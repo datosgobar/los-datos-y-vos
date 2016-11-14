@@ -11,7 +11,7 @@ gulp.task('js', function () {
     		.pipe(ngAnnotate())
     		.pipe(uglify())
     	.pipe(sourcemaps.write())
-    	.pipe(gulp.dest('./dist'))
+    	.pipe(gulp.dest('.'))
 });
 
 gulp.task('watch', ['js'], function () {
