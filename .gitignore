@@ -87,3 +87,4 @@ ENV/
 
 # Rope project settings
 .ropeproject
+los-datos-y-vos/node_modules
