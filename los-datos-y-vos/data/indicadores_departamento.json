@@ -1,0 +1,4736 @@
+[
+  {
+    "departamento_id": 2001,
+    "jovenes_proporcion": 0.041250983554,
+    "jovenes_asistencia_escolar": 0.800777110562,
+    "personas_por_cuarto": 1.42966460662,
+    "propietarios_vivienda_proporcion": 0.425155088317,
+    "departamento_nombre": "Comuna 1",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2002,
+    "jovenes_proporcion": 0.0358255451713,
+    "jovenes_asistencia_escolar": 0.915694591729,
+    "personas_por_cuarto": 1.08106702079,
+    "propietarios_vivienda_proporcion": 0.325974629559,
+    "departamento_nombre": "Comuna 2",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2003,
+    "jovenes_proporcion": 0.0411758746274,
+    "jovenes_asistencia_escolar": 0.851463351463,
+    "personas_por_cuarto": 1.36260726145,
+    "propietarios_vivienda_proporcion": 0.416156244953,
+    "departamento_nombre": "Comuna 3",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2004,
+    "jovenes_proporcion": 0.0565190496919,
+    "jovenes_asistencia_escolar": 0.805188488042,
+    "personas_por_cuarto": 1.47493731795,
+    "propietarios_vivienda_proporcion": 0.315126545026,
+    "departamento_nombre": "Comuna 4",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2005,
+    "jovenes_proporcion": 0.0396692829809,
+    "jovenes_asistencia_escolar": 0.890015490776,
+    "personas_por_cuarto": 1.27398439946,
+    "propietarios_vivienda_proporcion": 0.343010696718,
+    "departamento_nombre": "Comuna 5",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2006,
+    "jovenes_proporcion": 0.0374440582476,
+    "jovenes_asistencia_escolar": 0.911421204308,
+    "personas_por_cuarto": 1.18546546466,
+    "propietarios_vivienda_proporcion": 0.270797590073,
+    "departamento_nombre": "Comuna 6",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2007,
+    "jovenes_proporcion": 0.0490001858643,
+    "jovenes_asistencia_escolar": 0.83772781941,
+    "personas_por_cuarto": 1.32863733828,
+    "propietarios_vivienda_proporcion": 0.284145159113,
+    "departamento_nombre": "Comuna 7",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2008,
+    "jovenes_proporcion": 0.0647842039768,
+    "jovenes_asistencia_escolar": 0.762572135202,
+    "personas_por_cuarto": 1.53313354131,
+    "propietarios_vivienda_proporcion": 0.214143357845,
+    "departamento_nombre": "Comuna 8",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2009,
+    "jovenes_proporcion": 0.0505880825973,
+    "jovenes_asistencia_escolar": 0.843005497862,
+    "personas_por_cuarto": 1.36797294441,
+    "propietarios_vivienda_proporcion": 0.241791308965,
+    "departamento_nombre": "Comuna 9",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2010,
+    "jovenes_proporcion": 0.0464637216754,
+    "jovenes_asistencia_escolar": 0.871532278973,
+    "personas_por_cuarto": 1.29983949892,
+    "propietarios_vivienda_proporcion": 0.245358241258,
+    "departamento_nombre": "Comuna 10",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2011,
+    "jovenes_proporcion": 0.044381347718,
+    "jovenes_asistencia_escolar": 0.89471810089,
+    "personas_por_cuarto": 1.25590965326,
+    "propietarios_vivienda_proporcion": 0.23078645396,
+    "departamento_nombre": "Comuna 11",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2012,
+    "jovenes_proporcion": 0.0411961062584,
+    "jovenes_asistencia_escolar": 0.902474526929,
+    "personas_por_cuarto": 1.2372696921,
+    "propietarios_vivienda_proporcion": 0.237908513374,
+    "departamento_nombre": "Comuna 12",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2013,
+    "jovenes_proporcion": 0.0371459078118,
+    "jovenes_asistencia_escolar": 0.913185150704,
+    "personas_por_cuarto": 1.11319583462,
+    "propietarios_vivienda_proporcion": 0.269177959525,
+    "departamento_nombre": "Comuna 13",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2014,
+    "jovenes_proporcion": 0.0362570252688,
+    "jovenes_asistencia_escolar": 0.910655437569,
+    "personas_por_cuarto": 1.09984084261,
+    "propietarios_vivienda_proporcion": 0.310120678598,
+    "departamento_nombre": "Comuna 14",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 2015,
+    "jovenes_proporcion": 0.0436973501156,
+    "jovenes_asistencia_escolar": 0.876410127852,
+    "personas_por_cuarto": 1.28375252252,
+    "propietarios_vivienda_proporcion": 0.288001103981,
+    "departamento_nombre": "Comuna 15",
+    "provincia_id": 2
+  },
+  {
+    "departamento_id": 6007,
+    "jovenes_proporcion": 0.0666002811621,
+    "jovenes_asistencia_escolar": 0.765171503958,
+    "personas_por_cuarto": 1.24006682647,
+    "propietarios_vivienda_proporcion": 0.117043450377,
+    "departamento_nombre": "Adolfo Alsina",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6014,
+    "jovenes_proporcion": 0.06947787831,
+    "jovenes_asistencia_escolar": 0.768219832736,
+    "personas_por_cuarto": 1.26783834982,
+    "propietarios_vivienda_proporcion": 0.125744224815,
+    "departamento_nombre": "Adolfo González Cháves",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6021,
+    "jovenes_proporcion": 0.053876478318,
+    "jovenes_asistencia_escolar": 0.782229965157,
+    "personas_por_cuarto": 1.23668020894,
+    "propietarios_vivienda_proporcion": 0.12434691745,
+    "departamento_nombre": "Alberti",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6028,
+    "jovenes_proporcion": 0.0734723332525,
+    "jovenes_asistencia_escolar": 0.794131403392,
+    "personas_por_cuarto": 1.63981208515,
+    "propietarios_vivienda_proporcion": 0.0859111128105,
+    "departamento_nombre": "Almirante Brown",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6035,
+    "jovenes_proporcion": 0.0579087595608,
+    "jovenes_asistencia_escolar": 0.83188873211,
+    "personas_por_cuarto": 1.44123634161,
+    "propietarios_vivienda_proporcion": 0.178421806226,
+    "departamento_nombre": "Avellaneda",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6042,
+    "jovenes_proporcion": 0.0667256724197,
+    "jovenes_asistencia_escolar": 0.731024318349,
+    "personas_por_cuarto": 1.32574967405,
+    "propietarios_vivienda_proporcion": 0.140806659968,
+    "departamento_nombre": "Ayacucho",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6049,
+    "jovenes_proporcion": 0.0644607843137,
+    "jovenes_asistencia_escolar": 0.773288973384,
+    "personas_por_cuarto": 1.36104914205,
+    "propietarios_vivienda_proporcion": 0.147638510445,
+    "departamento_nombre": "Azul",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6056,
+    "jovenes_proporcion": 0.0609870942926,
+    "jovenes_asistencia_escolar": 0.826120052197,
+    "personas_por_cuarto": 1.35722804538,
+    "propietarios_vivienda_proporcion": 0.236591293121,
+    "departamento_nombre": "Bahía Blanca",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6063,
+    "jovenes_proporcion": 0.06165712069,
+    "jovenes_asistencia_escolar": 0.723168023686,
+    "personas_por_cuarto": 1.40584498909,
+    "propietarios_vivienda_proporcion": 0.153736413043,
+    "departamento_nombre": "Balcarce",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6070,
+    "jovenes_proporcion": 0.0645584689112,
+    "jovenes_asistencia_escolar": 0.777304964539,
+    "personas_por_cuarto": 1.41497862048,
+    "propietarios_vivienda_proporcion": 0.119335637481,
+    "departamento_nombre": "Baradero",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6077,
+    "jovenes_proporcion": 0.0671050819446,
+    "jovenes_asistencia_escolar": 0.69984607491,
+    "personas_por_cuarto": 1.38621611302,
+    "propietarios_vivienda_proporcion": 0.117431384873,
+    "departamento_nombre": "Arrecifes",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6084,
+    "jovenes_proporcion": 0.0629477740995,
+    "jovenes_asistencia_escolar": 0.772370486656,
+    "personas_por_cuarto": 1.31875936665,
+    "propietarios_vivienda_proporcion": 0.13763631005,
+    "departamento_nombre": "Benito Juárez",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6091,
+    "jovenes_proporcion": 0.0690035898891,
+    "jovenes_asistencia_escolar": 0.819924912845,
+    "personas_por_cuarto": 1.63858076319,
+    "propietarios_vivienda_proporcion": 0.0982031686059,
+    "departamento_nombre": "Berazategui",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6098,
+    "jovenes_proporcion": 0.066847518933,
+    "jovenes_asistencia_escolar": 0.798613459587,
+    "personas_por_cuarto": 1.52245740836,
+    "propietarios_vivienda_proporcion": 0.109257167839,
+    "departamento_nombre": "Berisso",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6105,
+    "jovenes_proporcion": 0.06332260895,
+    "jovenes_asistencia_escolar": 0.765819861432,
+    "personas_por_cuarto": 1.3088584335,
+    "propietarios_vivienda_proporcion": 0.156390601566,
+    "departamento_nombre": "Bolívar",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6112,
+    "jovenes_proporcion": 0.0622217921424,
+    "jovenes_asistencia_escolar": 0.731726283048,
+    "personas_por_cuarto": 1.318364483,
+    "propietarios_vivienda_proporcion": 0.11972570149,
+    "departamento_nombre": "Bragado",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6119,
+    "jovenes_proporcion": 0.0677361853832,
+    "jovenes_asistencia_escolar": 0.717245240761,
+    "personas_por_cuarto": 1.49991467091,
+    "propietarios_vivienda_proporcion": 0.135631907737,
+    "departamento_nombre": "Brandsen",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6126,
+    "jovenes_proporcion": 0.0673293740274,
+    "jovenes_asistencia_escolar": 0.741509433962,
+    "personas_por_cuarto": 1.53144404274,
+    "propietarios_vivienda_proporcion": 0.154352388745,
+    "departamento_nombre": "Campana",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6134,
+    "jovenes_proporcion": 0.0720920373083,
+    "jovenes_asistencia_escolar": 0.706495589415,
+    "personas_por_cuarto": 1.61335654769,
+    "propietarios_vivienda_proporcion": 0.117293625914,
+    "departamento_nombre": "Cañuelas",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6140,
+    "jovenes_proporcion": 0.063543535256,
+    "jovenes_asistencia_escolar": 0.71552660152,
+    "personas_por_cuarto": 1.4126705653,
+    "propietarios_vivienda_proporcion": 0.170162671233,
+    "departamento_nombre": "Capitán Sarmiento",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6147,
+    "jovenes_proporcion": 0.0665557404326,
+    "jovenes_asistencia_escolar": 0.708783783784,
+    "personas_por_cuarto": 1.33483402365,
+    "propietarios_vivienda_proporcion": 0.128360128617,
+    "departamento_nombre": "Carlos Casares",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6154,
+    "jovenes_proporcion": 0.0630942091616,
+    "jovenes_asistencia_escolar": 0.72602739726,
+    "personas_por_cuarto": 1.2846990895,
+    "propietarios_vivienda_proporcion": 0.104879275654,
+    "departamento_nombre": "Carlos Tejedor",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6161,
+    "jovenes_proporcion": 0.0628913694528,
+    "jovenes_asistencia_escolar": 0.698051948052,
+    "personas_por_cuarto": 1.42626929424,
+    "propietarios_vivienda_proporcion": 0.127402288922,
+    "departamento_nombre": "Carmen de Areco",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6168,
+    "jovenes_proporcion": 0.0639853747715,
+    "jovenes_asistencia_escolar": 0.790476190476,
+    "personas_por_cuarto": 1.38621388748,
+    "propietarios_vivienda_proporcion": 0.12164645351,
+    "departamento_nombre": "Castelli",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6175,
+    "jovenes_proporcion": 0.0646042587384,
+    "jovenes_asistencia_escolar": 0.721393034826,
+    "personas_por_cuarto": 1.38462394304,
+    "propietarios_vivienda_proporcion": 0.109876693932,
+    "departamento_nombre": "Colón",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6182,
+    "jovenes_proporcion": 0.0642135409963,
+    "jovenes_asistencia_escolar": 0.865697820095,
+    "personas_por_cuarto": 1.40507302075,
+    "propietarios_vivienda_proporcion": 0.249639621087,
+    "departamento_nombre": "Coronel de Marina L. Rosales",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6189,
+    "jovenes_proporcion": 0.0606003159558,
+    "jovenes_asistencia_escolar": 0.773722627737,
+    "personas_por_cuarto": 1.19940882219,
+    "propietarios_vivienda_proporcion": 0.133415362981,
+    "departamento_nombre": "Coronel Dorrego",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6196,
+    "jovenes_proporcion": 0.0722975624646,
+    "jovenes_asistencia_escolar": 0.726176115802,
+    "personas_por_cuarto": 1.3168532874,
+    "propietarios_vivienda_proporcion": 0.128319130542,
+    "departamento_nombre": "Coronel Pringles",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6203,
+    "jovenes_proporcion": 0.0657620041754,
+    "jovenes_asistencia_escolar": 0.741666666667,
+    "personas_por_cuarto": 1.26518753302,
+    "propietarios_vivienda_proporcion": 0.130696602483,
+    "departamento_nombre": "Coronel Suárez",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6210,
+    "jovenes_proporcion": 0.0588054123976,
+    "jovenes_asistencia_escolar": 0.719972067039,
+    "personas_por_cuarto": 1.3718382063,
+    "propietarios_vivienda_proporcion": 0.153673617847,
+    "departamento_nombre": "Chacabuco",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6217,
+    "jovenes_proporcion": 0.0634150956785,
+    "jovenes_asistencia_escolar": 0.766878030586,
+    "personas_por_cuarto": 1.37692157374,
+    "propietarios_vivienda_proporcion": 0.14435733295,
+    "departamento_nombre": "Chascomús",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6224,
+    "jovenes_proporcion": 0.0584248656228,
+    "jovenes_asistencia_escolar": 0.728533333333,
+    "personas_por_cuarto": 1.34613368008,
+    "propietarios_vivienda_proporcion": 0.163247747136,
+    "departamento_nombre": "Chivilcoy",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6231,
+    "jovenes_proporcion": 0.0682692877021,
+    "jovenes_asistencia_escolar": 0.738074588031,
+    "personas_por_cuarto": 1.40134417524,
+    "propietarios_vivienda_proporcion": 0.141266654499,
+    "departamento_nombre": "Daireaux",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6238,
+    "jovenes_proporcion": 0.0675985504031,
+    "jovenes_asistencia_escolar": 0.842450765864,
+    "personas_por_cuarto": 1.36644770086,
+    "propietarios_vivienda_proporcion": 0.116170590849,
+    "departamento_nombre": "Dolores",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6245,
+    "jovenes_proporcion": 0.0669498845388,
+    "jovenes_asistencia_escolar": 0.764086361243,
+    "personas_por_cuarto": 1.50359140184,
+    "propietarios_vivienda_proporcion": 0.101874677521,
+    "departamento_nombre": "Ensenada",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6252,
+    "jovenes_proporcion": 0.0739400521489,
+    "jovenes_asistencia_escolar": 0.756315289649,
+    "personas_por_cuarto": 1.62569062876,
+    "propietarios_vivienda_proporcion": 0.134259182074,
+    "departamento_nombre": "Escobar",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6260,
+    "jovenes_proporcion": 0.0734418974013,
+    "jovenes_asistencia_escolar": 0.769940732027,
+    "personas_por_cuarto": 1.67244972242,
+    "propietarios_vivienda_proporcion": 0.110503536858,
+    "departamento_nombre": "Esteban Echeverría",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6266,
+    "jovenes_proporcion": 0.0700889112565,
+    "jovenes_asistencia_escolar": 0.719483006223,
+    "personas_por_cuarto": 1.48350007466,
+    "propietarios_vivienda_proporcion": 0.134051203164,
+    "departamento_nombre": "Exaltación de la Cruz",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6270,
+    "jovenes_proporcion": 0.0758969472643,
+    "jovenes_asistencia_escolar": 0.771125060357,
+    "personas_por_cuarto": 1.81846656226,
+    "propietarios_vivienda_proporcion": 0.0861600017983,
+    "departamento_nombre": "Ezeiza",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6274,
+    "jovenes_proporcion": 0.0808887219634,
+    "jovenes_asistencia_escolar": 0.762529382745,
+    "personas_por_cuarto": 1.85640080356,
+    "propietarios_vivienda_proporcion": 0.0731338666195,
+    "departamento_nombre": "Florencio Varela",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6277,
+    "jovenes_proporcion": 0.0761077911828,
+    "jovenes_asistencia_escolar": 0.700740740741,
+    "personas_por_cuarto": 1.34930777423,
+    "propietarios_vivienda_proporcion": 0.143335565975,
+    "departamento_nombre": "Florentino Ameghino",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6280,
+    "jovenes_proporcion": 0.0667020255594,
+    "jovenes_asistencia_escolar": 0.779628928436,
+    "personas_por_cuarto": 1.45272427078,
+    "propietarios_vivienda_proporcion": 0.133993088281,
+    "departamento_nombre": "General Alvarado",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6287,
+    "jovenes_proporcion": 0.0617250673854,
+    "jovenes_asistencia_escolar": 0.768558951965,
+    "personas_por_cuarto": 1.51966138722,
+    "propietarios_vivienda_proporcion": 0.127569528416,
+    "departamento_nombre": "General Alvear",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6294,
+    "jovenes_proporcion": 0.0605247265651,
+    "jovenes_asistencia_escolar": 0.754988913525,
+    "personas_por_cuarto": 1.24805292689,
+    "propietarios_vivienda_proporcion": 0.116951379763,
+    "departamento_nombre": "General Arenales",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6301,
+    "jovenes_proporcion": 0.065649294558,
+    "jovenes_asistencia_escolar": 0.737719298246,
+    "personas_por_cuarto": 1.3432085396,
+    "propietarios_vivienda_proporcion": 0.130326231691,
+    "departamento_nombre": "General Belgrano",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6308,
+    "jovenes_proporcion": 0.0635653409091,
+    "jovenes_asistencia_escolar": 0.776536312849,
+    "personas_por_cuarto": 1.24822695035,
+    "propietarios_vivienda_proporcion": 0.0796019900498,
+    "departamento_nombre": "General Guido",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6315,
+    "jovenes_proporcion": 0.0714032511268,
+    "jovenes_asistencia_escolar": 0.727659574468,
+    "personas_por_cuarto": 1.4632826973,
+    "propietarios_vivienda_proporcion": 0.115445356917,
+    "departamento_nombre": "General Juan Madariaga",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6322,
+    "jovenes_proporcion": 0.0738199016971,
+    "jovenes_asistencia_escolar": 0.736180904523,
+    "personas_por_cuarto": 1.24702208859,
+    "propietarios_vivienda_proporcion": 0.107757479481,
+    "departamento_nombre": "General La Madrid",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6329,
+    "jovenes_proporcion": 0.0649472765129,
+    "jovenes_asistencia_escolar": 0.744570837642,
+    "personas_por_cuarto": 1.48592814371,
+    "propietarios_vivienda_proporcion": 0.137254901961,
+    "departamento_nombre": "General Las Heras",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6336,
+    "jovenes_proporcion": 0.0691891891892,
+    "jovenes_asistencia_escolar": 0.78515625,
+    "personas_por_cuarto": 1.46942017474,
+    "propietarios_vivienda_proporcion": 0.0578231292517,
+    "departamento_nombre": "General Lavalle",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6343,
+    "jovenes_proporcion": 0.0624888412783,
+    "jovenes_asistencia_escolar": 0.73,
+    "personas_por_cuarto": 1.34850126399,
+    "propietarios_vivienda_proporcion": 0.15150713908,
+    "departamento_nombre": "General Paz",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6351,
+    "jovenes_proporcion": 0.070508835805,
+    "jovenes_asistencia_escolar": 0.759445843829,
+    "personas_por_cuarto": 1.31723008539,
+    "propietarios_vivienda_proporcion": 0.118312757202,
+    "departamento_nombre": "General Pinto",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6357,
+    "jovenes_proporcion": 0.0618056217477,
+    "jovenes_asistencia_escolar": 0.780876702303,
+    "personas_por_cuarto": 1.43965661603,
+    "propietarios_vivienda_proporcion": 0.204567337483,
+    "departamento_nombre": "General Pueyrredón",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6364,
+    "jovenes_proporcion": 0.0751161323622,
+    "jovenes_asistencia_escolar": 0.695831424645,
+    "personas_por_cuarto": 1.7089401572,
+    "propietarios_vivienda_proporcion": 0.101620797561,
+    "departamento_nombre": "General Rodríguez",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6371,
+    "jovenes_proporcion": 0.0602564969242,
+    "jovenes_asistencia_escolar": 0.789326067794,
+    "personas_por_cuarto": 1.50713732111,
+    "propietarios_vivienda_proporcion": 0.186078287113,
+    "departamento_nombre": "General San Martín",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6385,
+    "jovenes_proporcion": 0.067927868127,
+    "jovenes_asistencia_escolar": 0.778501628664,
+    "personas_por_cuarto": 1.29842706313,
+    "propietarios_vivienda_proporcion": 0.105631562202,
+    "departamento_nombre": "General Viamonte",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6392,
+    "jovenes_proporcion": 0.0679432348367,
+    "jovenes_asistencia_escolar": 0.708631378159,
+    "personas_por_cuarto": 1.38032200358,
+    "propietarios_vivienda_proporcion": 0.130052214272,
+    "departamento_nombre": "General Villegas",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6399,
+    "jovenes_proporcion": 0.060629122273,
+    "jovenes_asistencia_escolar": 0.743375174338,
+    "personas_por_cuarto": 1.22727272727,
+    "propietarios_vivienda_proporcion": 0.113873106061,
+    "departamento_nombre": "Guaminí",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6406,
+    "jovenes_proporcion": 0.0683359415754,
+    "jovenes_asistencia_escolar": 0.737404580153,
+    "personas_por_cuarto": 1.29632134163,
+    "propietarios_vivienda_proporcion": 0.126858877086,
+    "departamento_nombre": "Hipólito Yrigoyen",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6408,
+    "jovenes_proporcion": 0.0624748263362,
+    "jovenes_asistencia_escolar": 0.826282787247,
+    "personas_por_cuarto": 1.51029132362,
+    "propietarios_vivienda_proporcion": 0.136279525416,
+    "departamento_nombre": "Hurlingham",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6410,
+    "jovenes_proporcion": 0.0612903994661,
+    "jovenes_asistencia_escolar": 0.845518180051,
+    "personas_por_cuarto": 1.44279094559,
+    "propietarios_vivienda_proporcion": 0.099836715652,
+    "departamento_nombre": "Ituzaingó",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6412,
+    "jovenes_proporcion": 0.0769453457202,
+    "jovenes_asistencia_escolar": 0.741229356005,
+    "personas_por_cuarto": 1.7558587819,
+    "propietarios_vivienda_proporcion": 0.0916594629263,
+    "departamento_nombre": "José C. Paz",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6413,
+    "jovenes_proporcion": 0.0597862798295,
+    "jovenes_asistencia_escolar": 0.796258566401,
+    "personas_por_cuarto": 1.3684856567,
+    "propietarios_vivienda_proporcion": 0.181692231569,
+    "departamento_nombre": "Junín",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6420,
+    "jovenes_proporcion": 0.0650984447029,
+    "jovenes_asistencia_escolar": 0.786896095301,
+    "personas_por_cuarto": 1.43189389266,
+    "propietarios_vivienda_proporcion": 0.173618940248,
+    "departamento_nombre": "La Costa",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6427,
+    "jovenes_proporcion": 0.0727321974799,
+    "jovenes_asistencia_escolar": 0.761363900309,
+    "personas_por_cuarto": 1.7310375214,
+    "propietarios_vivienda_proporcion": 0.145955220464,
+    "departamento_nombre": "La Matanza",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6434,
+    "jovenes_proporcion": 0.057890576859,
+    "jovenes_asistencia_escolar": 0.818708391319,
+    "personas_por_cuarto": 1.48321599277,
+    "propietarios_vivienda_proporcion": 0.154792304504,
+    "departamento_nombre": "Lanús",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6441,
+    "jovenes_proporcion": 0.0607863993985,
+    "jovenes_asistencia_escolar": 0.811308895258,
+    "personas_por_cuarto": 1.401185064,
+    "propietarios_vivienda_proporcion": 0.20458355361,
+    "departamento_nombre": "La Plata",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6448,
+    "jovenes_proporcion": 0.0740450538688,
+    "jovenes_asistencia_escolar": 0.75,
+    "personas_por_cuarto": 1.29634332148,
+    "propietarios_vivienda_proporcion": 0.116071428571,
+    "departamento_nombre": "Laprida",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6455,
+    "jovenes_proporcion": 0.0636755896276,
+    "jovenes_asistencia_escolar": 0.713157894737,
+    "personas_por_cuarto": 1.3377605918,
+    "propietarios_vivienda_proporcion": 0.118714233532,
+    "departamento_nombre": "Las Flores",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6462,
+    "jovenes_proporcion": 0.0681588189773,
+    "jovenes_asistencia_escolar": 0.717903930131,
+    "personas_por_cuarto": 1.3198460088,
+    "propietarios_vivienda_proporcion": 0.126577900744,
+    "departamento_nombre": "Leandro N. Alem",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6469,
+    "jovenes_proporcion": 0.0632893226177,
+    "jovenes_asistencia_escolar": 0.765684051398,
+    "personas_por_cuarto": 1.29705581237,
+    "propietarios_vivienda_proporcion": 0.136219713656,
+    "departamento_nombre": "Lincoln",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6476,
+    "jovenes_proporcion": 0.0679678137305,
+    "jovenes_asistencia_escolar": 0.775818639798,
+    "personas_por_cuarto": 1.34203875316,
+    "propietarios_vivienda_proporcion": 0.100982717723,
+    "departamento_nombre": "Lobería",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6483,
+    "jovenes_proporcion": 0.0614563750968,
+    "jovenes_asistencia_escolar": 0.688708951867,
+    "personas_por_cuarto": 1.42112913998,
+    "propietarios_vivienda_proporcion": 0.13686271172,
+    "departamento_nombre": "Lobos",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6490,
+    "jovenes_proporcion": 0.0655287621353,
+    "jovenes_asistencia_escolar": 0.791402535658,
+    "personas_por_cuarto": 1.54303133489,
+    "propietarios_vivienda_proporcion": 0.125330961005,
+    "departamento_nombre": "Lomas de Zamora",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6497,
+    "jovenes_proporcion": 0.064099065614,
+    "jovenes_asistencia_escolar": 0.73825601879,
+    "personas_por_cuarto": 1.51528502581,
+    "propietarios_vivienda_proporcion": 0.16624646415,
+    "departamento_nombre": "Luján",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6505,
+    "jovenes_proporcion": 0.061862079685,
+    "jovenes_asistencia_escolar": 0.746231155779,
+    "personas_por_cuarto": 1.64585998124,
+    "propietarios_vivienda_proporcion": 0.151362448675,
+    "departamento_nombre": "Magdalena",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6511,
+    "jovenes_proporcion": 0.065371024735,
+    "jovenes_asistencia_escolar": 0.804804804805,
+    "personas_por_cuarto": 1.33002610966,
+    "propietarios_vivienda_proporcion": 0.108210037714,
+    "departamento_nombre": "Maipú",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6515,
+    "jovenes_proporcion": 0.0728003101978,
+    "jovenes_asistencia_escolar": 0.764838723422,
+    "personas_por_cuarto": 1.69320825871,
+    "propietarios_vivienda_proporcion": 0.114016431977,
+    "departamento_nombre": "Malvinas Argentinas",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6518,
+    "jovenes_proporcion": 0.0631138681329,
+    "jovenes_asistencia_escolar": 0.784810126582,
+    "personas_por_cuarto": 1.38688652806,
+    "propietarios_vivienda_proporcion": 0.135066760365,
+    "departamento_nombre": "Mar Chiquita",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6525,
+    "jovenes_proporcion": 0.0775917757147,
+    "jovenes_asistencia_escolar": 0.700523311132,
+    "personas_por_cuarto": 1.81620407616,
+    "propietarios_vivienda_proporcion": 0.107942139738,
+    "departamento_nombre": "Marcos Paz",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6532,
+    "jovenes_proporcion": 0.0642500474053,
+    "jovenes_asistencia_escolar": 0.750614854894,
+    "personas_por_cuarto": 1.43579272166,
+    "propietarios_vivienda_proporcion": 0.173839912932,
+    "departamento_nombre": "Mercedes",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6539,
+    "jovenes_proporcion": 0.0743357540483,
+    "jovenes_asistencia_escolar": 0.765259889019,
+    "personas_por_cuarto": 1.71583947222,
+    "propietarios_vivienda_proporcion": 0.101045248991,
+    "departamento_nombre": "Merlo",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6547,
+    "jovenes_proporcion": 0.0656556052106,
+    "jovenes_asistencia_escolar": 0.688631426503,
+    "personas_por_cuarto": 1.486816993,
+    "propietarios_vivienda_proporcion": 0.148626081676,
+    "departamento_nombre": "Monte",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6553,
+    "jovenes_proporcion": 0.0563163563625,
+    "jovenes_asistencia_escolar": 0.754098360656,
+    "personas_por_cuarto": 1.35621869783,
+    "propietarios_vivienda_proporcion": 0.229944229944,
+    "departamento_nombre": "Monte Hermoso",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6560,
+    "jovenes_proporcion": 0.0788853161844,
+    "jovenes_asistencia_escolar": 0.74924361273,
+    "personas_por_cuarto": 1.75942594745,
+    "propietarios_vivienda_proporcion": 0.0900770868275,
+    "departamento_nombre": "Moreno",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6568,
+    "jovenes_proporcion": 0.0542027784958,
+    "jovenes_asistencia_escolar": 0.870209709853,
+    "personas_por_cuarto": 1.37219617881,
+    "propietarios_vivienda_proporcion": 0.154131821668,
+    "departamento_nombre": "Morón",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6574,
+    "jovenes_proporcion": 0.0691333411516,
+    "jovenes_asistencia_escolar": 0.678541136556,
+    "personas_por_cuarto": 1.42615822044,
+    "propietarios_vivienda_proporcion": 0.135500845706,
+    "departamento_nombre": "Navarro",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6581,
+    "jovenes_proporcion": 0.0652190287627,
+    "jovenes_asistencia_escolar": 0.789473684211,
+    "personas_por_cuarto": 1.35029931419,
+    "propietarios_vivienda_proporcion": 0.162036595068,
+    "departamento_nombre": "Necochea",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6588,
+    "jovenes_proporcion": 0.0644356900381,
+    "jovenes_asistencia_escolar": 0.719349593496,
+    "personas_por_cuarto": 1.33264451271,
+    "propietarios_vivienda_proporcion": 0.155874417464,
+    "departamento_nombre": "9 de Julio",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6595,
+    "jovenes_proporcion": 0.0629945930462,
+    "jovenes_asistencia_escolar": 0.796930510161,
+    "personas_por_cuarto": 1.3868845132,
+    "propietarios_vivienda_proporcion": 0.17102943171,
+    "departamento_nombre": "Olavarría",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6602,
+    "jovenes_proporcion": 0.0721024927997,
+    "jovenes_asistencia_escolar": 0.813131313131,
+    "personas_por_cuarto": 1.40950025664,
+    "propietarios_vivienda_proporcion": 0.168614357262,
+    "departamento_nombre": "Patagones",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6609,
+    "jovenes_proporcion": 0.064435840708,
+    "jovenes_asistencia_escolar": 0.766289504487,
+    "personas_por_cuarto": 1.33930435368,
+    "propietarios_vivienda_proporcion": 0.154219485694,
+    "departamento_nombre": "Pehuajó",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6616,
+    "jovenes_proporcion": 0.0684559198233,
+    "jovenes_asistencia_escolar": 0.754342431762,
+    "personas_por_cuarto": 1.23806519453,
+    "propietarios_vivienda_proporcion": 0.127619047619,
+    "departamento_nombre": "Pellegrini",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6623,
+    "jovenes_proporcion": 0.0666889760015,
+    "jovenes_asistencia_escolar": 0.758996415771,
+    "personas_por_cuarto": 1.37421329935,
+    "propietarios_vivienda_proporcion": 0.140445237,
+    "departamento_nombre": "Pergamino",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6630,
+    "jovenes_proporcion": 0.0730769230769,
+    "jovenes_asistencia_escolar": 0.748120300752,
+    "personas_por_cuarto": 1.38140417457,
+    "propietarios_vivienda_proporcion": 0.0633744855967,
+    "departamento_nombre": "Pila",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6638,
+    "jovenes_proporcion": 0.0767594967182,
+    "jovenes_asistencia_escolar": 0.730844622555,
+    "personas_por_cuarto": 1.62890646275,
+    "propietarios_vivienda_proporcion": 0.125896626387,
+    "departamento_nombre": "Pilar",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6644,
+    "jovenes_proporcion": 0.0576026119403,
+    "jovenes_asistencia_escolar": 0.782051282051,
+    "personas_por_cuarto": 1.47760165403,
+    "propietarios_vivienda_proporcion": 0.264472882389,
+    "departamento_nombre": "Pinamar",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6648,
+    "jovenes_proporcion": 0.0772728953304,
+    "jovenes_asistencia_escolar": 0.706858054226,
+    "personas_por_cuarto": 1.896615399,
+    "propietarios_vivienda_proporcion": 0.0667071235179,
+    "departamento_nombre": "Presidente Perón",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6651,
+    "jovenes_proporcion": 0.0538652099346,
+    "jovenes_asistencia_escolar": 0.801886792453,
+    "personas_por_cuarto": 1.10260540692,
+    "propietarios_vivienda_proporcion": 0.110145385588,
+    "departamento_nombre": "Puán",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6655,
+    "jovenes_proporcion": 0.0651294498382,
+    "jovenes_asistencia_escolar": 0.840062111801,
+    "personas_por_cuarto": 1.28766766506,
+    "propietarios_vivienda_proporcion": 0.142103721067,
+    "departamento_nombre": "Punta Indio",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6658,
+    "jovenes_proporcion": 0.0654643764485,
+    "jovenes_asistencia_escolar": 0.797285257586,
+    "personas_por_cuarto": 1.56959533868,
+    "propietarios_vivienda_proporcion": 0.12015131839,
+    "departamento_nombre": "Quilmes",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6665,
+    "jovenes_proporcion": 0.0710005447612,
+    "jovenes_asistencia_escolar": 0.736146632566,
+    "personas_por_cuarto": 1.46970910061,
+    "propietarios_vivienda_proporcion": 0.116165081855,
+    "departamento_nombre": "Ramallo",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6672,
+    "jovenes_proporcion": 0.0687269372694,
+    "jovenes_asistencia_escolar": 0.755512943432,
+    "personas_por_cuarto": 1.28056704076,
+    "propietarios_vivienda_proporcion": 0.140469483568,
+    "departamento_nombre": "Rauch",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6679,
+    "jovenes_proporcion": 0.0694160881993,
+    "jovenes_asistencia_escolar": 0.751260504202,
+    "personas_por_cuarto": 1.43684519319,
+    "propietarios_vivienda_proporcion": 0.117089184753,
+    "departamento_nombre": "Rivadavia",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6686,
+    "jovenes_proporcion": 0.0626920450666,
+    "jovenes_asistencia_escolar": 0.753573859769,
+    "personas_por_cuarto": 1.33174197215,
+    "propietarios_vivienda_proporcion": 0.117353308365,
+    "departamento_nombre": "Rojas",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6693,
+    "jovenes_proporcion": 0.0622552545353,
+    "jovenes_asistencia_escolar": 0.657252888318,
+    "personas_por_cuarto": 1.36649557715,
+    "propietarios_vivienda_proporcion": 0.154365541327,
+    "departamento_nombre": "Roque Pérez",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6700,
+    "jovenes_proporcion": 0.055858113644,
+    "jovenes_asistencia_escolar": 0.807592752373,
+    "personas_por_cuarto": 1.23911615408,
+    "propietarios_vivienda_proporcion": 0.16008202324,
+    "departamento_nombre": "Saavedra",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6707,
+    "jovenes_proporcion": 0.0628913185684,
+    "jovenes_asistencia_escolar": 0.746409113422,
+    "personas_por_cuarto": 1.37574458967,
+    "propietarios_vivienda_proporcion": 0.152581723626,
+    "departamento_nombre": "Saladillo",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6714,
+    "jovenes_proporcion": 0.0620157412795,
+    "jovenes_asistencia_escolar": 0.707160493827,
+    "personas_por_cuarto": 1.40075500837,
+    "propietarios_vivienda_proporcion": 0.133314622509,
+    "departamento_nombre": "Salto",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6721,
+    "jovenes_proporcion": 0.0602730217492,
+    "jovenes_asistencia_escolar": 0.827255278311,
+    "personas_por_cuarto": 1.20793739519,
+    "propietarios_vivienda_proporcion": 0.128399746996,
+    "departamento_nombre": "Salliqueló",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6728,
+    "jovenes_proporcion": 0.0694836496287,
+    "jovenes_asistencia_escolar": 0.701875,
+    "personas_por_cuarto": 1.45943719103,
+    "propietarios_vivienda_proporcion": 0.145524437122,
+    "departamento_nombre": "San Andrés de Giles",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6735,
+    "jovenes_proporcion": 0.0670758060334,
+    "jovenes_asistencia_escolar": 0.771262886598,
+    "personas_por_cuarto": 1.40733532024,
+    "propietarios_vivienda_proporcion": 0.139479905437,
+    "departamento_nombre": "San Antonio de Areco",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6742,
+    "jovenes_proporcion": 0.065841171568,
+    "jovenes_asistencia_escolar": 0.745027124774,
+    "personas_por_cuarto": 1.27508729315,
+    "propietarios_vivienda_proporcion": 0.105707531239,
+    "departamento_nombre": "San Cayetano",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6749,
+    "jovenes_proporcion": 0.065602793433,
+    "jovenes_asistencia_escolar": 0.80371650014,
+    "personas_por_cuarto": 1.55684625142,
+    "propietarios_vivienda_proporcion": 0.197979102543,
+    "departamento_nombre": "San Fernando",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6756,
+    "jovenes_proporcion": 0.0552858186685,
+    "jovenes_asistencia_escolar": 0.876111660079,
+    "personas_por_cuarto": 1.25425790233,
+    "propietarios_vivienda_proporcion": 0.177815724234,
+    "departamento_nombre": "San Isidro",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6760,
+    "jovenes_proporcion": 0.0707773634092,
+    "jovenes_asistencia_escolar": 0.793482709229,
+    "personas_por_cuarto": 1.57229875897,
+    "propietarios_vivienda_proporcion": 0.147171543031,
+    "departamento_nombre": "San Miguel",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6763,
+    "jovenes_proporcion": 0.0650294466498,
+    "jovenes_asistencia_escolar": 0.824143384291,
+    "personas_por_cuarto": 1.45720023178,
+    "propietarios_vivienda_proporcion": 0.133027013829,
+    "departamento_nombre": "San Nicolás",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6770,
+    "jovenes_proporcion": 0.0720746663053,
+    "jovenes_asistencia_escolar": 0.675675675676,
+    "personas_por_cuarto": 1.49841366532,
+    "propietarios_vivienda_proporcion": 0.136218209425,
+    "departamento_nombre": "San Pedro",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6778,
+    "jovenes_proporcion": 0.0752547160295,
+    "jovenes_asistencia_escolar": 0.734584450402,
+    "personas_por_cuarto": 1.69849791536,
+    "propietarios_vivienda_proporcion": 0.0740243047441,
+    "departamento_nombre": "San Vicente",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6784,
+    "jovenes_proporcion": 0.0689415732566,
+    "jovenes_asistencia_escolar": 0.709352517986,
+    "personas_por_cuarto": 1.42709513024,
+    "propietarios_vivienda_proporcion": 0.135767790262,
+    "departamento_nombre": "Suipacha",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6791,
+    "jovenes_proporcion": 0.0617497235027,
+    "jovenes_asistencia_escolar": 0.81357040136,
+    "personas_por_cuarto": 1.37602337232,
+    "propietarios_vivienda_proporcion": 0.245255474453,
+    "departamento_nombre": "Tandil",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6798,
+    "jovenes_proporcion": 0.0646110263674,
+    "jovenes_asistencia_escolar": 0.760539629005,
+    "personas_por_cuarto": 1.30387839182,
+    "propietarios_vivienda_proporcion": 0.0951628201075,
+    "departamento_nombre": "Tapalqué",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6805,
+    "jovenes_proporcion": 0.0687733971694,
+    "jovenes_asistencia_escolar": 0.781842766081,
+    "personas_por_cuarto": 1.56264167864,
+    "propietarios_vivienda_proporcion": 0.148722341974,
+    "departamento_nombre": "Tigre",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6812,
+    "jovenes_proporcion": 0.0765306122449,
+    "jovenes_asistencia_escolar": 0.822222222222,
+    "personas_por_cuarto": 1.41346153846,
+    "propietarios_vivienda_proporcion": 0.0537634408602,
+    "departamento_nombre": "Tordillo",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6819,
+    "jovenes_proporcion": 0.0631926432445,
+    "jovenes_asistencia_escolar": 0.773631840796,
+    "personas_por_cuarto": 1.28398425674,
+    "propietarios_vivienda_proporcion": 0.178713089467,
+    "departamento_nombre": "Tornquist",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6826,
+    "jovenes_proporcion": 0.0673159619721,
+    "jovenes_asistencia_escolar": 0.736533149171,
+    "personas_por_cuarto": 1.35264895457,
+    "propietarios_vivienda_proporcion": 0.159515118121,
+    "departamento_nombre": "Trenque Lauquen",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6833,
+    "jovenes_proporcion": 0.0634564874803,
+    "jovenes_asistencia_escolar": 0.762141280353,
+    "personas_por_cuarto": 1.31924231924,
+    "propietarios_vivienda_proporcion": 0.169235358457,
+    "departamento_nombre": "Tres Arroyos",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6840,
+    "jovenes_proporcion": 0.0563558786253,
+    "jovenes_asistencia_escolar": 0.831933211584,
+    "personas_por_cuarto": 1.43849192921,
+    "propietarios_vivienda_proporcion": 0.184566738906,
+    "departamento_nombre": "Tres de Febrero",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6847,
+    "jovenes_proporcion": 0.0672413793103,
+    "jovenes_asistencia_escolar": 0.74358974359,
+    "personas_por_cuarto": 1.34758364312,
+    "propietarios_vivienda_proporcion": 0.140635798203,
+    "departamento_nombre": "Tres Lomas",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6854,
+    "jovenes_proporcion": 0.0642263266559,
+    "jovenes_asistencia_escolar": 0.704170286707,
+    "personas_por_cuarto": 1.30953598831,
+    "propietarios_vivienda_proporcion": 0.136034149485,
+    "departamento_nombre": "25 de Mayo",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6861,
+    "jovenes_proporcion": 0.048500482518,
+    "jovenes_asistencia_escolar": 0.90793602204,
+    "personas_por_cuarto": 1.22103431241,
+    "propietarios_vivienda_proporcion": 0.21484398606,
+    "departamento_nombre": "Vicente López",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6868,
+    "jovenes_proporcion": 0.0642294358651,
+    "jovenes_asistencia_escolar": 0.768400392542,
+    "personas_por_cuarto": 1.50393402218,
+    "propietarios_vivienda_proporcion": 0.219298245614,
+    "departamento_nombre": "Villa Gesell",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6875,
+    "jovenes_proporcion": 0.0789320951828,
+    "jovenes_asistencia_escolar": 0.676879084967,
+    "personas_por_cuarto": 1.53276663042,
+    "propietarios_vivienda_proporcion": 0.172699696663,
+    "departamento_nombre": "Villarino",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 6882,
+    "jovenes_proporcion": 0.0677786626294,
+    "jovenes_asistencia_escolar": 0.744996772111,
+    "personas_por_cuarto": 1.57410494125,
+    "propietarios_vivienda_proporcion": 0.138241260694,
+    "departamento_nombre": "Zárate",
+    "provincia_id": 6
+  },
+  {
+    "departamento_id": 10007,
+    "jovenes_proporcion": 0.0743894241542,
+    "jovenes_asistencia_escolar": 0.80421686747,
+    "personas_por_cuarto": 1.29362318841,
+    "propietarios_vivienda_proporcion": 0.032457496136,
+    "departamento_nombre": "Ambato",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10014,
+    "jovenes_proporcion": 0.0778196777511,
+    "jovenes_asistencia_escolar": 0.590308370044,
+    "personas_por_cuarto": 1.61249309011,
+    "propietarios_vivienda_proporcion": 0.0101781170483,
+    "departamento_nombre": "Ancasti",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10021,
+    "jovenes_proporcion": 0.0841606000441,
+    "jovenes_asistencia_escolar": 0.745085190039,
+    "personas_por_cuarto": 1.53543907189,
+    "propietarios_vivienda_proporcion": 0.055354481584,
+    "departamento_nombre": "Andalgalá",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10028,
+    "jovenes_proporcion": 0.0619777158774,
+    "jovenes_asistencia_escolar": 0.752808988764,
+    "personas_por_cuarto": 1.66976744186,
+    "propietarios_vivienda_proporcion": 0.0602739726027,
+    "departamento_nombre": "Antofagasta de la Sierra",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10035,
+    "jovenes_proporcion": 0.0864490177064,
+    "jovenes_asistencia_escolar": 0.758205234732,
+    "personas_por_cuarto": 1.56184439334,
+    "propietarios_vivienda_proporcion": 0.0704122047822,
+    "departamento_nombre": "Belén",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10042,
+    "jovenes_proporcion": 0.0875349704694,
+    "jovenes_asistencia_escolar": 0.751420454545,
+    "personas_por_cuarto": 1.72548809268,
+    "propietarios_vivienda_proporcion": 0.0292844410491,
+    "departamento_nombre": "Capayán",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10049,
+    "jovenes_proporcion": 0.0771557203058,
+    "jovenes_asistencia_escolar": 0.828599253368,
+    "personas_por_cuarto": 1.53270247704,
+    "propietarios_vivienda_proporcion": 0.110355163309,
+    "departamento_nombre": "Capital",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10056,
+    "jovenes_proporcion": 0.0694677871148,
+    "jovenes_asistencia_escolar": 0.665322580645,
+    "personas_por_cuarto": 1.53021860266,
+    "propietarios_vivienda_proporcion": 0.0403071017274,
+    "departamento_nombre": "El Alto",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10063,
+    "jovenes_proporcion": 0.0822125084062,
+    "jovenes_asistencia_escolar": 0.808793456033,
+    "personas_por_cuarto": 1.61148740179,
+    "propietarios_vivienda_proporcion": 0.0473666777079,
+    "departamento_nombre": "Fray Mamerto Esquiú",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10070,
+    "jovenes_proporcion": 0.088700415231,
+    "jovenes_asistencia_escolar": 0.72061752988,
+    "personas_por_cuarto": 1.76597238474,
+    "propietarios_vivienda_proporcion": 0.0666338421139,
+    "departamento_nombre": "La Paz",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10077,
+    "jovenes_proporcion": 0.0805256869773,
+    "jovenes_asistencia_escolar": 0.780415430267,
+    "personas_por_cuarto": 1.45971398675,
+    "propietarios_vivienda_proporcion": 0.03125,
+    "departamento_nombre": "Paclín",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10084,
+    "jovenes_proporcion": 0.0876948775056,
+    "jovenes_asistencia_escolar": 0.782010582011,
+    "personas_por_cuarto": 1.56947276435,
+    "propietarios_vivienda_proporcion": 0.0633648943918,
+    "departamento_nombre": "Pomán",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10091,
+    "jovenes_proporcion": 0.0907397551889,
+    "jovenes_asistencia_escolar": 0.815738025415,
+    "personas_por_cuarto": 1.46187759336,
+    "propietarios_vivienda_proporcion": 0.0957873620863,
+    "departamento_nombre": "Santa María",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10098,
+    "jovenes_proporcion": 0.0848429449892,
+    "jovenes_asistencia_escolar": 0.672869735553,
+    "personas_por_cuarto": 1.6868516961,
+    "propietarios_vivienda_proporcion": 0.0529715762274,
+    "departamento_nombre": "Santa Rosa",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10105,
+    "jovenes_proporcion": 0.0944096601073,
+    "jovenes_asistencia_escolar": 0.807200378967,
+    "personas_por_cuarto": 1.37931034483,
+    "propietarios_vivienda_proporcion": 0.0512693702605,
+    "departamento_nombre": "Tinogasta",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 10112,
+    "jovenes_proporcion": 0.0834740474268,
+    "jovenes_asistencia_escolar": 0.813544415128,
+    "personas_por_cuarto": 1.62348033373,
+    "propietarios_vivienda_proporcion": 0.0617553036908,
+    "departamento_nombre": "Valle Viejo",
+    "provincia_id": 10
+  },
+  {
+    "departamento_id": 14007,
+    "jovenes_proporcion": 0.0699250867897,
+    "jovenes_asistencia_escolar": 0.718578521035,
+    "personas_por_cuarto": 1.49748276239,
+    "propietarios_vivienda_proporcion": 0.17652970736,
+    "departamento_nombre": "Calamuchita",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14014,
+    "jovenes_proporcion": 0.0664679107464,
+    "jovenes_asistencia_escolar": 0.756574183036,
+    "personas_por_cuarto": 1.45466600002,
+    "propietarios_vivienda_proporcion": 0.267672853946,
+    "departamento_nombre": "",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14021,
+    "jovenes_proporcion": 0.071809585567,
+    "jovenes_asistencia_escolar": 0.716724393864,
+    "personas_por_cuarto": 1.57642273007,
+    "propietarios_vivienda_proporcion": 0.181969269363,
+    "departamento_nombre": "",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14028,
+    "jovenes_proporcion": 0.0847189366735,
+    "jovenes_asistencia_escolar": 0.705705102451,
+    "personas_por_cuarto": 1.6677736149,
+    "propietarios_vivienda_proporcion": 0.122585904189,
+    "departamento_nombre": "Cruz del Eje",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14035,
+    "jovenes_proporcion": 0.0686491794081,
+    "jovenes_asistencia_escolar": 0.646505925623,
+    "personas_por_cuarto": 1.39976438249,
+    "propietarios_vivienda_proporcion": 0.128876636802,
+    "departamento_nombre": "General Roca",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14042,
+    "jovenes_proporcion": 0.0649567687166,
+    "jovenes_asistencia_escolar": 0.72400048315,
+    "personas_por_cuarto": 1.41154451016,
+    "propietarios_vivienda_proporcion": 0.234983640228,
+    "departamento_nombre": "",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14049,
+    "jovenes_proporcion": 0.0773824731732,
+    "jovenes_asistencia_escolar": 0.716467189435,
+    "personas_por_cuarto": 1.57275603998,
+    "propietarios_vivienda_proporcion": 0.12743302038,
+    "departamento_nombre": "Ischilín",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14056,
+    "jovenes_proporcion": 0.0674874750319,
+    "jovenes_asistencia_escolar": 0.695536147501,
+    "personas_por_cuarto": 1.37343437296,
+    "propietarios_vivienda_proporcion": 0.169207394277,
+    "departamento_nombre": "Juárez Celman",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14063,
+    "jovenes_proporcion": 0.0626553428338,
+    "jovenes_asistencia_escolar": 0.712360238934,
+    "personas_por_cuarto": 1.30458460614,
+    "propietarios_vivienda_proporcion": 0.137163152554,
+    "departamento_nombre": "Marcos Juárez",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14070,
+    "jovenes_proporcion": 0.0829278612228,
+    "jovenes_asistencia_escolar": 0.709183673469,
+    "personas_por_cuarto": 1.43416262136,
+    "propietarios_vivienda_proporcion": 0.0508361204013,
+    "departamento_nombre": "Minas",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14077,
+    "jovenes_proporcion": 0.0724907063197,
+    "jovenes_asistencia_escolar": 0.607692307692,
+    "personas_por_cuarto": 1.51378728194,
+    "propietarios_vivienda_proporcion": 0.072625698324,
+    "departamento_nombre": "Pocho",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14084,
+    "jovenes_proporcion": 0.0651838377157,
+    "jovenes_asistencia_escolar": 0.69133192389,
+    "personas_por_cuarto": 1.34442509356,
+    "propietarios_vivienda_proporcion": 0.144083890678,
+    "departamento_nombre": "Presidente Roque Sáenz Peña",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14084,
+    "jovenes_proporcion": 0.0651838377157,
+    "jovenes_asistencia_escolar": 0.69133192389,
+    "personas_por_cuarto": 1.34442509356,
+    "propietarios_vivienda_proporcion": 0.144083890678,
+    "departamento_nombre": "Presidente Roque Sáenz Peña",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14091,
+    "jovenes_proporcion": 0.0708460154371,
+    "jovenes_asistencia_escolar": 0.764538333729,
+    "personas_por_cuarto": 1.5017045598,
+    "propietarios_vivienda_proporcion": 0.224603188967,
+    "departamento_nombre": "Punilla",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14098,
+    "jovenes_proporcion": 0.064583815287,
+    "jovenes_asistencia_escolar": 0.723245145479,
+    "personas_por_cuarto": 1.36395491735,
+    "propietarios_vivienda_proporcion": 0.204604465986,
+    "departamento_nombre": "Río Cuarto",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14105,
+    "jovenes_proporcion": 0.0753722549545,
+    "jovenes_asistencia_escolar": 0.656054576464,
+    "personas_por_cuarto": 1.55087054758,
+    "propietarios_vivienda_proporcion": 0.148989159098,
+    "departamento_nombre": "Río Primero",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14112,
+    "jovenes_proporcion": 0.0840507476212,
+    "jovenes_asistencia_escolar": 0.641509433962,
+    "personas_por_cuarto": 1.62798131301,
+    "propietarios_vivienda_proporcion": 0.101144045762,
+    "departamento_nombre": "Río Seco",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14119,
+    "jovenes_proporcion": 0.0695925490272,
+    "jovenes_asistencia_escolar": 0.703518980327,
+    "personas_por_cuarto": 1.41805553657,
+    "propietarios_vivienda_proporcion": 0.164256777812,
+    "departamento_nombre": "Río Segundo",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14126,
+    "jovenes_proporcion": 0.0794778942817,
+    "jovenes_asistencia_escolar": 0.691941516491,
+    "personas_por_cuarto": 1.684680173,
+    "propietarios_vivienda_proporcion": 0.121608527132,
+    "departamento_nombre": "San Alberto",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14133,
+    "jovenes_proporcion": 0.0742339312407,
+    "jovenes_asistencia_escolar": 0.696451044551,
+    "personas_por_cuarto": 1.51032847951,
+    "propietarios_vivienda_proporcion": 0.148407442447,
+    "departamento_nombre": "San Javier",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14140,
+    "jovenes_proporcion": 0.0662847116191,
+    "jovenes_asistencia_escolar": 0.687166361974,
+    "personas_por_cuarto": 1.38200440779,
+    "propietarios_vivienda_proporcion": 0.199949126167,
+    "departamento_nombre": "San Justo",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14147,
+    "jovenes_proporcion": 0.0703242758789,
+    "jovenes_asistencia_escolar": 0.710644460536,
+    "personas_por_cuarto": 1.61053702063,
+    "propietarios_vivienda_proporcion": 0.161064525298,
+    "departamento_nombre": "",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14154,
+    "jovenes_proporcion": 0.0829884556741,
+    "jovenes_asistencia_escolar": 0.54593175853,
+    "personas_por_cuarto": 1.64198855508,
+    "propietarios_vivienda_proporcion": 0.070938215103,
+    "departamento_nombre": "Sobremonte",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14161,
+    "jovenes_proporcion": 0.0645982803001,
+    "jovenes_asistencia_escolar": 0.738165889501,
+    "personas_por_cuarto": 1.33047533458,
+    "propietarios_vivienda_proporcion": 0.184064562649,
+    "departamento_nombre": "Tercero Arriba",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14168,
+    "jovenes_proporcion": 0.0756089674499,
+    "jovenes_asistencia_escolar": 0.699215965788,
+    "personas_por_cuarto": 1.54839786382,
+    "propietarios_vivienda_proporcion": 0.148051463733,
+    "departamento_nombre": "Totoral",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14175,
+    "jovenes_proporcion": 0.0738578079381,
+    "jovenes_asistencia_escolar": 0.663461538462,
+    "personas_por_cuarto": 1.47514841113,
+    "propietarios_vivienda_proporcion": 0.0898292501856,
+    "departamento_nombre": "Tulumba",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 14182,
+    "jovenes_proporcion": 0.0651016296689,
+    "jovenes_asistencia_escolar": 0.686909777713,
+    "personas_por_cuarto": 1.35777212719,
+    "propietarios_vivienda_proporcion": 0.1383079985,
+    "departamento_nombre": "Unión",
+    "provincia_id": 14
+  },
+  {
+    "departamento_id": 18007,
+    "jovenes_proporcion": 0.0871412818375,
+    "jovenes_asistencia_escolar": 0.671604938272,
+    "personas_por_cuarto": 1.75721915024,
+    "propietarios_vivienda_proporcion": 0.0727883538634,
+    "departamento_nombre": "Bella Vista",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18014,
+    "jovenes_proporcion": 0.0759853718001,
+    "jovenes_asistencia_escolar": 0.743315508021,
+    "personas_por_cuarto": 1.65612382234,
+    "propietarios_vivienda_proporcion": 0.0281065088757,
+    "departamento_nombre": "Berón de Astrada",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18021,
+    "jovenes_proporcion": 0.080740209311,
+    "jovenes_asistencia_escolar": 0.78591432424,
+    "personas_por_cuarto": 1.61038184548,
+    "propietarios_vivienda_proporcion": 0.165486169105,
+    "departamento_nombre": "",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18028,
+    "jovenes_proporcion": 0.0956756500734,
+    "jovenes_asistencia_escolar": 0.562376237624,
+    "personas_por_cuarto": 1.86510600707,
+    "propietarios_vivienda_proporcion": 0.0386167146974,
+    "departamento_nombre": "Concepción",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18035,
+    "jovenes_proporcion": 0.083566149964,
+    "jovenes_asistencia_escolar": 0.653815044486,
+    "personas_por_cuarto": 1.57596846927,
+    "propietarios_vivienda_proporcion": 0.0886228507151,
+    "departamento_nombre": "Curuzú Cuatiá",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18042,
+    "jovenes_proporcion": 0.0884241180753,
+    "jovenes_asistencia_escolar": 0.690119760479,
+    "personas_por_cuarto": 1.67821837165,
+    "propietarios_vivienda_proporcion": 0.0374845869297,
+    "departamento_nombre": "Empedrado",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18049,
+    "jovenes_proporcion": 0.0822349198104,
+    "jovenes_asistencia_escolar": 0.634030793525,
+    "personas_por_cuarto": 1.66434322148,
+    "propietarios_vivienda_proporcion": 0.0590774543661,
+    "departamento_nombre": "Esquina",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18056,
+    "jovenes_proporcion": 0.0855412566238,
+    "jovenes_asistencia_escolar": 0.761061946903,
+    "personas_por_cuarto": 1.46886582654,
+    "propietarios_vivienda_proporcion": 0.0511101801424,
+    "departamento_nombre": "",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18063,
+    "jovenes_proporcion": 0.0862092208142,
+    "jovenes_asistencia_escolar": 0.721657544957,
+    "personas_por_cuarto": 1.61243343115,
+    "propietarios_vivienda_proporcion": 0.0555960184511,
+    "departamento_nombre": "",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18070,
+    "jovenes_proporcion": 0.0843717693616,
+    "jovenes_asistencia_escolar": 0.698287220026,
+    "personas_por_cuarto": 1.67101328132,
+    "propietarios_vivienda_proporcion": 0.0671212619126,
+    "departamento_nombre": "Goya",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18077,
+    "jovenes_proporcion": 0.0946461672664,
+    "jovenes_asistencia_escolar": 0.720046082949,
+    "personas_por_cuarto": 1.58558091286,
+    "propietarios_vivienda_proporcion": 0.0435667752443,
+    "departamento_nombre": "Itatí",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18084,
+    "jovenes_proporcion": 0.0926805778491,
+    "jovenes_asistencia_escolar": 0.725320401801,
+    "personas_por_cuarto": 1.6134044647,
+    "propietarios_vivienda_proporcion": 0.0785227680172,
+    "departamento_nombre": "",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18091,
+    "jovenes_proporcion": 0.0913105462638,
+    "jovenes_asistencia_escolar": 0.56587966489,
+    "personas_por_cuarto": 1.97317324185,
+    "propietarios_vivienda_proporcion": 0.0519693654267,
+    "departamento_nombre": "Lavalle",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18098,
+    "jovenes_proporcion": 0.0863597060095,
+    "jovenes_asistencia_escolar": 0.717146433041,
+    "personas_por_cuarto": 1.64304741609,
+    "propietarios_vivienda_proporcion": 0.0309033280507,
+    "departamento_nombre": "Mburucuyá",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18105,
+    "jovenes_proporcion": 0.0913271202695,
+    "jovenes_asistencia_escolar": 0.661281637049,
+    "personas_por_cuarto": 1.56694794436,
+    "propietarios_vivienda_proporcion": 0.0736663086287,
+    "departamento_nombre": "",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18112,
+    "jovenes_proporcion": 0.0791733171886,
+    "jovenes_asistencia_escolar": 0.681612791102,
+    "personas_por_cuarto": 1.50430534857,
+    "propietarios_vivienda_proporcion": 0.0966518068861,
+    "departamento_nombre": "Monte Caseros",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18119,
+    "jovenes_proporcion": 0.0800953908145,
+    "jovenes_asistencia_escolar": 0.719712525667,
+    "personas_por_cuarto": 1.60027635215,
+    "propietarios_vivienda_proporcion": 0.126905085257,
+    "departamento_nombre": "Paso de los Libres",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18126,
+    "jovenes_proporcion": 0.0882934723971,
+    "jovenes_asistencia_escolar": 0.680244399185,
+    "personas_por_cuarto": 1.7586970272,
+    "propietarios_vivienda_proporcion": 0.0473572188719,
+    "departamento_nombre": "Saladas",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18133,
+    "jovenes_proporcion": 0.0879632848898,
+    "jovenes_asistencia_escolar": 0.735968379447,
+    "personas_por_cuarto": 1.68238184371,
+    "propietarios_vivienda_proporcion": 0.054353426069,
+    "departamento_nombre": "San Cosme",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18140,
+    "jovenes_proporcion": 0.0901648664014,
+    "jovenes_asistencia_escolar": 0.786885245902,
+    "personas_por_cuarto": 1.79197229014,
+    "propietarios_vivienda_proporcion": 0.0330541091238,
+    "departamento_nombre": "San Luis del Palmar",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18147,
+    "jovenes_proporcion": 0.0781582952816,
+    "jovenes_asistencia_escolar": 0.66893865628,
+    "personas_por_cuarto": 1.57008005735,
+    "propietarios_vivienda_proporcion": 0.0625512155149,
+    "departamento_nombre": "San Martín",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18154,
+    "jovenes_proporcion": 0.103386303443,
+    "jovenes_asistencia_escolar": 0.709972552608,
+    "personas_por_cuarto": 1.87913259865,
+    "propietarios_vivienda_proporcion": 0.0227183705445,
+    "departamento_nombre": "",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18161,
+    "jovenes_proporcion": 0.0922356528368,
+    "jovenes_asistencia_escolar": 0.6906729634,
+    "personas_por_cuarto": 1.79988239906,
+    "propietarios_vivienda_proporcion": 0.032023911187,
+    "departamento_nombre": "San Roque",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18168,
+    "jovenes_proporcion": 0.0870841966165,
+    "jovenes_asistencia_escolar": 0.71974522293,
+    "personas_por_cuarto": 1.59250214336,
+    "propietarios_vivienda_proporcion": 0.142162746039,
+    "departamento_nombre": "Santo Tomé",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 18175,
+    "jovenes_proporcion": 0.0895704162976,
+    "jovenes_asistencia_escolar": 0.645241038319,
+    "personas_por_cuarto": 1.62504498021,
+    "propietarios_vivienda_proporcion": 0.0473349244232,
+    "departamento_nombre": "Sauce",
+    "provincia_id": 18
+  },
+  {
+    "departamento_id": 22007,
+    "jovenes_proporcion": 0.093206162876,
+    "jovenes_asistencia_escolar": 0.564546599496,
+    "personas_por_cuarto": 1.89811720143,
+    "propietarios_vivienda_proporcion": 0.0475372279496,
+    "departamento_nombre": "",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22014,
+    "jovenes_proporcion": 0.0894938527862,
+    "jovenes_asistencia_escolar": 0.757805530776,
+    "personas_por_cuarto": 1.61251287333,
+    "propietarios_vivienda_proporcion": 0.0469977553311,
+    "departamento_nombre": "Bermejo",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22021,
+    "jovenes_proporcion": 0.0828416405347,
+    "jovenes_asistencia_escolar": 0.691321130619,
+    "personas_por_cuarto": 1.66036960282,
+    "propietarios_vivienda_proporcion": 0.100592592593,
+    "departamento_nombre": "Comandante Fernández",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22028,
+    "jovenes_proporcion": 0.087643020595,
+    "jovenes_asistencia_escolar": 0.647519582245,
+    "personas_por_cuarto": 1.64950121327,
+    "propietarios_vivienda_proporcion": 0.0932422886744,
+    "departamento_nombre": "",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22036,
+    "jovenes_proporcion": 0.0904357973161,
+    "jovenes_asistencia_escolar": 0.622828784119,
+    "personas_por_cuarto": 1.7382586987,
+    "propietarios_vivienda_proporcion": 0.0687593423019,
+    "departamento_nombre": "12 de Octubre",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22039,
+    "jovenes_proporcion": 0.0888051668461,
+    "jovenes_asistencia_escolar": 0.586363636364,
+    "personas_por_cuarto": 1.65008880995,
+    "propietarios_vivienda_proporcion": 0.0796793965111,
+    "departamento_nombre": "2 de Abril",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22043,
+    "jovenes_proporcion": 0.0842212075089,
+    "jovenes_asistencia_escolar": 0.595381526104,
+    "personas_por_cuarto": 1.85972637207,
+    "propietarios_vivienda_proporcion": 0.0960049550945,
+    "departamento_nombre": "Fray Justo Santa María de Oro",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22049,
+    "jovenes_proporcion": 0.0912579245913,
+    "jovenes_asistencia_escolar": 0.584095063985,
+    "personas_por_cuarto": 1.82967032967,
+    "propietarios_vivienda_proporcion": 0.0298895386615,
+    "departamento_nombre": "",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22056,
+    "jovenes_proporcion": 0.0914010378058,
+    "jovenes_asistencia_escolar": 0.711273317113,
+    "personas_por_cuarto": 1.71781484783,
+    "propietarios_vivienda_proporcion": 0.0440778799351,
+    "departamento_nombre": "General Donovan",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22063,
+    "jovenes_proporcion": 0.0930852648513,
+    "jovenes_asistencia_escolar": 0.581533045287,
+    "personas_por_cuarto": 2.00023836482,
+    "propietarios_vivienda_proporcion": 0.0574146030273,
+    "departamento_nombre": "General Güemes",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22070,
+    "jovenes_proporcion": 0.093480879925,
+    "jovenes_asistencia_escolar": 0.486396181384,
+    "personas_por_cuarto": 1.9922659792,
+    "propietarios_vivienda_proporcion": 0.0337825364593,
+    "departamento_nombre": "Independencia",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22077,
+    "jovenes_proporcion": 0.0867741404836,
+    "jovenes_asistencia_escolar": 0.699526066351,
+    "personas_por_cuarto": 1.72502837684,
+    "propietarios_vivienda_proporcion": 0.0386160024714,
+    "departamento_nombre": "Libertad",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22084,
+    "jovenes_proporcion": 0.0918558844912,
+    "jovenes_asistencia_escolar": 0.651573716179,
+    "personas_por_cuarto": 1.83407237434,
+    "propietarios_vivienda_proporcion": 0.0503893144268,
+    "departamento_nombre": "Libertador General San Martín",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22091,
+    "jovenes_proporcion": 0.0980306864916,
+    "jovenes_asistencia_escolar": 0.50786607503,
+    "personas_por_cuarto": 1.90896051936,
+    "propietarios_vivienda_proporcion": 0.0458556571068,
+    "departamento_nombre": "",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22098,
+    "jovenes_proporcion": 0.0929920116195,
+    "jovenes_asistencia_escolar": 0.664974619289,
+    "personas_por_cuarto": 1.68378576669,
+    "propietarios_vivienda_proporcion": 0.0786705388835,
+    "departamento_nombre": "Mayor Luis J. Fontana",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22105,
+    "jovenes_proporcion": 0.0948695499912,
+    "jovenes_asistencia_escolar": 0.646733111849,
+    "personas_por_cuarto": 1.71542712964,
+    "propietarios_vivienda_proporcion": 0.0745062836625,
+    "departamento_nombre": "",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22112,
+    "jovenes_proporcion": 0.0882718195817,
+    "jovenes_asistencia_escolar": 0.527855936972,
+    "personas_por_cuarto": 1.83609996352,
+    "propietarios_vivienda_proporcion": 0.0435956790123,
+    "departamento_nombre": "O' Higgins",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22119,
+    "jovenes_proporcion": 0.0978478278262,
+    "jovenes_asistencia_escolar": 0.600981193786,
+    "personas_por_cuarto": 1.7848065115,
+    "propietarios_vivienda_proporcion": 0.0456674473068,
+    "departamento_nombre": "Presidencia de la Plaza",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22126,
+    "jovenes_proporcion": 0.0922301879481,
+    "jovenes_asistencia_escolar": 0.759453781513,
+    "personas_por_cuarto": 1.63737309645,
+    "propietarios_vivienda_proporcion": 0.039268788084,
+    "departamento_nombre": "1o de Mayo",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22133,
+    "jovenes_proporcion": 0.0949502655439,
+    "jovenes_asistencia_escolar": 0.592707045735,
+    "personas_por_cuarto": 1.84971506106,
+    "propietarios_vivienda_proporcion": 0.0488137132478,
+    "departamento_nombre": "Quitilipi",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22140,
+    "jovenes_proporcion": 0.0821952854373,
+    "jovenes_asistencia_escolar": 0.76609188247,
+    "personas_por_cuarto": 1.59316714491,
+    "propietarios_vivienda_proporcion": 0.102468687602,
+    "departamento_nombre": "",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22147,
+    "jovenes_proporcion": 0.0952251394368,
+    "jovenes_asistencia_escolar": 0.612142857143,
+    "personas_por_cuarto": 1.77175222945,
+    "propietarios_vivienda_proporcion": 0.0348196392786,
+    "departamento_nombre": "San Lorenzo",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22154,
+    "jovenes_proporcion": 0.100132166908,
+    "jovenes_asistencia_escolar": 0.716530483972,
+    "personas_por_cuarto": 1.7441273326,
+    "propietarios_vivienda_proporcion": 0.0348065033204,
+    "departamento_nombre": "Sargento Cabral",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22161,
+    "jovenes_proporcion": 0.0932389553332,
+    "jovenes_asistencia_escolar": 0.596858638743,
+    "personas_por_cuarto": 1.81524147098,
+    "propietarios_vivienda_proporcion": 0.0363321799308,
+    "departamento_nombre": "Tapenagá",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 22168,
+    "jovenes_proporcion": 0.089098066062,
+    "jovenes_asistencia_escolar": 0.580484056857,
+    "personas_por_cuarto": 1.9458505395,
+    "propietarios_vivienda_proporcion": 0.0423526287839,
+    "departamento_nombre": "",
+    "provincia_id": 22
+  },
+  {
+    "departamento_id": 26007,
+    "jovenes_proporcion": 0.0720051156449,
+    "jovenes_asistencia_escolar": 0.810321715818,
+    "personas_por_cuarto": 1.64558143229,
+    "propietarios_vivienda_proporcion": 0.260144661027,
+    "departamento_nombre": "Biedma",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26014,
+    "jovenes_proporcion": 0.0817916726421,
+    "jovenes_asistencia_escolar": 0.788427819988,
+    "personas_por_cuarto": 1.45149875104,
+    "propietarios_vivienda_proporcion": 0.106047065833,
+    "departamento_nombre": "Cushamen",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26021,
+    "jovenes_proporcion": 0.0677446498341,
+    "jovenes_asistencia_escolar": 0.79667721519,
+    "personas_por_cuarto": 1.494182089,
+    "propietarios_vivienda_proporcion": 0.209705494505,
+    "departamento_nombre": "Escalante",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26028,
+    "jovenes_proporcion": 0.0780577750461,
+    "jovenes_asistencia_escolar": 0.700787401575,
+    "personas_por_cuarto": 1.61890547264,
+    "propietarios_vivienda_proporcion": 0.0772442588727,
+    "departamento_nombre": "",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26035,
+    "jovenes_proporcion": 0.0764694957749,
+    "jovenes_asistencia_escolar": 0.840012143291,
+    "personas_por_cuarto": 1.46566859476,
+    "propietarios_vivienda_proporcion": 0.183478893741,
+    "departamento_nombre": "Futaleufú",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26042,
+    "jovenes_proporcion": 0.075307423032,
+    "jovenes_asistencia_escolar": 0.747318235995,
+    "personas_por_cuarto": 1.48943850267,
+    "propietarios_vivienda_proporcion": 0.124572405929,
+    "departamento_nombre": "Gaiman",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26049,
+    "jovenes_proporcion": 0.0462508759636,
+    "jovenes_asistencia_escolar": 0.651515151515,
+    "personas_por_cuarto": 1.3361423221,
+    "propietarios_vivienda_proporcion": 0.037109375,
+    "departamento_nombre": "Gastre",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26056,
+    "jovenes_proporcion": 0.0768233387358,
+    "jovenes_asistencia_escolar": 0.658227848101,
+    "personas_por_cuarto": 1.40482695811,
+    "propietarios_vivienda_proporcion": 0.0475302889096,
+    "departamento_nombre": "Languiñeo",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26063,
+    "jovenes_proporcion": 0.0745501285347,
+    "jovenes_asistencia_escolar": 0.327586206897,
+    "personas_por_cuarto": 1.34602076125,
+    "propietarios_vivienda_proporcion": 0.0522648083624,
+    "departamento_nombre": "Mártires",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26070,
+    "jovenes_proporcion": 0.0792715586502,
+    "jovenes_asistencia_escolar": 0.641891891892,
+    "personas_por_cuarto": 1.42301829268,
+    "propietarios_vivienda_proporcion": 0.040061633282,
+    "departamento_nombre": "Paso de Indios",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26077,
+    "jovenes_proporcion": 0.0745089975859,
+    "jovenes_asistencia_escolar": 0.826962387572,
+    "personas_por_cuarto": 1.45389623331,
+    "propietarios_vivienda_proporcion": 0.180178211572,
+    "departamento_nombre": "Rawson",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26084,
+    "jovenes_proporcion": 0.0764341863188,
+    "jovenes_asistencia_escolar": 0.700218818381,
+    "personas_por_cuarto": 1.3172504957,
+    "propietarios_vivienda_proporcion": 0.0927419354839,
+    "departamento_nombre": "Río Senguer",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26091,
+    "jovenes_proporcion": 0.0767813267813,
+    "jovenes_asistencia_escolar": 0.756571428571,
+    "personas_por_cuarto": 1.65471177581,
+    "propietarios_vivienda_proporcion": 0.209380748007,
+    "departamento_nombre": "Sarmiento",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26098,
+    "jovenes_proporcion": 0.0751391465677,
+    "jovenes_asistencia_escolar": 0.703703703704,
+    "personas_por_cuarto": 1.42781456954,
+    "propietarios_vivienda_proporcion": 0.105409927496,
+    "departamento_nombre": "Tehuelches",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 26105,
+    "jovenes_proporcion": 0.0687347931873,
+    "jovenes_asistencia_escolar": 0.628318584071,
+    "personas_por_cuarto": 1.24734446131,
+    "propietarios_vivienda_proporcion": 0.0680379746835,
+    "departamento_nombre": "Telsen",
+    "provincia_id": 26
+  },
+  {
+    "departamento_id": 30008,
+    "jovenes_proporcion": 0.068564993565,
+    "jovenes_asistencia_escolar": 0.69404035664,
+    "personas_por_cuarto": 1.44252860226,
+    "propietarios_vivienda_proporcion": 0.16325201623,
+    "departamento_nombre": "",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30015,
+    "jovenes_proporcion": 0.0798315621085,
+    "jovenes_asistencia_escolar": 0.679239723,
+    "personas_por_cuarto": 1.64115012644,
+    "propietarios_vivienda_proporcion": 0.11400108374,
+    "departamento_nombre": "Concordia",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30021,
+    "jovenes_proporcion": 0.0672979443929,
+    "jovenes_asistencia_escolar": 0.757051282051,
+    "personas_por_cuarto": 1.40683983735,
+    "propietarios_vivienda_proporcion": 0.172754329004,
+    "departamento_nombre": "Diamante",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30028,
+    "jovenes_proporcion": 0.0783723230912,
+    "jovenes_asistencia_escolar": 0.618526081307,
+    "personas_por_cuarto": 1.56001906448,
+    "propietarios_vivienda_proporcion": 0.13809474662,
+    "departamento_nombre": "Federación",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30035,
+    "jovenes_proporcion": 0.0880021652554,
+    "jovenes_asistencia_escolar": 0.696397188049,
+    "personas_por_cuarto": 1.63245597425,
+    "propietarios_vivienda_proporcion": 0.0900377969762,
+    "departamento_nombre": "Federal",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30042,
+    "jovenes_proporcion": 0.0925127660985,
+    "jovenes_asistencia_escolar": 0.739784946237,
+    "personas_por_cuarto": 1.75214966303,
+    "propietarios_vivienda_proporcion": 0.0620410230438,
+    "departamento_nombre": "Feliciano",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30049,
+    "jovenes_proporcion": 0.0725863963148,
+    "jovenes_asistencia_escolar": 0.69755708975,
+    "personas_por_cuarto": 1.45147573087,
+    "propietarios_vivienda_proporcion": 0.132421222064,
+    "departamento_nombre": "Gualeguay",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30056,
+    "jovenes_proporcion": 0.0670193036789,
+    "jovenes_asistencia_escolar": 0.770856052345,
+    "personas_por_cuarto": 1.41261872806,
+    "propietarios_vivienda_proporcion": 0.140264409138,
+    "departamento_nombre": "Gualeguaychú",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30063,
+    "jovenes_proporcion": 0.0850376749193,
+    "jovenes_asistencia_escolar": 0.675754625122,
+    "personas_por_cuarto": 1.57828018819,
+    "propietarios_vivienda_proporcion": 0.0740203193033,
+    "departamento_nombre": "Islas del Ibicuy",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30070,
+    "jovenes_proporcion": 0.0894578718443,
+    "jovenes_asistencia_escolar": 0.698078529657,
+    "personas_por_cuarto": 1.67169735889,
+    "propietarios_vivienda_proporcion": 0.0803605572248,
+    "departamento_nombre": "",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30077,
+    "jovenes_proporcion": 0.068492799672,
+    "jovenes_asistencia_escolar": 0.715301159746,
+    "personas_por_cuarto": 1.43209423507,
+    "propietarios_vivienda_proporcion": 0.0847874170558,
+    "departamento_nombre": "Nogoyá",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30084,
+    "jovenes_proporcion": 0.0684582119848,
+    "jovenes_asistencia_escolar": 0.792015813674,
+    "personas_por_cuarto": 1.45105521975,
+    "propietarios_vivienda_proporcion": 0.16323907455,
+    "departamento_nombre": "Paraná",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30088,
+    "jovenes_proporcion": 0.0743215993547,
+    "jovenes_asistencia_escolar": 0.682945736434,
+    "personas_por_cuarto": 1.50996085254,
+    "propietarios_vivienda_proporcion": 0.109377972228,
+    "departamento_nombre": "San Salvador",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30091,
+    "jovenes_proporcion": 0.069978570037,
+    "jovenes_asistencia_escolar": 0.726057906459,
+    "personas_por_cuarto": 1.35966306421,
+    "propietarios_vivienda_proporcion": 0.113252438734,
+    "departamento_nombre": "Tala",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30098,
+    "jovenes_proporcion": 0.0652450162815,
+    "jovenes_asistencia_escolar": 0.712416311625,
+    "personas_por_cuarto": 1.39398552429,
+    "propietarios_vivienda_proporcion": 0.159457219169,
+    "departamento_nombre": "Uruguay",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30105,
+    "jovenes_proporcion": 0.0707355942629,
+    "jovenes_asistencia_escolar": 0.70395256917,
+    "personas_por_cuarto": 1.49596386298,
+    "propietarios_vivienda_proporcion": 0.110187110187,
+    "departamento_nombre": "Victoria",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 30113,
+    "jovenes_proporcion": 0.0809149392423,
+    "jovenes_asistencia_escolar": 0.692074709743,
+    "personas_por_cuarto": 1.49201657627,
+    "propietarios_vivienda_proporcion": 0.142333288062,
+    "departamento_nombre": "Villaguay",
+    "provincia_id": 30
+  },
+  {
+    "departamento_id": 34007,
+    "jovenes_proporcion": 0.0874982201338,
+    "jovenes_asistencia_escolar": 0.568755085435,
+    "personas_por_cuarto": 2.30262295082,
+    "propietarios_vivienda_proporcion": 0.0470687711387,
+    "departamento_nombre": "",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34014,
+    "jovenes_proporcion": 0.0902992908165,
+    "jovenes_asistencia_escolar": 0.800869483036,
+    "personas_por_cuarto": 1.65068251933,
+    "propietarios_vivienda_proporcion": 0.115312754507,
+    "departamento_nombre": "Formosa",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34021,
+    "jovenes_proporcion": 0.100978725898,
+    "jovenes_asistencia_escolar": 0.740568775392,
+    "personas_por_cuarto": 1.83631080499,
+    "propietarios_vivienda_proporcion": 0.0482591449978,
+    "departamento_nombre": "Laishi",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34028,
+    "jovenes_proporcion": 0.0997565217391,
+    "jovenes_asistencia_escolar": 0.730822873082,
+    "personas_por_cuarto": 2.12742341276,
+    "propietarios_vivienda_proporcion": 0.0802854594112,
+    "departamento_nombre": "Matacos",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34035,
+    "jovenes_proporcion": 0.0937723276126,
+    "jovenes_asistencia_escolar": 0.695692738299,
+    "personas_por_cuarto": 1.7942807807,
+    "propietarios_vivienda_proporcion": 0.0648069579975,
+    "departamento_nombre": "Patiño",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34042,
+    "jovenes_proporcion": 0.101472906136,
+    "jovenes_asistencia_escolar": 0.715050883771,
+    "personas_por_cuarto": 1.75764233856,
+    "propietarios_vivienda_proporcion": 0.0429703796412,
+    "departamento_nombre": "Pilagás",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34049,
+    "jovenes_proporcion": 0.0917035190064,
+    "jovenes_asistencia_escolar": 0.770424522252,
+    "personas_por_cuarto": 1.72514963985,
+    "propietarios_vivienda_proporcion": 0.0732263359475,
+    "departamento_nombre": "Pilcomayo",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34056,
+    "jovenes_proporcion": 0.0946163615525,
+    "jovenes_asistencia_escolar": 0.691275167785,
+    "personas_por_cuarto": 1.72047537838,
+    "propietarios_vivienda_proporcion": 0.0566227947354,
+    "departamento_nombre": "Pirané",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 34063,
+    "jovenes_proporcion": 0.0887014686637,
+    "jovenes_asistencia_escolar": 0.550819672131,
+    "personas_por_cuarto": 3.17058552328,
+    "propietarios_vivienda_proporcion": 0.0364806866953,
+    "departamento_nombre": "Ramón Lista",
+    "provincia_id": 34
+  },
+  {
+    "departamento_id": 38007,
+    "jovenes_proporcion": 0.0977402022756,
+    "jovenes_asistencia_escolar": 0.802748585287,
+    "personas_por_cuarto": 1.79798266799,
+    "propietarios_vivienda_proporcion": 0.124518233027,
+    "departamento_nombre": "Cochinoca",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38014,
+    "jovenes_proporcion": 0.0895619287091,
+    "jovenes_asistencia_escolar": 0.713726843861,
+    "personas_por_cuarto": 1.85387054868,
+    "propietarios_vivienda_proporcion": 0.110529926256,
+    "departamento_nombre": "El Carmen",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38021,
+    "jovenes_proporcion": 0.0830992765288,
+    "jovenes_asistencia_escolar": 0.856864168406,
+    "personas_por_cuarto": 1.54164341842,
+    "propietarios_vivienda_proporcion": 0.134222710066,
+    "departamento_nombre": "Dr. Manuel Belgrano",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38028,
+    "jovenes_proporcion": 0.0935160658758,
+    "jovenes_asistencia_escolar": 0.807266009852,
+    "personas_por_cuarto": 1.64591034025,
+    "propietarios_vivienda_proporcion": 0.0892028679882,
+    "departamento_nombre": "Humahuaca",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38035,
+    "jovenes_proporcion": 0.0875657170803,
+    "jovenes_asistencia_escolar": 0.776040212231,
+    "personas_por_cuarto": 1.71842171611,
+    "propietarios_vivienda_proporcion": 0.0823298107643,
+    "departamento_nombre": "Ledesma",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38042,
+    "jovenes_proporcion": 0.0838289221181,
+    "jovenes_asistencia_escolar": 0.834088848595,
+    "personas_por_cuarto": 1.65303558529,
+    "propietarios_vivienda_proporcion": 0.107674858223,
+    "departamento_nombre": "Palpalá",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38049,
+    "jovenes_proporcion": 0.0819935691318,
+    "jovenes_asistencia_escolar": 0.71568627451,
+    "personas_por_cuarto": 2.27422303473,
+    "propietarios_vivienda_proporcion": 0.0795660036166,
+    "departamento_nombre": "Rinconada",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38056,
+    "jovenes_proporcion": 0.0942678011644,
+    "jovenes_asistencia_escolar": 0.75296912114,
+    "personas_por_cuarto": 1.71111111111,
+    "propietarios_vivienda_proporcion": 0.0548829701372,
+    "departamento_nombre": "San Antonio",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38063,
+    "jovenes_proporcion": 0.0872902701334,
+    "jovenes_asistencia_escolar": 0.813435114504,
+    "personas_por_cuarto": 1.67605539424,
+    "propietarios_vivienda_proporcion": 0.0494494290375,
+    "departamento_nombre": "",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38070,
+    "jovenes_proporcion": 0.0985899605189,
+    "jovenes_asistencia_escolar": 0.732837528604,
+    "personas_por_cuarto": 1.96978113543,
+    "propietarios_vivienda_proporcion": 0.0464637216754,
+    "departamento_nombre": "Santa Bárbara",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38077,
+    "jovenes_proporcion": 0.0882142857143,
+    "jovenes_asistencia_escolar": 0.761133603239,
+    "personas_por_cuarto": 1.7665615142,
+    "propietarios_vivienda_proporcion": 0.0673758865248,
+    "departamento_nombre": "Santa Catalina",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38084,
+    "jovenes_proporcion": 0.0888947507254,
+    "jovenes_asistencia_escolar": 0.729970326409,
+    "personas_por_cuarto": 1.93913043478,
+    "propietarios_vivienda_proporcion": 0.0644028103044,
+    "departamento_nombre": "Susques",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38094,
+    "jovenes_proporcion": 0.0878613652927,
+    "jovenes_asistencia_escolar": 0.797235023041,
+    "personas_por_cuarto": 1.62209378694,
+    "propietarios_vivienda_proporcion": 0.107153370621,
+    "departamento_nombre": "Tilcara",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38098,
+    "jovenes_proporcion": 0.0860884499785,
+    "jovenes_asistencia_escolar": 0.760598503741,
+    "personas_por_cuarto": 1.65118752216,
+    "propietarios_vivienda_proporcion": 0.116822429907,
+    "departamento_nombre": "Tumbaya",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38105,
+    "jovenes_proporcion": 0.0791513667891,
+    "jovenes_asistencia_escolar": 0.742268041237,
+    "personas_por_cuarto": 1.56713554987,
+    "propietarios_vivienda_proporcion": 0.045045045045,
+    "departamento_nombre": "Valle Grande",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 38112,
+    "jovenes_proporcion": 0.0971354416995,
+    "jovenes_asistencia_escolar": 0.850074220683,
+    "personas_por_cuarto": 1.61612552431,
+    "propietarios_vivienda_proporcion": 0.159822222222,
+    "departamento_nombre": "Yavi",
+    "provincia_id": 38
+  },
+  {
+    "departamento_id": 42007,
+    "jovenes_proporcion": 0.0715059588299,
+    "jovenes_asistencia_escolar": 0.68870523416,
+    "personas_por_cuarto": 1.20281957114,
+    "propietarios_vivienda_proporcion": 0.105688789738,
+    "departamento_nombre": "Atreucó",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42014,
+    "jovenes_proporcion": 0.0739299610895,
+    "jovenes_asistencia_escolar": 0.789473684211,
+    "personas_por_cuarto": 1.44472204872,
+    "propietarios_vivienda_proporcion": 0.0728744939271,
+    "departamento_nombre": "Caleu Caleu",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42021,
+    "jovenes_proporcion": 0.0691184290489,
+    "jovenes_asistencia_escolar": 0.800384668224,
+    "personas_por_cuarto": 1.35310291661,
+    "propietarios_vivienda_proporcion": 0.229844373279,
+    "departamento_nombre": "",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42028,
+    "jovenes_proporcion": 0.0734951323187,
+    "jovenes_asistencia_escolar": 0.67723880597,
+    "personas_por_cuarto": 1.340625,
+    "propietarios_vivienda_proporcion": 0.131435747175,
+    "departamento_nombre": "Catriló",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42035,
+    "jovenes_proporcion": 0.0679121972011,
+    "jovenes_asistencia_escolar": 0.690376569038,
+    "personas_por_cuarto": 1.1997784028,
+    "propietarios_vivienda_proporcion": 0.0990792634107,
+    "departamento_nombre": "Conhelo",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42042,
+    "jovenes_proporcion": 0.0711538461538,
+    "jovenes_asistencia_escolar": 0.702702702703,
+    "personas_por_cuarto": 1.44846796657,
+    "propietarios_vivienda_proporcion": 0.0805555555556,
+    "departamento_nombre": "Curacó",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42049,
+    "jovenes_proporcion": 0.091122278057,
+    "jovenes_asistencia_escolar": 0.724264705882,
+    "personas_por_cuarto": 1.45396980029,
+    "propietarios_vivienda_proporcion": 0.105596620908,
+    "departamento_nombre": "Chalileo",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42056,
+    "jovenes_proporcion": 0.0668674698795,
+    "jovenes_asistencia_escolar": 0.669240669241,
+    "personas_por_cuarto": 1.29211609029,
+    "propietarios_vivienda_proporcion": 0.122740963855,
+    "departamento_nombre": "Chapaleufú",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42063,
+    "jovenes_proporcion": 0.0559254327563,
+    "jovenes_asistencia_escolar": 0.5,
+    "personas_por_cuarto": 1.49452736318,
+    "propietarios_vivienda_proporcion": 0.0548523206751,
+    "departamento_nombre": "Chicalcó",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42070,
+    "jovenes_proporcion": 0.0634129770128,
+    "jovenes_asistencia_escolar": 0.6875,
+    "personas_por_cuarto": 1.15016931493,
+    "propietarios_vivienda_proporcion": 0.113366645846,
+    "departamento_nombre": "Guatraché",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42077,
+    "jovenes_proporcion": 0.0633952254642,
+    "jovenes_asistencia_escolar": 0.719665271967,
+    "personas_por_cuarto": 1.11786508525,
+    "propietarios_vivienda_proporcion": 0.101100412655,
+    "departamento_nombre": "Hucal",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42084,
+    "jovenes_proporcion": 0.0318906605923,
+    "jovenes_asistencia_escolar": 0.428571428571,
+    "personas_por_cuarto": 0.982102908277,
+    "propietarios_vivienda_proporcion": 0.0494505494505,
+    "departamento_nombre": "Lihuel Calel",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42091,
+    "jovenes_proporcion": 0.0636182902584,
+    "jovenes_asistencia_escolar": 0.34375,
+    "personas_por_cuarto": 1.21204819277,
+    "propietarios_vivienda_proporcion": 0.0582010582011,
+    "departamento_nombre": "Limay Mahuida",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42098,
+    "jovenes_proporcion": 0.0871330780833,
+    "jovenes_asistencia_escolar": 0.814913448735,
+    "personas_por_cuarto": 1.30749393204,
+    "propietarios_vivienda_proporcion": 0.0945467422096,
+    "departamento_nombre": "Loventué",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42105,
+    "jovenes_proporcion": 0.0696326917864,
+    "jovenes_asistencia_escolar": 0.760583941606,
+    "personas_por_cuarto": 1.3480723552,
+    "propietarios_vivienda_proporcion": 0.210171039943,
+    "departamento_nombre": "Maracó",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42112,
+    "jovenes_proporcion": 0.0834389522602,
+    "jovenes_asistencia_escolar": 0.7,
+    "personas_por_cuarto": 1.56083086053,
+    "propietarios_vivienda_proporcion": 0.14229390681,
+    "departamento_nombre": "Puelén",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42119,
+    "jovenes_proporcion": 0.0656816345377,
+    "jovenes_asistencia_escolar": 0.697715289982,
+    "personas_por_cuarto": 1.16469481043,
+    "propietarios_vivienda_proporcion": 0.101306148455,
+    "departamento_nombre": "Quemú Quemú",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42126,
+    "jovenes_proporcion": 0.070303712036,
+    "jovenes_asistencia_escolar": 0.693333333333,
+    "personas_por_cuarto": 1.33952787544,
+    "propietarios_vivienda_proporcion": 0.0917929653989,
+    "departamento_nombre": "Rancul",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42133,
+    "jovenes_proporcion": 0.0715474209651,
+    "jovenes_asistencia_escolar": 0.749354005168,
+    "personas_por_cuarto": 1.26872556685,
+    "propietarios_vivienda_proporcion": 0.111659356725,
+    "departamento_nombre": "Realicó",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42140,
+    "jovenes_proporcion": 0.068337496978,
+    "jovenes_asistencia_escolar": 0.716981132075,
+    "personas_por_cuarto": 1.45919567262,
+    "propietarios_vivienda_proporcion": 0.126955161627,
+    "departamento_nombre": "Toay",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42147,
+    "jovenes_proporcion": 0.0739034279396,
+    "jovenes_asistencia_escolar": 0.630922693267,
+    "personas_por_cuarto": 1.24879171461,
+    "propietarios_vivienda_proporcion": 0.0885529157667,
+    "departamento_nombre": "Trenel",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 42154,
+    "jovenes_proporcion": 0.074533324348,
+    "jovenes_asistencia_escolar": 0.71609403255,
+    "personas_por_cuarto": 1.26861588441,
+    "propietarios_vivienda_proporcion": 0.126673326673,
+    "departamento_nombre": "Utracán",
+    "provincia_id": 42
+  },
+  {
+    "departamento_id": 46007,
+    "jovenes_proporcion": 0.0924892982229,
+    "jovenes_asistencia_escolar": 0.638148667602,
+    "personas_por_cuarto": 1.62585679637,
+    "propietarios_vivienda_proporcion": 0.107082015089,
+    "departamento_nombre": "Arauco",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46014,
+    "jovenes_proporcion": 0.0828531174894,
+    "jovenes_asistencia_escolar": 0.794345158709,
+    "personas_por_cuarto": 1.57725723946,
+    "propietarios_vivienda_proporcion": 0.149828277046,
+    "departamento_nombre": "",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46021,
+    "jovenes_proporcion": 0.0808341143393,
+    "jovenes_asistencia_escolar": 0.802898550725,
+    "personas_por_cuarto": 1.29608259945,
+    "propietarios_vivienda_proporcion": 0.0353915662651,
+    "departamento_nombre": "Castro Barros",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46028,
+    "jovenes_proporcion": 0.0947346600332,
+    "jovenes_asistencia_escolar": 0.82056892779,
+    "personas_por_cuarto": 1.43124165554,
+    "propietarios_vivienda_proporcion": 0.0806266717616,
+    "departamento_nombre": "Coronel Felipe Varela",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46035,
+    "jovenes_proporcion": 0.0848870056497,
+    "jovenes_asistencia_escolar": 0.763727121464,
+    "personas_por_cuarto": 1.47423217074,
+    "propietarios_vivienda_proporcion": 0.127649088221,
+    "departamento_nombre": "Chamical",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46042,
+    "jovenes_proporcion": 0.0844999190808,
+    "jovenes_asistencia_escolar": 0.714388316974,
+    "personas_por_cuarto": 1.56306719368,
+    "propietarios_vivienda_proporcion": 0.116165413534,
+    "departamento_nombre": "Chilecito",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46049,
+    "jovenes_proporcion": 0.0898857240321,
+    "jovenes_asistencia_escolar": 0.770398481973,
+    "personas_por_cuarto": 1.35843373494,
+    "propietarios_vivienda_proporcion": 0.0450029222677,
+    "departamento_nombre": "Famatina",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46056,
+    "jovenes_proporcion": 0.0956719817768,
+    "jovenes_asistencia_escolar": 0.751700680272,
+    "personas_por_cuarto": 1.49319727891,
+    "propietarios_vivienda_proporcion": 0.0265282583622,
+    "departamento_nombre": "General Angel V. Peñaloza",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46063,
+    "jovenes_proporcion": 0.09131614654,
+    "jovenes_asistencia_escolar": 0.811292719168,
+    "personas_por_cuarto": 1.47873194222,
+    "propietarios_vivienda_proporcion": 0.109353187529,
+    "departamento_nombre": "",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46070,
+    "jovenes_proporcion": 0.100048685492,
+    "jovenes_asistencia_escolar": 0.732360097324,
+    "personas_por_cuarto": 1.55901328273,
+    "propietarios_vivienda_proporcion": 0.0498664292075,
+    "departamento_nombre": "General Juan F. Quiroga",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46077,
+    "jovenes_proporcion": 0.0865051903114,
+    "jovenes_asistencia_escolar": 0.8,
+    "personas_por_cuarto": 1.43900414938,
+    "propietarios_vivienda_proporcion": 0.0371900826446,
+    "departamento_nombre": "General Lamadrid",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46084,
+    "jovenes_proporcion": 0.0793561931421,
+    "jovenes_asistencia_escolar": 0.753086419753,
+    "personas_por_cuarto": 1.46534044299,
+    "propietarios_vivienda_proporcion": 0.069179389313,
+    "departamento_nombre": "General Ocampo",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46091,
+    "jovenes_proporcion": 0.0902103559871,
+    "jovenes_asistencia_escolar": 0.683856502242,
+    "personas_por_cuarto": 1.74637937125,
+    "propietarios_vivienda_proporcion": 0.0516576715497,
+    "departamento_nombre": "",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46098,
+    "jovenes_proporcion": 0.0948370560234,
+    "jovenes_asistencia_escolar": 0.853281853282,
+    "personas_por_cuarto": 1.34069710358,
+    "propietarios_vivienda_proporcion": 0.0744125326371,
+    "departamento_nombre": "Vinchina",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46105,
+    "jovenes_proporcion": 0.0828182941904,
+    "jovenes_asistencia_escolar": 0.626865671642,
+    "personas_por_cuarto": 1.68191268191,
+    "propietarios_vivienda_proporcion": 0.0466562986003,
+    "departamento_nombre": "",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46112,
+    "jovenes_proporcion": 0.103244627864,
+    "jovenes_asistencia_escolar": 0.745692625775,
+    "personas_por_cuarto": 1.62305116064,
+    "propietarios_vivienda_proporcion": 0.102701325178,
+    "departamento_nombre": "Rosario Vera Peñaloza",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46119,
+    "jovenes_proporcion": 0.0949834479246,
+    "jovenes_asistencia_escolar": 0.753351206434,
+    "personas_por_cuarto": 1.44907749077,
+    "propietarios_vivienda_proporcion": 0.033118675253,
+    "departamento_nombre": "San Blas de los Sauces",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 46126,
+    "jovenes_proporcion": 0.0857142857143,
+    "jovenes_asistencia_escolar": 0.835820895522,
+    "personas_por_cuarto": 1.51485788114,
+    "propietarios_vivienda_proporcion": 0.0530546623794,
+    "departamento_nombre": "Sanagasta",
+    "provincia_id": 46
+  },
+  {
+    "departamento_id": 50007,
+    "jovenes_proporcion": 0.054032910006,
+    "jovenes_asistencia_escolar": 0.825933075933,
+    "personas_por_cuarto": 1.25594724718,
+    "propietarios_vivienda_proporcion": 0.325148201145,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50014,
+    "jovenes_proporcion": 0.0738977794051,
+    "jovenes_asistencia_escolar": 0.763625765083,
+    "personas_por_cuarto": 1.39859023406,
+    "propietarios_vivienda_proporcion": 0.136696501221,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50021,
+    "jovenes_proporcion": 0.0650380661063,
+    "jovenes_asistencia_escolar": 0.8266965788,
+    "personas_por_cuarto": 1.36290872418,
+    "propietarios_vivienda_proporcion": 0.215233115468,
+    "departamento_nombre": "Godoy Cruz",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50028,
+    "jovenes_proporcion": 0.0701930564511,
+    "jovenes_asistencia_escolar": 0.773505346117,
+    "personas_por_cuarto": 1.51100498339,
+    "propietarios_vivienda_proporcion": 0.207546696753,
+    "departamento_nombre": "Guaymallén",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50035,
+    "jovenes_proporcion": 0.0769698090282,
+    "jovenes_asistencia_escolar": 0.728208647907,
+    "personas_por_cuarto": 1.5713040591,
+    "propietarios_vivienda_proporcion": 0.099073548875,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50042,
+    "jovenes_proporcion": 0.0921893727527,
+    "jovenes_asistencia_escolar": 0.798483206934,
+    "personas_por_cuarto": 1.55828793774,
+    "propietarios_vivienda_proporcion": 0.0829557337051,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50049,
+    "jovenes_proporcion": 0.0767874853928,
+    "jovenes_asistencia_escolar": 0.756122514227,
+    "personas_por_cuarto": 1.6079487139,
+    "propietarios_vivienda_proporcion": 0.158823965319,
+    "departamento_nombre": "Las Heras",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50056,
+    "jovenes_proporcion": 0.0896891501987,
+    "jovenes_asistencia_escolar": 0.669195751138,
+    "personas_por_cuarto": 1.81341625944,
+    "propietarios_vivienda_proporcion": 0.0666738591002,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50063,
+    "jovenes_proporcion": 0.0745112104631,
+    "jovenes_asistencia_escolar": 0.768051046681,
+    "personas_por_cuarto": 1.51352716163,
+    "propietarios_vivienda_proporcion": 0.139763596314,
+    "departamento_nombre": "Luján de Cuyo",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50070,
+    "jovenes_proporcion": 0.0750992270733,
+    "jovenes_asistencia_escolar": 0.696260237985,
+    "personas_por_cuarto": 1.60039375563,
+    "propietarios_vivienda_proporcion": 0.138246472976,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50077,
+    "jovenes_proporcion": 0.0782357194505,
+    "jovenes_asistencia_escolar": 0.742144177449,
+    "personas_por_cuarto": 1.59130134622,
+    "propietarios_vivienda_proporcion": 0.15716112532,
+    "departamento_nombre": "Malargüe",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50084,
+    "jovenes_proporcion": 0.077519379845,
+    "jovenes_asistencia_escolar": 0.727459954233,
+    "personas_por_cuarto": 1.56469967803,
+    "propietarios_vivienda_proporcion": 0.105703852934,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50091,
+    "jovenes_proporcion": 0.0800772271766,
+    "jovenes_asistencia_escolar": 0.719096823574,
+    "personas_por_cuarto": 1.59292164999,
+    "propietarios_vivienda_proporcion": 0.141346688926,
+    "departamento_nombre": "San Carlos",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50098,
+    "jovenes_proporcion": 0.0746997124006,
+    "jovenes_asistencia_escolar": 0.678632091496,
+    "personas_por_cuarto": 1.57826580335,
+    "propietarios_vivienda_proporcion": 0.125022914757,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50105,
+    "jovenes_proporcion": 0.0727855843589,
+    "jovenes_asistencia_escolar": 0.787869930581,
+    "personas_por_cuarto": 1.469636925,
+    "propietarios_vivienda_proporcion": 0.173786597152,
+    "departamento_nombre": "San Rafael",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50112,
+    "jovenes_proporcion": 0.0832417246855,
+    "jovenes_asistencia_escolar": 0.683052090976,
+    "personas_por_cuarto": 1.57928240741,
+    "propietarios_vivienda_proporcion": 0.0716538981523,
+    "departamento_nombre": "",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50119,
+    "jovenes_proporcion": 0.0785717174168,
+    "jovenes_asistencia_escolar": 0.731085949563,
+    "personas_por_cuarto": 1.69388314268,
+    "propietarios_vivienda_proporcion": 0.164352193825,
+    "departamento_nombre": "Tunuyán",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 50126,
+    "jovenes_proporcion": 0.0839072684787,
+    "jovenes_asistencia_escolar": 0.685232685966,
+    "personas_por_cuarto": 1.79988931931,
+    "propietarios_vivienda_proporcion": 0.181125439625,
+    "departamento_nombre": "Tupungato",
+    "provincia_id": 50
+  },
+  {
+    "departamento_id": 54007,
+    "jovenes_proporcion": 0.0900849724254,
+    "jovenes_asistencia_escolar": 0.699421965318,
+    "personas_por_cuarto": 1.57869367013,
+    "propietarios_vivienda_proporcion": 0.104015230183,
+    "departamento_nombre": "Apóstoles",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54014,
+    "jovenes_proporcion": 0.0915866149842,
+    "jovenes_asistencia_escolar": 0.542424861991,
+    "personas_por_cuarto": 1.60258680191,
+    "propietarios_vivienda_proporcion": 0.064294154445,
+    "departamento_nombre": "Cainguás",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54021,
+    "jovenes_proporcion": 0.0915310650888,
+    "jovenes_asistencia_escolar": 0.695353535354,
+    "personas_por_cuarto": 1.67243938644,
+    "propietarios_vivienda_proporcion": 0.0441156322784,
+    "departamento_nombre": "Candelaria",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54028,
+    "jovenes_proporcion": 0.0828591311631,
+    "jovenes_asistencia_escolar": 0.785610762199,
+    "personas_por_cuarto": 1.51584430618,
+    "propietarios_vivienda_proporcion": 0.143041237113,
+    "departamento_nombre": "",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54035,
+    "jovenes_proporcion": 0.0926177299781,
+    "jovenes_asistencia_escolar": 0.593010146561,
+    "personas_por_cuarto": 1.61691710282,
+    "propietarios_vivienda_proporcion": 0.0545665634675,
+    "departamento_nombre": "",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54042,
+    "jovenes_proporcion": 0.0881732527071,
+    "jovenes_asistencia_escolar": 0.71842830216,
+    "personas_por_cuarto": 1.55348347633,
+    "propietarios_vivienda_proporcion": 0.116709036284,
+    "departamento_nombre": "Eldorado",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54049,
+    "jovenes_proporcion": 0.0934921448884,
+    "jovenes_asistencia_escolar": 0.495387683869,
+    "personas_por_cuarto": 1.68045436741,
+    "propietarios_vivienda_proporcion": 0.0605868502083,
+    "departamento_nombre": "General Manuel Belgrano",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54056,
+    "jovenes_proporcion": 0.0946286286581,
+    "jovenes_asistencia_escolar": 0.429260700389,
+    "personas_por_cuarto": 1.6280302122,
+    "propietarios_vivienda_proporcion": 0.0656585530384,
+    "departamento_nombre": "Guaraní",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54063,
+    "jovenes_proporcion": 0.0910284942902,
+    "jovenes_asistencia_escolar": 0.681763527054,
+    "personas_por_cuarto": 1.71309818955,
+    "propietarios_vivienda_proporcion": 0.12168079754,
+    "departamento_nombre": "Iguazú",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54070,
+    "jovenes_proporcion": 0.0852579034942,
+    "jovenes_asistencia_escolar": 0.652875357793,
+    "personas_por_cuarto": 1.50209944015,
+    "propietarios_vivienda_proporcion": 0.0987522008727,
+    "departamento_nombre": "",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54077,
+    "jovenes_proporcion": 0.0900324305749,
+    "jovenes_asistencia_escolar": 0.676526717557,
+    "personas_por_cuarto": 1.53788479324,
+    "propietarios_vivienda_proporcion": 0.111520665046,
+    "departamento_nombre": "Libertador Grl. San Martín",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54084,
+    "jovenes_proporcion": 0.0942169002585,
+    "jovenes_asistencia_escolar": 0.695840554593,
+    "personas_por_cuarto": 1.57097050021,
+    "propietarios_vivienda_proporcion": 0.0819989801122,
+    "departamento_nombre": "Montecarlo",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54091,
+    "jovenes_proporcion": 0.0857945507484,
+    "jovenes_asistencia_escolar": 0.630488994904,
+    "personas_por_cuarto": 1.55014491918,
+    "propietarios_vivienda_proporcion": 0.120469083156,
+    "departamento_nombre": "Oberá",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54098,
+    "jovenes_proporcion": 0.0959846175166,
+    "jovenes_asistencia_escolar": 0.683811586356,
+    "personas_por_cuarto": 1.61206366937,
+    "propietarios_vivienda_proporcion": 0.0659284058717,
+    "departamento_nombre": "San Ignacio",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54105,
+    "jovenes_proporcion": 0.084473356931,
+    "jovenes_asistencia_escolar": 0.58550396376,
+    "personas_por_cuarto": 1.56435199042,
+    "propietarios_vivienda_proporcion": 0.0553027651383,
+    "departamento_nombre": "",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54112,
+    "jovenes_proporcion": 0.0992560626067,
+    "jovenes_asistencia_escolar": 0.507138221934,
+    "personas_por_cuarto": 1.77090224706,
+    "propietarios_vivienda_proporcion": 0.0464448793216,
+    "departamento_nombre": "",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 54119,
+    "jovenes_proporcion": 0.0905815377964,
+    "jovenes_asistencia_escolar": 0.430787589499,
+    "personas_por_cuarto": 1.46358698518,
+    "propietarios_vivienda_proporcion": 0.0479479346527,
+    "departamento_nombre": "",
+    "provincia_id": 54
+  },
+  {
+    "departamento_id": 58007,
+    "jovenes_proporcion": 0.0810257645076,
+    "jovenes_asistencia_escolar": 0.775631500743,
+    "personas_por_cuarto": 1.64998013508,
+    "propietarios_vivienda_proporcion": 0.162006578947,
+    "departamento_nombre": "Aluminé",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58014,
+    "jovenes_proporcion": 0.0832560726868,
+    "jovenes_asistencia_escolar": 0.661469933185,
+    "personas_por_cuarto": 1.87159465556,
+    "propietarios_vivienda_proporcion": 0.149783817171,
+    "departamento_nombre": "Añelo",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58021,
+    "jovenes_proporcion": 0.0798143851508,
+    "jovenes_asistencia_escolar": 0.598837209302,
+    "personas_por_cuarto": 1.66666666667,
+    "propietarios_vivienda_proporcion": 0.0484114977307,
+    "departamento_nombre": "Catán Lil",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58028,
+    "jovenes_proporcion": 0.0966460723742,
+    "jovenes_asistencia_escolar": 0.7899543379,
+    "personas_por_cuarto": 1.52489905787,
+    "propietarios_vivienda_proporcion": 0.13829787234,
+    "departamento_nombre": "Collón Curá",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58035,
+    "jovenes_proporcion": 0.0728176621916,
+    "jovenes_asistencia_escolar": 0.790866749972,
+    "personas_por_cuarto": 1.48307039282,
+    "propietarios_vivienda_proporcion": 0.193722335418,
+    "departamento_nombre": "Confluencia",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58042,
+    "jovenes_proporcion": 0.0907184058731,
+    "jovenes_asistencia_escolar": 0.848265895954,
+    "personas_por_cuarto": 1.58487429877,
+    "propietarios_vivienda_proporcion": 0.187173913043,
+    "departamento_nombre": "Chos Malal",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58049,
+    "jovenes_proporcion": 0.0876061120543,
+    "jovenes_asistencia_escolar": 0.824031007752,
+    "personas_por_cuarto": 1.60002173204,
+    "propietarios_vivienda_proporcion": 0.239696826149,
+    "departamento_nombre": "Huiliches",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58056,
+    "jovenes_proporcion": 0.0726435390614,
+    "jovenes_asistencia_escolar": 0.803794539565,
+    "personas_por_cuarto": 1.4594515037,
+    "propietarios_vivienda_proporcion": 0.285745494265,
+    "departamento_nombre": "Lácar",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58063,
+    "jovenes_proporcion": 0.0851985559567,
+    "jovenes_asistencia_escolar": 0.728813559322,
+    "personas_por_cuarto": 1.74917908563,
+    "propietarios_vivienda_proporcion": 0.1125,
+    "departamento_nombre": "Loncopué",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58070,
+    "jovenes_proporcion": 0.0687614602434,
+    "jovenes_asistencia_escolar": 0.820606060606,
+    "personas_por_cuarto": 1.46406345333,
+    "propietarios_vivienda_proporcion": 0.302235716257,
+    "departamento_nombre": "Los Lagos",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58077,
+    "jovenes_proporcion": 0.0887475808681,
+    "jovenes_asistencia_escolar": 0.834890965732,
+    "personas_por_cuarto": 1.55369415808,
+    "propietarios_vivienda_proporcion": 0.114350797267,
+    "departamento_nombre": "",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58084,
+    "jovenes_proporcion": 0.0880221653879,
+    "jovenes_asistencia_escolar": 0.811138014528,
+    "personas_por_cuarto": 1.68413496052,
+    "propietarios_vivienda_proporcion": 0.0760869565217,
+    "departamento_nombre": "Ñorquín",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58091,
+    "jovenes_proporcion": 0.06812803587,
+    "jovenes_asistencia_escolar": 0.703839122486,
+    "personas_por_cuarto": 1.75433357611,
+    "propietarios_vivienda_proporcion": 0.256531406337,
+    "departamento_nombre": "Pehuenches",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58098,
+    "jovenes_proporcion": 0.0803844473569,
+    "jovenes_asistencia_escolar": 0.747282608696,
+    "personas_por_cuarto": 1.526,
+    "propietarios_vivienda_proporcion": 0.113620807666,
+    "departamento_nombre": "Picún Leufú",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58105,
+    "jovenes_proporcion": 0.0932782682996,
+    "jovenes_asistencia_escolar": 0.825954198473,
+    "personas_por_cuarto": 1.70685464268,
+    "propietarios_vivienda_proporcion": 0.135421930268,
+    "departamento_nombre": "Picunches",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 58112,
+    "jovenes_proporcion": 0.0811513310898,
+    "jovenes_asistencia_escolar": 0.797707349966,
+    "personas_por_cuarto": 1.55388801497,
+    "propietarios_vivienda_proporcion": 0.151467163484,
+    "departamento_nombre": "Zapala",
+    "provincia_id": 58
+  },
+  {
+    "departamento_id": 62007,
+    "jovenes_proporcion": 0.0723846180519,
+    "jovenes_asistencia_escolar": 0.828982035928,
+    "personas_por_cuarto": 1.41847425114,
+    "propietarios_vivienda_proporcion": 0.1816298719,
+    "departamento_nombre": "",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62014,
+    "jovenes_proporcion": 0.0800894601251,
+    "jovenes_asistencia_escolar": 0.715447154472,
+    "personas_por_cuarto": 1.56497275265,
+    "propietarios_vivienda_proporcion": 0.166935254526,
+    "departamento_nombre": "",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62021,
+    "jovenes_proporcion": 0.0786441947566,
+    "jovenes_asistencia_escolar": 0.82131631584,
+    "personas_por_cuarto": 1.48188437972,
+    "propietarios_vivienda_proporcion": 0.221864875167,
+    "departamento_nombre": "Bariloche",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62028,
+    "jovenes_proporcion": 0.0783703494129,
+    "jovenes_asistencia_escolar": 0.685920577617,
+    "personas_por_cuarto": 1.39924782264,
+    "propietarios_vivienda_proporcion": 0.131322094055,
+    "departamento_nombre": "Conesa",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62035,
+    "jovenes_proporcion": 0.0632575757576,
+    "jovenes_asistencia_escolar": 0.622754491018,
+    "personas_por_cuarto": 1.54160583942,
+    "propietarios_vivienda_proporcion": 0.0379882289995,
+    "departamento_nombre": "El Cuy",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62042,
+    "jovenes_proporcion": 0.0736941490273,
+    "jovenes_asistencia_escolar": 0.748625792812,
+    "personas_por_cuarto": 1.50656526536,
+    "propietarios_vivienda_proporcion": 0.178260738387,
+    "departamento_nombre": "",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62049,
+    "jovenes_proporcion": 0.0774100719424,
+    "jovenes_asistencia_escolar": 0.780669144981,
+    "personas_por_cuarto": 1.50955690704,
+    "propietarios_vivienda_proporcion": 0.0552092609083,
+    "departamento_nombre": "",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62056,
+    "jovenes_proporcion": 0.0627880184332,
+    "jovenes_asistencia_escolar": 0.633027522936,
+    "personas_por_cuarto": 1.35202492212,
+    "propietarios_vivienda_proporcion": 0.0423861852433,
+    "departamento_nombre": "Ñorquincó",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62063,
+    "jovenes_proporcion": 0.0802438505706,
+    "jovenes_asistencia_escolar": 0.764134275618,
+    "personas_por_cuarto": 1.30656663888,
+    "propietarios_vivienda_proporcion": 0.122466396416,
+    "departamento_nombre": "Pichi Mahuida",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62070,
+    "jovenes_proporcion": 0.086295099623,
+    "jovenes_asistencia_escolar": 0.787831513261,
+    "personas_por_cuarto": 1.4020385051,
+    "propietarios_vivienda_proporcion": 0.102966101695,
+    "departamento_nombre": "Pilcaniyeu",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62077,
+    "jovenes_proporcion": 0.0724969266494,
+    "jovenes_asistencia_escolar": 0.783796514366,
+    "personas_por_cuarto": 1.45539486109,
+    "propietarios_vivienda_proporcion": 0.193391115926,
+    "departamento_nombre": "",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62084,
+    "jovenes_proporcion": 0.0792846078017,
+    "jovenes_asistencia_escolar": 0.774422735346,
+    "personas_por_cuarto": 1.54942177613,
+    "propietarios_vivienda_proporcion": 0.133463224549,
+    "departamento_nombre": "Valcheta",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 62091,
+    "jovenes_proporcion": 0.0794003684177,
+    "jovenes_asistencia_escolar": 0.768,
+    "personas_por_cuarto": 1.60413694722,
+    "propietarios_vivienda_proporcion": 0.131821099936,
+    "departamento_nombre": "",
+    "provincia_id": 62
+  },
+  {
+    "departamento_id": 66007,
+    "jovenes_proporcion": 0.090975597011,
+    "jovenes_asistencia_escolar": 0.632778096879,
+    "personas_por_cuarto": 1.88041662572,
+    "propietarios_vivienda_proporcion": 0.0801431911163,
+    "departamento_nombre": "Anta",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66014,
+    "jovenes_proporcion": 0.0943267259057,
+    "jovenes_asistencia_escolar": 0.74347826087,
+    "personas_por_cuarto": 1.73300165837,
+    "propietarios_vivienda_proporcion": 0.119823302043,
+    "departamento_nombre": "Cachi",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66021,
+    "jovenes_proporcion": 0.0830303030303,
+    "jovenes_asistencia_escolar": 0.767234387672,
+    "personas_por_cuarto": 1.69869595058,
+    "propietarios_vivienda_proporcion": 0.196343178622,
+    "departamento_nombre": "Cafayate",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66028,
+    "jovenes_proporcion": 0.0813895577984,
+    "jovenes_asistencia_escolar": 0.823715451254,
+    "personas_por_cuarto": 1.59744760225,
+    "propietarios_vivienda_proporcion": 0.162072992701,
+    "departamento_nombre": "",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66035,
+    "jovenes_proporcion": 0.0880438123446,
+    "jovenes_asistencia_escolar": 0.722310377658,
+    "personas_por_cuarto": 1.9653487095,
+    "propietarios_vivienda_proporcion": 0.0745443856555,
+    "departamento_nombre": "Cerrillos",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66042,
+    "jovenes_proporcion": 0.0886528247224,
+    "jovenes_asistencia_escolar": 0.729847494553,
+    "personas_por_cuarto": 1.85990121239,
+    "propietarios_vivienda_proporcion": 0.0943624974742,
+    "departamento_nombre": "Chicoana",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66049,
+    "jovenes_proporcion": 0.0893363825012,
+    "jovenes_asistencia_escolar": 0.763688077744,
+    "personas_por_cuarto": 1.75281149093,
+    "propietarios_vivienda_proporcion": 0.0975609756098,
+    "departamento_nombre": "",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66056,
+    "jovenes_proporcion": 0.0897265948633,
+    "jovenes_asistencia_escolar": 0.701399247106,
+    "personas_por_cuarto": 1.84839203675,
+    "propietarios_vivienda_proporcion": 0.0746670183305,
+    "departamento_nombre": "Grl. José de San Martín",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66063,
+    "jovenes_proporcion": 0.0903671164104,
+    "jovenes_asistencia_escolar": 0.635416666667,
+    "personas_por_cuarto": 1.56609336609,
+    "propietarios_vivienda_proporcion": 0.0772626931567,
+    "departamento_nombre": "Guachipas",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66070,
+    "jovenes_proporcion": 0.0983798229497,
+    "jovenes_asistencia_escolar": 0.728353140917,
+    "personas_por_cuarto": 1.99367299367,
+    "propietarios_vivienda_proporcion": 0.0864361702128,
+    "departamento_nombre": "Iruya",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66077,
+    "jovenes_proporcion": 0.078835501739,
+    "jovenes_asistencia_escolar": 0.813725490196,
+    "personas_por_cuarto": 1.55914842338,
+    "propietarios_vivienda_proporcion": 0.0704022988506,
+    "departamento_nombre": "La Caldera",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66084,
+    "jovenes_proporcion": 0.0850280504909,
+    "jovenes_asistencia_escolar": 0.744329896907,
+    "personas_por_cuarto": 1.75130488179,
+    "propietarios_vivienda_proporcion": 0.0633083730429,
+    "departamento_nombre": "La Candelaria",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66091,
+    "jovenes_proporcion": 0.0920598388953,
+    "jovenes_asistencia_escolar": 0.61875,
+    "personas_por_cuarto": 1.83720930233,
+    "propietarios_vivienda_proporcion": 0.10401891253,
+    "departamento_nombre": "La Poma",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66098,
+    "jovenes_proporcion": 0.0855413584398,
+    "jovenes_asistencia_escolar": 0.795597484277,
+    "personas_por_cuarto": 1.72305909618,
+    "propietarios_vivienda_proporcion": 0.0898876404494,
+    "departamento_nombre": "La Viña",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66105,
+    "jovenes_proporcion": 0.0894214876033,
+    "jovenes_asistencia_escolar": 0.713493530499,
+    "personas_por_cuarto": 2.08692652639,
+    "propietarios_vivienda_proporcion": 0.1056,
+    "departamento_nombre": "Los Andes",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66112,
+    "jovenes_proporcion": 0.0911005923025,
+    "jovenes_asistencia_escolar": 0.738846572361,
+    "personas_por_cuarto": 1.6341068319,
+    "propietarios_vivienda_proporcion": 0.0923183254344,
+    "departamento_nombre": "Metán",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66119,
+    "jovenes_proporcion": 0.105095541401,
+    "jovenes_asistencia_escolar": 0.63468013468,
+    "personas_por_cuarto": 1.78691116029,
+    "propietarios_vivienda_proporcion": 0.0747271200672,
+    "departamento_nombre": "Molinos",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66126,
+    "jovenes_proporcion": 0.0936559155274,
+    "jovenes_asistencia_escolar": 0.696454664308,
+    "personas_por_cuarto": 1.92033084828,
+    "propietarios_vivienda_proporcion": 0.0727580903355,
+    "departamento_nombre": "Orán",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66133,
+    "jovenes_proporcion": 0.0894686563231,
+    "jovenes_asistencia_escolar": 0.541605301915,
+    "personas_por_cuarto": 2.38000784006,
+    "propietarios_vivienda_proporcion": 0.0317305004193,
+    "departamento_nombre": "",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66140,
+    "jovenes_proporcion": 0.0838823164212,
+    "jovenes_asistencia_escolar": 0.694490131579,
+    "personas_por_cuarto": 1.58761362392,
+    "propietarios_vivienda_proporcion": 0.0891964628989,
+    "departamento_nombre": "Rosario de la Frontera",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66147,
+    "jovenes_proporcion": 0.0889359723012,
+    "jovenes_asistencia_escolar": 0.757117954678,
+    "personas_por_cuarto": 1.81656888054,
+    "propietarios_vivienda_proporcion": 0.0905441570027,
+    "departamento_nombre": "Rosario de Lerma",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66154,
+    "jovenes_proporcion": 0.0905074116306,
+    "jovenes_asistencia_escolar": 0.677165354331,
+    "personas_por_cuarto": 1.72214040255,
+    "propietarios_vivienda_proporcion": 0.107142857143,
+    "departamento_nombre": "",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 66161,
+    "jovenes_proporcion": 0.102184841454,
+    "jovenes_asistencia_escolar": 0.706717123936,
+    "personas_por_cuarto": 1.94875659382,
+    "propietarios_vivienda_proporcion": 0.0793713163065,
+    "departamento_nombre": "Santa Victoria",
+    "provincia_id": 66
+  },
+  {
+    "departamento_id": 70007,
+    "jovenes_proporcion": 0.0788680509042,
+    "jovenes_asistencia_escolar": 0.6491507431,
+    "personas_por_cuarto": 1.89768033047,
+    "propietarios_vivienda_proporcion": 0.0501449769742,
+    "departamento_nombre": "Albardón",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70014,
+    "jovenes_proporcion": 0.0744615384615,
+    "jovenes_asistencia_escolar": 0.642975206612,
+    "personas_por_cuarto": 1.87644341801,
+    "propietarios_vivienda_proporcion": 0.0282878411911,
+    "departamento_nombre": "Angaco",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70021,
+    "jovenes_proporcion": 0.0926874708896,
+    "jovenes_asistencia_escolar": 0.73743718593,
+    "personas_por_cuarto": 1.66080061884,
+    "propietarios_vivienda_proporcion": 0.108171941427,
+    "departamento_nombre": "Calingasta",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70028,
+    "jovenes_proporcion": 0.0590709566269,
+    "jovenes_asistencia_escolar": 0.83214396525,
+    "personas_por_cuarto": 1.28599375405,
+    "propietarios_vivienda_proporcion": 0.222561602397,
+    "departamento_nombre": "",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70035,
+    "jovenes_proporcion": 0.0810839005816,
+    "jovenes_asistencia_escolar": 0.691219041492,
+    "personas_por_cuarto": 1.75066204,
+    "propietarios_vivienda_proporcion": 0.0633728311468,
+    "departamento_nombre": "Caucete",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70042,
+    "jovenes_proporcion": 0.0821701162071,
+    "jovenes_asistencia_escolar": 0.724965132497,
+    "personas_por_cuarto": 1.79023819782,
+    "propietarios_vivienda_proporcion": 0.0827017173558,
+    "departamento_nombre": "Chimbas",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70049,
+    "jovenes_proporcion": 0.0606660072535,
+    "jovenes_asistencia_escolar": 0.73731884058,
+    "personas_por_cuarto": 2.08596973865,
+    "propietarios_vivienda_proporcion": 0.0810039931546,
+    "departamento_nombre": "Iglesia",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70056,
+    "jovenes_proporcion": 0.0805338242062,
+    "jovenes_asistencia_escolar": 0.810857142857,
+    "personas_por_cuarto": 1.53568904594,
+    "propietarios_vivienda_proporcion": 0.0890959925443,
+    "departamento_nombre": "Jáchal",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70063,
+    "jovenes_proporcion": 0.086064252713,
+    "jovenes_asistencia_escolar": 0.601747815231,
+    "personas_por_cuarto": 2.04280070237,
+    "propietarios_vivienda_proporcion": 0.0346690679874,
+    "departamento_nombre": "",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70070,
+    "jovenes_proporcion": 0.0836875964034,
+    "jovenes_asistencia_escolar": 0.60665318049,
+    "personas_por_cuarto": 1.87414510329,
+    "propietarios_vivienda_proporcion": 0.0588414170594,
+    "departamento_nombre": "Pocito",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70077,
+    "jovenes_proporcion": 0.0764287213206,
+    "jovenes_asistencia_escolar": 0.732982496282,
+    "personas_por_cuarto": 1.63736059213,
+    "propietarios_vivienda_proporcion": 0.117208672087,
+    "departamento_nombre": "",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70084,
+    "jovenes_proporcion": 0.0732808170279,
+    "jovenes_asistencia_escolar": 0.810105680317,
+    "personas_por_cuarto": 1.47996060172,
+    "propietarios_vivienda_proporcion": 0.1211775445,
+    "departamento_nombre": "",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70091,
+    "jovenes_proporcion": 0.0823211875843,
+    "jovenes_asistencia_escolar": 0.663387978142,
+    "personas_por_cuarto": 1.84849492766,
+    "propietarios_vivienda_proporcion": 0.0456074766355,
+    "departamento_nombre": "",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70098,
+    "jovenes_proporcion": 0.0728055399588,
+    "jovenes_asistencia_escolar": 0.745215652671,
+    "personas_por_cuarto": 1.59202118854,
+    "propietarios_vivienda_proporcion": 0.120559572461,
+    "departamento_nombre": "Santa Lucía",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70105,
+    "jovenes_proporcion": 0.0882020694953,
+    "jovenes_asistencia_escolar": 0.606557377049,
+    "personas_por_cuarto": 1.98395338413,
+    "propietarios_vivienda_proporcion": 0.0597243491577,
+    "departamento_nombre": "",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70112,
+    "jovenes_proporcion": 0.0798198935735,
+    "jovenes_asistencia_escolar": 0.653846153846,
+    "personas_por_cuarto": 1.83133433283,
+    "propietarios_vivienda_proporcion": 0.0308943089431,
+    "departamento_nombre": "Ullúm",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70119,
+    "jovenes_proporcion": 0.103572417613,
+    "jovenes_asistencia_escolar": 0.782085561497,
+    "personas_por_cuarto": 1.57,
+    "propietarios_vivienda_proporcion": 0.0829764453961,
+    "departamento_nombre": "Valle Fértil",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70126,
+    "jovenes_proporcion": 0.0858695017232,
+    "jovenes_asistencia_escolar": 0.586394557823,
+    "personas_por_cuarto": 1.96792734797,
+    "propietarios_vivienda_proporcion": 0.0302038761641,
+    "departamento_nombre": "",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 70133,
+    "jovenes_proporcion": 0.0908903968744,
+    "jovenes_asistencia_escolar": 0.588235294118,
+    "personas_por_cuarto": 1.82613593691,
+    "propietarios_vivienda_proporcion": 0.0342809364548,
+    "departamento_nombre": "Zonda",
+    "provincia_id": 70
+  },
+  {
+    "departamento_id": 74007,
+    "jovenes_proporcion": 0.0781683868602,
+    "jovenes_asistencia_escolar": 0.707774798928,
+    "personas_por_cuarto": 1.54675850891,
+    "propietarios_vivienda_proporcion": 0.10950487893,
+    "departamento_nombre": "",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74014,
+    "jovenes_proporcion": 0.0700125470514,
+    "jovenes_asistencia_escolar": 0.645161290323,
+    "personas_por_cuarto": 1.46669120353,
+    "propietarios_vivienda_proporcion": 0.048686244204,
+    "departamento_nombre": "Belgrano",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74021,
+    "jovenes_proporcion": 0.0748650908262,
+    "jovenes_asistencia_escolar": 0.697461928934,
+    "personas_por_cuarto": 1.46792368627,
+    "propietarios_vivienda_proporcion": 0.110234278668,
+    "departamento_nombre": "",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74028,
+    "jovenes_proporcion": 0.0749132279213,
+    "jovenes_asistencia_escolar": 0.678893178893,
+    "personas_por_cuarto": 1.43825833738,
+    "propietarios_vivienda_proporcion": 0.135265700483,
+    "departamento_nombre": "",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74035,
+    "jovenes_proporcion": 0.0756479400154,
+    "jovenes_asistencia_escolar": 0.758819823604,
+    "personas_por_cuarto": 1.49470497447,
+    "propietarios_vivienda_proporcion": 0.150681228374,
+    "departamento_nombre": "General Pedernera",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74042,
+    "jovenes_proporcion": 0.0798030393072,
+    "jovenes_asistencia_escolar": 0.582978723404,
+    "personas_por_cuarto": 1.61644023604,
+    "propietarios_vivienda_proporcion": 0.0932155074116,
+    "departamento_nombre": "Gobernador Dupuy",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74049,
+    "jovenes_proporcion": 0.0691252203366,
+    "jovenes_asistencia_escolar": 0.721,
+    "personas_por_cuarto": 1.51688161896,
+    "propietarios_vivienda_proporcion": 0.209343518211,
+    "departamento_nombre": "",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74056,
+    "jovenes_proporcion": 0.0746401070489,
+    "jovenes_asistencia_escolar": 0.760769634883,
+    "personas_por_cuarto": 1.55304604657,
+    "propietarios_vivienda_proporcion": 0.1787428064,
+    "departamento_nombre": "La Capital",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 74063,
+    "jovenes_proporcion": 0.0715954960697,
+    "jovenes_asistencia_escolar": 0.522255192878,
+    "personas_por_cuarto": 1.41521346963,
+    "propietarios_vivienda_proporcion": 0.0398692810458,
+    "departamento_nombre": "",
+    "provincia_id": 74
+  },
+  {
+    "departamento_id": 78007,
+    "jovenes_proporcion": 0.0644550617507,
+    "jovenes_asistencia_escolar": 0.87972027972,
+    "personas_por_cuarto": 1.29606262414,
+    "propietarios_vivienda_proporcion": 0.260270037346,
+    "departamento_nombre": "Corpen Aike",
+    "provincia_id": 78
+  },
+  {
+    "departamento_id": 78014,
+    "jovenes_proporcion": 0.0738362909969,
+    "jovenes_asistencia_escolar": 0.811627029068,
+    "personas_por_cuarto": 1.52976960359,
+    "propietarios_vivienda_proporcion": 0.255475813217,
+    "departamento_nombre": "Deseado",
+    "provincia_id": 78
+  },
+  {
+    "departamento_id": 78021,
+    "jovenes_proporcion": 0.0740551087254,
+    "jovenes_asistencia_escolar": 0.871483071054,
+    "personas_por_cuarto": 1.4262850379,
+    "propietarios_vivienda_proporcion": 0.264633677423,
+    "departamento_nombre": "Güer Aike",
+    "provincia_id": 78
+  },
+  {
+    "departamento_id": 78028,
+    "jovenes_proporcion": 0.050943596268,
+    "jovenes_asistencia_escolar": 0.785639958377,
+    "personas_por_cuarto": 1.69976572355,
+    "propietarios_vivienda_proporcion": 0.427249637155,
+    "departamento_nombre": "Lago Argentino",
+    "provincia_id": 78
+  },
+  {
+    "departamento_id": 78035,
+    "jovenes_proporcion": 0.0678857142857,
+    "jovenes_asistencia_escolar": 0.789562289562,
+    "personas_por_cuarto": 1.45445478723,
+    "propietarios_vivienda_proporcion": 0.222870478413,
+    "departamento_nombre": "Lago Buenos Aires",
+    "provincia_id": 78
+  },
+  {
+    "departamento_id": 78042,
+    "jovenes_proporcion": 0.0678113453597,
+    "jovenes_asistencia_escolar": 0.801282051282,
+    "personas_por_cuarto": 1.37159040095,
+    "propietarios_vivienda_proporcion": 0.220520128251,
+    "departamento_nombre": "Magallanes",
+    "provincia_id": 78
+  },
+  {
+    "departamento_id": 78049,
+    "jovenes_proporcion": 0.0641721597518,
+    "jovenes_asistencia_escolar": 0.818731117825,
+    "personas_por_cuarto": 1.60635316101,
+    "propietarios_vivienda_proporcion": 0.230230930721,
+    "departamento_nombre": "Río Chico",
+    "provincia_id": 78
+  },
+  {
+    "departamento_id": 82007,
+    "jovenes_proporcion": 0.0644145753327,
+    "jovenes_asistencia_escolar": 0.658578856153,
+    "personas_por_cuarto": 1.39565610296,
+    "propietarios_vivienda_proporcion": 0.11594503142,
+    "departamento_nombre": "",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82014,
+    "jovenes_proporcion": 0.058574908648,
+    "jovenes_asistencia_escolar": 0.706591807028,
+    "personas_por_cuarto": 1.34897553441,
+    "propietarios_vivienda_proporcion": 0.128761046116,
+    "departamento_nombre": "Caseros",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82021,
+    "jovenes_proporcion": 0.068779058015,
+    "jovenes_asistencia_escolar": 0.671075189811,
+    "personas_por_cuarto": 1.47407628129,
+    "propietarios_vivienda_proporcion": 0.190258132956,
+    "departamento_nombre": "Castellanos",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82028,
+    "jovenes_proporcion": 0.0638706708089,
+    "jovenes_asistencia_escolar": 0.728157088813,
+    "personas_por_cuarto": 1.4276562192,
+    "propietarios_vivienda_proporcion": 0.101650236522,
+    "departamento_nombre": "Constitución",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82035,
+    "jovenes_proporcion": 0.0897079942556,
+    "jovenes_asistencia_escolar": 0.58591248666,
+    "personas_por_cuarto": 1.74694765011,
+    "propietarios_vivienda_proporcion": 0.0767918088737,
+    "departamento_nombre": "Garay",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82042,
+    "jovenes_proporcion": 0.0647876706592,
+    "jovenes_asistencia_escolar": 0.673884938591,
+    "personas_por_cuarto": 1.37861751418,
+    "propietarios_vivienda_proporcion": 0.168687982359,
+    "departamento_nombre": "General López",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82049,
+    "jovenes_proporcion": 0.0815996825577,
+    "jovenes_asistencia_escolar": 0.711010767628,
+    "personas_por_cuarto": 1.64281124573,
+    "propietarios_vivienda_proporcion": 0.119674198003,
+    "departamento_nombre": "General Obligado",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82056,
+    "jovenes_proporcion": 0.0629921259843,
+    "jovenes_asistencia_escolar": 0.675238095238,
+    "personas_por_cuarto": 1.41105138407,
+    "propietarios_vivienda_proporcion": 0.120387285349,
+    "departamento_nombre": "Iriondo",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82063,
+    "jovenes_proporcion": 0.0674147246297,
+    "jovenes_asistencia_escolar": 0.766801322071,
+    "personas_por_cuarto": 1.47707147197,
+    "propietarios_vivienda_proporcion": 0.163910302605,
+    "departamento_nombre": "",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82070,
+    "jovenes_proporcion": 0.0640996321918,
+    "jovenes_asistencia_escolar": 0.68232495912,
+    "personas_por_cuarto": 1.40617965484,
+    "propietarios_vivienda_proporcion": 0.175779998252,
+    "departamento_nombre": "Las Colonias",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82077,
+    "jovenes_proporcion": 0.0801488334674,
+    "jovenes_asistencia_escolar": 0.657465495609,
+    "personas_por_cuarto": 1.64726670348,
+    "propietarios_vivienda_proporcion": 0.0938929551693,
+    "departamento_nombre": "",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82084,
+    "jovenes_proporcion": 0.0632244335438,
+    "jovenes_asistencia_escolar": 0.724176770688,
+    "personas_por_cuarto": 1.4465239216,
+    "propietarios_vivienda_proporcion": 0.171672190618,
+    "departamento_nombre": "Rosario",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82091,
+    "jovenes_proporcion": 0.0739713696681,
+    "jovenes_asistencia_escolar": 0.661432777233,
+    "personas_por_cuarto": 1.44866024482,
+    "propietarios_vivienda_proporcion": 0.124908155768,
+    "departamento_nombre": "San Cristóbal",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82098,
+    "jovenes_proporcion": 0.089537775768,
+    "jovenes_asistencia_escolar": 0.649711399711,
+    "personas_por_cuarto": 1.62676685408,
+    "propietarios_vivienda_proporcion": 0.0770075799187,
+    "departamento_nombre": "",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82105,
+    "jovenes_proporcion": 0.0696561108362,
+    "jovenes_asistencia_escolar": 0.667021843367,
+    "personas_por_cuarto": 1.46683118014,
+    "propietarios_vivienda_proporcion": 0.10864312992,
+    "departamento_nombre": "San Jerónimo",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82112,
+    "jovenes_proporcion": 0.0708732642284,
+    "jovenes_asistencia_escolar": 0.698171783374,
+    "personas_por_cuarto": 1.41707950805,
+    "propietarios_vivienda_proporcion": 0.123465263479,
+    "departamento_nombre": "",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82119,
+    "jovenes_proporcion": 0.0677816285651,
+    "jovenes_asistencia_escolar": 0.674734965757,
+    "personas_por_cuarto": 1.54978367777,
+    "propietarios_vivienda_proporcion": 0.112326783868,
+    "departamento_nombre": "",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82126,
+    "jovenes_proporcion": 0.0640487453401,
+    "jovenes_asistencia_escolar": 0.630716556615,
+    "personas_por_cuarto": 1.35447872024,
+    "propietarios_vivienda_proporcion": 0.125739300517,
+    "departamento_nombre": "",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 82133,
+    "jovenes_proporcion": 0.086107119276,
+    "jovenes_asistencia_escolar": 0.68448353631,
+    "personas_por_cuarto": 1.65858214964,
+    "propietarios_vivienda_proporcion": 0.0822716183247,
+    "departamento_nombre": "Vera",
+    "provincia_id": 82
+  },
+  {
+    "departamento_id": 86007,
+    "jovenes_proporcion": 0.0776609724047,
+    "jovenes_asistencia_escolar": 0.522842639594,
+    "personas_por_cuarto": 1.74942528736,
+    "propietarios_vivienda_proporcion": 0.0618112122664,
+    "departamento_nombre": "Aguirre",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86014,
+    "jovenes_proporcion": 0.0866566195224,
+    "jovenes_asistencia_escolar": 0.453511705686,
+    "personas_por_cuarto": 2.00768067031,
+    "propietarios_vivienda_proporcion": 0.0195979899497,
+    "departamento_nombre": "Alberdi",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86021,
+    "jovenes_proporcion": 0.0882541426348,
+    "jovenes_asistencia_escolar": 0.51867219917,
+    "personas_por_cuarto": 1.89701285168,
+    "propietarios_vivienda_proporcion": 0.00793650793651,
+    "departamento_nombre": "Atamisqui",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86028,
+    "jovenes_proporcion": 0.087366950826,
+    "jovenes_asistencia_escolar": 0.457552370452,
+    "personas_por_cuarto": 1.98423165138,
+    "propietarios_vivienda_proporcion": 0.016336532571,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86035,
+    "jovenes_proporcion": 0.0858173026237,
+    "jovenes_asistencia_escolar": 0.646601146601,
+    "personas_por_cuarto": 1.77164452303,
+    "propietarios_vivienda_proporcion": 0.033140392691,
+    "departamento_nombre": "Banda",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86042,
+    "jovenes_proporcion": 0.0889321648815,
+    "jovenes_asistencia_escolar": 0.644768856448,
+    "personas_por_cuarto": 1.69845644983,
+    "propietarios_vivienda_proporcion": 0.094217549535,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86049,
+    "jovenes_proporcion": 0.0805690219934,
+    "jovenes_asistencia_escolar": 0.743611188551,
+    "personas_por_cuarto": 1.58533038968,
+    "propietarios_vivienda_proporcion": 0.0567354236623,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86056,
+    "jovenes_proporcion": 0.0878232072347,
+    "jovenes_asistencia_escolar": 0.554024655547,
+    "personas_por_cuarto": 1.87811733748,
+    "propietarios_vivienda_proporcion": 0.0283169369848,
+    "departamento_nombre": "Copo",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86063,
+    "jovenes_proporcion": 0.0809992211613,
+    "jovenes_asistencia_escolar": 0.681623931624,
+    "personas_por_cuarto": 1.59498504716,
+    "propietarios_vivienda_proporcion": 0.061912308505,
+    "departamento_nombre": "Choya",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86070,
+    "jovenes_proporcion": 0.0902918069585,
+    "jovenes_asistencia_escolar": 0.502175264139,
+    "personas_por_cuarto": 2.08153253125,
+    "propietarios_vivienda_proporcion": 0.00612144955926,
+    "departamento_nombre": "Figueroa",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86077,
+    "jovenes_proporcion": 0.0890434326204,
+    "jovenes_asistencia_escolar": 0.529325081049,
+    "personas_por_cuarto": 1.88042834583,
+    "propietarios_vivienda_proporcion": 0.043535765458,
+    "departamento_nombre": "General Taboada",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86084,
+    "jovenes_proporcion": 0.0864246250987,
+    "jovenes_asistencia_escolar": 0.51902587519,
+    "personas_por_cuarto": 1.72812002728,
+    "propietarios_vivienda_proporcion": 0.0261538461538,
+    "departamento_nombre": "Guasayán",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86091,
+    "jovenes_proporcion": 0.0898829431438,
+    "jovenes_asistencia_escolar": 0.476744186047,
+    "personas_por_cuarto": 1.80120481928,
+    "propietarios_vivienda_proporcion": 0.0128276631344,
+    "departamento_nombre": "Jiménez",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86098,
+    "jovenes_proporcion": 0.0845936513213,
+    "jovenes_asistencia_escolar": 0.552717747217,
+    "personas_por_cuarto": 1.96014768162,
+    "propietarios_vivienda_proporcion": 0.0179425837321,
+    "departamento_nombre": "Juan F. Ibarra",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86105,
+    "jovenes_proporcion": 0.0867438610501,
+    "jovenes_asistencia_escolar": 0.57249712313,
+    "personas_por_cuarto": 1.81075463172,
+    "propietarios_vivienda_proporcion": 0.0261396905061,
+    "departamento_nombre": "Loreto",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86112,
+    "jovenes_proporcion": 0.0708994708995,
+    "jovenes_asistencia_escolar": 0.268656716418,
+    "personas_por_cuarto": 1.7027027027,
+    "propietarios_vivienda_proporcion": 0.0130597014925,
+    "departamento_nombre": "Mitre",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86119,
+    "jovenes_proporcion": 0.0869903516962,
+    "jovenes_asistencia_escolar": 0.501967799642,
+    "personas_por_cuarto": 2.07920792079,
+    "propietarios_vivienda_proporcion": 0.0504888174635,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86126,
+    "jovenes_proporcion": 0.09037692747,
+    "jovenes_asistencia_escolar": 0.60663507109,
+    "personas_por_cuarto": 1.65991231189,
+    "propietarios_vivienda_proporcion": 0.0628964059197,
+    "departamento_nombre": "Ojo de Agua",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86133,
+    "jovenes_proporcion": 0.0826264989763,
+    "jovenes_asistencia_escolar": 0.473156342183,
+    "personas_por_cuarto": 1.72967959528,
+    "propietarios_vivienda_proporcion": 0.0336102719033,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86140,
+    "jovenes_proporcion": 0.0888531415594,
+    "jovenes_asistencia_escolar": 0.433439829606,
+    "personas_por_cuarto": 1.70726978998,
+    "propietarios_vivienda_proporcion": 0.0470252939081,
+    "departamento_nombre": "Quebrachos",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86147,
+    "jovenes_proporcion": 0.0840031348534,
+    "jovenes_asistencia_escolar": 0.576263831634,
+    "personas_por_cuarto": 1.7501993684,
+    "propietarios_vivienda_proporcion": 0.0328001768998,
+    "departamento_nombre": "Río Hondo",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86154,
+    "jovenes_proporcion": 0.0813559322034,
+    "jovenes_asistencia_escolar": 0.598039215686,
+    "personas_por_cuarto": 1.50104759054,
+    "propietarios_vivienda_proporcion": 0.0776566757493,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86161,
+    "jovenes_proporcion": 0.0885961949792,
+    "jovenes_asistencia_escolar": 0.528589580686,
+    "personas_por_cuarto": 1.95316622691,
+    "propietarios_vivienda_proporcion": 0.0395890281836,
+    "departamento_nombre": "Robles",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86168,
+    "jovenes_proporcion": 0.0802353570473,
+    "jovenes_asistencia_escolar": 0.385555555556,
+    "personas_por_cuarto": 1.86205179283,
+    "propietarios_vivienda_proporcion": 0.013612950699,
+    "departamento_nombre": "Salavina",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86175,
+    "jovenes_proporcion": 0.085037127454,
+    "jovenes_asistencia_escolar": 0.486842105263,
+    "personas_por_cuarto": 1.96738042826,
+    "propietarios_vivienda_proporcion": 0.0145953118089,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86182,
+    "jovenes_proporcion": 0.0915997395268,
+    "jovenes_asistencia_escolar": 0.5663507109,
+    "personas_por_cuarto": 2.0493772242,
+    "propietarios_vivienda_proporcion": 0.0113528855251,
+    "departamento_nombre": "",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 86189,
+    "jovenes_proporcion": 0.0929719917012,
+    "jovenes_asistencia_escolar": 0.47419804742,
+    "personas_por_cuarto": 2.0289397527,
+    "propietarios_vivienda_proporcion": 0.00549752611325,
+    "departamento_nombre": "Silípica",
+    "provincia_id": 86
+  },
+  {
+    "departamento_id": 90007,
+    "jovenes_proporcion": 0.0883873237531,
+    "jovenes_asistencia_escolar": 0.60685854256,
+    "personas_por_cuarto": 1.85208761466,
+    "propietarios_vivienda_proporcion": 0.0112410582491,
+    "departamento_nombre": "Burruyacú",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90014,
+    "jovenes_proporcion": 0.0819118111458,
+    "jovenes_asistencia_escolar": 0.680825160636,
+    "personas_por_cuarto": 1.86780425717,
+    "propietarios_vivienda_proporcion": 0.0302172743644,
+    "departamento_nombre": "Cruz Alta",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90021,
+    "jovenes_proporcion": 0.082293924568,
+    "jovenes_asistencia_escolar": 0.669777242625,
+    "personas_por_cuarto": 1.73429713009,
+    "propietarios_vivienda_proporcion": 0.0572895690697,
+    "departamento_nombre": "Chicligasta",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90028,
+    "jovenes_proporcion": 0.0853743269064,
+    "jovenes_asistencia_escolar": 0.676161410648,
+    "personas_por_cuarto": 1.8777928785,
+    "propietarios_vivienda_proporcion": 0.0423993016586,
+    "departamento_nombre": "Famaillá",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90035,
+    "jovenes_proporcion": 0.0826507268836,
+    "jovenes_asistencia_escolar": 0.7,
+    "personas_por_cuarto": 1.82948562171,
+    "propietarios_vivienda_proporcion": 0.0163746049986,
+    "departamento_nombre": "Graneros",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90042,
+    "jovenes_proporcion": 0.0838046102457,
+    "jovenes_asistencia_escolar": 0.733228097869,
+    "personas_por_cuarto": 1.70272553215,
+    "propietarios_vivienda_proporcion": 0.051363516018,
+    "departamento_nombre": "Juan Bautista Alberdi",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90049,
+    "jovenes_proporcion": 0.0903589095885,
+    "jovenes_asistencia_escolar": 0.670355270821,
+    "personas_por_cuarto": 1.84199302055,
+    "propietarios_vivienda_proporcion": 0.0301714781854,
+    "departamento_nombre": "La Cocha",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90056,
+    "jovenes_proporcion": 0.0814391526688,
+    "jovenes_asistencia_escolar": 0.724022346369,
+    "personas_por_cuarto": 1.78707558215,
+    "propietarios_vivienda_proporcion": 0.0182244016687,
+    "departamento_nombre": "Leales",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90063,
+    "jovenes_proporcion": 0.0774454537489,
+    "jovenes_asistencia_escolar": 0.691495379974,
+    "personas_por_cuarto": 1.78923438725,
+    "propietarios_vivienda_proporcion": 0.0402175906118,
+    "departamento_nombre": "Lules",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90070,
+    "jovenes_proporcion": 0.0804669945475,
+    "jovenes_asistencia_escolar": 0.740675649287,
+    "personas_por_cuarto": 1.70450223639,
+    "propietarios_vivienda_proporcion": 0.0361891620672,
+    "departamento_nombre": "Monteros",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90077,
+    "jovenes_proporcion": 0.0834168909529,
+    "jovenes_asistencia_escolar": 0.722690847744,
+    "personas_por_cuarto": 1.72180155076,
+    "propietarios_vivienda_proporcion": 0.0374787052811,
+    "departamento_nombre": "",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90084,
+    "jovenes_proporcion": 0.0712013496919,
+    "jovenes_asistencia_escolar": 0.764713408393,
+    "personas_por_cuarto": 1.52368817007,
+    "propietarios_vivienda_proporcion": 0.149543263899,
+    "departamento_nombre": "",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90091,
+    "jovenes_proporcion": 0.0822969296541,
+    "jovenes_asistencia_escolar": 0.681621408894,
+    "personas_por_cuarto": 1.80224141957,
+    "propietarios_vivienda_proporcion": 0.0256507936508,
+    "departamento_nombre": "Simoca",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90098,
+    "jovenes_proporcion": 0.07989017612,
+    "jovenes_asistencia_escolar": 0.667225481978,
+    "personas_por_cuarto": 1.42640175757,
+    "propietarios_vivienda_proporcion": 0.0503524672709,
+    "departamento_nombre": "Tafí del Valle",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90105,
+    "jovenes_proporcion": 0.0805504858679,
+    "jovenes_asistencia_escolar": 0.727903653807,
+    "personas_por_cuarto": 1.70545265903,
+    "propietarios_vivienda_proporcion": 0.0523646379148,
+    "departamento_nombre": "Tafí Viejo",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90112,
+    "jovenes_proporcion": 0.0860629785274,
+    "jovenes_asistencia_escolar": 0.695652173913,
+    "personas_por_cuarto": 1.70053842389,
+    "propietarios_vivienda_proporcion": 0.051339788336,
+    "departamento_nombre": "Trancas",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 90119,
+    "jovenes_proporcion": 0.0813575576749,
+    "jovenes_asistencia_escolar": 0.811722331369,
+    "personas_por_cuarto": 1.48204591666,
+    "propietarios_vivienda_proporcion": 0.0658405172414,
+    "departamento_nombre": "Yerba Buena",
+    "provincia_id": 90
+  },
+  {
+    "departamento_id": 94007,
+    "jovenes_proporcion": 0.0747837012078,
+    "jovenes_asistencia_escolar": 0.889079801451,
+    "personas_por_cuarto": 1.38076369586,
+    "propietarios_vivienda_proporcion": 0.228631480617,
+    "departamento_nombre": "Río Grande",
+    "provincia_id": 94
+  },
+  {
+    "departamento_id": 94014,
+    "jovenes_proporcion": 0.0749701523983,
+    "jovenes_asistencia_escolar": 0.909367681499,
+    "personas_por_cuarto": 1.45902605221,
+    "propietarios_vivienda_proporcion": 0.282757440985,
+    "departamento_nombre": "Ushuaia",
+    "provincia_id": 94
+  }
+]
