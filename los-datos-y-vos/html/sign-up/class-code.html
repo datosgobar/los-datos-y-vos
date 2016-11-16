@@ -2,8 +2,8 @@
 	<p>
 		Escrib&iacute; el c&oacute;digo de la clase que te dio tu profe.
 	</p>
-	<input type="text" ng-model="studentData.classCode"/>
+	<input type="text" ng-model="studentData.classCode" placeholder="XXXX" />
 <div>
-<a ng-click="saveClassCode()">
+<button ng-click="saveClassCode()" ng-disabled="!studentData.classCode">
 	Siguiente
-</a>
+</button>

@@ -1,387 +1,169 @@
-[
-  {
-    "provincia_id": 2,
-    "jovenes_proporcion": 0.044348201876,
-    "jovenes_asistencia_escolar": 0.85840231562,
-    "personas_por_cuarto": 1.27472956415,
-    "propietarios_vivienda_proporcion": 0.298611292249,
-    "provincia_nombre": "Ciudad Autónoma de Buenos Aires"
-  },
-  {
-    "provincia_id": 6,
-    "jovenes_proporcion": 0.0670541035171,
-    "jovenes_asistencia_escolar": 0.780476002314,
-    "personas_por_cuarto": 1.5284089842,
-    "propietarios_vivienda_proporcion": 0.146203432353,
-    "provincia_nombre": "Buenos Aires"
-  },
-  {
-    "provincia_id": 10,
-    "jovenes_proporcion": 0.0823183661929,
-    "jovenes_asistencia_escolar": 0.793057894911,
-    "personas_por_cuarto": 1.55142772787,
-    "propietarios_vivienda_proporcion": 0.0816658159811,
-    "provincia_nombre": "Catamarca"
-  },
-  {
-    "provincia_id": 14,
-    "jovenes_proporcion": 0.0679599356398,
-    "jovenes_asistencia_escolar": 0.728568823903,
-    "personas_por_cuarto": 1.4483849618,
-    "propietarios_vivienda_proporcion": 0.214042252552,
-    "provincia_nombre": "Córdoba"
-  },
-  {
-    "provincia_id": 18,
-    "jovenes_proporcion": 0.0845641978853,
-    "jovenes_asistencia_escolar": 0.719400033358,
-    "personas_por_cuarto": 1.63908695494,
-    "propietarios_vivienda_proporcion": 0.108290981602,
-    "provincia_nombre": "Corrientes"
-  },
-  {
-    "provincia_id": 22,
-    "jovenes_proporcion": 0.0877149590764,
-    "jovenes_asistencia_escolar": 0.675676843629,
-    "personas_por_cuarto": 1.70771015862,
-    "propietarios_vivienda_proporcion": 0.0778754741317,
-    "provincia_nombre": "Chaco"
-  },
-  {
-    "provincia_id": 26,
-    "jovenes_proporcion": 0.0721300784902,
-    "jovenes_asistencia_escolar": 0.802788519144,
-    "personas_por_cuarto": 1.49950223552,
-    "propietarios_vivienda_proporcion": 0.194895842612,
-    "provincia_nombre": "Chubut"
-  },
-  {
-    "provincia_id": 30,
-    "jovenes_proporcion": 0.0729954999782,
-    "jovenes_asistencia_escolar": 0.724612622199,
-    "personas_por_cuarto": 1.48925884914,
-    "propietarios_vivienda_proporcion": 0.138062118623,
-    "provincia_nombre": "Entre Ríos"
-  },
-  {
-    "provincia_id": 34,
-    "jovenes_proporcion": 0.0923717656113,
-    "jovenes_asistencia_escolar": 0.749040267908,
-    "personas_por_cuarto": 1.74416049269,
-    "propietarios_vivienda_proporcion": 0.0857002344925,
-    "provincia_nombre": "Formosa"
-  },
-  {
-    "provincia_id": 38,
-    "jovenes_proporcion": 0.086700420462,
-    "jovenes_asistencia_escolar": 0.808037549678,
-    "personas_por_cuarto": 1.65304975056,
-    "propietarios_vivienda_proporcion": 0.108246005841,
-    "provincia_nombre": "Jujuy"
-  },
-  {
-    "provincia_id": 42,
-    "jovenes_proporcion": 0.0703713109537,
-    "jovenes_asistencia_escolar": 0.747248830474,
-    "personas_por_cuarto": 1.31646160006,
-    "propietarios_vivienda_proporcion": 0.167960696175,
-    "provincia_nombre": "La Pampa"
-  },
-  {
-    "provincia_id": 46,
-    "jovenes_proporcion": 0.0857595866228,
-    "jovenes_asistencia_escolar": 0.767308566036,
-    "personas_por_cuarto": 1.5532536941,
-    "propietarios_vivienda_proporcion": 0.123714282578,
-    "provincia_nombre": "La Rioja"
-  },
-  {
-    "provincia_id": 50,
-    "jovenes_proporcion": 0.0726516148733,
-    "jovenes_asistencia_escolar": 0.754519693516,
-    "personas_por_cuarto": 1.50932320712,
-    "propietarios_vivienda_proporcion": 0.176266720017,
-    "provincia_nombre": "Mendoza"
-  },
-  {
-    "provincia_id": 54,
-    "jovenes_proporcion": 0.0884255800464,
-    "jovenes_asistencia_escolar": 0.662597911897,
-    "personas_por_cuarto": 1.57213888457,
-    "propietarios_vivienda_proporcion": 0.105867906903,
-    "provincia_nombre": "Misiones"
-  },
-  {
-    "provincia_id": 58,
-    "jovenes_proporcion": 0.0753266118353,
-    "jovenes_asistencia_escolar": 0.788440698374,
-    "personas_por_cuarto": 1.51957263002,
-    "propietarios_vivienda_proporcion": 0.195358027014,
-    "provincia_nombre": "Neuquén"
-  },
-  {
-    "provincia_id": 62,
-    "jovenes_proporcion": 0.0753595502979,
-    "jovenes_asistencia_escolar": 0.771068816489,
-    "personas_por_cuarto": 1.48864134337,
-    "propietarios_vivienda_proporcion": 0.181129480042,
-    "provincia_nombre": "Río Negro"
-  },
-  {
-    "provincia_id": 66,
-    "jovenes_proporcion": 0.0864027153233,
-    "jovenes_asistencia_escolar": 0.752618387321,
-    "personas_por_cuarto": 1.72611008697,
-    "propietarios_vivienda_proporcion": 0.118468014703,
-    "provincia_nombre": "Salta"
-  },
-  {
-    "provincia_id": 70,
-    "jovenes_proporcion": 0.0760246969775,
-    "jovenes_asistencia_escolar": 0.726036657203,
-    "personas_por_cuarto": 1.61881139874,
-    "propietarios_vivienda_proporcion": 0.115091304225,
-    "provincia_nombre": "San Juan"
-  },
-  {
-    "provincia_id": 74,
-    "jovenes_proporcion": 0.0748051166987,
-    "jovenes_asistencia_escolar": 0.74077738953,
-    "personas_por_cuarto": 1.52368297695,
-    "propietarios_vivienda_proporcion": 0.159972266431,
-    "provincia_nombre": "San Luis"
-  },
-  {
-    "provincia_id": 78,
-    "jovenes_proporcion": 0.071396241842,
-    "jovenes_asistencia_escolar": 0.837627811861,
-    "personas_por_cuarto": 1.477978464,
-    "propietarios_vivienda_proporcion": 0.268374981662,
-    "provincia_nombre": "Santa Cruz"
-  },
-  {
-    "provincia_id": 82,
-    "jovenes_proporcion": 0.066958059963,
-    "jovenes_asistencia_escolar": 0.709593267882,
-    "personas_por_cuarto": 1.46310539321,
-    "propietarios_vivienda_proporcion": 0.153612554296,
-    "provincia_nombre": "Santa Fe"
-  },
-  {
-    "provincia_id": 86,
-    "jovenes_proporcion": 0.0845005640694,
-    "jovenes_asistencia_escolar": 0.613588972838,
-    "personas_por_cuarto": 1.74491303445,
-    "propietarios_vivienda_proporcion": 0.0418759316592,
-    "provincia_nombre": "Santiago del Estero"
-  },
-  {
-    "provincia_id": 90,
-    "jovenes_proporcion": 0.0779394664229,
-    "jovenes_asistencia_escolar": 0.726094390942,
-    "personas_por_cuarto": 1.65241868771,
-    "propietarios_vivienda_proporcion": 0.0844526208966,
-    "provincia_nombre": "Tucumán"
-  },
-  {
-    "provincia_id": 94,
-    "jovenes_proporcion": 0.0747612122165,
-    "jovenes_asistencia_escolar": 0.898212407992,
-    "personas_por_cuarto": 1.41672606584,
-    "propietarios_vivienda_proporcion": 0.252952048465,
-    "provincia_nombre": "Tierra del Fuego, Antártida e Islas del Atlántico Sur"
-  }
-][
-  {
-    "provincia_id": 2,
-    "jovenes_proporcion": 0.044348201876,
-    "jovenes_asistencia_escolar": 0.85840231562,
-    "personas_por_cuarto": 1.27472956415,
-    "propietarios_vivienda_proporcion": 0.298611292249,
-    "provincia_nombre": "Ciudad Autónoma de Buenos Aires"
-  },
-  {
-    "provincia_id": 6,
-    "jovenes_proporcion": 0.0670541035171,
-    "jovenes_asistencia_escolar": 0.780476002314,
-    "personas_por_cuarto": 1.5284089842,
-    "propietarios_vivienda_proporcion": 0.146203432353,
-    "provincia_nombre": "Buenos Aires"
-  },
-  {
-    "provincia_id": 10,
-    "jovenes_proporcion": 0.0823183661929,
-    "jovenes_asistencia_escolar": 0.793057894911,
-    "personas_por_cuarto": 1.55142772787,
-    "propietarios_vivienda_proporcion": 0.0816658159811,
-    "provincia_nombre": "Catamarca"
-  },
-  {
-    "provincia_id": 14,
-    "jovenes_proporcion": 0.0679599356398,
-    "jovenes_asistencia_escolar": 0.728568823903,
-    "personas_por_cuarto": 1.4483849618,
-    "propietarios_vivienda_proporcion": 0.214042252552,
-    "provincia_nombre": "Córdoba"
-  },
-  {
-    "provincia_id": 18,
-    "jovenes_proporcion": 0.0845641978853,
-    "jovenes_asistencia_escolar": 0.719400033358,
-    "personas_por_cuarto": 1.63908695494,
-    "propietarios_vivienda_proporcion": 0.108290981602,
-    "provincia_nombre": "Corrientes"
-  },
-  {
-    "provincia_id": 22,
-    "jovenes_proporcion": 0.0877149590764,
-    "jovenes_asistencia_escolar": 0.675676843629,
-    "personas_por_cuarto": 1.70771015862,
-    "propietarios_vivienda_proporcion": 0.0778754741317,
-    "provincia_nombre": "Chaco"
-  },
-  {
-    "provincia_id": 26,
-    "jovenes_proporcion": 0.0721300784902,
-    "jovenes_asistencia_escolar": 0.802788519144,
-    "personas_por_cuarto": 1.49950223552,
-    "propietarios_vivienda_proporcion": 0.194895842612,
-    "provincia_nombre": "Chubut"
-  },
-  {
-    "provincia_id": 30,
-    "jovenes_proporcion": 0.0729954999782,
-    "jovenes_asistencia_escolar": 0.724612622199,
-    "personas_por_cuarto": 1.48925884914,
-    "propietarios_vivienda_proporcion": 0.138062118623,
-    "provincia_nombre": "Entre Ríos"
-  },
-  {
-    "provincia_id": 34,
-    "jovenes_proporcion": 0.0923717656113,
-    "jovenes_asistencia_escolar": 0.749040267908,
-    "personas_por_cuarto": 1.74416049269,
-    "propietarios_vivienda_proporcion": 0.0857002344925,
-    "provincia_nombre": "Formosa"
-  },
-  {
-    "provincia_id": 38,
-    "jovenes_proporcion": 0.086700420462,
-    "jovenes_asistencia_escolar": 0.808037549678,
-    "personas_por_cuarto": 1.65304975056,
-    "propietarios_vivienda_proporcion": 0.108246005841,
-    "provincia_nombre": "Jujuy"
-  },
-  {
-    "provincia_id": 42,
-    "jovenes_proporcion": 0.0703713109537,
-    "jovenes_asistencia_escolar": 0.747248830474,
-    "personas_por_cuarto": 1.31646160006,
-    "propietarios_vivienda_proporcion": 0.167960696175,
-    "provincia_nombre": "La Pampa"
-  },
-  {
-    "provincia_id": 46,
-    "jovenes_proporcion": 0.0857595866228,
-    "jovenes_asistencia_escolar": 0.767308566036,
-    "personas_por_cuarto": 1.5532536941,
-    "propietarios_vivienda_proporcion": 0.123714282578,
-    "provincia_nombre": "La Rioja"
-  },
-  {
-    "provincia_id": 50,
-    "jovenes_proporcion": 0.0726516148733,
-    "jovenes_asistencia_escolar": 0.754519693516,
-    "personas_por_cuarto": 1.50932320712,
-    "propietarios_vivienda_proporcion": 0.176266720017,
-    "provincia_nombre": "Mendoza"
-  },
-  {
-    "provincia_id": 54,
-    "jovenes_proporcion": 0.0884255800464,
-    "jovenes_asistencia_escolar": 0.662597911897,
-    "personas_por_cuarto": 1.57213888457,
-    "propietarios_vivienda_proporcion": 0.105867906903,
-    "provincia_nombre": "Misiones"
-  },
-  {
-    "provincia_id": 58,
-    "jovenes_proporcion": 0.0753266118353,
-    "jovenes_asistencia_escolar": 0.788440698374,
-    "personas_por_cuarto": 1.51957263002,
-    "propietarios_vivienda_proporcion": 0.195358027014,
-    "provincia_nombre": "Neuquén"
-  },
-  {
-    "provincia_id": 62,
-    "jovenes_proporcion": 0.0753595502979,
-    "jovenes_asistencia_escolar": 0.771068816489,
-    "personas_por_cuarto": 1.48864134337,
-    "propietarios_vivienda_proporcion": 0.181129480042,
-    "provincia_nombre": "Río Negro"
-  },
-  {
-    "provincia_id": 66,
-    "jovenes_proporcion": 0.0864027153233,
-    "jovenes_asistencia_escolar": 0.752618387321,
-    "personas_por_cuarto": 1.72611008697,
-    "propietarios_vivienda_proporcion": 0.118468014703,
-    "provincia_nombre": "Salta"
-  },
-  {
-    "provincia_id": 70,
-    "jovenes_proporcion": 0.0760246969775,
-    "jovenes_asistencia_escolar": 0.726036657203,
-    "personas_por_cuarto": 1.61881139874,
-    "propietarios_vivienda_proporcion": 0.115091304225,
-    "provincia_nombre": "San Juan"
-  },
-  {
-    "provincia_id": 74,
-    "jovenes_proporcion": 0.0748051166987,
-    "jovenes_asistencia_escolar": 0.74077738953,
-    "personas_por_cuarto": 1.52368297695,
-    "propietarios_vivienda_proporcion": 0.159972266431,
-    "provincia_nombre": "San Luis"
-  },
-  {
-    "provincia_id": 78,
-    "jovenes_proporcion": 0.071396241842,
-    "jovenes_asistencia_escolar": 0.837627811861,
-    "personas_por_cuarto": 1.477978464,
-    "propietarios_vivienda_proporcion": 0.268374981662,
-    "provincia_nombre": "Santa Cruz"
-  },
-  {
-    "provincia_id": 82,
-    "jovenes_proporcion": 0.066958059963,
-    "jovenes_asistencia_escolar": 0.709593267882,
-    "personas_por_cuarto": 1.46310539321,
-    "propietarios_vivienda_proporcion": 0.153612554296,
-    "provincia_nombre": "Santa Fe"
-  },
-  {
-    "provincia_id": 86,
-    "jovenes_proporcion": 0.0845005640694,
-    "jovenes_asistencia_escolar": 0.613588972838,
-    "personas_por_cuarto": 1.74491303445,
-    "propietarios_vivienda_proporcion": 0.0418759316592,
-    "provincia_nombre": "Santiago del Estero"
-  },
-  {
-    "provincia_id": 90,
-    "jovenes_proporcion": 0.0779394664229,
-    "jovenes_asistencia_escolar": 0.726094390942,
-    "personas_por_cuarto": 1.65241868771,
-    "propietarios_vivienda_proporcion": 0.0844526208966,
-    "provincia_nombre": "Tucumán"
-  },
-  {
-    "provincia_id": 94,
-    "jovenes_proporcion": 0.0747612122165,
-    "jovenes_asistencia_escolar": 0.898212407992,
-    "personas_por_cuarto": 1.41672606584,
-    "propietarios_vivienda_proporcion": 0.252952048465,
-    "provincia_nombre": "Tierra del Fuego, Antártida e Islas del Atlántico Sur"
-  }
-]
+[{
+  "provincia_id": 2,
+  "jovenes_proporcion": 0.044348201876,
+  "jovenes_asistencia_escolar": 0.85840231562,
+  "personas_por_cuarto": 1.27472956415,
+  "propietarios_vivienda_proporcion": 0.298611292249,
+  "provincia_nombre": "Ciudad Autónoma de Buenos Aires"
+}, {
+  "provincia_id": 6,
+  "jovenes_proporcion": 0.0670541035171,
+  "jovenes_asistencia_escolar": 0.780476002314,
+  "personas_por_cuarto": 1.5284089842,
+  "propietarios_vivienda_proporcion": 0.146203432353,
+  "provincia_nombre": "Buenos Aires"
+}, {
+  "provincia_id": 10,
+  "jovenes_proporcion": 0.0823183661929,
+  "jovenes_asistencia_escolar": 0.793057894911,
+  "personas_por_cuarto": 1.55142772787,
+  "propietarios_vivienda_proporcion": 0.0816658159811,
+  "provincia_nombre": "Catamarca"
+}, {
+  "provincia_id": 14,
+  "jovenes_proporcion": 0.0679599356398,
+  "jovenes_asistencia_escolar": 0.728568823903,
+  "personas_por_cuarto": 1.4483849618,
+  "propietarios_vivienda_proporcion": 0.214042252552,
+  "provincia_nombre": "Córdoba"
+}, {
+  "provincia_id": 18,
+  "jovenes_proporcion": 0.0845641978853,
+  "jovenes_asistencia_escolar": 0.719400033358,
+  "personas_por_cuarto": 1.63908695494,
+  "propietarios_vivienda_proporcion": 0.108290981602,
+  "provincia_nombre": "Corrientes"
+}, {
+  "provincia_id": 22,
+  "jovenes_proporcion": 0.0877149590764,
+  "jovenes_asistencia_escolar": 0.675676843629,
+  "personas_por_cuarto": 1.70771015862,
+  "propietarios_vivienda_proporcion": 0.0778754741317,
+  "provincia_nombre": "Chaco"
+}, {
+  "provincia_id": 26,
+  "jovenes_proporcion": 0.0721300784902,
+  "jovenes_asistencia_escolar": 0.802788519144,
+  "personas_por_cuarto": 1.49950223552,
+  "propietarios_vivienda_proporcion": 0.194895842612,
+  "provincia_nombre": "Chubut"
+}, {
+  "provincia_id": 30,
+  "jovenes_proporcion": 0.0729954999782,
+  "jovenes_asistencia_escolar": 0.724612622199,
+  "personas_por_cuarto": 1.48925884914,
+  "propietarios_vivienda_proporcion": 0.138062118623,
+  "provincia_nombre": "Entre Ríos"
+}, {
+  "provincia_id": 34,
+  "jovenes_proporcion": 0.0923717656113,
+  "jovenes_asistencia_escolar": 0.749040267908,
+  "personas_por_cuarto": 1.74416049269,
+  "propietarios_vivienda_proporcion": 0.0857002344925,
+  "provincia_nombre": "Formosa"
+}, {
+  "provincia_id": 38,
+  "jovenes_proporcion": 0.086700420462,
+  "jovenes_asistencia_escolar": 0.808037549678,
+  "personas_por_cuarto": 1.65304975056,
+  "propietarios_vivienda_proporcion": 0.108246005841,
+  "provincia_nombre": "Jujuy"
+}, {
+  "provincia_id": 42,
+  "jovenes_proporcion": 0.0703713109537,
+  "jovenes_asistencia_escolar": 0.747248830474,
+  "personas_por_cuarto": 1.31646160006,
+  "propietarios_vivienda_proporcion": 0.167960696175,
+  "provincia_nombre": "La Pampa"
+}, {
+  "provincia_id": 46,
+  "jovenes_proporcion": 0.0857595866228,
+  "jovenes_asistencia_escolar": 0.767308566036,
+  "personas_por_cuarto": 1.5532536941,
+  "propietarios_vivienda_proporcion": 0.123714282578,
+  "provincia_nombre": "La Rioja"
+}, {
+  "provincia_id": 50,
+  "jovenes_proporcion": 0.0726516148733,
+  "jovenes_asistencia_escolar": 0.754519693516,
+  "personas_por_cuarto": 1.50932320712,
+  "propietarios_vivienda_proporcion": 0.176266720017,
+  "provincia_nombre": "Mendoza"
+}, {
+  "provincia_id": 54,
+  "jovenes_proporcion": 0.0884255800464,
+  "jovenes_asistencia_escolar": 0.662597911897,
+  "personas_por_cuarto": 1.57213888457,
+  "propietarios_vivienda_proporcion": 0.105867906903,
+  "provincia_nombre": "Misiones"
+}, {
+  "provincia_id": 58,
+  "jovenes_proporcion": 0.0753266118353,
+  "jovenes_asistencia_escolar": 0.788440698374,
+  "personas_por_cuarto": 1.51957263002,
+  "propietarios_vivienda_proporcion": 0.195358027014,
+  "provincia_nombre": "Neuquén"
+}, {
+  "provincia_id": 62,
+  "jovenes_proporcion": 0.0753595502979,
+  "jovenes_asistencia_escolar": 0.771068816489,
+  "personas_por_cuarto": 1.48864134337,
+  "propietarios_vivienda_proporcion": 0.181129480042,
+  "provincia_nombre": "Río Negro"
+}, {
+  "provincia_id": 66,
+  "jovenes_proporcion": 0.0864027153233,
+  "jovenes_asistencia_escolar": 0.752618387321,
+  "personas_por_cuarto": 1.72611008697,
+  "propietarios_vivienda_proporcion": 0.118468014703,
+  "provincia_nombre": "Salta"
+}, {
+  "provincia_id": 70,
+  "jovenes_proporcion": 0.0760246969775,
+  "jovenes_asistencia_escolar": 0.726036657203,
+  "personas_por_cuarto": 1.61881139874,
+  "propietarios_vivienda_proporcion": 0.115091304225,
+  "provincia_nombre": "San Juan"
+}, {
+  "provincia_id": 74,
+  "jovenes_proporcion": 0.0748051166987,
+  "jovenes_asistencia_escolar": 0.74077738953,
+  "personas_por_cuarto": 1.52368297695,
+  "propietarios_vivienda_proporcion": 0.159972266431,
+  "provincia_nombre": "San Luis"
+}, {
+  "provincia_id": 78,
+  "jovenes_proporcion": 0.071396241842,
+  "jovenes_asistencia_escolar": 0.837627811861,
+  "personas_por_cuarto": 1.477978464,
+  "propietarios_vivienda_proporcion": 0.268374981662,
+  "provincia_nombre": "Santa Cruz"
+}, {
+  "provincia_id": 82,
+  "jovenes_proporcion": 0.066958059963,
+  "jovenes_asistencia_escolar": 0.709593267882,
+  "personas_por_cuarto": 1.46310539321,
+  "propietarios_vivienda_proporcion": 0.153612554296,
+  "provincia_nombre": "Santa Fe"
+}, {
+  "provincia_id": 86,
+  "jovenes_proporcion": 0.0845005640694,
+  "jovenes_asistencia_escolar": 0.613588972838,
+  "personas_por_cuarto": 1.74491303445,
+  "propietarios_vivienda_proporcion": 0.0418759316592,
+  "provincia_nombre": "Santiago del Estero"
+}, {
+  "provincia_id": 90,
+  "jovenes_proporcion": 0.0779394664229,
+  "jovenes_asistencia_escolar": 0.726094390942,
+  "personas_por_cuarto": 1.65241868771,
+  "propietarios_vivienda_proporcion": 0.0844526208966,
+  "provincia_nombre": "Tucumán"
+}, {
+  "provincia_id": 94,
+  "jovenes_proporcion": 0.0747612122165,
+  "jovenes_asistencia_escolar": 0.898212407992,
+  "personas_por_cuarto": 1.41672606584,
+  "propietarios_vivienda_proporcion": 0.252952048465,
+  "provincia_nombre": "Tierra del Fuego, Antártida e Islas del Atlántico Sur"
+}]
