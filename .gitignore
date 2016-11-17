@@ -15,7 +15,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -88,3 +87,5 @@ ENV/
 # Rope project settings
 .ropeproject
 .DS_Store
+
+los-datos-y-vos/node_modules
