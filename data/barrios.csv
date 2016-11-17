@@ -1,54 +1,54 @@
-barrio_nombre,comuna_id
-CHACARITA,15
-PATERNAL,15
-VILLA CRESPO,15
-VILLA DEL PARQUE,11
-ALMAGRO,05
-CABALLITO,06
-Dique 3,01
-VILLA SANTA RITA,11
-MONTE CASTRO,10
-VILLA REAL,10
-FLORES,07
-FLORESTA,10
-CONSTITUCION,01
-SAN CRISTOBAL,03
-BOEDO,05
-VELEZ SARSFIELD,10
-VILLA LURO,10
-PARQUE PATRICIOS,04
-MATADEROS,09
-VILLA LUGANO,08
-ESCOLLERA EXTERIOR,00
-SAN TELMO,01
-SAAVEDRA,12
-COGHLAN,12
-VILLA URQUIZA,12
-COLEGIALES,13
-BALVANERA,03
-Dique 4,01
-VILLA GRAL. MITRE,11
-Dique 1,01
-PARQUE CHAS,15
-AGRONOMIA,15
-VILLA ORTUZAR,15
-BARRACAS,04
-PARQUE AVELLANEDA,09
-PARQUE CHACABUCO,07
-NUEVA POMPEYA,04
-PALERMO,14
-VILLA RIACHUELO,08
-VILLA SOLDATI,08
-VILLA PUEYRREDON,12
-VILLA DEVOTO,11
-LINIERS,09
-VERSALLES,10
-PUERTO MADERO,01
-MONSERRAT,01
-SAN NICOLAS,01
-BELGRANO,13
-RECOLETA,02
-RETIRO,01
-Nuñez,13
-BOCA,04
-Dique 2,01
+barrio_nombre,comuna_id,comuna_nombre
+Chacarita,02015,Comuna 15
+Paternal,02015,Comuna 15
+Villa Crespo,02015,Comuna 15
+Villa Del Parque,02011,Comuna 11
+Almagro,02005,Comuna 5
+Caballito,02006,Comuna 6
+Dique 3,02001,Comuna 1
+Villa Santa Rita,02011,Comuna 11
+Monte Castro,02010,Comuna 10
+Villa Real,02010,Comuna 10
+Flores,02007,Comuna 7
+Floresta,02010,Comuna 10
+Constitucion,02001,Comuna 1
+San Cristobal,02003,Comuna 3
+Boedo,02005,Comuna 5
+Velez Sarsfield,02010,Comuna 10
+Villa Luro,02010,Comuna 10
+Parque Patricios,02004,Comuna 4
+Mataderos,02009,Comuna 9
+Villa Lugano,02008,Comuna 8
+Escollera Exterior,02000,
+San Telmo,02001,Comuna 1
+Saavedra,02012,Comuna 12
+Coghlan,02012,Comuna 12
+Villa Urquiza,02012,Comuna 12
+Colegiales,02013,Comuna 13
+Balvanera,02003,Comuna 3
+Dique 4,02001,Comuna 1
+Villa Gral. Mitre,02011,Comuna 11
+Dique 1,02001,Comuna 1
+Parque Chas,02015,Comuna 15
+Agronomia,02015,Comuna 15
+Villa Ortuzar,02015,Comuna 15
+Barracas,02004,Comuna 4
+Parque Avellaneda,02009,Comuna 9
+Parque Chacabuco,02007,Comuna 7
+Nueva Pompeya,02004,Comuna 4
+Palermo,02014,Comuna 14
+Villa Riachuelo,02008,Comuna 8
+Villa Soldati,02008,Comuna 8
+Villa Pueyrredon,02012,Comuna 12
+Villa Devoto,02011,Comuna 11
+Liniers,02009,Comuna 9
+Versalles,02010,Comuna 10
+Puerto Madero,02001,Comuna 1
+Monserrat,02001,Comuna 1
+San Nicolas,02001,Comuna 1
+Belgrano,02013,Comuna 13
+Recoleta,02002,Comuna 2
+Retiro,02001,Comuna 1
+NuñEz,02013,Comuna 13
+Boca,02004,Comuna 4
+Dique 2,02001,Comuna 1
