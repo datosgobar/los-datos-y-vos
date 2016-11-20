@@ -9,7 +9,7 @@
 	</select>
 	<select id="departmentId" 
 		ng-model="studentData.departmentId"
-		ng-options="department.departamento_id as department.departamento_nombre for department in departmentList">
+		ng-options="department as department.name for department in departmentList track by department.id">
 		<option value="">¿D&oacute;nde viv&iacute;s?</option>
 	</select>
 <div>

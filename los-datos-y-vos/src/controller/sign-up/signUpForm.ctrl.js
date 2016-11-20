@@ -9,9 +9,15 @@ angular.module('app').controller('signUpFormCtrl', function($scope, $state, $fil
     };
 
     var updateDepartmentList = function() {
-    	LocationIndicatorSvc.getDepartmentList().then(function(data) {
-    		$scope.departmentList = $filter('filter')(data, {provincia_id: $scope.studentData.provinceId}, true);
-	    });
+        if($scope.studentData.provinceId == 2) { // CABA
+            LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
+                $scope.departmentList = data;
+            });
+        } else {
+        	LocationIndicatorSvc.getDepartmentList().then(function(data) {
+                $scope.departmentList = $filter('filter')(data, {provinceId: $scope.studentData.provinceId}, true);
+    	    });
+        }
     };
 
     $scope.$watch("studentData.provinceId", function(){
@@ -26,6 +32,7 @@ angular.module('app').controller('signUpFormCtrl', function($scope, $state, $fil
 
     $scope.saveStudentData = function() {
     	StudentDataSvc.updateStudentData($scope.studentData);
+        $state.go("root.quizSection1.question", { pageNumber: 1});
     };
     
     activate();

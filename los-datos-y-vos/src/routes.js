@@ -6,45 +6,72 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
         enabled: true
     });
 
-    $stateProvider        
-        .state('root',{
-            url: '',
-            abstract: true,
-            views: {
-                'header': {
-                    templateUrl: 'html/default/header.html',
-                    controller: 'HeaderCtrl'
-                }
+    $stateProvider.state('root',{
+        url: '',
+        abstract: true,
+        views: {
+            'header': {
+                templateUrl: 'html/default/header.html',
+                controller: 'HeaderCtrl'
             }
-        })
-        .state('root.welcome', {
-            url: '/welcome',
-            views: {
-                'container@': {
-                    templateUrl: 'html/welcome/index.html',
-                    controller: 'welcomeCtrl'
-                }
+        }
+    });
+
+    $stateProvider.state('root.welcome', {
+        url: '/bienvenido',
+        views: {
+            'container@': {
+                templateUrl: 'html/welcome/index.html',
+                controller: 'welcomeCtrl'
             }
-        })
-        .state('root.signUpForm', {
-            url: '/signUp',
-            views: {
-                'container@': {
-                    templateUrl: 'html/sign-up/index.html',
-                    controller: 'signUpFormCtrl'
-                }
+        }
+    });
+
+    $stateProvider.state('root.signUpForm', {
+        url: '/registro',
+        views: {
+            'container@': {
+                templateUrl: 'html/sign-up/index.html',
+                controller: 'signUpFormCtrl'
             }
-        })
-        .state('root.signUpForm.classCode', {
-            url: '/classCode',
-            templateUrl: 'html/sign-up/class-code.html'
-        })
-        .state('root.signUpForm.studentData', {
-            url: '/studentData',
-            templateUrl: 'html/sign-up/student-data.html'
-        });
-       
+        }
+    });
+
+    $stateProvider.state('root.signUpForm.classCode', {
+        url: '/codigo-clase',
+        templateUrl: 'html/sign-up/class-code.html'
+    });
+
+    $stateProvider.state('root.signUpForm.studentData', {
+        url: '/informacion',
+        templateUrl: 'html/sign-up/student-data.html'
+    });
+        
+    $stateProvider.state('root.quizSection1', {
+        url: '/primer-paso',
+        data: {
+            stepNumber: 1
+        },
+        views: {
+            'container@': {
+                templateUrl: 'html/quiz-section-1/index.html',
+            }
+        }
+    });
+
+    $stateProvider.state('root.quizSection1.result', {
+        url: '/resultados',
+        templateUrl: 'html/quiz-section-1/result.html'
+    });
+
+    $stateProvider.state('root.quizSection1.question', {
+        url: '/{pageNumber}',
+        templateUrl: 'html/quiz-section-1/question.html',
+        controller: 'QuizSection1Ctrl'
+    });
+          
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('/welcome');
+    $urlRouterProvider.otherwise('/bienvenido');
+
 });
