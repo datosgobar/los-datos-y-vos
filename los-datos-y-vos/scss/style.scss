@@ -1,0 +1,31 @@
+
+//Helpers
+@import 'helpers/mixins';
+@import 'helpers/variables';
+@import '../node_modules/flint-gs/stylesheets/_flint';
+@include _(foundation);
+
+//base
+@import 'base/reset';
+@import 'base/buttons';
+@import 'base/typography';
+
+//Animations
+@import 'animations/animations';
+
+//Global Styles
+@import 'base/global-styles';
+
+//Includes
+@import 'includes/header';
+@import 'includes/footer';
+
+//Pages
+//@import 'pages/home';
+
+//Components
+//@import 'components/intro';
+
+.test-hello {
+    padding: 10px;
+}

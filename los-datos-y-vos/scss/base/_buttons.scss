@@ -1,0 +1,36 @@
+
+.btn {
+    display: inline-block;
+    padding: 9px 20px;
+    background: $accentColor;
+    border: 1px solid #DC5605;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+    border: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $type__body;
+    font-weight: 700;
+
+    transition: all .5s ease;
+
+    //Default button hover
+	&:hover {
+		background: darken($accentColor, 20%);
+		box-shadow: none;
+        color: #fff;
+	}
+
+}
+
+.btn-wrapper {
+	@include _(less than laptop) {
+		text-align: center;
+	}
+}

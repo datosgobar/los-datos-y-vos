@@ -1,0 +1,258 @@
+
+
+.site-content {
+	padding-top: 58px;
+
+	@include _(greater than tablet) {
+		padding-top: 78px;
+	}
+
+}
+
+.out-wrapper {
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	zoom: 1;
+	float: none;
+}
+
+.content-wrapper {
+	@include _(16 12 8 4);
+	overflow: hidden;
+}
+
+.wrapper {
+	overflow: hidden;
+	zoom: 1;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+    @include _(container, clear);
+	padding-left:  15px;
+	padding-right: 15px;
+
+	      @include _(greater than tablet) {
+	    		padding-left:  60px;
+	    		padding-right: 60px;
+	    	}
+
+	      @include _(greater than laptop) {
+	    		padding-left:  70px;
+	    		padding-right: 70px;
+	      }
+
+    		@include _(from laptop to desktop ) {
+    			//max-width: 1084px;
+    		}
+
+}
+
+.accentColor {
+	color: $accentColor;
+}
+
+//This adds space for heading scrolled
+.anchor{
+   display:block;
+   height: 80px; /* this is the height of your header */
+   margin-top: -80px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
+
+.svg-fix {
+	position: relative;
+	display: inline-block;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+
+//layout
+.section {
+	margin-bottom: 75px;
+
+	&__heading {
+		margin-bottom: 20px;
+		position: relative;
+
+		//Add line between headings
+		&:before, &:after {
+			position: absolute;
+			top: 51%;
+			overflow: hidden;
+			width: 36%;
+			height: 1px;
+			content: '\a0';
+			background-color: #d8d8d8;
+		}
+			@include _(less than laptop) {
+				&:before, &:after {
+					display: none;
+				}
+			}
+		&:before {
+			//margin-left: -52%;
+			left: 0;
+			text-align: right;
+		}
+
+		&:after {
+			//margin-left: 2%;
+			right: 0;
+		}
+	}
+
+	&__text {
+		max-width: 790px;
+		font-family: $type__body;
+		font-size: 20px;
+		@include fp(font-size, 16, 18);
+		color: #6F7E7D;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+}
+
+ul {
+	padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+//Alignment
+.main-centered-text {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.mrg-side-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mrg-0 {
+	margin: 0 !important;
+}
+
+//Dividers
+
+hr.divider {
+	height: 3px;
+	max-width: 85px;
+	width: 100%;
+	background: $accentColor;
+	border: 0;
+	margin-bottom: 10px;
+	display: inline-block;
+
+		&--full-width {
+			max-width: none;
+			margin: 0;
+			height: 1px;
+			display: block;
+		}
+}
+
+hr.divider--dark {
+	background: rgba(255, 255, 255, .24);
+	border: 0;
+	height: 1px;
+	margin: 30px auto;
+	width: 100%;
+}
+
+//Arrows :)
+
+.arrow {
+	position: relative;
+
+	&--gray {
+		background: #EAEAEA;
+		position: relative;
+
+			&:after {
+				right: 100%;
+				top: 50%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(234, 234, 234, 0);
+				border-right-color: #EAEAEA;
+				border-width: 37px;
+				margin-top: -37px;
+			}
+	}
+}
+
+//Header and Footer
+header,
+footer {
+	a {
+		text-decoration: none;
+	}
+}
+
+//Social
+.social__icons {
+	margin-right: 10px;
+	vertical-align: sub;
+	max-width: 22px;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+//Desktop + Mobile hidden class
+
+.hidden-desktop {
+	display: none;
+
+	@include _(less than laptop) {
+		display: initial;
+	}
+}
+
+.hidden-mobile {
+	display: initial;
+
+	@include _(less than laptop) {
+		display: none !important;
+	}
+}
+
+a {
+	color: $accentColor;
+	font-family: inherit;
+
+		&:hover {
+			color: darken($accentColor, 10%);
+		}
+}
