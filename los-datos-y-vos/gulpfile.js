@@ -14,6 +14,12 @@ gulp.task('js', function () {
     	.pipe(gulp.dest('.'));
 });
 
+gulp.task('sass', function(){
+  return gulp.src('/scss/style.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('/css'))
+});
+
 gulp.task('watch', function () {
 	gulp.watch('src/**/*.js', function() {
 		gulp.src(['src/**/module.js', 'src/**/*.js']).pipe(concat('app.js')).pipe(gulp.dest('.'));
