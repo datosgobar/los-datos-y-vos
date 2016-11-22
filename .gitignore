@@ -89,3 +89,4 @@ ENV/
 .DS_Store
 
 los-datos-y-vos/node_modules
+templates.js

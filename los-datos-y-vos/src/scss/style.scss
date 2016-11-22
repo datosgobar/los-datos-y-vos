@@ -2,7 +2,7 @@
 //Helpers
 @import 'helpers/mixins';
 @import 'helpers/variables';
-@import '../node_modules/flint-gs/stylesheets/_flint';
+@import '../../node_modules/flint-gs/stylesheets/_flint';
 @include _(foundation);
 
 //base
