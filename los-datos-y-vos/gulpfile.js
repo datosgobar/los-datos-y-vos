@@ -24,10 +24,12 @@ const paths = {
   styles: `${root}/scss/**/*.scss`,
   templates: `${root}/**/*.html`,
   modules: [
-    'angular/lib/angular.min.js',
+    'angular/angular.js',
     'angular-animate/angular-animate.js',
     'angular-ui-router/release/angular-ui-router.js',
-    'angular-loading-bar/build/loading-bar.min.js'
+    'angular-translate/dist/angular-translate.js',
+    'angular-loading-bar/build/loading-bar.min.js',
+    'angularjs-slider/dist/rzslider.js'
   ],
   static: [
     `${root}/index.html`,

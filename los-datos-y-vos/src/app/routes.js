@@ -54,20 +54,20 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
         },
         views: {
             'container@': {
-                templateUrl: 'html/quiz-section-1/index.html',
+                templateUrl: 'html/quiz/index.html',
             }
         }
     });
 
     $stateProvider.state('root.quizSection1.result', {
         url: '/resultados',
-        templateUrl: 'html/quiz-section-1/result.html'
+        templateUrl: 'html/quiz/section1-result.html'
     });
 
     $stateProvider.state('root.quizSection1.question', {
         url: '/{pageNumber}',
-        templateUrl: 'html/quiz-section-1/question.html',
-        controller: 'QuizSection1Ctrl'
+        templateUrl: 'html/quiz/question.html',
+        controller: 'QuizCtrl'
     });
           
     // catch all route

@@ -15,7 +15,7 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
         $http.get("data/indicadores_departamento.json").success(function(data) {
             var list = []; 
             angular.forEach(data, function(element) {
-                list.push({id: element.departamento_id, name: element.departamento_nombre, provinceId: element.provincia_id});
+                list.push({id: element.departamento_id, name: element.departamento_nombre != "" ? element.departamento_nombre : "Blank", provinceId: element.provincia_id});
             });
             defer.resolve($filter('orderBy')(list, 'name'));
         }).catch(function(data) {

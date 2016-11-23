@@ -1,4 +1,4 @@
-angular.module('app').controller('QuizSection1Ctrl', function($scope, $state, $stateParams, EventBusSvc, StudentDataSvc, QuizSvc) {
+angular.module('app').controller('QuizCtrl', function($scope, $state, $stateParams, EventBusSvc, StudentDataSvc, QuizSvc) {
     
     $scope.studentData = StudentDataSvc.getStudentData();
     $scope.sectionData = QuizSvc.getSectionData($state.current.data.stepNumber);
