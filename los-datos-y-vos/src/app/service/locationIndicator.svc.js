@@ -3,7 +3,11 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
     var getProvinceList = function() {
         var defer = $q.defer();
         $http.get("data/indicadores_provincia.json").success(function(data) {
-            defer.resolve(data);
+            var list = []; 
+            angular.forEach(data, function(element) {
+                list.push({id: element.provincia_id, name: element.provincia_nombre});
+            });
+            defer.resolve($filter('orderBy')(list, 'name'));
         }).catch(function(data) {
             defer.reject(data);
         });

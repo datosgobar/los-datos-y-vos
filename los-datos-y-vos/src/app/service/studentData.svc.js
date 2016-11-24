@@ -7,7 +7,8 @@ angular.module('app').factory('StudentDataSvc', function() {
     }
 	
     var clearStudentData = function() {
-        localStorage.setItem("studentData", JSON.stringify({}));
+        localStorage.removeItem("studentData");
+        studentData = {};
     };
 
     var getStudentData = function() {

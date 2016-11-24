@@ -7,7 +7,8 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
         switch ($state.current.name) {
             case 'root.welcome':
                 StudentDataSvc.clearStudentData();
-            break;
+                $scope.studentData = StudentDataSvc.getStudentData();
+                break;
             case 'root.signUpForm.studentData':
             	EventBusSvc.broadcast('updateStep', {
                     name: 'Ingreso datos', 

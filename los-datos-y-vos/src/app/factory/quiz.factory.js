@@ -2,6 +2,7 @@ angular.module('app').factory('QuizFactory', function() {
 
     var quiz = {
         1: {
+            id: "section1",
             title: "Primer Paso",
             pages: {
                 1: {
@@ -9,17 +10,17 @@ angular.module('app').factory('QuizFactory', function() {
                     nextPage: 2,
                     questions: [
                         {
-                            id: 1,
+                            id: "youngProportion",
                             type: "slider",
                             text: "1. En estos lugares que te detallamos, y teniendo en cuenta todas las personas que viven ahí, ¿qué porcentaje crees que son chicos de entre 15 y 18 años?",
                             options: [
                                 {
-                                    id: "a",
-                                    text: "¿Tu comuna?"
+                                    id: "department",
+                                    textKey: "YOUR_DEPARTMENT"
                                 },
                                 {
-                                    id: "b",
-                                    text: "¿La Ciudad de Buenos Aires?"
+                                    id: "province",
+                                    textKey: "YOUR_PROVINCE"
                                 }
                             ]
                         }
@@ -30,17 +31,17 @@ angular.module('app').factory('QuizFactory', function() {
                     nextPage: false,
                     questions: [
                         {
-                            id: 2,
+                            id: "schoolAttendance",
                             type: "slider",
                             text: "Contanos qué porcentaje de chicos de entre 15 y 18 años crees que van a la escuela en:",
                             options: [
                                 {
-                                    id: "a",
-                                    text: "¿Tu comuna?"
+                                    id: "department",
+                                    textKey: "YOUR_DEPARTMENT"
                                 },
                                 {
-                                    id: "b",
-                                    text: "¿La Ciudad de Buenos Aires?"
+                                    id: "province",
+                                    textKey: "YOUR_PROVINCE"
                                 }
                             ]
                         }
