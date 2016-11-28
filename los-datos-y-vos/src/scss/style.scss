@@ -17,16 +17,12 @@
 //Global Styles
 @import 'base/global-styles';
 
+//Components
+@import 'components/inputs';
+
 //Includes
 @import 'includes/header';
 @import 'includes/footer';
 
-//Pages
-//@import 'pages/home';
-
-//Components
-//@import 'components/intro';
-
-.test-hello {
-    padding: 10px;
-}
+//Slide General Styles
+@import 'slides-general/slides';

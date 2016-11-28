@@ -1,9 +1,11 @@
-<div>
-	<p>
-		Escrib&iacute; el c&oacute;digo de la clase que te dio tu profe.
-	</p>
-	<input type="text" ng-model="studentData.classCode" placeholder="XXXX" />
-<div>
-<button ng-click="saveClassCode()" ng-disabled="!studentData.classCode">
-	Siguiente
-</button>
+<div class="code-slide">
+	<div class="center">
+		<p class="code-slide__text">
+			Escrib&iacute; el c&oacute;digo de la clase que te dio tu profe.
+		</p>
+		<input type="text" class="code-slide__input" ng-model="studentData.classCode" placeholder="XXXX" />
+	<div>
+	<button ng-click="saveClassCode()" ng-disabled="!studentData.classCode" class="btn btn--alternative">
+		Siguiente
+	</button>
+</div>

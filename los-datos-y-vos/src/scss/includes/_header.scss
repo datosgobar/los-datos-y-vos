@@ -1,196 +1,23 @@
 
-.site-header {
-    padding-bottom: 3px;
-    //height: 40px;
-    position: fixed;
-    width: 100%;
-    //background-color: rgba(0, 0, 0, 1);
-    z-index: 101;
-    transition: background-color .7s;
-
-    &.scrolled {
-        background-color: rgba(16, 53, 97, 0.95);
-    }
-
-
-
-        // @include _(greater than tablet) {
-        //
-        //     //If you scroll the navbar gets darker and the logo smaller :)
-        //     &.scrolled {
-        //         background-color: rgba(16, 53, 97, 0.95);
-        //     }
-        // }
-
-}
-
-.top-navigation {
+.header {
 
     &__container {
-        @include _(greater than tablet) {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &.open {
-        background-color: rgba(16, 53, 97, 0.98);
-    }
-}
-
-.logo {
-    float: left;
-
-        object, img {
-            max-width: 60px;
-            transition: max-width .7s;
-
-            @include _(greater than tablet) {
-                max-width: 95px;
-                //margin-top: 6px;
-            }
-        }
-
-        .scrolled & {
-            object, img {
-                max-width: 60px;
-            }
-        }
-
-        h1 {
-            line-height: 1;
-            margin-bottom: 0;
-        }
-
-        a {
-            font-size: 20px;
-            font-family: 'montserratultra_light';
-            color: #fff;
-
-            @include _(greater than tablet) {
-                font-size: 29px;
-                //max-width: 190px;
-            }
-
-            span {
-                color: $accentColor;
-            }
-        }
-}
-
-
-
-.top-menu {
-    //padding-top: 15px;
-    float: right;
-    align-self: center;
-
-        li {
-            list-style: none;
-            margin-bottom: 35px;
-        }
-
-    @include _(greater than tablet) {
-        li {
-            float: left;
-            margin-right: 20px;
-            list-style: none;
-            margin-bottom: 0;
-        }
-
-        li:last-of-type {
-            margin-right: 0;
-        }
+    &__item--1 {
+        margin-right: auto;
     }
 
-    @include _(less than laptop) {
-        padding-top: 25px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
-        position: absolute;
-        right: 0;
-        background-color: rgba(16, 53, 97, 0.99);
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        //max-width: 220px;
-        width: 100%;
-        z-index: 101;
-        margin-top: 52px;
-        align-self: none;
-
-
-            .open & {
-                display: block;
-                opacity: 1;
-                height: auto;
-                -webkit-transition: all .3s ease .15s;
-                transition: all .3s ease .15s;
-            }
+    &__item--2 {
+        margin: auto;
+        text-align: center;
     }
 
-}
-
-//Hamburger Menu
-button.nav-toggle {
-    color: #fff;
-    font-size: 0.75rem;
-    line-height: 1;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    display: inline;
-    float: right;
-    position: relative;
-    z-index: 102;
-    outline: 0;
-    margin-top: 20px;
-
-        @include _(greater than tablet) {
-            display: none;
-        }
-}
-
-.nav-toggle {
-    cursor: pointer;
-    padding: 10px 35px 16px 0px;
-}
-
-.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-    cursor: pointer;
-    height: 2px;
-    width: 28px;
-    background: #fff;
-    position: absolute;
-    display: block;
-    content: '';
-    border-radius: 5px;
-}
-
-.nav-toggle span:before  {
-    top: -8px;
-}
-
-.nav-toggle span:after {
-    bottom: -8px;
-}
-
-//Hamburger animation
-.open {
-    .nav-toggle span {
-      background-color: transparent;
+    &__item--3 {
+        margin-left: auto;
     }
-    .nav-toggle span:before, .nav-toggle span:after {
-      top: 0;
-    }
-    .nav-toggle span:before {
-      transform: rotate(45deg);
-    }
-    .nav-toggle span:after {
-      transform: rotate(-45deg);
-    }
+
 }

@@ -36,24 +36,20 @@
 	padding-left:  15px;
 	padding-right: 15px;
 
-	      @include _(greater than tablet) {
-	    		padding-left:  60px;
-	    		padding-right: 60px;
-	    	}
+  	@include _(greater than tablet) {
+		padding-left:  60px;
+		padding-right: 60px;
+	}
 
-	      @include _(greater than laptop) {
-	    		padding-left:  70px;
-	    		padding-right: 70px;
-	      }
-
-    		@include _(from laptop to desktop ) {
-    			//max-width: 1084px;
-    		}
+	@include _(greater than laptop) {
+		padding-left:  70px;
+		padding-right: 70px;
+	}
 
 }
 
 .accentColor {
-	color: $accentColor;
+	color: $primaryColor;
 }
 
 //This adds space for heading scrolled
@@ -138,7 +134,7 @@ img {
 
 //Alignment
 .main-centered-text {
-	max-width: 1200px;
+	max-width: 940px;
 	margin-right: auto;
 	margin-left: auto;
 	float: none;
@@ -164,7 +160,7 @@ hr.divider {
 	height: 3px;
 	max-width: 85px;
 	width: 100%;
-	background: $accentColor;
+	background: $primaryColor;
 	border: 0;
 	margin-bottom: 10px;
 	display: inline-block;
@@ -249,10 +245,10 @@ footer {
 }
 
 a {
-	color: $accentColor;
+	color: $primaryColor;
 	font-family: inherit;
 
 		&:hover {
-			color: darken($accentColor, 10%);
+			color: darken($primaryColor, 10%);
 		}
 }

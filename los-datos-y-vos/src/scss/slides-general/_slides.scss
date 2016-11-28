@@ -1,0 +1,50 @@
+
+//Welcome Slide
+.welcome-slide {
+
+    &__img {
+        margin-top: 75px;//Fallback
+        @include fp(margin-top, 45, 95);
+        max-width: 100%;
+    }
+
+    &__subheading {
+        color: #4C0985;
+        font-size: 18px;//Fallback
+        @include fp(font-size, 14, 21);
+        font-family: $type__heading;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+//Code Slide
+.code-slide {
+    background-color: #4C0985;
+    background-image: url(../img/backgrounds/nodos.png);
+    background-image: url(../img/backgrounds/nodos.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+
+        &__text {
+            color: #FFCA00;
+            font-size: 22px; //fallback
+            @include fp(font-size, 19,34);
+            padding-top: 30vh;
+            margin-bottom: 25px;
+        }
+
+        &__input {
+            font-size: 55px;
+            background: transparent;
+            border: 0;
+            border-bottom: 3px solid #fff;
+            width: auto;
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            max-width: 145px;
+            margin-bottom: 100px;
+        }
+}

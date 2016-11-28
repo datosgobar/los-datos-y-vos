@@ -1,0 +1,22 @@
+
+input[type="text"],
+select {
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    padding: 17px 25px;
+    border-radius: 3px;
+
+        &:focus {
+            outline: 0;
+            border-bottom: 1px solid $primaryColor;
+
+        }
+}
+
+input[type="text"] {
+    &:focus {
+        outline: 0;
+        border-bottom: 1px solid $primaryColor;
+
+    }
+}

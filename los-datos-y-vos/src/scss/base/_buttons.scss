@@ -1,31 +1,51 @@
 
 .btn {
     display: inline-block;
-    padding: 9px 20px;
-    background: $accentColor;
-    border: 1px solid #DC5605;
+    padding: 9px 20px 5px;
+    background: $primaryColor;
+    border-radius: 100px;
+    border: 2px solid $primaryColor;
     color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    font-size: 15px;
-    box-shadow: none;
-    text-shadow: none;
+    font-size: 14px;
     cursor: pointer;
-    border: 0;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: $type__body;
+    font-family: $type__heading;
     font-weight: 700;
 
-    transition: all .5s ease;
+    transition: border .5s ease;
 
     //Default button hover
 	&:hover {
-		background: darken($accentColor, 20%);
-		box-shadow: none;
+		background: #FFBF00;
+		border: 2px solid #FFEAA8;
         color: #fff;
 	}
+
+    &--ghost {
+        background: transparent;
+        border: 1px solid #FFBF00;
+        color: #FFBF00;
+
+            &:hover {
+                background: #FFBF00;
+                color: #fff;
+            }
+    }
+
+    &--disabled {
+        background: #DBDFE4;
+        border: 2px solid #DBDFE4;
+    }
+
+    &--alternative {
+        background: #fff;
+        color: #4C0985;
+        border: 2px solid #fff;
+    }
 
 }
 
