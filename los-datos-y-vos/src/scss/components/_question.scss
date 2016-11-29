@@ -1,0 +1,19 @@
+
+.question {
+
+    &__text {
+        font-family: $type__body;
+        color: #4A4A4A;
+        font-size: 16px;
+        @include fp(font-size, 14, 18);
+        margin-bottom: 60px;
+    }
+
+    &__option {
+        font-family: $type__heading;
+        font-weight: 700;
+        color: #000;
+        font-size: 16px;
+        @include fp(font-size, 16, 18);
+    }
+}

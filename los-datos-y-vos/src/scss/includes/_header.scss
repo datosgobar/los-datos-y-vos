@@ -1,6 +1,9 @@
 
 .header {
 
+    margin-top: 20px;
+    margin-bottom: 100px;
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -9,6 +12,11 @@
 
     &__item--1 {
         margin-right: auto;
+        font-family: $type__heading;
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+        text-transform: uppercase;
     }
 
     &__item--2 {
@@ -18,6 +26,28 @@
 
     &__item--3 {
         margin-left: auto;
+    }
+
+    &__acerca {
+        font-family: $type__heading;
+        font-weight: 700;
+        color: #D0D6DF;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__code {
+        font-family: $type__heading;
+        font-weight: 700;
+        font-size: 16px;
+        color: $secondaryColor;
+    }
+
+    &__section {
+        font-family: $type__body;
+        font-weight: 600;
+        color: #4A4A4A;
+        font-size: 14px;
     }
 
 }

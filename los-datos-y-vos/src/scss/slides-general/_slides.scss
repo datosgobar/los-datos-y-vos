@@ -37,14 +37,43 @@
 
         &__input {
             font-size: 55px;
-            background: transparent;
-            border: 0;
-            border-bottom: 3px solid #fff;
+            background: transparent !important;
+            border: 0 !important;
+            border-bottom: 3px solid #fff !important;
             width: auto;
             display: inline-block;
             text-align: center;
             color: #fff;
-            max-width: 145px;
+            max-width: 211px;
             margin-bottom: 100px;
         }
+}
+
+//Student Info
+
+.student-info {
+
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 100%;
+        margin-bottom: 30px;
+
+        @include _(greater than tablet) {
+            width: 60%;
+        }
+    }
+
+    &__right {
+        width: 100%;
+        margin-bottom: 30px;
+
+        @include _(greater than tablet) {
+            width: 38%;
+        }
+    }
 }

@@ -29,7 +29,9 @@ const paths = {
     'angular-ui-router/release/angular-ui-router.js',
     'angular-translate/dist/angular-translate.js',
     'angular-loading-bar/build/loading-bar.min.js',
-    'angularjs-slider/dist/rzslider.js'
+    'angularjs-slider/dist/rzslider.js',
+    'classie.js',
+    'selectFx.js'
   ],
   static: [
     `${root}/index.html`,
@@ -63,7 +65,9 @@ gulp.task('modules', ['templates'], () => {
 
 gulp.task('styles', () => {
   return gulp.src(paths.styles)
+    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist + 'css/'));
 });
 
