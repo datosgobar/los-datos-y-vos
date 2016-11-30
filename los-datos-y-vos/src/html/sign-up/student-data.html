@@ -4,11 +4,11 @@
 		<input type="text" ng-model="studentData.name" placeholder="Nombre"  class="student-info__left"/>
 		<input type="text" ng-model="studentData.age" placeholder="Edad" class="student-info__right"/>
 		<select id="province"
-			ng-model="studentData.province" class="student-info__left cs-select cs-skin-border"
+			ng-model="studentData.province" class="student-info__left"
 			ng-options="province as province.name for province in provinceList track by province.name">
 			<option value="">Provincia</option>
 		</select>
-		<select id="department" class="student-info__right cs-select cs-skin-border"
+		<select id="department" class="student-info__right"
 			ng-model="studentData.department"
 			ng-options="department as department.name for department in departmentList track by department.name">
 			<option value="">¿D&oacute;nde viv&iacute;s?</option>

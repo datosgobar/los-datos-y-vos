@@ -35,17 +35,22 @@
             margin-bottom: 25px;
         }
 
-        &__input {
-            font-size: 55px;
-            background: transparent !important;
-            border: 0 !important;
-            border-bottom: 3px solid #fff !important;
-            width: auto;
-            display: inline-block;
-            text-align: center;
-            color: #fff;
-            max-width: 211px;
-            margin-bottom: 100px;
+}
+
+input.code-slide__input {
+    font-size: 55px;
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid #fff;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    max-width: 211px;
+    margin-bottom: 100px;
+
+        &:focus {
+            border-bottom: 3px solid #fff;
         }
 }
 
