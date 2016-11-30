@@ -29,9 +29,7 @@ const paths = {
     'angular-ui-router/release/angular-ui-router.js',
     'angular-translate/dist/angular-translate.js',
     'angular-loading-bar/build/loading-bar.min.js',
-    'angularjs-slider/dist/rzslider.js',
-    'classie.js',
-    'selectFx.js'
+    'angularjs-slider/dist/rzslider.js'
   ],
   static: [
     `${root}/index.html`,
