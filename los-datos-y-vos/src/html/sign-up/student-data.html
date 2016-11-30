@@ -1,18 +1,22 @@
-<div>
+<div class="student-info">
 	<h2>Antes de empezar</h2>
-	<input type="text" ng-model="studentData.name" placeholder="Nombre" />
-	<input type="text" ng-model="studentData.age" placeholder="Edad" />
-	<select id="province" 
-		ng-model="studentData.province"
-		ng-options="province as province.name for province in provinceList track by province.name">
-		<option value="">Provincia</option>
-	</select>
-	<select id="department" 
-		ng-model="studentData.department"
-		ng-options="department as department.name for department in departmentList track by department.name">
-		<option value="">¿D&oacute;nde viv&iacute;s?</option>
-	</select>
+	<div class="student-info__inputs">
+		<input type="text" ng-model="studentData.name" placeholder="Nombre"  class="student-info__left"/>
+		<input type="text" ng-model="studentData.age" placeholder="Edad" class="student-info__right"/>
+		<select id="province"
+			ng-model="studentData.province" class="student-info__left"
+			ng-options="province as province.name for province in provinceList track by province.name">
+			<option value="">Provincia</option>
+		</select>
+		<select id="department" class="student-info__right"
+			ng-model="studentData.department"
+			ng-options="department as department.name for department in departmentList track by department.name">
+			<option value="">¿D&oacute;nde viv&iacute;s?</option>
+		</select>
+	</div>
 <div>
-<button ng-click="saveStudentData()" ng-disabled="!studentData.name || !studentData.age || !studentData.department">
+
+
+<button ng-click="saveStudentData()" ng-disabled="!studentData.name || !studentData.age || !studentData.department" class="btn right--desktop center--mobile">
 	Siguiente
 </button>

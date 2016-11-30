@@ -1,22 +1,6 @@
 
 
-.site-content {
-	padding-top: 58px;
 
-	@include _(greater than tablet) {
-		padding-top: 78px;
-	}
-
-}
-
-.out-wrapper {
-	max-width: 95%;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-	zoom: 1;
-	float: none;
-}
 
 .content-wrapper {
 	@include _(16 12 8 4);
@@ -52,13 +36,6 @@
 	color: $primaryColor;
 }
 
-//This adds space for heading scrolled
-.anchor{
-   display:block;
-   height: 80px; /* this is the height of your header */
-   margin-top: -80px; /* this is again negative value of the height of your header */
-   visibility:hidden;
-}
 
 .svg-fix {
 	position: relative;
@@ -72,56 +49,6 @@
 		bottom: 0;
 		left: 0;
 	}
-}
-
-
-//layout
-.section {
-	margin-bottom: 75px;
-
-	&__heading {
-		margin-bottom: 20px;
-		position: relative;
-
-		//Add line between headings
-		&:before, &:after {
-			position: absolute;
-			top: 51%;
-			overflow: hidden;
-			width: 36%;
-			height: 1px;
-			content: '\a0';
-			background-color: #d8d8d8;
-		}
-			@include _(less than laptop) {
-				&:before, &:after {
-					display: none;
-				}
-			}
-		&:before {
-			//margin-left: -52%;
-			left: 0;
-			text-align: right;
-		}
-
-		&:after {
-			//margin-left: 2%;
-			right: 0;
-		}
-	}
-
-	&__text {
-		max-width: 790px;
-		font-family: $type__body;
-		font-size: 20px;
-		@include fp(font-size, 16, 18);
-		color: #6F7E7D;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		margin-bottom: 70px;
-	}
-
 }
 
 ul {
@@ -143,6 +70,12 @@ img {
 
 .center {
 	text-align: center;
+
+	&--mobile {
+		margin-left: auto;
+		margin-right: auto;
+    	display: block;
+	}
 }
 
 .mrg-side-auto {
@@ -154,31 +87,14 @@ img {
 	margin: 0 !important;
 }
 
-//Dividers
+.right {
+	float: right;
 
-hr.divider {
-	height: 3px;
-	max-width: 85px;
-	width: 100%;
-	background: $primaryColor;
-	border: 0;
-	margin-bottom: 10px;
-	display: inline-block;
-
-		&--full-width {
-			max-width: none;
-			margin: 0;
-			height: 1px;
-			display: block;
+	&--desktop {
+		@include _(greater than tablet) {
+			float: right;
 		}
-}
-
-hr.divider--dark {
-	background: rgba(255, 255, 255, .24);
-	border: 0;
-	height: 1px;
-	margin: 30px auto;
-	width: 100%;
+	}
 }
 
 //Arrows :)
@@ -215,17 +131,6 @@ footer {
 	}
 }
 
-//Social
-.social__icons {
-	margin-right: 10px;
-	vertical-align: sub;
-	max-width: 22px;
-}
-
-.no-wrap {
-	white-space: nowrap;
-}
-
 //Desktop + Mobile hidden class
 
 .hidden-desktop {
@@ -242,13 +147,4 @@ footer {
 	@include _(less than laptop) {
 		display: none !important;
 	}
-}
-
-a {
-	color: $primaryColor;
-	font-family: inherit;
-
-		&:hover {
-			color: darken($primaryColor, 10%);
-		}
 }

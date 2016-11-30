@@ -1,14 +1,14 @@
 <div ng-repeat="question in pageData.questions" class="{{question.type}}Question">
-	<div>{{question.text}}</div>
+	<div class="question__text">{{question.text}}</div>
 	<div ng-repeat="option in question.options" ng-init="initSliderValue(question.id, option.id)">
-		
-		<p>{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
+
+		<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
 		<p>
 			<rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider>
-		</p>	
+		</p>
 	</div>
 <div>
 
-<button ng-click="goToNextPage(pageData.nextPage)">
+<button ng-click="goToNextPage(pageData.nextPage)" class="btn center--mobile right--desktop">
 	Siguiente
 </button>
