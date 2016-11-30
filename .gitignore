@@ -90,3 +90,4 @@ ENV/
 
 los-datos-y-vos/node_modules
 templates.js
+data/departamentos/shp
