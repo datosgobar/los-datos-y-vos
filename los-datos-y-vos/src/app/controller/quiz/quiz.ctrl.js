@@ -28,7 +28,7 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
         return {
             key: $scope.keys[keyName]
         };
-    }
+    };
 
     $scope.initSliderValue = function(questionId, optionId) {
         if(!$scope.studentData[$scope.sectionData.id]) {
@@ -40,6 +40,6 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
         if(!$scope.studentData[$scope.sectionData.id][questionId][optionId]) {
             $scope.studentData[$scope.sectionData.id][questionId][optionId] = 0;
         }
-    }
+    };
 
 });
