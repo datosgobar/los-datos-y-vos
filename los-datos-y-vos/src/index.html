@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app" ng-controller="AppCtrl as appCtrl">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
         <title>Los datos y vos</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body ng-app="app">
+    <body class="{{ appCtrl.bodyClass }}">
 
         <header ui-view="header" id="header"></header>
 

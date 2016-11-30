@@ -19,6 +19,9 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
 
     $stateProvider.state('root.welcome', {
         url: '/bienvenido',
+        data: {
+            bodyClass: 'welcomeSlide',
+        },
         views: {
             'container@': {
                 templateUrl: 'html/welcome/index.html',
@@ -39,11 +42,17 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
 
     $stateProvider.state('root.signUpForm.classCode', {
         url: '/codigo-clase',
+        data: {
+            bodyClass: 'classCodeSlide',
+        },
         templateUrl: 'html/sign-up/class-code.html'
     });
 
     $stateProvider.state('root.signUpForm.studentData', {
         url: '/informacion',
+        data: {
+            bodyClass: 'studentDataSlide',
+        },
         templateUrl: 'html/sign-up/student-data.html'
     });
         
@@ -61,11 +70,17 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
 
     $stateProvider.state('root.quizSection1.result', {
         url: '/resultados',
+        data: {
+            bodyClass: 'section1ResultSlide',
+        },
         templateUrl: 'html/quiz/section1-result.html'
     });
 
     $stateProvider.state('root.quizSection1.question', {
         url: '/{pageNumber}',
+        data: {
+            bodyClass: 'section1QuestionSlide',
+        },
         templateUrl: 'html/quiz/question.html',
         controller: 'QuizCtrl'
     });
