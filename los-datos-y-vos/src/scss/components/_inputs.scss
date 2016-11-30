@@ -30,6 +30,7 @@ input[type="text"] {
 
 //Range Sliders
 .rzslider {
+    margin: 35px 0 90px 0;
 
     .rz-pointer {
         //background-color: rgba(255, 191, 0, .6);
@@ -62,6 +63,17 @@ input[type="text"] {
     .rz-bar {
         height: 2px;
         background: #FFEAA8;
+    }
+
+    //Number value
+    .rz-bubble {
+        bottom: -70px;
+        left: 50% !important;
+
+            &::after {
+                content: "%";
+                padding-left: 5px;
+            }
     }
 }
 
