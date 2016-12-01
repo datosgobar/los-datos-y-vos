@@ -31,7 +31,7 @@
             width: 49%;
         }
 
-        @include _(greater than mobile) {
+        @include _(greater than mobile ) {
             width: 47%;
         }
     }

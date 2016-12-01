@@ -19,13 +19,19 @@
 }
 
 //Code Slide
-.code-slide {
+
+.classCodeSlide {
     background-color: #4C0985;
     background-image: url(../img/backgrounds/nodos.png);
     background-image: url(../img/backgrounds/nodos.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     height: 100vh;
+    background-size: contain;
+}
+
+.code-slide {
+
 
         &__text {
             color: #FFCA00;
