@@ -3,19 +3,18 @@
 	<div class="student-info__inputs">
 		<input type="text" ng-model="studentData.name" placeholder="Nombre"  class="student-info__left"/>
 		<input type="text" ng-model="studentData.age" placeholder="Edad" class="student-info__right"/>
-		
+
 		<div dropdown-select="provinceList" dropdown-model="studentData.province" dropdown-item-label="name"
-			ng-init="initProvinceCombobox()" placeholder="Provincia"></div>
+			ng-init="initProvinceCombobox()" placeholder="Provincia" class="student-info__left"></div>
 
 		<div dropdown-select="departmentList" dropdown-model="studentData.department" dropdown-item-label="name"
-			ng-init="initDepartmentCombobox()" placeholder="¿Dónde vivís?"></div>
+			ng-init="initDepartmentCombobox()" placeholder="¿Dónde vivís?" class="student-info__right"></div>
 
 	</div>
 <div>
 
-
-<button ng-click="saveStudentData()" 
-	ng-disabled="!studentData.name || !studentData.age 
+<button ng-click="saveStudentData()"
+	ng-disabled="!studentData.name || !studentData.age
 		|| !studentData.province.id || 	!studentData.department.id"
 	class="btn right--desktop center--mobile">
 	Siguiente

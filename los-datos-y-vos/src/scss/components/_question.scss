@@ -16,4 +16,23 @@
         font-size: 16px;
         @include fp(font-size, 16, 18);
     }
+
+    &__option-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+
+    &__option-item {
+        width: 100%;
+
+        @include _(greater than tablet) {
+            width: 49%;
+        }
+
+        @include _(greater than mobile) {
+            width: 47%;
+        }
+    }
 }

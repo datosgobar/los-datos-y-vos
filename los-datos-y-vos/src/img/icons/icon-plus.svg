@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="21" font-family="Roboto-Bold, Roboto" font-weight="bold">
+        <g id="3c---B1---P1" transform="translate(-1075.000000, -462.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(170.000000, 380.000000)">
+                <g id="Group-6" transform="translate(480.500000, 61.000000)">
+                    <text id="icon-plus">
+                        <tspan x="424" y="34">+</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

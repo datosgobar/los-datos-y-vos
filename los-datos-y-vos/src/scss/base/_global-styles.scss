@@ -1,6 +1,7 @@
 
-
-
+body {
+	border-top: 3px solid $primaryColor;
+}
 
 .content-wrapper {
 	@include _(16 12 8 4);

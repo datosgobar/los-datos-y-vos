@@ -2,42 +2,26 @@
 
 .wrap-dd-select {
   position: relative;
-  width: 200px;
-  margin: 0 auto;
-  padding: 10px;
-
-
-
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  user-select:none;
-
-  background: #fff;
-  border-radius: 7px;
-  border: 1px solid rgba(0,0,0,0.15);
-  box-shadow: 0 1px 1px rgba(50,50,50,0.1);
   cursor: pointer;
   outline: none;
-  font-weight: bold;
-  color: #8AA8BD;
 }
 
 .wrap-dd-select.disabled {
   cursor: default;
   color: #5B6A7D;
 }
-.wrap-dd-select:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  margin-top: -3px;
-  border-width: 6px 6px 0 6px;
-  border-style: solid;
-  border-color: #8aa8bd transparent;
-}
+// .wrap-dd-select:after {
+//   content: "";
+//   width: 0;
+//   height: 0;
+//   position: absolute;
+//   right: 15px;
+//   top: 50%;
+//   margin-top: -3px;
+//   border-width: 6px 6px 0 6px;
+//   border-style: solid;
+//   border-color: #8aa8bd transparent;
+// }
 
 .wrap-dd-select.disabled:after {
   border: none;
@@ -45,16 +29,13 @@
 
 .wrap-dd-select .dropdown {
   position: absolute;
-  top: 100%;
+  top: 101%;
   left: 0;
   right: 0;
   z-index: 10;
   background: white;
   padding: 0;
-  border-radius: inherit;
-  border: 1px solid rgba(0,0,0,0.17);
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  font-weight: normal;
+  background: #FFFAE9;
   list-style: none;
   visibility: hidden;
   max-height: 300px;
@@ -73,23 +54,24 @@
   padding: 10px 0;
 }
 
+.wrap-dd-select .dropdown li:first-of-type {
+    display: none;
+}
+
 .wrap-dd-select .dropdown li a {
   display: block;
-  padding: 10px;
+  padding: 10px 15px 7px 15px;
   text-decoration: none;
-  color: #8aa8bd;
-  border-bottom: 1px solid #e6e8ea;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,1);
   cursor: pointer;
+  border-left: 3px solid #FFFAE8;
+  font-family: $type__heading;
+  font-weight: 700;
+  color: #727272;
 }
 
 .wrap-dd-select .dropdown li i {
   float: right;
   color: inherit;
-}
-
-.wrap-dd-select .dropdown li:first-of-type a {
-  border-radius: 7px 7px 0 0;
 }
 
 .wrap-dd-select .dropdown li:last-of-type a {
@@ -98,7 +80,9 @@
 }
 
 .wrap-dd-select .dropdown li:hover a {
-  background: #f3f8f8;
+    background: #FEF2C7;
+    border-left: 3px solid #FFBF00;
+    color: #E1A800;
 }
 
 .wrap-dd-select .dropdown:after {

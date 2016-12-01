@@ -1,11 +1,12 @@
 <div ng-repeat="question in pageData.questions" class="{{question.type}}Question">
 	<div class="question__text">{{question.text}}</div>
-	<div ng-repeat="option in question.options" ng-init="initSliderValue(question.id, option.id)">
-
-		<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
-		<p>
-			<rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider>
-		</p>
+	<div class="question__option-wrapper">
+		<div ng-repeat="option in question.options" ng-init="initSliderValue(question.id, option.id)" class="question__option-item">
+			<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
+			<div class="question__input">
+				<rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider>
+			</div>
+		</div>
 	</div>
 <div>
 
