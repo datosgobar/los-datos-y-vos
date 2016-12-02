@@ -1,14 +1,31 @@
-<div ng-repeat="question in pageData.questions" class="{{question.type}}Question">
+<div ng-repeat="question in pageData.questions" class="{{question.type}}">
 	<div class="question__text">{{question.text}}</div>
-	<div class="question__option-wrapper">
-		<div ng-repeat="option in question.options" ng-init="initSliderValue(question.id, option.id)" class="question__option-item">
+	<div class="question__option-wrapper" ng-if="question.type == 'slider'">
+		<div ng-repeat="option in question.options" ng-init="initNumericValue(question.id, option.id)" class="question__option-item">
 			<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
 			<div class="question__input">
 				<rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider>
 			</div>
 		</div>
 	</div>
-<div>
+	<div ng-if="question.type == 'numeric_single_option'">
+		<input type="text" ng-model="studentData[sectionData.id][question.id]"
+			ng-init="initNumericValue(question.id)"/>
+	</div>
+	<div ng-if="question.type == 'radio_boolean'">
+		<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="1"/> Si 
+		<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="0"/> No
+	</div>
+	<div class="question__option-wrapper" ng-if="question.type == 'numeric_multiple_option'">
+		<div ng-repeat="option in question.options" class="question__option-item">
+			<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
+			<div class="question__input">
+				<input type="text" ng-model="studentData[sectionData.id][question.id][option.id]" 
+					ng-init="initNumericValue(question.id, option.id)"/>
+			</div>
+		</div>
+	</div>
+</div>
 
 <button ng-click="goToNextPage(pageData.nextPage)" class="btn center--mobile right--desktop">
 	Siguiente

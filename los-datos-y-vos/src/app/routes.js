@@ -73,13 +73,44 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
         data: {
             bodyClass: 'section1ResultSlide',
         },
-        templateUrl: 'html/quiz/section1-result.html'
+        templateUrl: 'html/quiz/section1-result.html',
+        controller: 'ResultSection1Ctrl'
     });
 
     $stateProvider.state('root.quizSection1.question', {
         url: '/{pageNumber}',
         data: {
             bodyClass: 'section1QuestionSlide',
+        },
+        templateUrl: 'html/quiz/question.html',
+        controller: 'QuizCtrl'
+    });
+
+    $stateProvider.state('root.quizSection2', {
+        url: '/segundo-paso',
+        data: {
+            stepNumber: 2
+        },
+        views: {
+            'container@': {
+                templateUrl: 'html/quiz/index.html',
+            }
+        }
+    });
+
+    $stateProvider.state('root.quizSection2.result', {
+        url: '/resultados',
+        data: {
+            bodyClass: 'section2ResultSlide',
+        },
+        templateUrl: 'html/quiz/section2-result.html',
+        controller: 'ResultSection2Ctrl'
+    });
+
+    $stateProvider.state('root.quizSection2.question', {
+        url: '/{pageNumber}',
+        data: {
+            bodyClass: 'section2QuestionSlide',
         },
         templateUrl: 'html/quiz/question.html',
         controller: 'QuizCtrl'

@@ -30,14 +30,18 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
         };
     };
 
-    $scope.initSliderValue = function(questionId, optionId) {
+    $scope.initNumericValue = function(questionId, optionId) {
         if(!$scope.studentData[$scope.sectionData.id]) {
             $scope.studentData[$scope.sectionData.id] = {};
         }
         if(!$scope.studentData[$scope.sectionData.id][questionId]) {
-            $scope.studentData[$scope.sectionData.id][questionId] = {};
+            if(!optionId) {
+                $scope.studentData[$scope.sectionData.id][questionId] = 0;
+            } else {
+                $scope.studentData[$scope.sectionData.id][questionId] = {};
+            }
         }
-        if(!$scope.studentData[$scope.sectionData.id][questionId][optionId]) {
+        if(!$scope.studentData[$scope.sectionData.id][questionId][optionId] && optionId) {
             $scope.studentData[$scope.sectionData.id][questionId][optionId] = 0;
         }
     };
