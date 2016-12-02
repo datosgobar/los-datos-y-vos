@@ -2,9 +2,11 @@
 .header {
 
     padding-top: 20px;
-    
-    @include _(greater than laptop) {
-        margin-bottom: 100px;
+    margin-bottom: 100px;
+
+    .welcomeSlide &,
+    .classCodeSlide & {
+        margin-bottom: 0;
     }
 
     &__container {
