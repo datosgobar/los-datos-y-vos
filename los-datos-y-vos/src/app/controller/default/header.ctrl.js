@@ -4,10 +4,15 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
     $scope.studentData = StudentDataSvc.getStudentData();
 
     $scope.$on('$stateChangeSuccess', function ($event, $toState, $toParams) {
+        $scope.displayClassCode = true;
         switch ($state.current.name) {
             case 'root.welcome':
                 StudentDataSvc.clearStudentData();
                 $scope.studentData = StudentDataSvc.getStudentData();
+                $scope.displayClassCode = false;
+                break;
+            case 'root.signUpForm.classCode':
+                $scope.displayClassCode = false;
                 break;
             case 'root.signUpForm.studentData':
             	EventBusSvc.broadcast('updateStep', {
@@ -28,6 +33,19 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
                     number: 4
                 });
                 break;
+            case 'root.quizSection2.question':
+                var baseStepNumber = 4;
+                EventBusSvc.broadcast('updateStep', { 
+                    name: 'Segundo paso', 
+                    number: baseStepNumber + parseInt($toParams.pageNumber)
+                });
+                break;
+            case 'root.quizSection2.result':
+                EventBusSvc.broadcast('updateStep', { 
+                    name: 'Segundo paso', 
+                    number: 7
+                });
+                break;
         }
     });
 
@@ -37,7 +55,7 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
 
     EventBusSvc.subscribe('updateStep', function(event, step) {
     	$scope.stepName = step.name;
-    	$scope.stepNumber = step.number;
+    	$scope.progressStyle = { 'width' : (100 / 7) * step.number + '%' };
     });
 
 });

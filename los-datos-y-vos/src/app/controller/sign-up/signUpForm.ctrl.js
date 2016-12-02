@@ -9,10 +9,15 @@ angular.module('app').controller('signUpFormCtrl', function($scope, $state, $fil
 	    	$scope.provinceList = $scope.provinceList.concat(data);
 	    });
 	    $scope.departmentList = [$scope.defaultDepartment]; 
+        $scope.pageLoad = true;
     };
 
     var updateDepartmentList = function() {
-        $scope.studentData['department'] = $scope.defaultDepartment;
+        if(!$scope.pageLoad) {
+            $scope.studentData['department'] = $scope.defaultDepartment;    
+        } else {
+            $scope.pageLoad = false;
+        }
         var provinceId = $scope.studentData.province && $scope.studentData.province.id ? $scope.studentData.province.id : null;
         if(provinceId == 2) { // CABA
             LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
