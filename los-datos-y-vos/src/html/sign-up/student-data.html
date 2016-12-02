@@ -1,14 +1,14 @@
 <div class="student-info">
 	<h2>Antes de empezar</h2>
 	<div class="student-info__inputs">
-		<input type="text" ng-model="studentData.name" placeholder="Nombre"  class="student-info__left"/>
-		<input type="text" ng-model="studentData.age" placeholder="Edad" class="student-info__right"/>
+		<input type="text" ng-model="studentData.name" placeholder="Nombre"  class="student-info__left input--info"/>
+		<input type="number" ng-model="studentData.age" placeholder="Edad" class="student-info__right input--info"/>
 
 		<div dropdown-select="provinceList" dropdown-model="studentData.province" dropdown-item-label="name"
-			ng-init="initProvinceCombobox()" placeholder="Provincia" class="student-info__left"></div>
+			ng-init="initProvinceCombobox()" placeholder="Provincia" class="student-info__left input--info"></div>
 
 		<div dropdown-select="departmentList" dropdown-model="studentData.department" dropdown-item-label="name"
-			ng-init="initDepartmentCombobox()" placeholder="¿Dónde vivís?" class="student-info__right"></div>
+			ng-init="initDepartmentCombobox()" placeholder="¿Dónde vivís?" class="student-info__right input--info"></div>
 	</div>
 <div>
 

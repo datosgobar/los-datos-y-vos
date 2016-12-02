@@ -1,4 +1,4 @@
-<div ng-repeat="question in pageData.questions" class="{{question.type}}">
+<div ng-repeat="question in pageData.questions" class="{{question.type}} question__single-container">
 	<div class="question__text">{{question.text}}</div>
 	<div class="question__option-wrapper" ng-if="question.type == 'slider'">
 		<div ng-repeat="option in question.options" ng-init="initNumericValue(question.id, option.id)" class="question__option-item">
@@ -11,8 +11,12 @@
 		</div>
 	</div>
 	<div ng-if="question.type == 'numeric_single_option'">
-		<input type="text" ng-model="studentData[sectionData.id][question.id]"
-			ng-init="initNumericValue(question.id)"/>
+		<div class="question__input">
+			<span class="input-square input-square--left"></span>
+			<input type="number" ng-model="studentData[sectionData.id][question.id]"
+				ng-init="initNumericValue(question.id)" class="question__number-input"/>
+			<span class="input-square input-square--right"></span>
+	    </div>
 	</div>
 	<div ng-if="question.type == 'radio_boolean'">
 		<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="1"/> Si
@@ -22,8 +26,10 @@
 		<div ng-repeat="option in question.options" class="question__option-item">
 			<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
 			<div class="question__input">
-				<input type="text" ng-model="studentData[sectionData.id][question.id][option.id]"
-					ng-init="initNumericValue(question.id, option.id)"/>
+				<span class="input-square input-square--left"></span>
+				<input type="number" ng-model="studentData[sectionData.id][question.id][option.id]"
+					ng-init="initNumericValue(question.id, option.id)" class="question__number-input"/>
+				<span class="input-square input-square--right"></span>
 			</div>
 		</div>
 	</div>

@@ -7,6 +7,11 @@
         font-size: 16px;
         @include fp(font-size, 14, 18);
         margin-bottom: 60px;
+
+            //Hay menos margin para el texto de preguntas en la segunda seccion
+            .section2QuestionSlide & {
+                margin-bottom: 30px;
+            }
     }
 
     &__option {
@@ -35,4 +40,28 @@
             width: 47%;
         }
     }
+
+    &__single-container {
+        margin-bottom: 75px;
+    }
+}
+
+.numeric_single_option {
+
+    width: 100%;
+    @include _(greater than tablet) {
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+    }
+
+    & + & {
+        margin-right: 0;
+    }
+
+}
+
+.numeric_multiple_option {
+    width: 100%;
+    clear: both;
 }
