@@ -37,10 +37,8 @@ span.input-square {
     background: #ffca00;
     height: 50px;
     margin-top: 11px;
-    width: 9%;
-    padding: 1px 15px;
-    color: #fff;
-    font-size: 28px;
+    width: 12%;
+    width: 40px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +57,8 @@ span.input-square {
 //Range Sliders
 .rzslider {
 
-    width: 82%;
+    width: 75%;
+    width: calc(100% - 80px);
     float: left;
 
     .rz-pointer {
