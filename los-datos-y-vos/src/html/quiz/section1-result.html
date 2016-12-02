@@ -3,7 +3,24 @@
 		Wow! ¿Te imaginabas esto, {{studentData.name}}?
 	</div>
 	
-	
+	<div class="questionResult" ng-repeat="question in results">
+		<p>{{question.questionText}}</p>
+		<table style="border: 1px solid black">
+			<th>
+				<tr>
+					<td></td>
+					<td>Tus respuestas</td>
+					<td>Censo Nacional del 2010</td>
+				</tr>
+			</th>
+			<tr ng-repeat="option in question.options">
+				<td>{{ option.optionText.concat('_RESULT') | translate: getTranslationKey(option.optionText) }}</td>
+				<td>{{option.yourAnswer | number:2}}%</td>
+				<td>{{option.censusResult | number:2}}%</td>
+			</tr>
+		</table>
+	</div>
+
 <div>
 
 <button ui-sref="root.quizSection2.question({pageNumber: 1})" class="btn center--mobile right--desktop">
