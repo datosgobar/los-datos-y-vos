@@ -2,7 +2,10 @@
 .header {
 
     padding-top: 20px;
-    margin-bottom: 100px;
+    
+    @include _(greater than laptop) {
+        margin-bottom: 100px;
+    }
 
     &__container {
         display: flex;
