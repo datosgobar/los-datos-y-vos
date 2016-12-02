@@ -54,6 +54,7 @@ angular.module('app').factory('QuizFactory', function() {
             title: "Segundo Paso",
             pages: {
                 1: {
+                    id: "avgPersonsPerHouse",
                     previousPage: false,
                     nextPage: 2,
                     questions: [
@@ -85,6 +86,7 @@ angular.module('app').factory('QuizFactory', function() {
                     ]                    
                 },
                 2: {
+                    id: "avgRentingHouse",
                     previousPage: 1,
                     nextPage: false,
                     questions: [
