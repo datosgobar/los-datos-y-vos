@@ -35,21 +35,31 @@ input[type="text"] {
 span.input-square {
     float: left;
     background: #ffca00;
-    height: 49px;
-    margin-top: 12px;
-    width: 4%;
-    padding: 1px 15px;
-    color: #fff;
-    font-size: 28px;
+    height: 50px;
+    margin-top: 11px;
+    width: 12%;
+    width: 40px;
     cursor: pointer;
-    border-radius: 3px 0 0 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+        &--left {
+            border-radius: 3px 0 0 3px;
+            background-image: url(../img/icons/icon-minus.svg);
+        }
+
+        &--right {
+            background-image: url(../img/icons/icon-plus.svg);
+            border-radius: 0 3px 3px 0;
+        }
 }
 
 //Range Sliders
 .rzslider {
-    //margin: 35px 0 90px 0;
-    margin: 35px 41px 90px 41px;
-    width: 82%; //fix for left and right absolute
+
+    width: 75%;
+    width: calc(100% - 80px);
+    float: left;
 
     .rz-pointer {
         //background-color: rgba(255, 191, 0, .6);
@@ -79,47 +89,47 @@ span.input-square {
         margin-top: -24px;
         border: 1px solid #FFEAA8;
         background: #FFFCF4;
-        border-left: 25px solid #fffcf4;
-        border-right: 25px solid #fffcf4;
+        // border-left: 25px solid #fffcf4;
+        // border-right: 25px solid #fffcf4;
         padding-bottom: 24px;
         //left: -10px;
 
-        &:before,
-        &:after {
-            display: block;
-            width: 40px;
-            height: 48px;
-            background: $primaryColor;
-            position: absolute;
-            top: 0;
-            padding: 7px 17px;
-            color: #fff;
-            font-size: 25px;
-            padding: 0px 15px;
-            cursor: pointer;
-            margin-right: -3px;
-            margin-left: -3px;
-            border: 1px solid #ffca00;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        &:before {
-            left: -62px;
-            content: '';
-            background-image: url(../img/icons/icon-minus.svg);
-            border-radius: 3px 0 0 3px;
-            //margin-left: -3px;
-        }
-
-        &:after {
-            right: -62px;
-            content: '';
-            background-image: url(../img/icons/icon-plus.svg);
-            padding-left: 12px;
-            border-radius: 0 3px 3px 0;
-            //margin-right: -3px;
-        }
+        // &:before,
+        // &:after {
+        //     display: block;
+        //     width: 40px;
+        //     height: 48px;
+        //     background: $primaryColor;
+        //     position: absolute;
+        //     top: 0;
+        //     padding: 7px 17px;
+        //     color: #fff;
+        //     font-size: 25px;
+        //     padding: 0px 15px;
+        //     cursor: pointer;
+        //     margin-right: -3px;
+        //     margin-left: -3px;
+        //     border: 1px solid #ffca00;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        // }
+        //
+        // &:before {
+        //     left: -62px;
+        //     content: '';
+        //     background-image: url(../img/icons/icon-minus.svg);
+        //     border-radius: 3px 0 0 3px;
+        //     //margin-left: -3px;
+        // }
+        //
+        // &:after {
+        //     right: -62px;
+        //     content: '';
+        //     background-image: url(../img/icons/icon-plus.svg);
+        //     padding-left: 12px;
+        //     border-radius: 0 3px 3px 0;
+        //     //margin-right: -3px;
+        // }
     }
 
     //SLider bar

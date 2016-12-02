@@ -4,6 +4,11 @@
     padding-top: 20px;
     margin-bottom: 100px;
 
+    .welcomeSlide &,
+    .classCodeSlide & {
+        margin-bottom: 0;
+    }
+
     &__container {
         display: flex;
         height: 41px;

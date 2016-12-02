@@ -24,14 +24,14 @@
         margin-bottom: 70px;
     }
 
+    &__input {
+        display: flex;
+    }
+
     &__option-item {
         width: 100%;
 
-        @include _(greater than tablet) {
-            width: 49%;
-        }
-
-        @include _(greater than mobile ) {
+        @include _(greater than tablet ) {
             width: 47%;
         }
     }

@@ -3,9 +3,14 @@
 .welcome-slide {
 
     &__img {
-        margin-top: 75px;//Fallback
-        @include fp(margin-top, 45, 95);
-        max-width: 100%;
+        max-width: 250px;
+
+        @include _(greater than 87.500em) {
+            margin-top: 75px;//Fallback
+            @include fp(margin-top, 45, 95);
+            max-width: 100%;
+        }
+
     }
 
     &__subheading {
@@ -15,6 +20,11 @@
         font-family: $type__heading;
         font-weight: 700;
         text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
     }
 }
 
@@ -37,7 +47,7 @@
             color: #FFCA00;
             font-size: 22px; //fallback
             @include fp(font-size, 19,34);
-            padding-top: 30vh;
+            padding-top: 25vh;
             margin-bottom: 25px;
         }
 
@@ -86,5 +96,13 @@ input.code-slide__input {
         @include _(greater than tablet) {
             width: 38%;
         }
+    }
+}
+
+///Student data Slide
+.studentDataSlide {
+    
+    .header {
+        margin-bottom: 100px;
     }
 }
