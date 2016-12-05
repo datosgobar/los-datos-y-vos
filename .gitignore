@@ -91,3 +91,5 @@ ENV/
 los-datos-y-vos/node_modules
 templates.js
 data/departamentos/shp
+data/provincias/shp
+data/prov_deptos/shp

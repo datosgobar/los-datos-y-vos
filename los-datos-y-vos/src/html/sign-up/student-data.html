@@ -10,6 +10,7 @@
 		<div dropdown-select="departmentList" dropdown-model="studentData.department" dropdown-item-label="name"
 			ng-init="initDepartmentCombobox()" placeholder="¿Dónde vivís?" class="student-info__right input--info"></div>
 	</div>
+	<svg-map province="studentData.province" department="studentData.department"></svg-map>
 <div>
 
 <button ng-click="saveStudentData()"
