@@ -31,12 +31,15 @@
 
     &__input {
         display: flex;
+        margin-top: auto;
     }
 
     &__option-item {
         width: 100%;
 
         @include _(greater than tablet ) {
+            display: flex;
+            flex-direction: column;
             width: 47%;
         }
     }

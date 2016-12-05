@@ -2,7 +2,7 @@
 	<div>
 		Wow! ¿Te imaginabas esto, {{studentData.name}}?
 	</div>
-	
+
 	<div class="questionResult" ng-repeat="question in results">
 		<p>{{question.questionText}}</p>
 		<table style="border: 1px solid black">
@@ -15,7 +15,12 @@
 			</th>
 			<tr ng-repeat="option in question.options">
 				<td>{{ option.optionText.concat('_RESULT') | translate: getTranslationKey(option.optionText) }}</td>
-				<td>{{option.yourAnswer | number:2}}%</td>
+				<td>
+					<span>{{option.yourAnswer | number:2}}%</span>
+					<object type="image/svg+xml" data="/img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:2}}%;">
+				    	<img src="/img/graph-svg/circle-graph.png">
+					</object>
+				</td>
 				<td>{{option.censusResult | number:2}}%</td>
 			</tr>
 		</table>
