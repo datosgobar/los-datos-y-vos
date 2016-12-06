@@ -1,4 +1,4 @@
-angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBusSvc, StudentDataSvc) {
+angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBusSvc, StudentDataSvc, ngDialog) {
     
     $scope.step = {};
     $scope.studentData = StudentDataSvc.getStudentData();
@@ -57,5 +57,9 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
     	$scope.stepName = step.name;
     	$scope.progressStyle = { 'width' : (100 / 7) * step.number + '%' };
     });
+
+    $scope.openAboutModal = function() {
+        ngDialog.open({ template: 'html/default/about.html', className: 'ngdialog-theme-default', width: '80%' });
+    };
 
 });

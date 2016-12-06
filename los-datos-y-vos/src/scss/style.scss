@@ -4,6 +4,9 @@
 @import 'helpers/variables';
 @import '../../node_modules/flint-gs/stylesheets/_flint';
 @import '../../node_modules/angularjs-slider/dist/rzslider.scss';
+@import '../../node_modules/ng-dialog/css/ngDialog';
+@import '../../node_modules/ng-dialog/css/ngDialog-theme-default';
+
 @include _(foundation);
 
 //base
