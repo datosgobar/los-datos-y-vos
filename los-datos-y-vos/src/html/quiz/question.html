@@ -4,18 +4,22 @@
 		<div ng-repeat="option in question.options" ng-init="initNumericValue(question.id, option.id)" class="question__option-item">
 			<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
 			<div class="question__input">
-				<span class="input-square input-square--left"></span>
+				<span class="input-square input-square--left" 
+					ng-click="decrementNumericValue(question.id, option.id)">
+				</span>
 				<rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider>
-				<span class="input-square input-square--right"></span>
+				<span class="input-square input-square--right"
+					ng-click="incrementNumericValue(question.id, option.id)">
+				</span>
 			</div>
 		</div>
 	</div>
 	<div ng-if="question.type == 'numeric_single_option'">
 		<div class="question__input">
-			<span class="input-square input-square--left"></span>
+			<span class="input-square input-square--left" ng-click="decrementNumericValue(question.id)"></span>
 			<input type="number" ng-model="studentData[sectionData.id][question.id]"
 				ng-init="initNumericValue(question.id)" class="question__number-input"/>
-			<span class="input-square input-square--right"></span>
+			<span class="input-square input-square--right" ng-click="incrementNumericValue(question.id)"></span>
 	    </div>
 	</div>
 	<div ng-if="question.type == 'radio_boolean'">
@@ -34,10 +38,10 @@
 		<div ng-repeat="option in question.options" class="question__option-item">
 			<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
 			<div class="question__input">
-				<span class="input-square input-square--left"></span>
+				<span class="input-square input-square--left" ng-click="decrementNumericValue(question.id, option.id)"></span>
 				<input type="number" ng-model="studentData[sectionData.id][question.id][option.id]"
 					ng-init="initNumericValue(question.id, option.id)" class="question__number-input"/>
-				<span class="input-square input-square--right"></span>
+				<span class="input-square input-square--right" ng-click="incrementNumericValue(question.id, option.id)"></span>
 			</div>
 		</div>
 	</div>

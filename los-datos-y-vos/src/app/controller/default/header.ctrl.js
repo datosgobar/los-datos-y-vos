@@ -17,33 +17,33 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
                 break;
             case 'root.signUpForm.studentData':
             	EventBusSvc.broadcast('updateStep', {
-                    name: 'Ingreso datos', 
+                    name: 'PRIMER BLOQUE', 
                     number: 1
                 });
                 break;
             case 'root.quizSection1.question':
                 var baseStepNumber = 1;
                 EventBusSvc.broadcast('updateStep', { 
-                    name: 'Primer paso', 
+                    name: 'PRIMER BLOQUE', 
                     number: baseStepNumber + parseInt($toParams.pageNumber)
                 });
                 break;
             case 'root.quizSection1.result':
                 EventBusSvc.broadcast('updateStep', { 
-                    name: 'Primer paso', 
+                    name: 'PRIMER BLOQUE', 
                     number: 4
                 });
                 break;
             case 'root.quizSection2.question':
                 var baseStepNumber = 4;
                 EventBusSvc.broadcast('updateStep', { 
-                    name: 'Segundo paso', 
+                    name: 'SEGUNDO BLOQUE', 
                     number: baseStepNumber + parseInt($toParams.pageNumber)
                 });
                 break;
             case 'root.quizSection2.result':
                 EventBusSvc.broadcast('updateStep', { 
-                    name: 'Segundo paso', 
+                    name: 'SEGUNDO BLOQUE', 
                     number: 7
                 });
                 break;
