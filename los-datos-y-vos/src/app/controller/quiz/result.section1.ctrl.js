@@ -6,7 +6,7 @@ angular.module('app').controller('ResultSection1Ctrl', function($scope, $state, 
         
         $scope.keys = [];
         $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
-        $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "La " : "La Provincia de ") + $scope.studentData.province.name;
+        $scope.keys['YOUR_PROVINCE'] = $scope.studentData.province.name;
 
         $scope.calculateResults();
     };
