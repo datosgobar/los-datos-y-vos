@@ -5,17 +5,17 @@ angular.module('app').directive("svgMap", function() {
     template: "<object type='image/svg+xml' id='locationMap'></object>",
     link: function(scope, element, attrs) {
 
-      var init = function() {
+      var init = function() {        
         var departmentChanged = function(newValue, oldValue) {
           if(newValue.id) {
             var oldSelectedDepartment = angular.element(element[0].getSVGDocument().getElementsByClassName("selected"));
             oldSelectedDepartment.removeClass("selected");
             if(oldSelectedDepartment.length > 0) {
-              oldSelectedDepartment[0].children[0].style.fill="white";
+              oldSelectedDepartment[0].children[0].style.fill="#F6F6F6";
             }
             var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));
             selectedDepartment.addClass("selected");
-            selectedDepartment.children('path')[0].style.fill="black";
+            selectedDepartment.children('path')[0].style.fill="#FFEAA8";
           }
         };
         departmentChanged(scope.studentData.department);
@@ -24,20 +24,7 @@ angular.module('app').directive("svgMap", function() {
 
       var provinceChanged = function(newValue, oldValue) {
         if(newValue.id) {
-          locationMap[0].data = "/img/maps/" + newValue.id + ".svg";
-        }
-      };
-      var departmentChanged = function(newValue, oldValue) {
-        var locationMap = angular.element(document.querySelector('#locationMap'));
-        if(newValue.id) {
-          var oldSelectedDepartment = angular.element(element[0].getSVGDocument().getElementsByClassName("selected"));
-          oldSelectedDepartment.removeClass("selected");
-          if(oldSelectedDepartment.length > 0) {
-            oldSelectedDepartment[0].children[0].style.fill="#F6F6F6";
-          }
-          var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));
-          selectedDepartment.addClass("selected");
-          selectedDepartment.children('path')[0].style.fill="#FFEAA8";
+          element[0].data = "/img/maps/" + newValue.id + ".svg";
         }
       };
       scope.$watch(attrs.province, provinceChanged);
