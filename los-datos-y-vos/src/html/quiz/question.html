@@ -19,8 +19,16 @@
 	    </div>
 	</div>
 	<div ng-if="question.type == 'radio_boolean'">
-		<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="1"/> Si
-		<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="0"/> No
+		<div class="question__radio">
+			<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="1" id="radio-si"/>
+			<div class="check"></div>
+			<label for="radio-si">Si</label>
+		</div>
+		<div class="question__radio">
+			<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="0" id="radio-no"/>
+			<div class="check"></div>
+			<label for="radio-no">No</label>
+		</div>
 	</div>
 	<div class="question__option-wrapper" ng-if="question.type == 'numeric_multiple_option'">
 		<div ng-repeat="option in question.options" class="question__option-item">

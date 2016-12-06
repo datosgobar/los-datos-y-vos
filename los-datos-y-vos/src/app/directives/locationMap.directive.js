@@ -16,11 +16,11 @@ angular.module('app').directive("svgMap", function() {
           var oldSelectedDepartment = angular.element(element[0].getSVGDocument().getElementsByClassName("selected"));
           oldSelectedDepartment.removeClass("selected");
           if(oldSelectedDepartment.length > 0) {
-            oldSelectedDepartment[0].children[0].style.fill="white";
+            oldSelectedDepartment[0].children[0].style.fill="#F6F6F6";
           }
           var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));
           selectedDepartment.addClass("selected");
-          selectedDepartment.children('path')[0].style.fill="black";
+          selectedDepartment.children('path')[0].style.fill="#FFEAA8";
         }
       };
       scope.$watch(attrs.province, provinceChanged);

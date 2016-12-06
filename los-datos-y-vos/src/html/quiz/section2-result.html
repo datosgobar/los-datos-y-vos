@@ -1,24 +1,24 @@
 <div>
-	<div>
-		Wow! ¿Te imaginabas esto, {{studentData.name}}?
-	</div>
-	
+
+	<h2>Wow! ¿Te imaginabas esto, {{studentData.name}}?</h2>
+
 	<div class="questionResult">
 		<p>{{results.avgPersonsPerHouse.questionText}}</p>
-		<table style="border: 1px solid black">
-			<th>
-				<tr>
-					<td></td>
-					<td>Tus respuestas</td>
-					<td>Censo Nacional del 2010</td>
-				</tr>
-			</th>
-			<tr ng-repeat="option in results.avgPersonsPerHouse.options">
-				<td>{{ option.optionText.concat('_RESULT') | translate: getTranslationKey(option.optionText) }}</td>
-				<td>{{option.yourAnswer | number:2}} <span ng-if="option.yourAnswer">personas en promedio</span></td>
-				<td>{{option.censusResult | number:2}} <span ng-if="option.censusResult">personas en promedio</span></td>
-			</tr>
-		</table>
+		<!-- Start table -->
+		<div class="Rtable Rtable--3cols">
+
+			<div class="Rtable__cell"></div>
+			<div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div>
+			<div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div>
+
+			<div ng-repeat="option in results.avgPersonsPerHouse.options" class="Rtable__results">
+				<div class="Rtable__cell Rtable__cell--per-promedio">{{ option.optionText.concat('_RESULT') | translate: getTranslationKey(option.optionText) }}</div>
+				<div class="Rtable__cell Rtable__cell--per-promedio results__yours"><span class="results__promedio">{{option.yourAnswer | number:2}}</span><span ng-if="option.yourAnswer" class="results__text">personas <span class="no-wrap">en promedio</span></span></div>
+				<div class="Rtable__cell Rtable__cell--per-promedio"><span class="results__promedio">{{option.censusResult | number:2}}</span><span ng-if="option.censusResult" class="results__text">personas <span class="no-wrap">en promedio</span></span></div>
+			</div>
+
+		</div>
+		<!-- End table -->
 	</div>
 
 <div>

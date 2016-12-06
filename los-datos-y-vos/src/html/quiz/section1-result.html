@@ -1,29 +1,38 @@
 <div>
-	<div>
-		Wow! ¿Te imaginabas esto, {{studentData.name}}?
-	</div>
 
-	<div class="questionResult" ng-repeat="question in results">
+	<h2>Wow! ¿Te imaginabas esto, {{studentData.name}}?</h2>
+
+
+	<div class="questionResult results" ng-repeat="question in results">
 		<p>{{question.questionText}}</p>
-		<table style="border: 1px solid black">
-			<th>
-				<tr>
-					<td></td>
-					<td>Tus respuestas</td>
-					<td>Censo Nacional del 2010</td>
-				</tr>
-			</th>
-			<tr ng-repeat="option in question.options">
-				<td>{{ option.optionText.concat('_RESULT') | translate: getTranslationKey(option.optionText) }}</td>
-				<td>
-					<span>{{option.yourAnswer | number:2}}%</span>
-					<object type="image/svg+xml" data="/img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:2}}%;">
-				    	<img src="/img/graph-svg/circle-graph.png">
+
+		<!-- Start table -->
+		<div class="Rtable Rtable--3cols">
+
+			<!--Table Heading -->
+			<div class="Rtable__cell"></div>
+			<div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div>
+			<div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div>
+			<!--Table Body-->
+			<div ng-repeat="option in question.options" class="Rtable__results">
+				<div class="Rtable__cell">{{ option.optionText.concat('_RESULT') | translate: getTranslationKey(option.optionText) }}</div>
+				<div class="Rtable__cell results__yours">
+					<span class="results__number">{{option.yourAnswer | number:0}}%</span>
+					<object type="image/svg+xml" data="/img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%;" class="results__graphic">
+				    	<img src="/img/graph-svg/circle-graph.png" class="results__graphic">
 					</object>
-				</td>
-				<td>{{option.censusResult | number:2}}%</td>
-			</tr>
-		</table>
+				</div>
+				<div class="Rtable__cell">
+					<span class="results__number">{{option.censusResult | number:0}}%</span>
+					<object type="image/svg+xml" data="/img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%;" class="results__graphic">
+				    	<img src="/img/graph-svg/circle-graph.png" class="results__graphic">
+					</object>
+				</div>
+			</div>
+
+		</div>
+		<!-- End table -->
+
 	</div>
 
 <div>

@@ -1,0 +1,65 @@
+//////////
+//Tables
+///////////
+.Rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em 0 6em 0;
+    padding: 0;
+
+
+        &__cell {
+            text-align: center;
+            box-sizing: border-box;
+            flex-grow: 1;
+            width: 100%;  // Default to full width
+            padding: 0.8em 1.2em;
+            overflow: hidden; // Or flex might break
+            list-style: none;
+            border: solid 1px #FFBF00;
+            border-top: 0;
+            border-left: 0;
+            display: flex;
+            align-items: center;
+            position: relative; //To hold absolute positioned result
+            justify-content: center;
+            font-family: $type__heading;
+            font-weight: 700;
+            color: rgba(0, 0, 0, .70);
+            font-size: 18px;
+            @include fp(font-size, 14, 18);
+
+
+
+                &:last-of-type {
+                    border-right: 0;
+                }
+        }
+
+        &__cell--per-promedio {
+            justify-content: center;
+            flex-wrap: wrap;
+
+            @include _(greater than 47.500em) {
+                min-height: 135px;
+            }
+        }
+
+        &__heading {
+            min-height: auto;
+        }
+
+        &__results {
+            display: flex;
+            width: 100%;
+        }
+}
+
+/////////////////////
+//Table column sizing
+/////////////////////
+.Rtable--2cols .Rtable-cell  { width: 50%; }
+.Rtable--3cols .Rtable__cell { width: 33.33%; }
+.Rtable--4cols .Rtable-cell  { width: 25%; }
+.Rtable--5cols .Rtable-cell  { width: 20%; }
+.Rtable--6cols .Rtable-cell  { width: 16.6%; }
