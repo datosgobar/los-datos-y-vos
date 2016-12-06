@@ -29,7 +29,8 @@ const paths = {
     'angular-ui-router/release/angular-ui-router.js',
     'angular-translate/dist/angular-translate.js',
     'angular-loading-bar/build/loading-bar.min.js',
-    'angularjs-slider/dist/rzslider.js'
+    'angularjs-slider/dist/rzslider.js',
+    'ng-dialog/js/ngDialog.js'
   ],
   static: [
     `${root}/index.html`,
