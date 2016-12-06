@@ -3,10 +3,6 @@ body {
 	border-top: 3px solid $primaryColor;
 }
 
-#container {
-	margin-bottom: 250px;
-}
-
 .content-wrapper {
 	@include _(16 12 8 4);
 	overflow: hidden;
