@@ -59,7 +59,7 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
     });
 
     $scope.openAboutModal = function() {
-        ngDialog.open({ template: 'html/default/about.html', className: 'ngdialog-theme-default', width: '60%' });
+        ngDialog.open({ template: 'html/default/about.html', className: 'ngdialog-theme-default', width: '80%' });
     };
 
 });
