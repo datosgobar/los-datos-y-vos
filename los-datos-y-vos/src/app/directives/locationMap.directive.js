@@ -4,8 +4,25 @@ angular.module('app').directive("svgMap", function() {
     replace: true,
     template: "<object type='image/svg+xml' id='locationMap'></object>",
     link: function(scope, element, attrs) {
+
+      var init = function() {
+        var departmentChanged = function(newValue, oldValue) {
+          if(newValue.id) {
+            var oldSelectedDepartment = angular.element(element[0].getSVGDocument().getElementsByClassName("selected"));
+            oldSelectedDepartment.removeClass("selected");
+            if(oldSelectedDepartment.length > 0) {
+              oldSelectedDepartment[0].children[0].style.fill="white";
+            }
+            var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));
+            selectedDepartment.addClass("selected");
+            selectedDepartment.children('path')[0].style.fill="black";
+          }
+        };
+        departmentChanged(scope.studentData.department);
+        scope.$watch(attrs.department, departmentChanged);
+      }
+
       var provinceChanged = function(newValue, oldValue) {
-        var locationMap = angular.element(document.querySelector('#locationMap'));
         if(newValue.id) {
           locationMap[0].data = "/img/maps/" + newValue.id + ".svg";
         }
@@ -24,7 +41,13 @@ angular.module('app').directive("svgMap", function() {
         }
       };
       scope.$watch(attrs.province, provinceChanged);
-      scope.$watch(attrs.department, departmentChanged);
+
+      if (element[0].getSVGDocument()) {
+        init();
+      } else {
+        element.on('load', init);
+      }
+
     }
   }
 });
