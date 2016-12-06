@@ -4,6 +4,7 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
     $scope.studentData = StudentDataSvc.getStudentData();
 
     $scope.$on('$stateChangeSuccess', function ($event, $toState, $toParams) {
+        document.getElementById('header').scrollIntoView();
         $scope.displayClassCode = true;
         switch ($state.current.name) {
             case 'root.welcome':

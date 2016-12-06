@@ -14,8 +14,10 @@ angular.module('app').directive("svgMap", function() {
               oldSelectedDepartment[0].children[0].style.fill="#F6F6F6";
             }
             var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));
-            selectedDepartment.addClass("selected");
-            selectedDepartment.children('path')[0].style.fill="#FFEAA8";
+            if(selectedDepartment.length) {
+              selectedDepartment.addClass("selected");
+              selectedDepartment.children('path')[0].style.fill="#FFEAA8";
+            }
           }
         };
         departmentChanged(scope.studentData.department);
