@@ -23,7 +23,7 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
         angular.forEach($scope.sectionData.pages, function(sectionPage) {
             if(sectionPage.id == "avgPersonsPerHouse") {
                 var questionResults = {
-                    questionText: "Personas que duermen por cuarto en promedio",
+                    questionText: "Personas que duermen por cuarto en promedio:",
                     options: []
                 };
                 questionResults.options.push({ 
@@ -43,6 +43,41 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
                 });
                 $scope.results[sectionPage.id] = questionResults;
 
+            }
+            if(sectionPage.id == "avgRentingHouse") {
+                var avgRentingHouseResults = {};
+
+                angular.forEach(sectionPage.questions, function(question) {
+                    if(question.id == "rentedHouse") {
+                        var rentedHouseResults = {
+                            questionText: "Vive en un lugar alquilado:",
+                            optionText: "Vivís en una vivienda alquilada?",  
+                            yourAnswer: $scope.studentData[$scope.sectionData.id]["rentedHouse"] ? 'Si' : 'No'
+                        };
+                        avgRentingHouseResults.rentedHouse = rentedHouseResults
+                    }
+                    if(question.id == "personsRentingHouses") {
+                        var questionResults = {
+                            questionText: "Porcentaje de personas que vive en un lugar alquilado en:",
+                            options: []
+                        };
+                        angular.forEach(question.options, function(option) {
+                            var optionResult = {
+                                optionText: option.textKey
+                            };
+                            optionResult.yourAnswer = $scope.studentData[$scope.sectionData.id][question.id][option.id];
+                            if(option.id == "department") {
+                                optionResult.censusResult = ($scope.studentData.department[question.id]*100);
+                            } else if(option.id == "province") {
+                                optionResult.censusResult = ($scope.studentData.province[question.id]*100);
+                            }
+                            questionResults.options.push(optionResult);
+                        });
+                        avgRentingHouseResults.personsRentingHouses = questionResults;
+                    }
+                });
+
+                $scope.results[sectionPage.id] = avgRentingHouseResults;
             }
         });
     };

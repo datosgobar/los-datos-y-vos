@@ -30,9 +30,9 @@ angular.module('app').controller('ResultSection1Ctrl', function($scope, $state, 
                         optionText: option.textKey
                     };
                     optionResult.yourAnswer = $scope.studentData[$scope.sectionData.id][question.id][option.id];
-                    if(option.id == 'department') {
+                    if(option.id == "department") {
                         optionResult.censusResult = ($scope.studentData.department[question.id]*100);
-                    } else if(option.id == 'province') {
+                    } else if(option.id == "province") {
                         optionResult.censusResult = ($scope.studentData.province[question.id]*100);
                     }
                     questionResults.options.push(optionResult);
