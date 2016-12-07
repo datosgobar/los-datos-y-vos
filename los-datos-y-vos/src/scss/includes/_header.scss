@@ -2,7 +2,12 @@
 .header {
 
     padding-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 55px;
+
+    @include _(greater than tablet) {
+        margin-bottom: 100px;
+    }
+
 
     .welcomeSlide &,
     .classCodeSlide & {
@@ -30,6 +35,11 @@
         text-align: center;
         max-width: 200px;
         width: 100%;
+        display: block;
+
+            @include _(less than laptop) {
+                margin-top: 40px;
+            }
     }
 
     &__item--3 {
@@ -42,6 +52,7 @@
         color: #D0D6DF;
         font-size: 14px;
         text-transform: uppercase;
+        outline: 0;
     }
 
     &__code {

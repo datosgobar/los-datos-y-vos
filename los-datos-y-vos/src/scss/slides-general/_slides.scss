@@ -3,7 +3,13 @@
 .welcome-slide {
 
     &__img {
-        max-width: 250px;
+        padding-top: 35px;
+        max-width: 190px;
+
+        @include _(greater than mobile) {
+            max-width: 250px;
+        }
+
 
         @include _(greater than 87.500em) {
             margin-top: 75px;//Fallback
@@ -37,7 +43,11 @@
     background-repeat: no-repeat;
     background-position: bottom;
     height: 100vh;
-    background-size: contain;
+
+    @include _(greater than tablet) {
+        background-size: contain;
+    }
+
 }
 
 .code-slide {
@@ -54,7 +64,7 @@
 }
 
 input.code-slide__input {
-    font-size: 55px;
+    font-size: 30px;
     background: transparent;
     border: 0;
     border-bottom: 3px solid #fff;
@@ -65,7 +75,10 @@ input.code-slide__input {
     max-width: 211px;
     @include fp(max-width, 180, 211);
     margin-bottom: 100px;
-    @include fp(font-size, 25, 55);
+    font-size: 30px; //Fallback
+    @include fp(font-size, 28, 55);
+    padding-bottom: 10px;
+    border-radius: 0;
 
         &:focus {
             border-bottom: 3px solid #fff;

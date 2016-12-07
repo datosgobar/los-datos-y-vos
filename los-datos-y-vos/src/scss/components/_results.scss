@@ -15,6 +15,7 @@
         font-family: $type__heading;
         font-weight: 600;
         font-size: 20px;
+        @include fp(font-size, 14, 20);
     }
 
     &__promedio {
@@ -44,8 +45,4 @@
         min-width: 38px;
     }
 
-    &__bottom {
-        margin-bottom: 100px;
-        overflow: hidden;
-    }
 }

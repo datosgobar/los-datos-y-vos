@@ -13,6 +13,7 @@ var sass = require('gulp-sass');
 var server = require('browser-sync');
 var yargs = require('yargs');
 var historyApiFallback = require('connect-history-api-fallback');
+var autoprefixer = require('gulp-autoprefixer');
 
 server.create();
 
@@ -66,6 +67,9 @@ gulp.task('styles', () => {
   return gulp.src(paths.styles)
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(autoprefixer({
+            browsers: ['last 4 versions']
+        }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist + 'css/'));
 });

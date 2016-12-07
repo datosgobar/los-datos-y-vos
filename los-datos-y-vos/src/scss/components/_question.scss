@@ -20,13 +20,17 @@
         color: #000;
         font-size: 16px;
         @include fp(font-size, 16, 18);
+        margin-bottom: 25px;
     }
 
     &__option-wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 70px;
+
+        @include _(greater than mobile) {
+            margin-bottom: 70px;
+        }
     }
 
     &__input {
@@ -36,6 +40,7 @@
 
     &__option-item {
         width: 100%;
+        margin-bottom: 75px;
 
         @include _(greater than tablet ) {
             display: flex;
@@ -45,8 +50,12 @@
     }
 
     &__single-container {
-        margin-bottom: 75px;
         overflow: hidden;
+        margin-bottom: 75px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -54,9 +63,9 @@
 
     width: 100%;
     @include _(greater than tablet) {
-        width: 48%;
+        width: 47%;
         float: left;
-        margin-right: 4%;
+        margin-right: 5%;
     }
 
     & + & {

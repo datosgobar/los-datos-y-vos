@@ -15,7 +15,7 @@
     font-size: 16px;
     font-family: $type__heading;
     font-weight: 700;
-    max-height: 52px;
+    //max-height: 52px;
 
         &:focus {
             outline: 0;
@@ -37,6 +37,7 @@ input[type="text"] {
     background-image: url(../img/icons/arrow.svg);
     background-repeat: no-repeat;
     background-position: 97%;
+    padding: 12px 25px;
 
         &.active {
             background-image: url(../img/icons/arrow-active.png);
@@ -87,6 +88,7 @@ span.input-square {
         font-size: 24px;
         text-align: center;
         max-width: 120px;
+        -webkit-appearance: none;
     }
 }
 
@@ -140,11 +142,41 @@ span.input-square {
     .rz-bubble {
         bottom: -70px;
         left: 50% !important;
+        margin-left: -16px;
 
             &::after {
                 content: "%";
                 padding-left: 5px;
             }
+    }
+
+    //Ticks
+    .rz-ticks .rz-tick {
+        width: 2px;
+        background: #FFEAA8;
+        margin-left: 12;
+    }
+
+    .rz-tick:first-of-type:after {
+        content: "";
+        width: 12px;
+        display: block;
+        height: 48px;
+        background: #fffcf4;
+        left: -12px;
+        position: absolute;
+        top: -20px;
+    }
+
+    .rz-tick:last-of-type:after {
+        content: "";
+        width: 18px;
+        display: block;
+        height: 48px;
+        background: #fffcf4;
+        left: 2px;
+        position: absolute;
+        top: -20px;
     }
 }
 
@@ -153,24 +185,25 @@ span.input-square {
 //Radio Inputs
 ///////////////
 .question__radio {
-  position: relative;
-  float: left;
-  width: 100%;
-  max-width: 100px;
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 100px;
+    padding-bottom: 3px;
 }
 
 .question__radio input[type=radio]{
-  position: absolute;
-  visibility: hidden;
+    position: absolute;
+    visibility: hidden;
 }
 
 .question__radio label{
-  position: relative;
-  padding-left: 30px;
-  z-index: 9;
-  cursor: pointer;
-  -webkit-transition: all 0.25s linear;
-  color: #9B9B9B;
+    position: relative;
+    padding-left: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #9B9B9B;
 }
 
 .question__radio .check{
@@ -201,13 +234,13 @@ span.input-square {
 }
 
 input[type=radio]:checked ~ .check {
-  border: 3px solid $primaryColor;
+    border: 3px solid $primaryColor;
 }
 
 input[type=radio]:checked ~ .check::before{
-  background: $primaryColor;
+    background: $primaryColor;
 }
 
 input[type=radio]:checked ~ label{
-  color: #222222;
+    color: #222222;
 }

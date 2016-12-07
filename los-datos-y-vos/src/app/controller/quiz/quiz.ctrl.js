@@ -1,18 +1,20 @@
 angular.module('app').controller('QuizCtrl', function($scope, $state, $stateParams, EventBusSvc, StudentDataSvc, QuizSvc) {
-    
+
     $scope.studentData = StudentDataSvc.getStudentData();
     $scope.sectionData = QuizSvc.getSectionData($state.current.data.stepNumber);
     $scope.pageData = $scope.sectionData.pages[$stateParams.pageNumber];
     $scope.sliderOptions = {
         floor: 0,
         ceil: 100,
-        hideLimitLabels: true
+        hideLimitLabels: true,
+        showTicks: true,
+        ticksArray: [0, 50, 100]
     };
-    
+
     $scope.keys = [];
     $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
     $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "la " : "la Provincia de ") + $scope.studentData.province.name;
-    
+
     $scope.goToNextPage = function(pageNumber) {
         var questionStateName = "root.quizSection{{stepNumber}}.question".replace("{{stepNumber}}", $state.current.data.stepNumber);
         var resultStateName = "root.quizSection{{stepNumber}}.result".replace("{{stepNumber}}", $state.current.data.stepNumber);
@@ -47,9 +49,9 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
     };
 
     $scope.decrementNumericValue = function(questionId, optionId) {
-        var value = optionId ? $scope.studentData[$scope.sectionData.id][questionId][optionId]: 
+        var value = optionId ? $scope.studentData[$scope.sectionData.id][questionId][optionId]:
             $scope.studentData[$scope.sectionData.id][questionId];
-        if((value -1) >= $scope.sliderOptions.floor) { 
+        if((value -1) >= $scope.sliderOptions.floor) {
             if(optionId) {
                 $scope.studentData[$scope.sectionData.id][questionId][optionId] -= 1;
             } else {
@@ -59,9 +61,9 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
     };
 
     $scope.incrementNumericValue = function(questionId, optionId) {
-        var value = optionId ? $scope.studentData[$scope.sectionData.id][questionId][optionId]: 
+        var value = optionId ? $scope.studentData[$scope.sectionData.id][questionId][optionId]:
             $scope.studentData[$scope.sectionData.id][questionId];
-        if((value +1) <= $scope.sliderOptions.ceil) { 
+        if((value +1) <= $scope.sliderOptions.ceil) {
             if(optionId) {
                 $scope.studentData[$scope.sectionData.id][questionId][optionId] += 1;
             } else {

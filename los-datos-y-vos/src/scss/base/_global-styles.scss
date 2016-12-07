@@ -3,6 +3,12 @@ body {
 	border-top: 3px solid $primaryColor;
 }
 
+#container {
+	@include _(less than laptop) {
+		padding-bottom: 20px;
+	}
+}
+
 .content-wrapper {
 	@include _(16 12 8 4);
 	overflow: hidden;
@@ -14,21 +20,14 @@ body {
 	float: none;
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
 
     @include _(container, clear);
-	padding-left:  15px;
-	padding-right: 15px;
 
   	@include _(greater than tablet) {
 		padding-left:  60px;
 		padding-right: 60px;
-	}
-
-	@include _(greater than laptop) {
-		padding-left:  70px;
-		padding-right: 70px;
 	}
 
 }
@@ -151,15 +150,15 @@ footer {
 //Desktop + Mobile hidden class
 
 .hidden-desktop {
-	display: none;
+	display: none !important;
 
 	@include _(less than laptop) {
-		display: initial;
+		display: block !important;
 	}
 }
 
 .hidden-mobile {
-	display: initial;
+	display: block !important;
 
 	@include _(less than laptop) {
 		display: none !important;

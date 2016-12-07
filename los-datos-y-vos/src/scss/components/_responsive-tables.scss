@@ -13,7 +13,7 @@
             box-sizing: border-box;
             flex-grow: 1;
             width: 100%;  // Default to full width
-            padding: 0.8em 1.2em;
+            padding: .4em .5em;
             overflow: hidden; // Or flex might break
             list-style: none;
             border: solid 1px #FFBF00;
@@ -28,6 +28,10 @@
             color: rgba(0, 0, 0, .70);
             font-size: 18px;
             @include fp(font-size, 14, 18);
+
+            @include _(greater than mobile) {
+                padding: 0.8em 1.2em;
+            }
 
 
 
