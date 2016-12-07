@@ -10,7 +10,8 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
                     name: element.provincia_nombre,
                     youngProportion: element.jovenes_proporcion,
                     schoolAttendance: element.jovenes_asistencia_escolar,
-                    avgPersonsPerHouse: element.personas_por_cuarto
+                    avgPersonsPerHouse: element.personas_por_cuarto,
+                    personsRentingHouses: element.propietarios_vivienda_proporcion
                 });
             });
             defer.resolve($filter('orderBy')(list, 'name'));
@@ -31,7 +32,8 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
                     provinceId: element.provincia_id,
                     youngProportion: element.jovenes_proporcion,
                     schoolAttendance: element.jovenes_asistencia_escolar,
-                    avgPersonsPerHouse: element.personas_por_cuarto
+                    avgPersonsPerHouse: element.personas_por_cuarto,
+                    personsRentingHouses: element.propietarios_vivienda_proporcion
                 });
             });
             defer.resolve($filter('orderBy')(list, 'name'));
@@ -57,7 +59,8 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
                         departmentName: element.comuna_nombre,
                         youngProportion: department.youngProportion || 0,
                         schoolAttendance: department.schoolAttendance || 0,
-                        avgPersonsPerHouse: department.avgPersonsPerHouse || 0
+                        avgPersonsPerHouse: department.avgPersonsPerHouse || 0,
+                        personsRentingHouses: department.personsRentingHouses || 0
                     });
                 });
                 defer.resolve($filter('orderBy')(list, 'name'));
