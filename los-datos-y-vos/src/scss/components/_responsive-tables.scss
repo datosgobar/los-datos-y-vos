@@ -28,6 +28,7 @@
             color: rgba(0, 0, 0, .70);
             font-size: 18px;
             @include fp(font-size, 14, 18);
+            -webkit-flex-align: center;
 
             @include _(greater than mobile) {
                 padding: 0.8em 1.2em;

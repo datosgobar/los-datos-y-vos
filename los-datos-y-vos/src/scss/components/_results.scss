@@ -16,6 +16,10 @@
         font-weight: 600;
         font-size: 20px;
         @include fp(font-size, 14, 20);
+
+        @include _(less than 30em) {
+            top: 33%; //Fix for ios vertical alignment 
+        }
     }
 
     &__promedio {

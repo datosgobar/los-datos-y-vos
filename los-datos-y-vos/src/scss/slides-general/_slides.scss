@@ -132,6 +132,13 @@ input.code-slide__input {
             width: 38%;
         }
     }
+
+    &__maps {
+        max-width: 400px;
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
 }
 
 ///Student data Slide

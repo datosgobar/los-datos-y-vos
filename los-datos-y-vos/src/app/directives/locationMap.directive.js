@@ -2,16 +2,16 @@ angular.module('app').directive("svgMap", function() {
   return {
     restrict: "E",
     replace: true,
-    template: "<object type='image/svg+xml' id='locationMap'></object>",
+    template: "<object type='image/svg+xml' id='locationMap' class='student-info__maps'></object>",
     link: function(scope, element, attrs) {
 
-      var init = function() {        
+      var init = function() {
         var departmentChanged = function(newValue, oldValue) {
           if(newValue.id) {
             var oldSelectedDepartment = angular.element(element[0].getSVGDocument().getElementsByClassName("selected"));
             oldSelectedDepartment.removeClass("selected");
             if(oldSelectedDepartment.length > 0) {
-              oldSelectedDepartment[0].children[0].style.fill="#F6F6F6";
+              oldSelectedDepartment[0].children[0].style.fill="#F2F2F2";
             }
             var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));
             if(selectedDepartment.length) {
