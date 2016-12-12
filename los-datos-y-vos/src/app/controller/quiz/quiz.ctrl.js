@@ -13,7 +13,7 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
 
     $scope.keys = [];
     $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
-    $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "la " : "la Provincia de ") + $scope.studentData.province.name;
+    $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
     $scope.goToNextPage = function(pageNumber) {
         var questionStateName = "root.quizSection{{stepNumber}}.question".replace("{{stepNumber}}", $state.current.data.stepNumber);
