@@ -52,7 +52,7 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
                         var rentedHouseResults = {
                             questionText: "Vive en un lugar alquilado:",
                             optionText: "Vivís en una vivienda alquilada?",  
-                            yourAnswer: $scope.studentData[$scope.sectionData.id]["rentedHouse"] ? 'Si' : 'No'
+                            yourAnswer: parseInt($scope.studentData[$scope.sectionData.id]["rentedHouse"]) ? 'Si' : 'No'
                         };
                         avgRentingHouseResults.rentedHouse = rentedHouseResults
                     }
