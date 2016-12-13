@@ -1,12 +1,12 @@
 // Messages Config
 // =============================================================================
 angular.module('app').config(['$translateProvider', function($translateProvider) {
-	
+
 	var translations = {
-  		YOUR_DEPARTMENT: 'a) En tu {{key}}',
-  		YOUR_PROVINCE: 'b) En {{key}}',
-  		YOUR_HOUSE_RESULT: 'En tu casa',
-  		YOUR_DEPARTMENT_RESULT: 'En tu {{key}}',
+  		YOUR_DEPARTMENT: 'a) Tu {{key}}',
+  		YOUR_PROVINCE: 'b) {{key}}',
+  		YOUR_HOUSE_RESULT: 'Tu casa',
+  		YOUR_DEPARTMENT_RESULT: 'Tu {{key}}',
   		YOUR_PROVINCE_RESULT: '{{key}}',
 	};
 

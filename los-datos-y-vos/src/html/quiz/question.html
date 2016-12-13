@@ -5,7 +5,7 @@
 			<div ng-repeat="option in question.options" ng-init="initNumericValue(question.id, option.id)" class="question__option-item">
 				<p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p>
 				<div class="question__input">
-					<span class="input-square input-square--left" 
+					<span class="input-square input-square--left"
 						ng-click="decrementNumericValue(question.id, option.id)">
 					</span>
 					<rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider>
@@ -25,10 +25,10 @@
 		</div>
 		<div ng-if="question.type == 'radio_boolean'">
 			<div class="question__radio">
-				<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="1" id="radio-si" 
+				<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="1" id="radio-si"
 					ng-required="!studentData[sectionData.id][question.id]"/>
 				<div class="check"></div>
-				<label for="radio-si">Si</label>
+				<label for="radio-si">Sí</label>
 			</div>
 			<div class="question__radio">
 				<input type="radio" ng-model="studentData[sectionData.id][question.id]"	value="0" id="radio-no"
