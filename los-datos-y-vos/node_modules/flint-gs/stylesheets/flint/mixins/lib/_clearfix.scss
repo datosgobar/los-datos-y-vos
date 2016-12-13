@@ -1,0 +1,29 @@
+///
+/// Micro flint-clearfix
+///
+/// @access private
+///
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/
+///
+/// @requires {Mixin} clearfix - local mixin if available
+///
+/// @group Internal Mixins
+///
+@mixin flint-clearfix {
+    @if mixin-exists("clearfix") {
+        @include clearfix;
+    } @else {
+        zoom: 1;
+
+        &:before, &:after {
+            content: "\0020";
+            display: block;
+            height: 0;
+            overflow: hidden;
+        }
+
+        &:after {
+            clear: both;
+        }
+    }
+}

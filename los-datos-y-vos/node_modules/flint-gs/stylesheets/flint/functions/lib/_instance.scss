@@ -1,0 +1,48 @@
+///
+/// Keeps count of all instances with arguments, stores in global var
+///
+/// @access private
+///
+/// @param {String} $key                 - computed breakpoint of instance
+/// @param {Number} $span                - computed span of instance
+/// @param {Number} $context             - computed context of instance
+/// @param {Number} $gutter              - computed gutter of instance
+/// @param {Number} $output-width        - computed width of instance
+/// @param {Number} $output-margin-right - computed right margin of instance
+/// @param {Number} $output-margin-left  - computed left margin of instance
+///
+/// @return {Map} merged instance map
+///
+/// @group Internal Functions
+///
+@function flint-instance($key, $span, $context, $gutter, $output-width, $output-margin-right, $output-margin-left) {
+
+    // Increase the instance count
+    $flint-instance-count: $flint-instance-count + 1 !global;
+
+    // Lets clean up the selector a bit...
+    $selector: nth(&, 1);
+
+		// Get the selector family instance
+    $family-instance: flint-has-family-instance($key);
+
+    $flint-instance: (
+		"#{$selector}::#{$key}": (
+			"instance-count": $flint-instance-count,
+			"parent-selector": if($family-instance != false, $family-instance, none),
+			"key": $key,
+			"breakpoint": flint-get-value("breakpoints", $key, "breakpoint"),
+			"columns": flint-get-value("breakpoints", $key, "columns"),
+			"span": $span,
+			"context": if($context == "auto", flint-get-instance-value($key, "span"), $context),
+			"gutter": $gutter,
+			"internal": (
+				"width": $output-width,
+				"margin-right": $output-margin-right,
+				"margin-left": $output-margin-left
+			)
+		)
+    );
+
+    @return map-merge($flint-instance, $flint-instances);
+}

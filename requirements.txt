@@ -1,6 +1,0 @@
-geopandas
-svgis
-simpledbf
-pyredatam
-xlrd
-openpyxl

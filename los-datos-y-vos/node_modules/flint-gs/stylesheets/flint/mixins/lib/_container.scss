@@ -1,0 +1,45 @@
+///
+/// Container
+///
+/// @access private
+///
+/// @param {String} $key [null] - alias of individual breakpoint
+/// @param {Number} $i   [null] - index number if called from loop
+///
+/// @group Internal Mixins
+///
+@mixin flint-container($key: null, $i: null) {
+
+    // Check if inside of loop, and if so only output for default
+    @if $i == null or flint-is-default(flint-steal-key($i)) {
+        float: none;
+
+        @if $key {
+            width: flint-calc-width($key, "container");
+        }
+
+        @if flint-get-value("settings", "max-width") {
+            @if flint-is-number(flint-get-value("settings", "max-width")) {
+                max-width: flint-get-value("settings", "max-width");
+            } @else {
+                max-width: max(flint-get-all-breakpoints()...);
+            }
+        }
+
+        @if flint-get-value("settings", "center-container") {
+            margin-right: auto;
+            margin-left: auto;
+        } @else {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+    // Inside of loop, so only output width
+    } @else {
+        @if $key {
+            width: flint-calc-width($key, "container");
+        }
+    }
+
+    @content;
+}

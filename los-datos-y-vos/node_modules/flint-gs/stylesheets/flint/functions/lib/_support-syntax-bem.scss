@@ -1,0 +1,37 @@
+///
+/// Parser to support BEM syntax
+///
+/// @access private
+///
+/// @param {List} $selectors - string of selectors to parse
+///
+/// @return {List} - parsed list of selectors according to syntax
+///
+/// @group Internal Functions
+///
+@function flint-support-syntax-bem($selectors) {
+    $selectors: flint-list-to-str($selectors, " ");
+    // Clean up selector, remove double underscores for spaces
+    //  add pseudo character to differentiate selectors
+    $selectors: flint-str-replace($selectors, "__", "/");
+    // Parse string back to list without pseudo character
+    $selectors: flint-str-to-list($selectors, "/");
+    // Define top-most parent of selector
+    $parent: nth($selectors, 1);
+    // Create new list of parsed selectors
+    $selector-list: ($parent,);
+
+    // Loop over each selector and build list of selectors
+    @each $selector in $selectors {
+        // Make sure current selector is not the parent
+        @if $selector != $parent {
+            // Save to selector list
+            $selector-list: append($selector-list, "#{$parent}__#{$selector}", "comma");
+            // Define new parent
+            $parent: "#{$parent}__#{$selector}";
+        }
+    }
+
+    // Return the list of parsed selectors
+    @return $selector-list;
+}

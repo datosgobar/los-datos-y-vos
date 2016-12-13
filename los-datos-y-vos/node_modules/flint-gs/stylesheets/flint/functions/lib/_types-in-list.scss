@@ -1,0 +1,76 @@
+///
+/// Checks type of each item in list
+///
+/// @access private
+///
+/// @param {List} $list                        - list of items
+/// @param {String|List} $assert-types  [null] - single or list of types to assert
+/// @param {Number}      $assert-length [null] - assert length of list
+///
+/// @return {Bool}
+///
+/// @group Internal Functions
+///
+@function flint-types-in-list($list, $assert-types: null, $assert-length: null) {
+    @if not flint-is-list($list) {
+      @return false;
+    }
+
+    @if not $assert-types {
+      $type: type-of(nth($list, 1));
+
+      @each $item in $list {
+          @if type-of($item) != $type {
+              @return false;
+          }
+      }
+
+      @return true;
+    }
+
+    @if not $assert-length {
+      $type: $assert-types;
+
+      @each $item in $list {
+          @if type-of($item) != $type {
+              @return false;
+          }
+      }
+
+      @return true;
+    }
+
+    $length: length($list);
+
+    @if $length != $assert-length {
+        @return false;
+    }
+
+    @if flint-is-list($assert-types) {
+        @if length($assert-types) != $length {
+            @return false;
+        }
+
+        @for $i from 1 through $assert-length {
+            $item: nth($list, $i);
+            $type: nth($assert-types, $i);
+
+            @if type-of($item) != $type {
+                @return false;
+            }
+        }
+
+    } @else {
+        $type: nth($assert-types, 1);
+
+        @for $i from 1 through $assert-length {
+            $item: nth($list, $i);
+
+            @if type-of($item) != $type {
+                @return false;
+            }
+        }
+    }
+
+    @return true;
+}

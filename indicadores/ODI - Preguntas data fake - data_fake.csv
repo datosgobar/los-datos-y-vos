@@ -1,7 +1,0 @@
-grupo_id,alumno_id,alumno_nombre,alumno_edad,alumno_provincia,alumno_departamento,pregunta_1_1_departamento,pregunta_1_1_provincia,pregunta_1_2_departamento,pregunta_1_2_provincia,pregunta_2_1_alumno_cuartos,pregunta_2_1_alumno_personas,pregunta_2_1_departamento,pregunta_2_1_provincia,pregunta_2_2_alumno,pregunta_2_2_departamento,pregunta_2_2_provincia
-1,1,Juan,15,CABA,Comuna 1,"0,15","0,1","0,85","0,8",2,4,2,"1,5",1,"0,9","0,8"
-1,2,Carlos,16,CABA,Comuna 1,"0,1","0,05","0,8","0,75",3,3,"2,5",2,1,"0,8","0,7"
-1,3,Pepe,15,CABA,Comuna 1,"0,12","0,1","0,82","0,8",2,2,2,"2,5",0,"0,3","0,4"
-1,4,Lucia,17,CABA,Comuna 1,"0,2","0,25","0,9","0,95",1,3,"1,5",2,1,"0,85","0,7"
-1,5,Sofia,18,CABA,Comuna 1,"0,05","0,01","0,75","0,71",4,6,3,"3,5",0,"0,4","0,3"
-1,6,Carolina,16,CABA,Comuna 1,"0,3","0,2",1,"0,9",3,4,1,"1,5",1,"0,6","0,8"

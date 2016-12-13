@@ -1,0 +1,19 @@
+//
+// Steal breakpoint key by index
+//
+@include describe("[function] steal-key") {
+
+	@include it("should expect breakpoint alias of passed index from configuration map") {
+		@include should(expect(
+			flint-steal-key(1)),
+			to(be("desktop"))
+		);
+	}
+
+	@include it("should expect invalid type to return false") {
+		@include should(expect(
+			flint-steal-key("string")),
+			to(be(false))
+		);
+	}
+}

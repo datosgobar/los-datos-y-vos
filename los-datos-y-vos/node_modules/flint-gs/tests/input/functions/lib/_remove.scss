@@ -1,0 +1,14 @@
+//
+// Remove value from list
+//
+@include describe("[function] remove") {
+
+	$list: ("one", "two", "three");
+
+	@include it("should expect value to be removed from list") {
+		@include should(expect(
+			flint-remove($list, "two")),
+			to(be(("one", "three")))
+		);
+	}
+}

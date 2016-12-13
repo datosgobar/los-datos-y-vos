@@ -1,0 +1,47 @@
+///
+/// Calculate breakpoint query
+///
+/// @access private
+///
+/// @param {String} $type - type of query to get
+/// @param {String} $key  - key of breakpoint
+/// @param {Number} $i    - index of current breakpoint
+///
+/// @return {Number} - breakpoint value
+///
+/// @group Internal Functions
+///
+@function flint-calc-breakpoint($type, $key, $i) {
+
+    @if $type == "alias" {
+
+        @if flint-get-value("settings", "grid") == "fixed" {
+            @if flint-is-lowest-breakpoint($key) {
+                @return 0;
+            } @else {
+                @return flint-get-value("breakpoints", $key, "breakpoint");
+            }
+        } @else if flint-get-value("settings", "grid") == "fluid" {
+            @return flint-get-value("breakpoints", $key, "breakpoint");
+        }
+
+    } @else if $type == "next" {
+
+        @if flint-is-lowest-breakpoint($key) {
+            @return 0;
+        } @else {
+            @return flint-get-value("breakpoints", flint-steal-key(($i + 1)), "breakpoint");
+        }
+
+    } @else if $type == "prev" {
+
+        @if flint-is-highest-breakpoint($key) {
+            @return flint-get-value("breakpoints", $key, "breakpoint");
+        } @else {
+            @return flint-get-value("breakpoints", flint-steal-key(($i - 1)), "breakpoint");
+        }
+
+    }
+
+    @return false;
+}

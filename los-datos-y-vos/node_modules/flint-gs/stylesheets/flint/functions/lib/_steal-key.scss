@@ -1,0 +1,32 @@
+///
+/// Steal breakpoint key by index
+///
+/// @access private
+///
+/// @param {Number} $index - index of key
+///
+/// @return {String}
+///
+/// @group Internal Functions
+///
+@function flint-steal-key($index) {
+	$length: length(map-keys(flint-get-value("breakpoints")));
+
+	@if not flint-is-number($index) {
+		@if not $flint-development-mode {
+			@error "Passed $index (#{$index}) is not a number. Function takes index number of breakpoint key.";
+		} @else {
+			@return false;
+		}
+	}
+
+	@if $index > $length {
+		@if not $flint-development-mode {
+			@error "Passed $index (#{$index}) is greater than the length of the config map.";
+		} @else {
+			@return false;
+		}
+	}
+
+	@return if($index != 0, nth(map-keys(flint-get-value("breakpoints")), $index), false);
+}

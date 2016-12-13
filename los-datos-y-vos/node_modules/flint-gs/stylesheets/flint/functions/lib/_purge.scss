@@ -1,0 +1,24 @@
+///
+/// Removes all false and null values from $list
+///
+/// @access private
+///
+/// @link http://sassylists.com/documentation.html#purge
+///
+/// @param {List} $list
+///
+/// @return {List}
+///
+/// @group Internal Functions
+///
+@function flint-purge($list) {
+	$result: ();
+
+	@each $item in $list {
+		@if flint-is-true($item) {
+			$result: append($result, $item, list-separator($list));
+		}
+	}
+
+	@return $result;
+}

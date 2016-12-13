@@ -1,0 +1,38 @@
+///
+/// Joins all elements of list with passed glue
+///
+/// @access private
+///
+/// @param {List}   $list
+/// @param {String} $glue
+/// @param {Bool}   $is-nested
+///
+/// @return {String}
+///
+/// @group Internal Functions
+///
+@function flint-list-to-str($list, $glue: "", $is-nested: false) {
+	@if flint-is-string($list) {
+		$list: ($list,);
+	}
+
+	// Use Ruby function if available
+	@if $flint-use-ruby-functions {
+		@return flint_ruby_list_to_str($list, $glue);
+	}
+
+	$result: "";
+	$length: length($list);
+
+	@for $i from 1 through $length {
+		$item: nth($list, $i);
+
+		@if flint-is-list($item) {
+			$result: $result + flint-list-to-str($item, $glue, true);
+		} @else {
+			$result: if($i != length($list) or $is-nested, $result + $item + $glue, $result + $item);
+		}
+	}
+
+	@return quote($result);
+}

@@ -1,0 +1,122 @@
+////
+/// @group Internal Variables
+////
+
+///
+/// Use development mode to silence fatal errors
+///
+/// @access private
+///
+/// @type Bool
+///
+$flint-development-mode: false !global;
+
+///
+/// Set global variable to check if foundation has been set
+///
+/// @access private
+///
+/// @type Bool
+///
+$flint-foundation: false !global;
+
+///
+/// Keep count of all instances
+///
+/// @access private
+///
+/// @type Number
+///
+$flint-instance-count: 0 !global;
+
+///
+/// Keep map of all instances
+///
+/// @access private
+///
+/// @type Map
+///
+$flint-instances: () !global;
+
+///
+/// Font size for em calculation
+///
+/// @access private
+///
+/// @type Number
+///
+$flint-base-font-size: 16px !global;
+
+///
+/// Detect if Ruby functions are available
+///
+/// @access private
+///
+/// @type Bool
+///
+$flint-use-ruby-functions: if(flint-use-ruby-functions() == true, true, false) !global;
+
+///
+/// Global syntax support
+///
+/// @access private
+///
+/// @type String
+///
+$flint-support-syntax: flint-get-value("settings", "support-syntax") !global;
+
+///
+/// Gather all keys, breakpoints and column counts
+///
+/// @access private
+///
+/// @type List
+///
+$flint-all-keys: flint-get-all-keys() !global;
+$flint-all-breakpoints: flint-get-all-breakpoints() !global;
+$flint-all-columns: flint-get-all-columns() !global;
+
+///
+/// Cache selector instance lists
+///
+/// @access private
+///
+/// @type Map
+///
+$flint-cached-instances: () !global;
+
+///
+/// Cache calculated values
+///
+/// @access private
+///
+/// @type Map
+///
+$flint-cached-values: () !global;
+
+///
+/// Cache calculation results
+///
+/// @access private
+///
+/// @type Map
+///
+$flint-cached-results: () !global;
+
+///
+/// Bool check for overlay
+///
+/// @access private
+///
+/// @type Bool
+///
+$flint-overlay: false !global;
+
+///
+/// Color for grid overlay
+///
+/// @access private
+///
+/// @type Color
+///
+$flint-overlay-color: #f33 !global;

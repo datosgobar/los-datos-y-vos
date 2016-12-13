@@ -1,0 +1,241 @@
+////
+/// @group Internal Mixins
+////
+
+///
+/// Outputs calculated styles
+///
+/// @access private
+///
+/// @param {Map}    $width        - map of target / context values
+/// @param {Number} $margin-right - right margin value
+/// @param {Number} $margin-left  - left margin value
+///
+@mixin flint-output($width, $margin-right, $margin-left) {
+
+	@if not flint-is-map($width) {
+		@if not $flint-development-mode {
+			@error "Passed $width (#{$width}) was not a map; a map containing a target / context combination is required."
+		}
+	}
+
+	@if flint-get-value("settings", "grid") == "fluid" {
+		width: flint-fluid-width(map-get($width, "target"), map-get($width, "context"));
+		margin-right: if(flint-is-number($margin-right) and $margin-right != 0, flint-fluid-width($margin-right, map-get($width, "context")), $margin-right);
+		margin-left: if(flint-is-number($margin-left) and $margin-left != 0, flint-fluid-width($margin-left, map-get($width, "context")), $margin-left);
+	} @else {
+		width: map-get($width, "target");
+		margin-right: $margin-right;
+		margin-left: $margin-left;
+	}
+
+	@content;
+}
+
+///
+/// Calculate widths, save all variables to instance
+///
+/// @access private
+///
+/// @param {String}      $calc-key     - breakpoint key
+/// @param {Number}      $calc-span    - span value
+/// @param {Number}      $calc-context - context value
+/// @param {String}      $calc-gutter  - gutter modifier
+/// @param {Number|Null} $i            - index if variable length is > 1
+///
+@mixin flint-calculate($key, $span, $context, $gutter, $i: null) {
+
+	// Define local vars
+	$calc-key: $key;
+	$calc-span: $span;
+	$calc-context: $context;
+	$calc-gutter: $gutter;
+
+	// Define default values
+	$output-width-map: null;
+	$output-margin-right: null;
+	$output-margin-left: null;
+
+	// Track errors
+	$errors: false;
+
+	// Default value for cache search result
+	$cached: false;
+
+	//
+	// Check lengths, if invalid throw error
+	//
+	@if flint-types-in-list($calc-gutter, "string") and length($calc-gutter) != length($flint-all-keys) {
+		@if not $flint-development-mode {
+			@error "Invalid argument length of #{length($calc-gutter)} for gutter. If you're using a shorthand, please provide an argument for each breakpoint in your config (#{length($flint-all-keys)}). Your argument was: #{$calc-gutter}";
+		}
+	}
+
+	//
+	// Check if any arguments are lists if called from loop
+	//
+	@if $i {
+
+		@if flint-types-in-list($calc-key, "number") {
+			$calc-key: nth($calc-key, $i);
+		}
+		@if flint-types-in-list($calc-span, "number") {
+			$calc-span: nth($calc-span, $i);
+		}
+		@if flint-types-in-list($calc-context, "number") {
+			$calc-context: nth($calc-context, $i);
+		}
+		@if flint-types-in-list($calc-gutter, "string") {
+			$calc-gutter: nth($calc-gutter, $i);
+		}
+
+	}
+
+	//
+	// Check for cached results
+	//
+	@if $calc-context != "auto" and $calc-span != 0 {
+		@if map-has-key($flint-cached-results, "#{$calc-key, $calc-span, $calc-context, $calc-gutter, $i}") {
+			$result: map-get($flint-cached-results, "#{$calc-key, $calc-span, $calc-context, $calc-gutter, $i}");
+
+			// Get results
+			$output-width-map: nth($result, 1);
+			$output-margin-right: nth($result, 2);
+			$output-margin-left: nth($result, 3);
+
+			// Declare successful search
+			$cached: true;
+		}
+	}
+
+	//
+	// Hide if span is zero
+	//
+	@if $calc-span == 0 {
+
+		// First check if it's the default, so we don't hide the element on all breakpoints
+		@if $calc-key == flint-get-value("settings", "default") {
+			@include _($calc-key) {
+				display: none;
+			}
+			// If we're hiding the default, but span is a list, define floats for other queries
+			@if flint-is-list($span) {
+				float: unquote(flint-get-value("settings", "float-direction"));
+			}
+		} @else {
+			display: none;
+		}
+
+		@if flint-get-value("settings", "instance-maps") {
+			@include flint-new-instance($calc-key, $calc-span, $calc-context, $calc-gutter, $output-width-map, $output-margin-right, $output-margin-left);
+			@include flint-debug-instance($calc-key);
+		}
+
+	} @else {
+
+		//
+		// Define floats if key is default, or this is a single instance call
+		//
+		@if flint-is-default($calc-key) and $gutter != "center" or $i == null and $gutter != "center" {
+			float: unquote(flint-get-value("settings", "float-direction"));
+		}
+
+		//
+		// Disable floats if gutter is set to center
+		//
+		$recursive-center: false;
+
+		@if $gutter == "center" {
+			$recursive-center: true;
+		}
+
+		// Check if default and gutter is recursive
+		@if flint-is-default($calc-key) and $recursive-center {
+			float: none;
+		// Check if default and gutter is not recurisve, wrap in query to not affect others
+		} @else if flint-is-default($calc-key) and $calc-gutter == "center" and not $recursive-center {
+			@include _($calc-key) {
+				float: none;
+			}
+		// Not default, check if gutter was set to center but not recursive
+		} @else if $calc-gutter == "center" and not $recursive-center or $i == null and $recursive-center {
+			float: none;
+		}
+
+		//
+		// Only run through if cache search was unsuccessful
+		//
+		@if not $cached {
+
+			$output-gutter: flint-get-gutter();
+
+			@if $calc-gutter == null or $calc-gutter == "normal" or $calc-gutter == "default" or $calc-gutter == "regular" {
+
+				$output-width-map: flint-calc-width($calc-key, $calc-span, if($calc-context, $calc-context, null), ($output-gutter * 2));
+				$output-margin-right: $output-gutter;
+				$output-margin-left: $output-gutter;
+
+			} @else if $calc-gutter == "inside" {
+
+				$output-width-map: flint-calc-width($calc-key, $calc-span, if($calc-context, $calc-context, null), ($output-gutter * 4));
+				$output-margin-right: $output-gutter;
+				$output-margin-left: $output-gutter;
+
+			} @else if $calc-gutter == "alpha" or $calc-gutter == "no-left" or $calc-gutter == "first" {
+
+				$output-width-map: flint-calc-width($calc-key, $calc-span, if($calc-context, $calc-context, null), $output-gutter);
+				$output-margin-right: $output-gutter;
+				$output-margin-left: 0;
+
+			} @else if $calc-gutter == "omega" or $calc-gutter == "no-right" or $calc-gutter == "last" {
+
+				$output-width-map: flint-calc-width($calc-key, $calc-span, if($calc-context, $calc-context, null), $output-gutter);
+				$output-margin-right: 0;
+				$output-margin-left: $output-gutter;
+
+			} @else if $calc-gutter == "center" {
+
+				$output-width-map: flint-calc-width($calc-key, $calc-span, if($calc-context, $calc-context, null), ($output-gutter * 2));
+				$output-margin-right: auto;
+				$output-margin-left: auto;
+
+			} @else if $calc-gutter == "row" or $calc-gutter == "none" {
+
+				$output-width-map: flint-calc-width($calc-key, $calc-span, if($calc-context, $calc-context, null));
+				$output-margin-right: 0;
+				$output-margin-left: 0;
+
+			} @else {
+				@if not $flint-development-mode {
+					@error "Invalid gutter argument: #{$calc-gutter}. Please provide a valid argument.";
+				} @else {
+					$errors: true;
+				}
+			}
+		}
+
+		@if not $errors {
+
+			// Cache result
+			@if $calc-context != "auto" and $calc-span != 0 and not $cached {
+				$flint-cached-results: map-merge($flint-cached-results, (
+					"#{$calc-key, $calc-span, $calc-context, $calc-gutter, $i}": ($output-width-map, $output-margin-right, $output-margin-left)
+				)) !global;
+			}
+
+			// Output styles
+			@include flint-output($output-width-map, $output-margin-right, $output-margin-left) {
+				@content;
+			}
+
+			@if flint-get-value("settings", "instance-maps") {
+
+				// Create new instance
+				@include flint-new-instance($calc-key, $calc-span, $calc-context, $calc-gutter, map-get($output-width-map, "target"), $output-margin-right, $output-margin-left);
+
+				// If debug mode, print instance
+				@include flint-debug-instance($calc-key);
+			}
+		}
+	}
+}
