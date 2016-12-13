@@ -20,7 +20,7 @@ server.create();
 const argv = yargs.argv;
 const root = 'src/';
 const paths = {
-  dist: './docs/',
+  dist: '../docs/',
   scripts: [`${root}/**/module.js`, `${root}/**/*.js`],
   styles: `${root}/scss/**/*.scss`,
   templates: `${root}/**/*.html`,
@@ -41,7 +41,7 @@ const paths = {
   ]
 };
 
-gulp.task('clean', cb => del(paths.dist + '**/*', cb));
+gulp.task('clean', cb => del(paths.dist + '**/*', {force: true}, cb));
 
 gulp.task('templates', () => {
   return gulp.src(paths.templates)
