@@ -26,7 +26,7 @@ angular.module('app').directive("svgMap", function() {
 
       var provinceChanged = function(newValue, oldValue) {
         if(newValue.id) {
-          element[0].data = "/img/maps/" + newValue.id + ".svg";
+          element[0].data = "img/maps/" + newValue.id + ".svg";
         }
       };
       scope.$watch(attrs.province, provinceChanged);

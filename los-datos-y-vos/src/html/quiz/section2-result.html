@@ -59,14 +59,14 @@
 				<div class="Rtable__cell">{{ option.optionText.concat('_RESULT') | translate: getTranslationKey(option.optionText) }}</div>
 				<div class="Rtable__cell results__yours">
 					<span class="results__number">{{option.yourAnswer | number:0}}%</span>
-					<object type="image/svg+xml" data="/img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%;" class="results__graphic">
-				    	<img src="/img/graph-svg/circle-graph.png" class="results__graphic">
+					<object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%;" class="results__graphic">
+				    	<img src="img/graph-svg/circle-graph.png" class="results__graphic">
 					</object>
 				</div>
 				<div class="Rtable__cell">
 					<span class="results__number">{{option.censusResult | number:0}}%</span>
-					<object type="image/svg+xml" data="/img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%;" class="results__graphic">
-				    	<img src="/img/graph-svg/circle-graph.png" class="results__graphic">
+					<object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%;" class="results__graphic">
+				    	<img src="img/graph-svg/circle-graph.png" class="results__graphic">
 					</object>
 				</div>
 			</div>
