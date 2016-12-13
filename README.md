@@ -9,14 +9,14 @@ Recursos para la app del proyecto "Bring Open Data to Your School" con ODI.
 
 ## Instrucciones para realizar el deploy
 
-* Requisitos: tener instalado node + gulp.
+* Requisitos: tener instalado node(version 6.9~) + gulp.
 * Una vez descargado el proyecto situarse desde la terminal en la carpeta open-data-school/los-dayos-y-vos.
 * Correr el comando "gulp production --deploy". El mismo generara la carpeta "open-data-school/docs", la cual contiene los archivos estaticos compilados necesarios para que se vean los cambios en github pages.
 * Luego de correr el proceso, hacer commit y push al repositorio con los archivos actualizados.
 
 ## Instrucciones para levantar una instancia local
 
-* Requisitos: tener instalado node
+* Requisitos: tener instalado node(version 6.9~)
 * Una vez descargado el proyecto situarse desde la terminal en la carpeta open-data-school/los-dayos-y-vos.
 * Correr "npm install" si se levanta la instancia local por primera vez
 * Correr "npm start" para levantar la instancia local
