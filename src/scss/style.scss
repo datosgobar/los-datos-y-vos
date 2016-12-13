@@ -1,0 +1,36 @@
+
+//Helpers
+@import 'helpers/mixins';
+@import 'helpers/variables';
+@import '../../node_modules/flint-gs/stylesheets/_flint';
+@import '../../node_modules/angularjs-slider/dist/rzslider.scss';
+@import '../../node_modules/ng-dialog/css/ngDialog';
+@import '../../node_modules/ng-dialog/css/ngDialog-theme-default';
+
+@include _(foundation);
+
+//base
+@import 'base/reset';
+@import 'base/buttons';
+@import 'base/typography';
+
+//Animations
+@import 'animations/animations';
+
+//Global Styles
+@import 'base/global-styles';
+
+//Components
+@import 'components/dropdown';
+@import 'components/inputs';
+@import 'components/question';
+@import 'components/results';
+@import 'components/responsive-tables';
+@import 'components/dialog-box';
+
+//Includes
+@import 'includes/header';
+@import 'includes/footer';
+
+//Slide General Styles
+@import 'slides-general/slides';

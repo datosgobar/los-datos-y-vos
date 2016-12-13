@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl as appCtrl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+        <title>Los datos y vos</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="{{ appCtrl.bodyClass }}">
+
+        <header ui-view="header" id="header"></header>
+
+        <div ui-view="container" id="container" class="wrapper"></div>
+
+        <!-- App -->
+        <script src="js/vendor.js"></script>
+        <script src="js/bundle.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+
+.ngdialog-content {
+    text-align: center;
+    border-radius: 20px !important;
+    max-width: 780px !important;
+
+    @include _(greater than tablet) {
+        padding: 3em !important;
+    }
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:before {
+    color: $secondaryColor;
+}
+
+.dialog {
+
+    &__heading {
+        font-size: 20px;
+        @include fp(font-size, 18, 24);
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+}

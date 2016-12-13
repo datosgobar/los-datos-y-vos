@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Work+Sans:400,600');
+
+body {
+	color: $bodyTextColor;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+li,
+a,
+span,
+label {
+	font-family: sans-serif;
+}
+
+h1 {
+	line-height: 1.2;
+	margin-bottom:  5px;
+	font-family: $type__heading;
+	font-weight: 700;
+	color: $primaryColor;
+	font-size: 27px;
+	@include fp(font-size, 29, 55);
+}
+
+h2 {
+	font-size: 24px;
+	@include fp(font-size, 24, 45);
+	line-height: 1.3;
+	margin-bottom:  34px;
+	font-family: $type__heading;
+	color: $primaryColor;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	font-family: $type__heading;
+	font-weight: 400;
+
+		@include _(greater than  tablet) {
+			font-size: 36px;
+		}
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	color: $secondaryFontColor;
+
+		@include _(greater than  tablet) {
+			font-size: 22px;
+		}
+}
+
+p, label, li {
+	font-size: 14px;
+	margin-bottom: 5px;
+	line-height: 1.8;
+	color: $bodyTextColor;
+	font-family: $type__body;
+
+		@include _(greater than  tablet) {
+			font-size: 16px;
+		}
+
+        @include _(greater than  laptop) {
+			font-size: 18px;
+		}
+}
+
+ul {
+	padding-left: 25px;
+}
+
+strong {
+	font-weight: bold;
+	color: darken($secondaryFontColor, 10%);
+}
+
+.top-menu a {
+    font-family: $type__heading;
+    color: #fff;
+	font-size: 16px;
+
+
+    @include _(greater than tablet) {
+        color: #fff;
+
+        &:hover {
+            color: #00B9F7;
+        }
+    }
+
+	&:current {
+		color: #00B9F7;
+	}
+
+
+}
+
+blockquote, blockquote p {
+	font-size: 15px;
+	color: #000;
+	line-height: 1.3;
+
+		@include _(greater than  tablet) {
+			font-size: 30px;
+		}
+
+		@include _(from tablet to laptop )  {
+    			font-size: 24px;
+    		}
+}
+
+//Input placeholder styles
+
+::-webkit-input-placeholder {
+   font-family: $type__heading;
+    font-size: 12px;
+
+    	@include _(greater than  tablet) {
+    			font-size: 16px;
+    		}
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: $type__heading;
+   font-size: 12px;
+   color: #727378;
+
+   	@include _(greater than  tablet) {
+   			font-size: 16px;
+   		}
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: $type__heading;
+   font-size: 12px;
+   color: #727378;
+
+   	@include _(greater than  tablet) {
+   			font-size: 16px;
+   		}
+}
+
+:-ms-input-placeholder {
+   font-family: $type__heading;
+   font-size: 12px;
+   color: #727378;
+
+   	@include _(greater than  tablet) {
+   			font-size: 16px;
+   		}
+}

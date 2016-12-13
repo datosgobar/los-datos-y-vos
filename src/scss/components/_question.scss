@@ -1,0 +1,80 @@
+
+.question {
+
+    &__text {
+        font-family: $type__body;
+        color: #4A4A4A;
+        font-size: 16px;
+        @include fp(font-size, 14, 18);
+        margin-bottom: 60px;
+
+            //Hay menos margin para el texto de preguntas en la segunda seccion
+            .section2QuestionSlide & {
+                margin-bottom: 30px;
+            }
+    }
+
+    &__option {
+        font-family: $type__heading;
+        font-weight: 700;
+        color: #000;
+        font-size: 16px;
+        @include fp(font-size, 16, 18);
+        margin-bottom: 25px;
+    }
+
+    &__option-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include _(greater than mobile) {
+            margin-bottom: 70px;
+        }
+    }
+
+    &__input {
+        display: flex;
+        margin-top: auto;
+    }
+
+    &__option-item {
+        width: 100%;
+        margin-bottom: 75px;
+
+        @include _(greater than tablet ) {
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+        }
+    }
+
+    &__single-container {
+        overflow: hidden;
+        margin-bottom: 75px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.numeric_single_option {
+
+    width: 100%;
+    @include _(greater than tablet) {
+        width: 47%;
+        float: left;
+        margin-right: 5%;
+    }
+
+    & + & {
+        margin-right: 0;
+    }
+
+}
+
+.numeric_multiple_option {
+    width: 100%;
+    clear: both;
+}

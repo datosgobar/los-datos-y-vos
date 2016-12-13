@@ -1,0 +1,63 @@
+
+.btn {
+    display: inline-block;
+    padding: 9px 20px 5px;
+    background: $primaryColor;
+    border-radius: 100px;
+    border: 2px solid $primaryColor;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $type__heading;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    transition: border .5s ease;
+
+    //Default button hover
+	&:hover {
+		background: #FFBF00;
+		border: 2px solid #FFEAA8;
+        color: #fff;
+	}
+
+    &--ghost {
+        background: transparent;
+        border: 1px solid #FFBF00;
+        color: #FFBF00;
+
+            &:hover {
+                background: #FFBF00;
+                color: #fff;
+            }
+    }
+
+    &--disabled {
+        background: #DBDFE4;
+        border: 2px solid #DBDFE4;
+    }
+
+    &--alternative {
+        background: #fff;
+        color: #4C0985;
+        border: 2px solid #fff;
+
+            &:hover {
+                border: 2px solid $primaryColor;
+                //background: #fff;
+                //color: #4C0985;
+            }
+    }
+
+}
+
+.btn-wrapper {
+	@include _(less than laptop) {
+		text-align: center;
+	}
+}

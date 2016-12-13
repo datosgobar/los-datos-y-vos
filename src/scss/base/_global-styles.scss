@@ -1,0 +1,166 @@
+
+body {
+	border-top: 3px solid $primaryColor;
+}
+
+#container {
+	@include _(less than laptop) {
+		padding-bottom: 20px;
+	}
+}
+
+.content-wrapper {
+	@include _(16 12 8 4);
+	overflow: hidden;
+}
+
+.wrapper {
+	/*overflow: hidden;*/
+	zoom: 1;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+
+    @include _(container, clear);
+
+  	@include _(greater than tablet) {
+		padding-left:  60px;
+		padding-right: 60px;
+	}
+
+}
+
+.accentColor {
+	color: $primaryColor;
+}
+
+.border {
+
+	&__right--0 {
+		border-right: 0 !important;
+	}
+
+	&__left--0 {
+		border-left: 0 !important;
+	}
+}
+
+//This is to avoid lingering words
+.no-wrap {
+	white-space: nowrap;
+}
+
+
+.svg-fix {
+	position: relative;
+	display: inline-block;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+ul {
+	padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+//Alignment
+.main-centered-text {
+	max-width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	clear: both;
+}
+
+.center {
+	text-align: center;
+
+	&--mobile {
+		margin-left: auto;
+		margin-right: auto;
+    	display: block;
+	}
+}
+
+.mrg-side-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mrg-0 {
+	margin: 0 !important;
+}
+
+.right {
+	float: right;
+
+	&--desktop {
+		@include _(greater than tablet) {
+			float: right;
+		}
+	}
+}
+
+//Arrows :)
+
+.arrow {
+	position: relative;
+
+	&--gray {
+		background: #EAEAEA;
+		position: relative;
+
+			&:after {
+				right: 100%;
+				top: 50%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(234, 234, 234, 0);
+				border-right-color: #EAEAEA;
+				border-width: 37px;
+				margin-top: -37px;
+			}
+	}
+}
+
+//Header and Footer
+header,
+footer {
+	a {
+		text-decoration: none;
+	}
+}
+
+//Desktop + Mobile hidden class
+
+.hidden-desktop {
+	display: none !important;
+
+	@include _(less than laptop) {
+		display: block !important;
+	}
+}
+
+.hidden-mobile {
+	display: block !important;
+
+	@include _(less than laptop) {
+		display: none !important;
+	}
+}
