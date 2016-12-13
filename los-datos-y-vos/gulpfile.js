@@ -116,5 +116,6 @@ gulp.task('default', [
 
 gulp.task('production', [
   'copy',
+  'styles',
   'scripts'
 ]);

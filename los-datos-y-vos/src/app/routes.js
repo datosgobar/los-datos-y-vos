@@ -3,7 +3,7 @@
 angular.module('app').config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     
     $locationProvider.html5Mode({
-        enabled: true
+        enabled: false
     });
 
     $stateProvider.state('root',{
@@ -57,7 +57,7 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
     });
         
     $stateProvider.state('root.quizSection1', {
-        url: '/primer-paso',
+        url: '/primer-bloque',
         data: {
             stepNumber: 1
         },
@@ -87,7 +87,7 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
     });
 
     $stateProvider.state('root.quizSection2', {
-        url: '/segundo-paso',
+        url: '/segundo-bloque',
         data: {
             stepNumber: 2
         },
