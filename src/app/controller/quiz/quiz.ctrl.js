@@ -1,6 +1,11 @@
-angular.module('app').controller('QuizCtrl', function($scope, $state, $stateParams, EventBusSvc, StudentDataSvc, QuizSvc) {
+angular.module('app').controller('QuizCtrl', function($scope, $state, $stateParams, EventBusSvc, 
+    StudentDataSvc, QuizSvc, $firebaseArray) {
 
     $scope.studentData = StudentDataSvc.getStudentData();
+    
+    var ref = firebase.database().ref().child("studentsPerClass/" + $scope.studentData.classCode);
+    $scope.studentsPerClass = $firebaseArray(ref);
+
     $scope.sectionData = QuizSvc.getSectionData($state.current.data.stepNumber);
     $scope.pageData = $scope.sectionData.pages[$stateParams.pageNumber];
     $scope.sliderOptions = {
@@ -22,6 +27,9 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
         if(!!pageNumber) {
             $state.go(questionStateName, { pageNumber: pageNumber});
         } else {
+            if ($state.current.data.stepNumber == 2) {
+                $scope.studentsPerClass.$add($scope.studentData);
+            }
             $state.go(resultStateName);
         }
     };

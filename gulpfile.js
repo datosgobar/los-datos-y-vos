@@ -31,7 +31,9 @@ const paths = {
     'angular-translate/dist/angular-translate.js',
     'angular-loading-bar/build/loading-bar.min.js',
     'angularjs-slider/dist/rzslider.js',
-    'ng-dialog/js/ngDialog.js'
+    'ng-dialog/js/ngDialog.js',
+    'firebase/firebase.js',
+    'angularfire/dist/angularfire.js'
   ],
   static: [
     `${root}/index.html`,

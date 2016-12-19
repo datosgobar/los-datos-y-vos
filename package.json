@@ -12,6 +12,7 @@
     "angular-loading-bar": "0.9.0",
     "angular-translate": "^2.13.0",
     "angular-ui-router": "^0.3.2",
+    "angularfire": "^2.1.0",
     "angularjs-slider": "^5.8.7",
     "ng-dialog": "^0.6.4"
   },
