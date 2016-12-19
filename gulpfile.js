@@ -20,7 +20,7 @@ server.create();
 const argv = yargs.argv;
 const root = 'src/';
 const paths = {
-  dist: '../docs/',
+  dist: 'docs/',
   scripts: [`${root}/**/module.js`, `${root}/**/*.js`],
   styles: `${root}/scss/**/*.scss`,
   templates: `${root}/**/*.html`,
