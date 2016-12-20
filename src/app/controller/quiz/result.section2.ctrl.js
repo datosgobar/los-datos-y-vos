@@ -1,4 +1,5 @@
-angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, StudentDataSvc, QuizSvc, LocationIndicatorSvc) {
+angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, StudentDataSvc, QuizSvc, 
+        LocationIndicatorSvc, $firebaseArray) {
 
     var activate = function() {
         $scope.studentData = StudentDataSvc.getStudentData();
@@ -8,7 +9,16 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
         $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
         $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
-        $scope.calculateResults();
+        var ref = firebase.database().ref().child("studentsPerClass/" + $scope.studentData.classCode);
+        $scope.studentsPerClass = $firebaseArray(ref);
+
+        $scope.studentsPerClass.$loaded().then(function() {
+            $scope.calculateResults();
+            $scope.displayResults = true;
+            $scope.studentsPerClass.$watch(function() {
+                $scope.calculateResults();
+            })
+        });
     };
 
     $scope.getTranslationKey = function(keyName) {
@@ -20,6 +30,27 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
     $scope.calculateResults = function() {
         $scope.results = {};
 
+        $scope.classAverages = {
+            avgPersonsPerHouse: {
+                yourHouse: 0,
+                yourDepartment: 0,
+                yourProvince: 0
+            },
+            personsRentingHouses: {
+                department: 0,
+                province: 0
+            }
+        };
+
+        angular.forEach($scope.studentsPerClass, function(student) {
+            $scope.classAverages.avgPersonsPerHouse.yourHouse += student[$scope.sectionData.id]["personsPerHouse"] /
+                        student[$scope.sectionData.id]["roomsPerHouse"]
+            $scope.classAverages.avgPersonsPerHouse.yourDepartment += student[$scope.sectionData.id]["avgPersonsPerHouse"]['department'];
+            $scope.classAverages.avgPersonsPerHouse.yourProvince += student[$scope.sectionData.id]["avgPersonsPerHouse"]['province'];
+            $scope.classAverages.personsRentingHouses.department += student[$scope.sectionData.id]["personsRentingHouses"]['department'];
+            $scope.classAverages.personsRentingHouses.province += student[$scope.sectionData.id]["personsRentingHouses"]['province'];
+        });
+
         angular.forEach($scope.sectionData.pages, function(sectionPage) {
             if(sectionPage.id == "avgPersonsPerHouse") {
                 var questionResults = {
@@ -29,20 +60,22 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
                 questionResults.options.push({
                     optionText: "YOUR_HOUSE",
                     yourAnswer: $scope.studentData[$scope.sectionData.id]["personsPerHouse"] /
-                        $scope.studentData[$scope.sectionData.id]["roomsPerHouse"]
+                        $scope.studentData[$scope.sectionData.id]["roomsPerHouse"],
+                    yourClass: $scope.classAverages.avgPersonsPerHouse.yourHouse / $scope.studentsPerClass.length
                 });
                 questionResults.options.push({
                     optionText: "YOUR_DEPARTMENT",
                     yourAnswer: $scope.studentData[$scope.sectionData.id]["avgPersonsPerHouse"]['department'],
-                    censusResult: $scope.studentData.department["avgPersonsPerHouse"]
+                    censusResult: $scope.studentData.department["avgPersonsPerHouse"],
+                    yourClass: $scope.classAverages.avgPersonsPerHouse.yourDepartment / $scope.studentsPerClass.length
                 });
                 questionResults.options.push({
                     optionText: "YOUR_PROVINCE",
                     yourAnswer: $scope.studentData[$scope.sectionData.id]["avgPersonsPerHouse"]['province'],
-                    censusResult: $scope.studentData.province["avgPersonsPerHouse"]
+                    censusResult: $scope.studentData.province["avgPersonsPerHouse"],
+                    yourClass: $scope.classAverages.avgPersonsPerHouse.yourProvince / $scope.studentsPerClass.length
                 });
                 $scope.results[sectionPage.id] = questionResults;
-
             }
             if(sectionPage.id == "avgRentingHouse") {
                 var avgRentingHouseResults = {};
@@ -66,11 +99,8 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
                                 optionText: option.textKey
                             };
                             optionResult.yourAnswer = $scope.studentData[$scope.sectionData.id][question.id][option.id];
-                            if(option.id == "department") {
-                                optionResult.censusResult = ($scope.studentData.department[question.id]*100);
-                            } else if(option.id == "province") {
-                                optionResult.censusResult = ($scope.studentData.province[question.id]*100);
-                            }
+                            optionResult.yourClass = $scope.classAverages[question.id][option.id] / $scope.studentsPerClass.length;
+                            optionResult.censusResult = ($scope.studentData[option.id][question.id]*100);
                             questionResults.options.push(optionResult);
                         });
                         avgRentingHouseResults.personsRentingHouses = questionResults;
