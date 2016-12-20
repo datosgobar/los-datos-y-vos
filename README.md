@@ -12,6 +12,7 @@ Recursos para la app del proyecto "Bring Open Data to Your School" con ODI.
 * Ingresar a https://firebase.google.com/ y hacer log-in con una cuenta de google.
 * Ir a la consola de firebase y crear un nuevo proyecto(ej: "los-datos-y-vos").
 * Hacer click en el icono que dice "Añade firebase a tu aplicación web", y copiar el array javascript que contiene la configuracion, por ejemplo:
+```javascript
   var config = {
     apiKey: "apiKey",
     authDomain: "authDomain",
@@ -19,13 +20,16 @@ Recursos para la app del proyecto "Bring Open Data to Your School" con ODI.
     storageBucket: "storageBucket",
     messagingSenderId: "messagingSenderId"
   };
+```
 * Dirigirse a la solapa "Database", luego al tab "Reglas" (para permitir el acceso a la base de datos sin necesidad de estar loggeados), y modificar el codigo de la siguiente manera:
+```javascript
   {
     "rules": {
       ".read": "auth == null",
       ".write": "auth == null"
     }
   }
+```  
 * Publicar los cambios.
 * Pegar la config previamente copiada en el archivo de configuracion: src/app/module.js
 * Seguir los pasos detallados debajo para realizar un `deploy`.
