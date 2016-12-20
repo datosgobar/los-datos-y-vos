@@ -1,7 +1,7 @@
 // App Config
 // =============================================================================
 angular.module('app', ['ngAnimate', 'ui.router', 'rzModule', 'pascalprecht.translate', 
-	'templates', 'ngDropdowns', 'ngDialog', 'firebase']).run(function() {
+	'templates', 'ngDropdowns', 'ngDialog', 'firebase', 'chart.js']).run(function() {
 	var config = {
     	apiKey: "AIzaSyBgL15t8NOSL0FjG-C180FFs9ZVVjxyCBw",
 	    authDomain: "deductive-reach-153014.firebaseapp.com",

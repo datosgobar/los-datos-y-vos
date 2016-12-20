@@ -33,7 +33,9 @@ const paths = {
     'angularjs-slider/dist/rzslider.js',
     'ng-dialog/js/ngDialog.js',
     'firebase/firebase.js',
-    'angularfire/dist/angularfire.js'
+    'angularfire/dist/angularfire.js',
+    'chart.js/dist/Chart.js',
+    'angular-chart.js/dist/angular-chart.js'
   ],
   static: [
     `${root}/index.html`,
