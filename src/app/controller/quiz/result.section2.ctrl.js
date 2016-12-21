@@ -39,7 +39,8 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
             personsRentingHouses: {
                 department: 0,
                 province: 0
-            }
+            },
+            rentedHouse: 0
         };
 
         angular.forEach($scope.studentsPerClass, function(student) {
@@ -49,6 +50,8 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
             $scope.classAverages.avgPersonsPerHouse.yourProvince += student[$scope.sectionData.id]["avgPersonsPerHouse"]['province'];
             $scope.classAverages.personsRentingHouses.department += student[$scope.sectionData.id]["personsRentingHouses"]['department'];
             $scope.classAverages.personsRentingHouses.province += student[$scope.sectionData.id]["personsRentingHouses"]['province'];
+            $scope.classAverages.personsRentingHouses.province += student[$scope.sectionData.id]["personsRentingHouses"]['province'];
+            $scope.classAverages.rentedHouse += parseInt(student[$scope.sectionData.id]["rentedHouse"]);
         });
 
         angular.forEach($scope.sectionData.pages, function(sectionPage) {
@@ -82,10 +85,43 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
 
                 angular.forEach(sectionPage.questions, function(question) {
                     if(question.id == "rentedHouse") {
+                        var yesPercentage = Math.round($scope.classAverages.rentedHouse * 100 / $scope.studentsPerClass.length);
+                        var noPercentage = 100 - yesPercentage;
                         var rentedHouseResults = {
                             questionText: "Vive en un lugar alquilado:",
                             optionText: "Vivís en una vivienda alquilada?",
-                            yourAnswer: parseInt($scope.studentData[$scope.sectionData.id]["rentedHouse"]) ? 'Sí' : 'No'
+                            yourAnswer: parseInt($scope.studentData[$scope.sectionData.id]["rentedHouse"]) ? 'Sí' : 'No',
+                            yourClass: {
+                                labels: ['Sí', 'No'],
+                                data: [yesPercentage, noPercentage],
+                                colors: ['#EEEEEE', '#34D1E2'],
+                                options: {
+                                    legend: {
+                                        display: true,
+                                        labels: {
+                                            generateLabels: function(chart) {
+                                                return chart.data.labels.map(function(label, i) {
+                                                    var meta = chart.getDatasetMeta(0);
+                                                    var ds = chart.data.datasets[0];
+                                                    var arc = meta.data[i];
+                                                    var getValueAtIndexOrDefault = Chart.helpers.getValueAtIndexOrDefault;
+                                                    var arcOpts = chart.options.elements.arc;
+                                                    var fill = ds.backgroundColor[i];
+                                                    var stroke = getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
+                                                    var bw = getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
+                                                    return {
+                                                        text:  label + ' ' + ds.data[i] + " %",
+                                                        fillStyle: fill,
+                                                        strokeStyle: stroke,
+                                                        lineWidth: bw,
+                                                        hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
+                                                        index: i
+                                                    };
+                                                });
+                                            }
+                                        }
+                                    }                                }
+                            }
                         };
                         avgRentingHouseResults.rentedHouse = rentedHouseResults
                     }

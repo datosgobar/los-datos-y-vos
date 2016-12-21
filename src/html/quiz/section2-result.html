@@ -40,7 +40,8 @@
 		<div class="Rtable Rtable--3cols">
 
 			<div class="Rtable__cell"></div>
-			<div class="Rtable__cell Rtable__heading results__yours border__right--0">Tu respuesta</div>
+			<div class="Rtable__cell Rtable__heading results__yours">Tu respuesta</div>
+			<div class="Rtable__cell Rtable__heading border__right--0">Respuestas promedio de tu clase</div>
 
 			<div class="Rtable__results">
 				<div class="Rtable__cell Rtable__cell--per-promedio">
@@ -50,6 +51,14 @@
 					<span class="results__promedio">
 						{{ results.avgRentingHouse.rentedHouse.yourAnswer }}
 					</span>
+				</div>
+				<div class="Rtable__cell Rtable__cell--per-promedio">
+					<canvas id="doughnut" class="chart chart-doughnut"
+  						chart-data="results.avgRentingHouse.rentedHouse.yourClass.data" 
+  						chart-labels="results.avgRentingHouse.rentedHouse.yourClass.labels" 
+  						chart-colors="results.avgRentingHouse.rentedHouse.yourClass.colors" 
+  						chart-options="results.avgRentingHouse.rentedHouse.yourClass.options">
+					</canvas> 
 				</div>
 			</div>
 
