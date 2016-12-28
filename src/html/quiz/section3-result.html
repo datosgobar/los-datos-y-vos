@@ -1,21 +1,33 @@
-<div>
+<div class="wrapper">
 
-	<h2>Aprende m&aacute;s de los datos</h2>
-	<p>Selecciona una ubicaci&oacute;n en el mapa que ves a continuaci&oacute;n y observa los resultados en pantalla</p>
-	<div>
-		<div ng-click="comparisonType='youngProportion'" ng-class="{selected: comparisonType == 'youngProportion' }">
-			Comparativa 01: Chicos entre 15 y 18 años en la poblaci&oacute;n
+	<h2 class="center">Aprende m&aacute;s de los datos</h2>
+	<p class="center main-centered-text">Selecciona dos ubicaciones en el mapa que ves a contuación y observa los resultados en el costado derecho de la pantalla. </p>
+	<div class="comparativo">
+		<div class="comparativo__buttons">
+			<div  class="comparativo__btn" ng-click="comparisonType='youngProportion'" ng-class="{selected: comparisonType == 'youngProportion' }">
+				<div class="comparativo__circle comparativo__circle--primary"></div>
+				<h4 class="comparativo__heading">Comparativa 01</h4>
+				<p class="comparativo__text">Chicos entre 15 y 18 años en la poblaci&oacute;n</p>
+			</div>
+			<div class="comparativo__btn" ng-click="comparisonType='schoolAttendance'" ng-class="{selected: comparisonType == 'schoolAttendance' }">
+				<div class="comparativo__circle comparativo__circle--secondary"></div>
+				<h4 class="comparativo__heading">Comparativa 02</h4>
+				<p class="comparativo__text">Chicos entre 15 y 18 que van a la escuela</p>
+			</div>
+			<div class="comparativo__btn" ng-click="comparisonType='avgPersonsPerHouse'" ng-class="{selected: comparisonType == 'avgPersonsPerHouse' }">
+				<div class="comparativo__circle comparativo__circle--tertiary"></div>
+				<h4 class="comparativo__heading">Comparativa 03</h4>
+				<p class="comparativo__text">Promedio de personas por habitaci&oacute;n</p>
+			</div>
+			<div class="comparativo__btn" ng-click="comparisonType='personsRentingHouses'" ng-class="{selected: comparisonType == 'personsRentingHouses' }">
+				<div class="comparativo__circle comparativo__circle--fourth"></div>
+				<h4 class="comparativo__heading">Comparativa 04</h4>
+				<p class="comparativo__text">Promedio de personas que vive en un lugar alquilado</p>
+			</div>
 		</div>
-		<div ng-click="comparisonType='schoolAttendance'" ng-class="{selected: comparisonType == 'schoolAttendance' }">
-			Comparativa 02: Chicos entre 15 y 18 que van a la escuela
+		<div class="comparativo__map">
+			<comparison-map province="2" comparison-type="comparisonType"></comparison-map>
 		</div>
-		<div ng-click="comparisonType='avgPersonsPerHouse'" ng-class="{selected: comparisonType == 'avgPersonsPerHouse' }">
-			Comparativa 03: Promedio de personas por habitaci&oacute;n
-		</div>
-		<div ng-click="comparisonType='personsRentingHouses'" ng-class="{selected: comparisonType == 'personsRentingHouses' }">
-			Comparativa 04: Promedio de personas que vive en un lugar alquilado
-		</div>
-		<comparison-map province="2" comparison-type="comparisonType"></comparison-map>
 	</div>
 
 <div>
