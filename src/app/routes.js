@@ -115,7 +115,28 @@ angular.module('app').config(function($locationProvider, $stateProvider, $urlRou
         templateUrl: 'html/quiz/question.html',
         controller: 'QuizCtrl'
     });
-          
+         
+    $stateProvider.state('root.quizSection3', {
+        url: '/bloque-final',
+        data: {
+            stepNumber: 3
+        },
+        views: {
+            'container@': {
+                templateUrl: 'html/quiz/index.html',
+            }
+        }
+    });
+
+    $stateProvider.state('root.quizSection3.result', {
+        url: '/resultados',
+        data: {
+            bodyClass: 'section3ResultSlide',
+        },
+        templateUrl: 'html/quiz/section3-result.html',
+        controller: 'ResultSection3Ctrl'
+    });
+
     // catch all route
     // send users to the form page 
     $urlRouterProvider.otherwise('/bienvenido');

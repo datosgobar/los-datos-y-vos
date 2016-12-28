@@ -47,6 +47,12 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
                     number: 7
                 });
                 break;
+            case 'root.quizSection3.result':
+                EventBusSvc.broadcast('updateStep', { 
+                    name: 'BLOQUE FINAL', 
+                    number: 8
+                });
+                break;
         }
     });
 
@@ -56,7 +62,7 @@ angular.module('app').controller('HeaderCtrl', function($scope, $state, EventBus
 
     EventBusSvc.subscribe('updateStep', function(event, step) {
     	$scope.stepName = step.name;
-    	$scope.progressStyle = { 'width' : (100 / 7) * step.number + '%' };
+    	$scope.progressStyle = { 'width' : (100 / 8) * step.number + '%' };
     });
 
     $scope.openAboutModal = function() {

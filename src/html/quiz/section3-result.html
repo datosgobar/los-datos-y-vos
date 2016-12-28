@@ -1,0 +1,21 @@
+<div>
+
+	<h2>Aprende m&aacute;s de los datos</h2>
+	<p>Selecciona una ubicaci&oacute;n en el mapa que ves a continuaci&oacute;n y observa los resultados en pantalla</p>
+	<div>
+		<div ng-click="comparisonType='youngProportion'" ng-class="{selected: comparisonType == 'youngProportion' }">
+			Comparativa 01: Chicos entre 15 y 18 años en la poblaci&oacute;n
+		</div>
+		<div ng-click="comparisonType='schoolAttendance'" ng-class="{selected: comparisonType == 'schoolAttendance' }">
+			Comparativa 02: Chicos entre 15 y 18 que van a la escuela
+		</div>
+		<div ng-click="comparisonType='avgPersonsPerHouse'" ng-class="{selected: comparisonType == 'avgPersonsPerHouse' }">
+			Comparativa 03: Promedio de personas por habitaci&oacute;n
+		</div>
+		<div ng-click="comparisonType='personsRentingHouses'" ng-class="{selected: comparisonType == 'personsRentingHouses' }">
+			Comparativa 04: Promedio de personas que vive en un lugar alquilado
+		</div>
+		<comparison-map province="2" comparison-type="comparisonType"></comparison-map>
+	</div>
+
+<div>
