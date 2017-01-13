@@ -26,8 +26,16 @@
 			</div>
 		</div>
 		<div class="comparativo__map" id="map-wrapper">
-			<comparison-map province="2" comparison-type="comparisonType" value-list="departmentList"></comparison-map>
-			<div id="descriptionDiv" class="description"></div>
+			<comparison-map province="2" click-function="showDepartmentTooltip"></comparison-map>
+			<div id="descriptionDiv" class="description">
+				<object ng-if="comparisonType != 'avgPersonsPerHouse'" type="image/svg+xml" data="img/graph-svg/circle-graph.svg" 
+					style="width:{{currentValue | number:0}}%;" class="results__graphic">
+			    	<img src="img/graph-svg/circle-graph.png" class="results__graphic">
+				</object>
+				<span ng-if="comparisonType == 'avgPersonsPerHouse'">
+			    	Personas por casa {{currentValue}}
+				</span>
+			</div>
 		</div>
 	</div>
 
