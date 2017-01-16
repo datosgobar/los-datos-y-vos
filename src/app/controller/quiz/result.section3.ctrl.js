@@ -34,6 +34,7 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
     $scope.closeTooltip = function(event) {
     	var description = document.getElementById("descriptionDiv");
         description.classList.remove("active");
+        $scope.mapControl.removeActiveTooltips();
     };
 
     $scope.changeComparisonType = function(type) {

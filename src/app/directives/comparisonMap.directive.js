@@ -43,7 +43,7 @@ angular.module('app').directive("comparisonMap", function($timeout) {
         init();
       };
 
-      var removeActiveTooltips = function() {
+      var removeActiveTooltips = scope.mapControl.removeActiveTooltips = function() {
         var pathElements = angular.element(element[0].getSVGDocument().getElementsByClassName("department active"));
         for(var i = 0; i < pathElements.length; i++) {
             var pathElement = pathElements[i];
