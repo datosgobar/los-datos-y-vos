@@ -13,10 +13,19 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
                 duration:0,
                 enabled:false
             },
-            barColor:'#2C3E50',
+            barColor: function(percent) {
+                var ctx = this.renderer.getCtx();
+                var canvas = this.renderer.getCanvas();
+                var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
+                    gradient.addColorStop(0, "#45E3C1");
+                    gradient.addColorStop(1, "#00CAF6");
+                return gradient;
+              },
             scaleColor:false,
-            lineWidth:20,
-            lineCap:'circle'
+            lineWidth:7,
+            lineCap:'round',
+            size: 70,
+            trackColor: "#EEEEEE"
         };
 
         //$scope.$watch($scope.comparisonType, comparisonTypeChanged);
@@ -46,10 +55,10 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
 		     //Position Tooltip were mouse clicked
 	        description.style.left = event.clientX + mapWrapper.offsetLeft + "px";
 	        //the 100 is used because of the tooltip height
-	      	description.style.top =  event.clientY + mapWrapper.offsetTop - 100 + "px";
-	      	updateNormalizedValue();	
-    	}); 
-    };    
+	      	description.style.top =  event.clientY + mapWrapper.offsetTop - 118 + "px";
+	      	updateNormalizedValue();
+    	});
+    };
 
     activate();
 

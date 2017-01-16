@@ -1,7 +1,7 @@
 <div class="wrapper">
 
 	<h2 class="center">Aprende m&aacute;s de los datos</h2>
-	<p class="center main-centered-text">Selecciona dos ubicaciones en el mapa que ves a contuación y observa los resultados en el costado derecho de la pantalla. </p>
+	<p class="center main-centered-text">Selecciona una ubicación en el mapa que ves a contuación y observa los resultados en el costado derecho de la pantalla. </p>
 	<div class="comparativo">
 		<div class="comparativo__buttons">
 			<div  class="comparativo__btn" ng-click="comparisonType='youngProportion'" ng-class="{selected: comparisonType == 'youngProportion' }">
@@ -28,7 +28,9 @@
 		<div class="comparativo__map" id="map-wrapper">
 			<comparison-map province="2" click-function="showDepartmentTooltip"></comparison-map>
 			<div id="descriptionDiv" class="description">
-				<div ng-if="comparisonType != 'avgPersonsPerHouse'" class="pieChart" easypiechart 
+				<i class="fa fa-times description__close" aria-hidden="true"></i>
+
+				<div ng-if="comparisonType != 'avgPersonsPerHouse'" class="pieChart" easypiechart
 					options="pieChartOptions" percent="percent">
 						<div class="easypielabel">
         					{{percent}}%
@@ -37,6 +39,7 @@
 				<span ng-if="comparisonType == 'avgPersonsPerHouse'">
 			    	Personas por casa {{currentValue}}
 				</span>
+				<p class="comparativo__comuna" ng-if="comparisonType != 'avgPersonsPerHouse'">Comuna N&deg; </p>
 			</div>
 		</div>
 	</div>
