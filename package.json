@@ -15,6 +15,7 @@
     "angular-ui-router": "^0.3.2",
     "angularfire": "^2.1.0",
     "angularjs-slider": "^5.8.7",
+    "easy-pie-chart": "^2.1.7",
     "ng-dialog": "^0.6.4"
   },
   "devDependencies": {

@@ -35,7 +35,8 @@ const paths = {
     'firebase/firebase.js',
     'angularfire/dist/angularfire.js',
     'chart.js/dist/Chart.js',
-    'angular-chart.js/dist/angular-chart.js'
+    'angular-chart.js/dist/angular-chart.js',
+    'easy-pie-chart/dist/angular.easypiechart.js'
   ],
   static: [
     `${root}/index.html`,

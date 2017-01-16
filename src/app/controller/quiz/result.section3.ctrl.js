@@ -7,46 +7,20 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
         LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
         	$scope.departmentList = data;
         });
-
-        $scope.doughnutChart = {
-       		labels: ['Sí', 'No'],
-            data: ['30', '40'],
-        	colors: ['#EEEEEE', '#34D1E2'],
-            options: {
-            	legend: {
-                	display: true,
-                    labels: {
-                    	generateLabels: function(chart) {
-                            return chart.data.labels.map(function(label, i) {
-                                var meta = chart.getDatasetMeta(0);
-                                var ds = chart.data.datasets[0];
-                                var arc = meta.data[i];
-                                var getValueAtIndexOrDefault = Chart.helpers.getValueAtIndexOrDefault;
-                                var arcOpts = chart.options.elements.arc;
-                                var fill = ds.backgroundColor[i];
-                                var stroke = getValueAtIndexOrDefault(ds.borderColor, i, arcOpts.borderColor);
-                                var bw = getValueAtIndexOrDefault(ds.borderWidth, i, arcOpts.borderWidth);
-                                return {
-                                    text:  label + ' ' + ds.data[i] + " %",
-                                    fillStyle: fill,
-                                    strokeStyle: stroke,
-                                    lineWidth: bw,
-                                    hidden: isNaN(ds.data[i]) || meta.data[i].hidden,
-                                    index: i
-                                };
-                            });
-                        }
-                    }
-                }          
-            }
+		$scope.percent = 0;
+        $scope.pieChartOptions = {
+       		animate:{
+                duration:0,
+                enabled:false
+            },
+            barColor:'#2C3E50',
+            scaleColor:false,
+            lineWidth:20,
+            lineCap:'circle'
         };
 
-        $scope.$watch($scope.comparisonType, comparisonTypeChanged);
+        //$scope.$watch($scope.comparisonType, comparisonTypeChanged);
     };
-
-    var comparisonTypeChanged = function(newValue, oldValue) {
-      // TODO HIDE TOOLTIPS
-  	};
 
   	var updateNormalizedValue = function() {
   		if($scope.currentDepartment) {
@@ -54,14 +28,13 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
 	          	$scope.currentValue = Math.round($scope.currentDepartment[$scope.comparisonType]);
 	        } else {
 	        	$scope.currentValue = Math.round($scope.currentDepartment[$scope.comparisonType] * 100);
-	        	var yesPercentage = Math.round($scope.currentDepartment[$scope.comparisonType] * 100);
-	        	var noPercentage = 100 - yesPercentage;
-        		$scope.doughnutChart.data = [yesPercentage, noPercentage];
+	        	$scope.percent = $scope.currentValue;
 	        }
         }
   	};
 
     $scope.showDepartmentTooltip = function(event) {
+
     	$scope.$apply(function(){
     		var departmentId = parseInt(event.currentTarget.id);
 	        var department = $filter('filter')($scope.departmentList, {id: departmentId})[0];
