@@ -22,7 +22,7 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
                 return gradient;
               },
             scaleColor:false,
-            lineWidth:7,
+            lineWidth:6,
             lineCap:'round',
             size: 70,
             trackColor: "#EEEEEE"
@@ -49,6 +49,9 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
 	        var department = $filter('filter')($scope.departmentList, {id: departmentId})[0];
 	        $scope.currentDepartment = department;
 
+            var selectedDepartment = event.currentTarget;
+            selectedDepartment.classList.toggle("active");
+            
 	        var description = document.getElementById("descriptionDiv");
 	        var mapWrapper = document.getElementById("comparisonMap");
 	        description.className = "description active";
