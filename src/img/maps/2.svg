@@ -16,34 +16,34 @@
             fill: #FFE291 !important;
         }
         .schoolAttendance .department {
-            fill: black !important;
+            fill: #DCB8FF !important;
         }
         .schoolAttendance .department:hover {
-            fill: black !important;
+            fill: #B063FF !important;
             cursor: pointer;
         }
         .schoolAttendance .department.active {
-            fill: black !important;
+            fill: #B063FF !important;
         }
         .avgPersonsPerHouse .department {
-            fill: red !important;
+            fill: #C1FAEE !important;
         }
         .avgPersonsPerHouse .department:hover {
-            fill: red !important;
+            fill: #45E3C1 !important;
             cursor: pointer;
         }
         .avgPersonsPerHouse .department.active {
-            fill: red !important;
+            fill: #45E3C1 !important;
         }
         .personsRentingHouses .department {
-            fill: tomato !important;
+            fill: #C6F2FF !important;
         }
         .personsRentingHouses .department:hover {
-            fill: tomato !important;
+            fill: #99E9FF !important;
             cursor: pointer;
         }
         .personsRentingHouses .department.active {
-            fill: tomato !important;
+            fill: #99E9FF !important;
         }
     </style>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

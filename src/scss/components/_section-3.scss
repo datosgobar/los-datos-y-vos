@@ -174,12 +174,15 @@ html, body {
     font-family: $type__heading;
     font-weight: 600;
     border-radius: 5px;
-    box-shadow: 0 0 0 1px #eee;
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     display: none;
+
+        .avgPersonsPerHouse {
+            padding: 28px 15px;
+        }
 
         &__close {
             position: absolute;
