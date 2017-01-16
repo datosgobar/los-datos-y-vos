@@ -6,7 +6,7 @@ angular.module('app').directive("comparisonMap", function($timeout) {
       clickFunction: '=',
       mapControl: '='
     },
-    template: "<object type='image/svg+xml' id='comparisonMap' class='student-info__maps' data='/img/maps/2.svg'></object>",
+    template: "<object type='image/svg+xml' id='comparisonMap' class='student-info__maps' data='img/maps/2.svg'></object>",
     link: function(scope, element, attrs) {
 
       var init = function() {
