@@ -31,9 +31,9 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
         $scope.mapControl = {};
     };
 
-    $scope.closeTooltip = function() {
+    $scope.closeTooltip = function(event) {
     	var description = document.getElementById("descriptionDiv");
-    	description.className = "description";
+        description.classList.remove("active");
     };
 
     $scope.changeComparisonType = function(type) {
@@ -49,7 +49,6 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
 	        } else {
 	        	$scope.currentValue = Math.round($scope.currentDepartment[$scope.comparisonType] * 100);
 	        }
-	        console.log
         }
   	};
 
@@ -61,11 +60,11 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
 	        $scope.currentDepartment = department;
 
             var selectedDepartment = event.currentTarget;
-            selectedDepartment.classList.toggle("active");
-            
+            selectedDepartment.classList.add("active");
+
 	        var description = document.getElementById("descriptionDiv");
 	        var mapWrapper = document.getElementById("comparisonMap");
-	        description.className = "description active";
+            description.classList.add("active");
 		     //Position Tooltip were mouse clicked
 	        description.style.left = event.clientX + mapWrapper.offsetLeft + "px";
 	        //the 100 is used because of the tooltip height

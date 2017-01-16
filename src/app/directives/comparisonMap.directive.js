@@ -11,9 +11,9 @@ angular.module('app').directive("comparisonMap", function($timeout) {
 
       var init = function() {
         if(element[0] === undefined) {
-          $timeout(function(){}, 2000);  
+          $timeout(function(){}, 2000);
         }
-        
+
         var pathElements = angular.element(element[0].getSVGDocument().getElementsByTagName("g"));
         var rootElement;
         for(var i = 0; i < pathElements.length; i++) {
@@ -35,7 +35,7 @@ angular.module('app').directive("comparisonMap", function($timeout) {
               });
             }
         }
-        
+
       };
 
       var comparisonMap = document.getElementById("comparisonMap");
@@ -47,12 +47,12 @@ angular.module('app').directive("comparisonMap", function($timeout) {
         var pathElements = angular.element(element[0].getSVGDocument().getElementsByClassName("department active"));
         for(var i = 0; i < pathElements.length; i++) {
             var pathElement = pathElements[i];
-            pathElement.setAttribute('class', 'department');
+            pathElement.classList.remove("active");
         }
       };
 
-      
-      
+
+
     }
   }
 });
