@@ -3,11 +3,11 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
     var activate = function() {
         $scope.studentData = StudentDataSvc.getStudentData();
         $scope.comparisonType = 'youngProportion';
-        $scope.currentDepartment = {};
+        $scope.currentDepartment = null;
         LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
         	$scope.departmentList = data;
         });
-		$scope.percent = 0;
+		$scope.currentValue = 100;
         $scope.pieChartOptions = {
        		animate:{
                 duration:0,
@@ -28,17 +28,28 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
             trackColor: "#EEEEEE"
         };
 
-        //$scope.$watch($scope.comparisonType, comparisonTypeChanged);
+        $scope.mapControl = {};
     };
 
-  	var updateNormalizedValue = function() {
+    $scope.closeTooltip = function() {
+    	var description = document.getElementById("descriptionDiv");
+    	description.className = "description";
+    };
+
+    $scope.changeComparisonType = function(type) {
+    	$scope.comparisonType = type;
+    	$scope.updateNormalizedValue();
+    	$scope.mapControl.map.setAttribute('class', type);
+    };
+
+  	$scope.updateNormalizedValue = function() {
   		if($scope.currentDepartment) {
 	      	if($scope.comparisonType == 'avgPersonsPerHouse') {
 	          	$scope.currentValue = Math.round($scope.currentDepartment[$scope.comparisonType]);
 	        } else {
 	        	$scope.currentValue = Math.round($scope.currentDepartment[$scope.comparisonType] * 100);
-	        	$scope.percent = $scope.currentValue;
 	        }
+	        console.log
         }
   	};
 
@@ -59,7 +70,7 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
 	        description.style.left = event.clientX + mapWrapper.offsetLeft + "px";
 	        //the 100 is used because of the tooltip height
 	      	description.style.top =  event.clientY + mapWrapper.offsetTop - 118 + "px";
-	      	updateNormalizedValue();
+	      	$scope.updateNormalizedValue();
     	});
     };
 

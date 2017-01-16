@@ -1,45 +1,44 @@
 <div class="wrapper">
 
 	<h2 class="center">Aprende m&aacute;s de los datos</h2>
-	<p class="center main-centered-text">Selecciona una ubicación en el mapa que ves a contuación y observa los resultados en el costado derecho de la pantalla. </p>
+	<p class="center main-centered-text">Selecciona una ubicación en el mapa que ves a contuación y observa los resultados. </p>
 	<div class="comparativo">
 		<div class="comparativo__buttons">
-			<div  class="comparativo__btn" ng-click="comparisonType='youngProportion'" ng-class="{selected: comparisonType == 'youngProportion' }">
+			<div  class="comparativo__btn" ng-click="changeComparisonType('youngProportion')" ng-class="{selected: comparisonType == 'youngProportion' }">
 				<div class="comparativo__circle comparativo__circle--primary"></div>
 				<h4 class="comparativo__heading">Comparativa 01</h4>
 				<p class="comparativo__text">Chicos entre 15 y 18 años en la poblaci&oacute;n</p>
 			</div>
-			<div class="comparativo__btn" ng-click="comparisonType='schoolAttendance'" ng-class="{selected: comparisonType == 'schoolAttendance' }">
+			<div class="comparativo__btn" ng-click="changeComparisonType('schoolAttendance')" ng-class="{selected: comparisonType == 'schoolAttendance' }">
 				<div class="comparativo__circle comparativo__circle--secondary"></div>
 				<h4 class="comparativo__heading">Comparativa 02</h4>
 				<p class="comparativo__text">Chicos entre 15 y 18 que van a la escuela</p>
 			</div>
-			<div class="comparativo__btn" ng-click="comparisonType='avgPersonsPerHouse'" ng-class="{selected: comparisonType == 'avgPersonsPerHouse' }">
+			<div class="comparativo__btn" ng-click="changeComparisonType('avgPersonsPerHouse')" ng-class="{selected: comparisonType == 'avgPersonsPerHouse' }">
 				<div class="comparativo__circle comparativo__circle--tertiary"></div>
 				<h4 class="comparativo__heading">Comparativa 03</h4>
 				<p class="comparativo__text">Promedio de personas por habitaci&oacute;n</p>
 			</div>
-			<div class="comparativo__btn" ng-click="comparisonType='personsRentingHouses'" ng-class="{selected: comparisonType == 'personsRentingHouses' }">
+			<div class="comparativo__btn" ng-click="changeComparisonType('personsRentingHouses')" ng-class="{selected: comparisonType == 'personsRentingHouses' }">
 				<div class="comparativo__circle comparativo__circle--fourth"></div>
 				<h4 class="comparativo__heading">Comparativa 04</h4>
 				<p class="comparativo__text">Promedio de personas que vive en un lugar alquilado</p>
 			</div>
 		</div>
-		<div class="comparativo__map" id="map-wrapper">
-			<comparison-map province="2" click-function="showDepartmentTooltip"></comparison-map>
-			<div id="descriptionDiv" class="description">
-				<i class="fa fa-times description__close" aria-hidden="true"></i>
-
+		<div class="comparativo__map youngProportion" id="map-wrapper">
+			<comparison-map province="2" click-function="showDepartmentTooltip" map-control="mapControl"></comparison-map>
+			<div id="descriptionDiv" class="description {{comparisonType}}">
+				<a ng-click="closeTooltip()"><i class="fa fa-times description__close" aria-hidden="true"></i></a>
 				<div ng-if="comparisonType != 'avgPersonsPerHouse'" class="pieChart" easypiechart
-					options="pieChartOptions" percent="percent">
+					options="pieChartOptions" percent="currentValue">
 						<div class="easypielabel">
-        					{{percent}}%
+        					{{currentValue}}%
 					    </div>
 					</div>
 				<span ng-if="comparisonType == 'avgPersonsPerHouse'">
-			    	Personas por casa {{currentValue}}
+			    	{{currentValue}}
 				</span>
-				<p class="comparativo__comuna" ng-if="comparisonType != 'avgPersonsPerHouse'">Comuna N&deg; </p>
+				<p class="comparativo__comuna">{{currentDepartment.departmentName}}</p>
 			</div>
 		</div>
 	</div>

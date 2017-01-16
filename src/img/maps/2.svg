@@ -5,15 +5,45 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <style>
-        .department {
+        .youngProportion .department {
             fill: #FFF1C8 !important;
         }
-        .department:hover {
+        .youngProportion .department:hover {
             fill: #FFE291 !important;
             cursor: pointer;
         }
-        .department.active {
+        .youngProportion .department.active {
             fill: #FFE291 !important;
+        }
+        .schoolAttendance .department {
+            fill: black !important;
+        }
+        .schoolAttendance .department:hover {
+            fill: black !important;
+            cursor: pointer;
+        }
+        .schoolAttendance .department.active {
+            fill: black !important;
+        }
+        .avgPersonsPerHouse .department {
+            fill: red !important;
+        }
+        .avgPersonsPerHouse .department:hover {
+            fill: red !important;
+            cursor: pointer;
+        }
+        .avgPersonsPerHouse .department.active {
+            fill: red !important;
+        }
+        .personsRentingHouses .department {
+            fill: tomato !important;
+        }
+        .personsRentingHouses .department:hover {
+            fill: tomato !important;
+            cursor: pointer;
+        }
+        .personsRentingHouses .department.active {
+            fill: tomato !important;
         }
     </style>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
