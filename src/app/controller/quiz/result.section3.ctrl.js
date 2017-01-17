@@ -5,7 +5,12 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
         $scope.comparisonType = 'youngProportion';
         $scope.currentDepartment = null;
         LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
-        	$scope.departmentList = data;
+        	$scope.departmentList = $filter('orderBy')(data, 'avgPersonsPerHouse');
+            $scope.avgPersonsPerHouse = {
+                min: $scope.departmentList[0].avgPersonsPerHouse,
+                max: $scope.departmentList[$scope.departmentList.length - 1].avgPersonsPerHouse
+            };
+            console.log($scope.avgPersonsPerHouse);
         });
 		$scope.currentValue = 100;
         $scope.pieChartOptions = {
@@ -46,7 +51,9 @@ angular.module('app').controller('ResultSection3Ctrl', function($scope, $state, 
   	$scope.updateNormalizedValue = function() {
   		if($scope.currentDepartment) {
 	      	if($scope.comparisonType == 'avgPersonsPerHouse') {
-	          	$scope.currentValue = Math.round($scope.currentDepartment[$scope.comparisonType]);
+                var comparisonValue = $scope.currentDepartment[$scope.comparisonType];
+	          	$scope.currentValue = Math.round((comparisonValue - $scope.avgPersonsPerHouse.min) / 
+                    ($scope.avgPersonsPerHouse.max - $scope.avgPersonsPerHouse.min) * 100);
 	        } else {
 	        	$scope.currentValue = Math.round($scope.currentDepartment[$scope.comparisonType] * 100);
 	        }
