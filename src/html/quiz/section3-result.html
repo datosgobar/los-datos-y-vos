@@ -2,6 +2,9 @@
 
 	<h2 class="center">Aprende m&aacute;s de los datos</h2>
 	<p class="center main-centered-text">Selecciona una ubicación en el mapa que ves a contuación y observa los resultados. </p>
+	<div dropdown-select="provinceList" dropdown-model="studentData.province" dropdown-item-label="name"
+		class="input--info">
+	</div>
 	<div class="comparativo">
 		<div class="comparativo__buttons">
 			<div  class="comparativo__btn" ng-click="changeComparisonType('youngProportion')" ng-class="{selected: comparisonType == 'youngProportion' }">
@@ -26,7 +29,7 @@
 			</div>
 		</div>
 		<div class="comparativo__map youngProportion" id="map-wrapper">
-			<comparison-map province="2" click-function="showDepartmentTooltip" map-control="mapControl"></comparison-map>
+			<object type='image/svg+xml' id='comparisonMap' class='student-info__maps'></object>
 			<div id="descriptionDiv" class="description {{comparisonType}}">
 				<a ng-click="closeTooltip()"><i class="fa fa-times description__close" aria-hidden="true"></i></a>
 				<div class="pieChart" easypiechart
@@ -38,7 +41,7 @@
     					{{currentDepartment[comparisonType] | number:2}}
 				    </div>
 				</div>
-				<p class="comparativo__comuna">{{currentDepartment.departmentName}}</p>
+				<p class="comparativo__comuna">{{currentDepartment.departmentName ? currentDepartment.departmentName : currentDepartment.name}}</p>
 			</div>
 		</div>
 	</div>

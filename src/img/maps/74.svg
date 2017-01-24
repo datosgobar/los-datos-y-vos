@@ -4,6 +4,48 @@
     <title>74</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
+    <style>
+        .youngProportion .department {
+            fill: #FFF1C8 !important;
+        }
+        .youngProportion .department:hover {
+            fill: #FFE291 !important;
+            cursor: pointer;
+        }
+        .youngProportion .department.active {
+            fill: #FFE291 !important;
+        }
+        .schoolAttendance .department {
+            fill: #DCB8FF !important;
+        }
+        .schoolAttendance .department:hover {
+            fill: #B063FF !important;
+            cursor: pointer;
+        }
+        .schoolAttendance .department.active {
+            fill: #B063FF !important;
+        }
+        .avgPersonsPerHouse .department {
+            fill: #C1FAEE !important;
+        }
+        .avgPersonsPerHouse .department:hover {
+            fill: #45E3C1 !important;
+            cursor: pointer;
+        }
+        .avgPersonsPerHouse .department.active {
+            fill: #45E3C1 !important;
+        }
+        .personsRentingHouses .department {
+            fill: #C6F2FF !important;
+        }
+        .personsRentingHouses .department:hover {
+            fill: #99E9FF !important;
+            cursor: pointer;
+        }
+        .personsRentingHouses .department.active {
+            fill: #99E9FF !important;
+        }
+    </style>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="74">
             <g id="figure_1">
