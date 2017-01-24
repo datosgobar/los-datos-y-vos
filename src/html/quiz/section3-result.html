@@ -31,8 +31,11 @@
 				<a ng-click="closeTooltip()"><i class="fa fa-times description__close" aria-hidden="true"></i></a>
 				<div class="pieChart" easypiechart
 					options="pieChartOptions" percent="currentValue">
-					<div class="easypielabel">
+					<div class="easypielabel" ng-if="comparisonType != 'avgPersonsPerHouse'">
     					{{currentValue}}%
+				    </div>
+				    <div class="easypielabel" ng-if="comparisonType == 'avgPersonsPerHouse'">
+    					{{currentDepartment[comparisonType] | number:2}}
 				    </div>
 				</div>
 				<p class="comparativo__comuna">{{currentDepartment.departmentName}}</p>
