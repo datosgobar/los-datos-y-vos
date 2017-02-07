@@ -22,6 +22,7 @@ Recursos para la app del proyecto "Bring Open Data to Your School" con ODI.
   };
 ```
 * Dirigirse a la solapa "Database", luego al tab "Reglas" (para permitir el acceso a la base de datos sin necesidad de estar loggeados), y modificar el codigo de la siguiente manera:
+
 ```javascript
   {
     "rules": {
@@ -29,7 +30,8 @@ Recursos para la app del proyecto "Bring Open Data to Your School" con ODI.
       ".write": "auth == null"
     }
   }
-```  
+```
+
 * Publicar los cambios.
 * Pegar la config previamente copiada en el archivo de configuracion: src/app/module.js
 * Seguir los pasos detallados debajo para realizar un `deploy`.
