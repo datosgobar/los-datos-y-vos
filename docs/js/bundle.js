@@ -182,6 +182,70 @@ angular.module('app').config(['$translateProvider', function($translateProvider)
 })(window.angular);
 (function(angular){
 'use strict';
+<<<<<<< HEAD
+=======
+angular.module('app').directive("comparisonMap", ["$timeout", function($timeout) {
+  return {
+    restrict: "E",
+    replace: true,
+    scope: {
+      clickFunction: '=',
+      mapControl: '='
+    },
+    template: "<object type='image/svg+xml' id='comparisonMap' class='student-info__maps' data='img/maps/2.svg'></object>",
+    link: function(scope, element, attrs) {
+
+      var init = function() {
+        if(element[0] === undefined) {
+          $timeout(function(){}, 2000);
+        }
+
+        var pathElements = angular.element(element[0].getSVGDocument().getElementsByTagName("g"));
+        var rootElement;
+        for(var i = 0; i < pathElements.length; i++) {
+            var pathElement = pathElements[i];
+            if (pathElement.id != null && !isNaN(pathElement.id) && pathElement.id == attrs.province) {
+              rootElement = pathElement;
+              rootElement.setAttribute('class', 'youngProportion');
+            }
+        }
+        scope.mapControl.map = rootElement;
+
+        for(var i = 0; i < pathElements.length; i++) {
+            var pathElement = pathElements[i];
+            if (pathElement.id != null && !isNaN(pathElement.id) && pathElement.id != attrs.province) {
+              pathElement.classList.add("department")
+              pathElement.addEventListener('click', function(event) {
+                removeActiveTooltips();
+                scope.clickFunction(event);
+              });
+            }
+        }
+
+      };
+
+      var comparisonMap = document.getElementById("comparisonMap");
+      comparisonMap.onload = function() {
+        init();
+      };
+
+      var removeActiveTooltips = scope.mapControl.removeActiveTooltips = function() {
+        var pathElements = angular.element(element[0].getSVGDocument().getElementsByClassName("department active"));
+        for(var i = 0; i < pathElements.length; i++) {
+            var pathElement = pathElements[i];
+            pathElement.classList.remove("active");
+        }
+      };
+
+
+
+    }
+  }
+}]);
+})(window.angular);
+(function(angular){
+'use strict';
+>>>>>>> master
 /**
  * @license MIT http://jseppi.mit-license.org/license.html
  */
@@ -1161,6 +1225,7 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
         $scope.studentData = StudentDataSvc.getStudentData();
         $scope.comparisonType = 'youngProportion';
         $scope.currentDepartment = null;
+<<<<<<< HEAD
         $scope.currentValue = 100;
         $scope.mapControl = {};
 
@@ -1209,6 +1274,19 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
     var initPieChart = function() {
         $scope.pieChartOptions = {
             animate:{
+=======
+        LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
+        	$scope.departmentList = $filter('orderBy')(data, 'avgPersonsPerHouse');
+            $scope.avgPersonsPerHouse = {
+                min: $scope.departmentList[0].avgPersonsPerHouse,
+                max: $scope.departmentList[$scope.departmentList.length - 1].avgPersonsPerHouse
+            };
+            console.log($scope.avgPersonsPerHouse);
+        });
+		$scope.currentValue = 100;
+        $scope.pieChartOptions = {
+       		animate:{
+>>>>>>> master
                 duration:0,
                 enabled:false
             },
@@ -1226,6 +1304,7 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
             size: 70,
             trackColor: "#EEEEEE"
         };
+<<<<<<< HEAD
     };
 
     var updateDepartmentList = function() {
@@ -1249,12 +1328,20 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
 
             });
         }
+=======
+
+        $scope.mapControl = {};
+>>>>>>> master
     };
 
     $scope.closeTooltip = function(event) {
     	var description = document.getElementById("descriptionDiv");
         description.classList.remove("active");
+<<<<<<< HEAD
         removeActiveTooltips();
+=======
+        $scope.mapControl.removeActiveTooltips();
+>>>>>>> master
     };
 
     $scope.changeComparisonType = function(type) {
@@ -1275,7 +1362,12 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
         }
   	};
 
+<<<<<<< HEAD
     var showDepartmentTooltip = function(event) {
+=======
+    $scope.showDepartmentTooltip = function(event) {
+
+>>>>>>> master
     	$scope.$apply(function(){
     		var departmentId = parseInt(event.currentTarget.id);
 	        var department = $filter('filter')($scope.departmentList, {id: departmentId})[0];
@@ -1295,6 +1387,7 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
     	});
     };
 
+<<<<<<< HEAD
     var removeActiveTooltips = function() {
         var map = document.getElementById("comparisonMap");
         var pathElements = angular.element(map.getSVGDocument().getElementsByClassName("department active"));
@@ -1304,6 +1397,8 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
         }
     };
 
+=======
+>>>>>>> master
     activate();
 
 }]);
@@ -1389,7 +1484,11 @@ $templateCache.put('html/quiz/index.html','<div ui-view></div>');
 $templateCache.put('html/quiz/question.html','<form name="questionForm" ng-submit="questionForm.$valid && goToNextPage(pageData.nextPage)" novalidate><div ng-repeat="question in pageData.questions" class="{{question.type}} question__single-container"><div class="question__text">{{question.text}}</div><div class="question__option-wrapper" ng-if="question.type == \'slider\'"><div ng-repeat="option in question.options" ng-init="initNumericValue(question.id, option.id)" class="question__option-item"><p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id, option.id)"></span><rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider><span class="input-square input-square--right" ng-click="incrementNumericValue(question.id, option.id)"></span></div></div></div><div ng-if="question.type == \'numeric_single_option\'"><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id)"></span> <input type="number" ng-model="studentData[sectionData.id][question.id]" ng-init="initNumericValue(question.id)" class="question__number-input"> <span class="input-square input-square--right" ng-click="incrementNumericValue(question.id)"></span></div></div><div ng-if="question.type == \'radio_boolean\'"><div class="question__radio"><input type="radio" ng-model="studentData[sectionData.id][question.id]" value="1" id="radio-si" ng-required="!studentData[sectionData.id][question.id]"><div class="check"></div><label for="radio-si">S\xED</label></div><div class="question__radio"><input type="radio" ng-model="studentData[sectionData.id][question.id]" value="0" id="radio-no" ng-required="!studentData[sectionData.id][question.id]"><div class="check"></div><label for="radio-no">No</label></div></div><div class="question__option-wrapper" ng-if="question.type == \'numeric_multiple_option\'"><div ng-repeat="option in question.options" class="question__option-item"><p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id, option.id)"></span> <input type="number" ng-model="studentData[sectionData.id][question.id][option.id]" ng-init="initNumericValue(question.id, option.id)" class="question__number-input"> <span class="input-square input-square--right" ng-click="incrementNumericValue(question.id, option.id)"></span></div></div></div></div><button type="submit" class="btn center--mobile right--desktop">Siguiente</button></form>');
 $templateCache.put('html/quiz/section1-result.html','<div><h2>\xA1Wow! \xBFTe imaginabas esto, {{studentData.name}}?</h2><div class="questionResult results" ng-repeat="question in results"><p>{{question.questionText}}</p><!-- Start table --><div class="Rtable Rtable--3cols"><!--Table Heading --><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><!--Table Body--><div ng-repeat="option in question.options" class="Rtable__results"><div class="Rtable__cell">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell results__yours"><span class="results__number">{{option.yourAnswer | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.censusResult | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div></div></div><!-- End table --></div><div><div class="results__bottom"><button ui-sref="root.quizSection2.question({pageNumber: 1})" class="btn center--mobile right--desktop">Siguiente</button></div></div></div>');
 $templateCache.put('html/quiz/section2-result.html','<div ng-show="displayResults"><h2>\xA1Wow! \xBFTe imaginabas esto, {{studentData.name}}?</h2><div class="questionResult"><p>{{results.avgPersonsPerHouse.questionText}}</p><!-- Start table --><div class="Rtable Rtable--4cols"><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell Rtable__heading">Respuestas promedio de tu clase</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><div ng-repeat="option in results.avgPersonsPerHouse.options" class="Rtable__results"><div class="Rtable__cell Rtable__cell--per-promedio">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell Rtable__cell--per-promedio results__yours"><span class="results__promedio">{{option.yourAnswer | number:2}}</span> <span ng-if="option.yourAnswer" class="results__text">personas <span class="no-wrap">en promedio</span></span></div><div class="Rtable__cell Rtable__cell--per-promedio"><span class="results__promedio">{{option.yourClass | number:2}}</span> <span ng-if="option.yourAnswer" class="results__text">personas <span class="no-wrap">en promedio</span></span></div><div class="Rtable__cell Rtable__cell--per-promedio"><span class="results__promedio">{{option.censusResult | number:2}}</span> <span ng-if="option.censusResult" class="results__text">personas <span class="no-wrap">en promedio</span></span></div></div></div><!-- End table --></div><div class="questionResult"><p>{{results.avgRentingHouse.rentedHouse.questionText}}</p><!-- Start table --><div class="Rtable Rtable--3cols"><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tu respuesta</div><div class="Rtable__cell Rtable__heading border__right--0">Respuestas promedio de tu clase</div><div class="Rtable__results"><div class="Rtable__cell Rtable__cell--per-promedio">{{ results.avgRentingHouse.rentedHouse.optionText }}</div><div class="Rtable__cell Rtable__cell--per-promedio results__yours"><span class="results__promedio">{{ results.avgRentingHouse.rentedHouse.yourAnswer }}</span></div><div class="Rtable__cell Rtable__cell--per-promedio"><canvas id="doughnut" class="chart chart-doughnut" chart-data="results.avgRentingHouse.rentedHouse.yourClass.data" chart-labels="results.avgRentingHouse.rentedHouse.yourClass.labels" chart-colors="results.avgRentingHouse.rentedHouse.yourClass.colors" chart-options="results.avgRentingHouse.rentedHouse.yourClass.options"></canvas></div></div></div><!-- End table --></div><div class="questionResult results"><p>{{results.avgRentingHouse.personsRentingHouses.questionText}}</p><!-- Start table --><div class="Rtable Rtable--4cols"><!--Table Heading --><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell Rtable__heading">Respuestas promedio de tu clase</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><!--Table Body--><div ng-repeat="option in results.avgRentingHouse.personsRentingHouses.options" class="Rtable__results"><div class="Rtable__cell">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell results__yours"><span class="results__number">{{option.yourAnswer | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.yourClass | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourClass | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.censusResult | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div></div></div><!-- End table --></div><div><div class="results__bottom"><button ui-sref="root.quizSection3.result" class="btn center--mobile right--desktop">Siguiente</button></div></div></div>');
+<<<<<<< HEAD
 $templateCache.put('html/quiz/section3-result.html','<div class="wrapper"><h2 class="center">Aprende m&aacute;s de los datos</h2><p class="center main-centered-text">Selecciona una ubicaci\xF3n en el mapa que ves a contuaci\xF3n y observa los resultados.</p><div dropdown-select="provinceList" dropdown-model="studentData.province" dropdown-item-label="name" class="input--info"></div><div class="comparativo"><div class="comparativo__buttons"><div class="comparativo__btn" ng-click="changeComparisonType(\'youngProportion\')" ng-class="{selected: comparisonType == \'youngProportion\' }"><div class="comparativo__circle comparativo__circle--primary"></div><h4 class="comparativo__heading">Comparativa 01</h4><p class="comparativo__text">Chicos entre 15 y 18 a\xF1os en la poblaci&oacute;n</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'schoolAttendance\')" ng-class="{selected: comparisonType == \'schoolAttendance\' }"><div class="comparativo__circle comparativo__circle--secondary"></div><h4 class="comparativo__heading">Comparativa 02</h4><p class="comparativo__text">Chicos entre 15 y 18 que van a la escuela</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'avgPersonsPerHouse\')" ng-class="{selected: comparisonType == \'avgPersonsPerHouse\' }"><div class="comparativo__circle comparativo__circle--tertiary"></div><h4 class="comparativo__heading">Comparativa 03</h4><p class="comparativo__text">Promedio de personas por habitaci&oacute;n</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'personsRentingHouses\')" ng-class="{selected: comparisonType == \'personsRentingHouses\' }"><div class="comparativo__circle comparativo__circle--fourth"></div><h4 class="comparativo__heading">Comparativa 04</h4><p class="comparativo__text">Promedio de personas que vive en un lugar alquilado</p></div></div><div class="comparativo__map youngProportion" id="map-wrapper"><object type="image/svg+xml" id="comparisonMap" class="student-info__maps"></object><div id="descriptionDiv" class="description {{comparisonType}}"><a ng-click="closeTooltip()"><i class="fa fa-times description__close" aria-hidden="true"></i></a><div class="pieChart" easypiechart options="pieChartOptions" percent="currentValue"><div class="easypielabel" ng-if="comparisonType != \'avgPersonsPerHouse\'">{{currentValue}}%</div><div class="easypielabel" ng-if="comparisonType == \'avgPersonsPerHouse\'">{{currentDepartment[comparisonType] | number:2}}</div></div><p class="comparativo__comuna">{{currentDepartment.departmentName ? currentDepartment.departmentName : currentDepartment.name}}</p></div></div></div><div></div></div>');
+=======
+$templateCache.put('html/quiz/section3-result.html','<div class="wrapper"><h2 class="center">Aprende m&aacute;s de los datos</h2><p class="center main-centered-text">Selecciona una ubicaci\xF3n en el mapa que ves a contuaci\xF3n y observa los resultados.</p><div class="comparativo"><div class="comparativo__buttons"><div class="comparativo__btn" ng-click="changeComparisonType(\'youngProportion\')" ng-class="{selected: comparisonType == \'youngProportion\' }"><div class="comparativo__circle comparativo__circle--primary"></div><h4 class="comparativo__heading">Comparativa 01</h4><p class="comparativo__text">Chicos entre 15 y 18 a\xF1os en la poblaci&oacute;n</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'schoolAttendance\')" ng-class="{selected: comparisonType == \'schoolAttendance\' }"><div class="comparativo__circle comparativo__circle--secondary"></div><h4 class="comparativo__heading">Comparativa 02</h4><p class="comparativo__text">Chicos entre 15 y 18 que van a la escuela</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'avgPersonsPerHouse\')" ng-class="{selected: comparisonType == \'avgPersonsPerHouse\' }"><div class="comparativo__circle comparativo__circle--tertiary"></div><h4 class="comparativo__heading">Comparativa 03</h4><p class="comparativo__text">Promedio de personas por habitaci&oacute;n</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'personsRentingHouses\')" ng-class="{selected: comparisonType == \'personsRentingHouses\' }"><div class="comparativo__circle comparativo__circle--fourth"></div><h4 class="comparativo__heading">Comparativa 04</h4><p class="comparativo__text">Promedio de personas que vive en un lugar alquilado</p></div></div><div class="comparativo__map youngProportion" id="map-wrapper"><comparison-map province="2" click-function="showDepartmentTooltip" map-control="mapControl"></comparison-map><div id="descriptionDiv" class="description {{comparisonType}}"><a ng-click="closeTooltip()"><i class="fa fa-times description__close" aria-hidden="true"></i></a><div class="pieChart" easypiechart options="pieChartOptions" percent="currentValue"><div class="easypielabel" ng-if="comparisonType != \'avgPersonsPerHouse\'">{{currentValue}}%</div><div class="easypielabel" ng-if="comparisonType == \'avgPersonsPerHouse\'">{{currentDepartment[comparisonType] | number:2}}</div></div><p class="comparativo__comuna">{{currentDepartment.departmentName}}</p></div></div></div><div></div></div>');
+>>>>>>> master
 $templateCache.put('html/sign-up/class-code.html','<div class="code-slide"><form name="classCodeForm" ng-submit="classCodeForm.$valid && saveClassCode()" novalidate><div class="center"><p class="code-slide__text">Escrib&iacute; el c&oacute;digo de la clase que te dio tu profe.</p><input type="text" class="code-slide__input" ng-model="studentData.classCode" placeholder="" required><div><button type="submit" class="btn btn--alternative">Siguiente</button></div></div></form></div>');
 $templateCache.put('html/sign-up/index.html','<div ui-view></div>');
 $templateCache.put('html/sign-up/student-data.html','<form name="studentDataForm" ng-submit="studentDataForm.$valid && studentData.department.id && saveStudentData()" novalidate><div class="student-info"><h2>Antes de empezar</h2><div class="student-info__inputs"><input type="text" ng-model="studentData.name" placeholder="Nombre" class="student-info__left input--info" required> <input type="number" ng-model="studentData.age" placeholder="Edad" class="student-info__right input--info" required><div dropdown-select="provinceList" dropdown-model="studentData.province" dropdown-item-label="name" ng-init="initProvinceCombobox()" placeholder="Provincia" class="student-info__left input--info" required></div><div dropdown-select="departmentList" dropdown-model="studentData.department" dropdown-item-label="name" ng-init="initDepartmentCombobox()" placeholder="\xBFD\xF3nde viv\xEDs?" class="student-info__right input--info" required></div></div><svg-map province="studentData.province" department="studentData.department"></svg-map><div><button type="submit" class="btn right--desktop center--mobile">Siguiente</button></div></div></form>');
