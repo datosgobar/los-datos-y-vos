@@ -1,8 +1,8 @@
-angular.module('app').controller('QuizCtrl', function($scope, $state, $stateParams, EventBusSvc, 
+angular.module('app').controller('QuizCtrl', function($scope, $state, $stateParams, EventBusSvc,
     StudentDataSvc, QuizSvc, $firebaseArray) {
 
     $scope.studentData = StudentDataSvc.getStudentData();
-    
+
     var ref = firebase.database().ref().child("studentsPerClass/" + $scope.studentData.classCode);
     $scope.studentsPerClass = $firebaseArray(ref);
 
@@ -17,7 +17,8 @@ angular.module('app').controller('QuizCtrl', function($scope, $state, $statePara
     };
 
     $scope.keys = [];
-    $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
+    // cod 11042
+    $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.department.name;
     $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
     $scope.goToNextPage = function(pageNumber) {

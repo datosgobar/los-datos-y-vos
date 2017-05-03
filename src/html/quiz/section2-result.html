@@ -1,9 +1,9 @@
 <div ng-show="displayResults">
 
-	<h2>¡Wow! ¿Te imaginabas esto, {{studentData.name}}?</h2>
+	<h2>¡Listo! ¿Te imaginabas esto, {{studentData.name}}?</h2>
 
 	<div class="questionResult">
-		<p>{{results.avgPersonsPerHouse.questionText}}</p>
+		<p><b>{{results.avgPersonsPerHouse.questionText}}</b></p>
 		<!-- Start table -->
 		<div class="Rtable Rtable--4cols">
 
@@ -35,7 +35,7 @@
 	</div>
 
 	<div class="questionResult">
-		<p>{{results.avgRentingHouse.rentedHouse.questionText}}</p>
+		<p><b>{{results.avgRentingHouse.rentedHouse.questionText}}</b></p>
 		<!-- Start table -->
 		<div class="Rtable Rtable--3cols">
 
@@ -54,11 +54,11 @@
 				</div>
 				<div class="Rtable__cell Rtable__cell--per-promedio">
 					<canvas id="doughnut" class="chart chart-doughnut"
-  						chart-data="results.avgRentingHouse.rentedHouse.yourClass.data" 
-  						chart-labels="results.avgRentingHouse.rentedHouse.yourClass.labels" 
-  						chart-colors="results.avgRentingHouse.rentedHouse.yourClass.colors" 
+  						chart-data="results.avgRentingHouse.rentedHouse.yourClass.data"
+  						chart-labels="results.avgRentingHouse.rentedHouse.yourClass.labels"
+  						chart-colors="results.avgRentingHouse.rentedHouse.yourClass.colors"
   						chart-options="results.avgRentingHouse.rentedHouse.yourClass.options">
-					</canvas> 
+					</canvas>
 				</div>
 			</div>
 
@@ -67,7 +67,7 @@
 	</div>
 
 	<div class="questionResult results">
-		<p>{{results.avgRentingHouse.personsRentingHouses.questionText}}</p>
+		<p><b>{{results.avgRentingHouse.personsRentingHouses.questionText}}</b></p>
 
 		<!-- Start table -->
 		<div class="Rtable Rtable--4cols">

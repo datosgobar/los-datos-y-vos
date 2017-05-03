@@ -1,4 +1,4 @@
-angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, StudentDataSvc, QuizSvc, 
+angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, StudentDataSvc, QuizSvc,
         LocationIndicatorSvc, $firebaseArray) {
 
     var activate = function() {
@@ -6,7 +6,7 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
         $scope.sectionData = QuizSvc.getSectionData($state.current.data.stepNumber);
 
         $scope.keys = [];
-        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
+        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.department.name;
         $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
         var ref = firebase.database().ref().child("studentsPerClass/" + $scope.studentData.classCode);

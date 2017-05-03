@@ -1,12 +1,12 @@
 angular.module('app').controller('ResultSection1Ctrl', function($scope, $state, StudentDataSvc, QuizSvc, LocationIndicatorSvc) {
-    
+
     var activate = function() {
         $scope.studentData = StudentDataSvc.getStudentData();
         $scope.sectionData = QuizSvc.getSectionData($state.current.data.stepNumber);
-        
+
         $scope.keys = [];
-        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
-        $scope.keys['YOUR_PROVINCE'] = $scope.studentData.province.name;
+        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.department.name;
+        $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
         $scope.calculateResults();
     };
@@ -22,7 +22,8 @@ angular.module('app').controller('ResultSection1Ctrl', function($scope, $state, 
         angular.forEach($scope.sectionData.pages, function(sectionPages) {
             angular.forEach(sectionPages.questions, function(question) {
                 var questionResults = {
-                    questionText: question.text,
+                    // cod 11043
+                    questionText: question.text_result,
                     options: []
                 };
                 angular.forEach(question.options, function(option) {

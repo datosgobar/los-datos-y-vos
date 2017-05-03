@@ -2,11 +2,12 @@
 // =============================================================================
 angular.module('app').config(['$translateProvider', function($translateProvider) {
 
+	// cod 11042
 	var translations = {
-  		YOUR_DEPARTMENT: 'a) Tu {{key}}',
-  		YOUR_PROVINCE: 'b) {{key}}',
+  		YOUR_DEPARTMENT: '{{key}}',
+  		YOUR_PROVINCE: '{{key}}',
   		YOUR_HOUSE_RESULT: 'Tu casa',
-  		YOUR_DEPARTMENT_RESULT: 'Tu {{key}}',
+  		YOUR_DEPARTMENT_RESULT: '{{key}}',
   		YOUR_PROVINCE_RESULT: '{{key}}',
 	};
 

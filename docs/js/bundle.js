@@ -167,11 +167,12 @@ angular.module('app').config(["$locationProvider", "$stateProvider", "$urlRouter
 // =============================================================================
 angular.module('app').config(['$translateProvider', function($translateProvider) {
 
+	// cod 11042
 	var translations = {
-  		YOUR_DEPARTMENT: 'a) Tu {{key}}',
-  		YOUR_PROVINCE: 'b) {{key}}',
+  		YOUR_DEPARTMENT: '{{key}}',
+  		YOUR_PROVINCE: '{{key}}',
   		YOUR_HOUSE_RESULT: 'Tu casa',
-  		YOUR_DEPARTMENT_RESULT: 'Tu {{key}}',
+  		YOUR_DEPARTMENT_RESULT: '{{key}}',
   		YOUR_PROVINCE_RESULT: '{{key}}',
 	};
 
@@ -553,6 +554,9 @@ angular.module('app').directive("svgMap", function() {
 'use strict';
 angular.module('app').factory('QuizFactory', function() {
 
+    // cod 11042
+    // cod 11043
+    // cod 11044
     var quiz = {
         1: {
             id: "section1",
@@ -566,6 +570,7 @@ angular.module('app').factory('QuizFactory', function() {
                             id: "youngProportion",
                             type: "slider",
                             text: "1. En estos lugares que te detallamos, y teniendo en cuenta todas las personas que viven ahí, ¿qué porcentaje creés que son chicos de entre 15 y 18 años?",
+                            text_result: "1. Porcentaje de chicos de entre 15 y 18 años entre toda la población estos lugares:",
                             options: [
                                 {
                                     id: "department",
@@ -587,6 +592,7 @@ angular.module('app').factory('QuizFactory', function() {
                             id: "schoolAttendance",
                             type: "slider",
                             text: "2. Contanos qué porcentaje de chicos de entre 15 y 18 años creés que van a la escuela en:",
+                            text_result: "2. Porcentaje de chicos de entre 15 y 18 años que van a la escuela en:",
                             options: [
                                 {
                                     id: "department",
@@ -619,12 +625,12 @@ angular.module('app').factory('QuizFactory', function() {
                         {
                             id: "roomsPerHouse",
                             type: "numeric_single_option",
-                            text: "2. Contanos cuántas habitaciones hay en tu casa:"
+                            text: "2. Contanos cuántos cuartos hay en tu casa:"
                         },
                         {
                             id: "avgPersonsPerHouse",
                             type: "numeric_multiple_option",
-                            text: "3. Cuántas personas, en promedio, creés que duermen por habitación en:",
+                            text: "3. Cuántas personas, en promedio, creés que duermen por cuarto en:",
                             options: [
                                 {
                                     id: "department",
@@ -651,7 +657,7 @@ angular.module('app').factory('QuizFactory', function() {
                         {
                             id: "personsRentingHouses",
                             type: "slider",
-                            text: "2. Contanos qué porcentaje de personas creés que viven en un lugar alquilado en:",
+                            text: "2. ¿Cuántas personas creés que viven en un lugar alquilado? Expresalo en porcentaje:",
                             options: [
                                 {
                                     id: "department",
@@ -924,11 +930,11 @@ angular.module('app').controller('HeaderCtrl', ["$scope", "$state", "EventBusSvc
 })(window.angular);
 (function(angular){
 'use strict';
-angular.module('app').controller('QuizCtrl', ["$scope", "$state", "$stateParams", "EventBusSvc", "StudentDataSvc", "QuizSvc", "$firebaseArray", function($scope, $state, $stateParams, EventBusSvc, 
+angular.module('app').controller('QuizCtrl', ["$scope", "$state", "$stateParams", "EventBusSvc", "StudentDataSvc", "QuizSvc", "$firebaseArray", function($scope, $state, $stateParams, EventBusSvc,
     StudentDataSvc, QuizSvc, $firebaseArray) {
 
     $scope.studentData = StudentDataSvc.getStudentData();
-    
+
     var ref = firebase.database().ref().child("studentsPerClass/" + $scope.studentData.classCode);
     $scope.studentsPerClass = $firebaseArray(ref);
 
@@ -943,7 +949,8 @@ angular.module('app').controller('QuizCtrl', ["$scope", "$state", "$stateParams"
     };
 
     $scope.keys = [];
-    $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
+    // cod 11042
+    $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.department.name;
     $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
     $scope.goToNextPage = function(pageNumber) {
@@ -1011,14 +1018,14 @@ angular.module('app').controller('QuizCtrl', ["$scope", "$state", "$stateParams"
 (function(angular){
 'use strict';
 angular.module('app').controller('ResultSection1Ctrl', ["$scope", "$state", "StudentDataSvc", "QuizSvc", "LocationIndicatorSvc", function($scope, $state, StudentDataSvc, QuizSvc, LocationIndicatorSvc) {
-    
+
     var activate = function() {
         $scope.studentData = StudentDataSvc.getStudentData();
         $scope.sectionData = QuizSvc.getSectionData($state.current.data.stepNumber);
-        
+
         $scope.keys = [];
-        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
-        $scope.keys['YOUR_PROVINCE'] = $scope.studentData.province.name;
+        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.department.name;
+        $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
         $scope.calculateResults();
     };
@@ -1034,7 +1041,8 @@ angular.module('app').controller('ResultSection1Ctrl', ["$scope", "$state", "Stu
         angular.forEach($scope.sectionData.pages, function(sectionPages) {
             angular.forEach(sectionPages.questions, function(question) {
                 var questionResults = {
-                    questionText: question.text,
+                    // cod 11043
+                    questionText: question.text_result,
                     options: []
                 };
                 angular.forEach(question.options, function(option) {
@@ -1060,7 +1068,7 @@ angular.module('app').controller('ResultSection1Ctrl', ["$scope", "$state", "Stu
 })(window.angular);
 (function(angular){
 'use strict';
-angular.module('app').controller('ResultSection2Ctrl', ["$scope", "$state", "StudentDataSvc", "QuizSvc", "LocationIndicatorSvc", "$firebaseArray", function($scope, $state, StudentDataSvc, QuizSvc, 
+angular.module('app').controller('ResultSection2Ctrl', ["$scope", "$state", "StudentDataSvc", "QuizSvc", "LocationIndicatorSvc", "$firebaseArray", function($scope, $state, StudentDataSvc, QuizSvc,
         LocationIndicatorSvc, $firebaseArray) {
 
     var activate = function() {
@@ -1068,7 +1076,7 @@ angular.module('app').controller('ResultSection2Ctrl', ["$scope", "$state", "Stu
         $scope.sectionData = QuizSvc.getSectionData($state.current.data.stepNumber);
 
         $scope.keys = [];
-        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.province.id == 2 ? 'comuna' : 'departamento';
+        $scope.keys['YOUR_DEPARTMENT'] = $scope.studentData.department.name;
         $scope.keys['YOUR_PROVINCE'] = ($scope.studentData.province.id == 2 ? "" : "Provincia de ") + $scope.studentData.province.name;
 
         var ref = firebase.database().ref().child("studentsPerClass/" + $scope.studentData.classCode);
@@ -1378,12 +1386,12 @@ angular.module('app').controller('welcomeCtrl', ["$scope", function($scope) {
 (function(angular){
 'use strict';
 angular.module('templates', []).run(['$templateCache', function($templateCache) {$templateCache.put('index.html','<!DOCTYPE html><html ng-app="app" ng-controller="AppCtrl as appCtrl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!--base href="/"--><title>Los datos y vos</title><script src="https://use.fontawesome.com/3d4418b16e.js"></script><link rel="stylesheet" href="css/style.css"></head><body class="{{ appCtrl.bodyClass }}"><header ui-view="header" id="header"></header><div ui-view="container" id="container" class="wrapper"></div><!-- App --><script src="js/vendor.js"></script><script src="js/bundle.js"></script></body></html>');
-$templateCache.put('html/default/about.html','<div class="dialog"><h2 class="dialog__heading">Acerca</h2><p class="dialog__text">Esta aplicaci&oacute;n fue hecha con \u2764 por el Open Data Institute, los equipos de Datos e Innovaci&oacute;n P&uacute;blica del Ministerio de Modernizaci&oacute;n argentino, Aerolab y Eidos. Ahora es tuya, \xA1Disfrutala!</p><h2 class="dialog__heading">T&eacute;rminos de uso</h2><p class="dialog__text">Los datos que agregues a esta aplicaci&oacute;n no est&aacute;n asociados a ning&uacute;n apellido. S&oacute;lo guardamos la informaci&oacute;n por un breve per&iacute;odo, y en una planilla de c&aacute;lculo, para poder mostrarte visualizaciones en la aplicaci&oacute;n \xA1Usala tranquilo!</p></div>');
+$templateCache.put('html/default/about.html','<div class="dialog"><h2 class="dialog__heading">Acercade Los datos y vos</h2><p class="dialog__text"><b>Esta aplicaci&oacute;n fue hecha con \u2764</b> por el Open Data Institute, los equipos de Datos e Innovaci&oacute;n P&uacute;blica del Ministerio de Modernizaci&oacute;n argentino, Aerolab y Eidos. <b>aaAhora es tuya, \xA1Disfrutala!</b></p><h2 class="dialog__heading">T&eacute;rminos de uso</h2><p class="dialog__text"><b>Los datos que agregues a esta aplicaci&oacute;n no est&aacute;n asociados a ning&uacute;n apellido.</b> S&oacute;lo guardamos la informaci&oacute;n por un breve per&iacute;odo, y en una planilla de c&aacute;lculo, para poder mostrarte visualizaciones en la aplicaci&oacute;n \xA1Usala tranquilo!</p></div>');
 $templateCache.put('html/default/header.html','<div class="header"><div class="wrapper header__container"><div class="header__item header__item--1">Los datos y Vos</div><div ng-if="studentData.classCode && displayClassCode" class="header__item header__item--2 hidden-mobile"><div class="classCode header__code">Clase: {{studentData.classCode}}</div><div class="progress"><div class="header__progress-container"><div class="header__progress-bar" ng-style="progressStyle"></div></div><!-- <div class="header__section">{{stepName}}</div> --></div></div><div class="header__item header__item--3"><a href="" ng-click="openAboutModal()" class="header__acerca">Acerca</a></div></div><div ng-if="studentData.classCode && displayClassCode" class="header__item header__item--2 hidden-desktop"><div class="classCode header__code">Clase: {{studentData.classCode}}</div><div class="progress"><div class="header__progress-container"><div class="header__progress-bar" ng-style="progressStyle"></div></div><div class="header__section">{{stepName}}</div></div></div></div>');
 $templateCache.put('html/quiz/index.html','<div ui-view></div>');
 $templateCache.put('html/quiz/question.html','<form name="questionForm" ng-submit="questionForm.$valid && goToNextPage(pageData.nextPage)" novalidate><div ng-repeat="question in pageData.questions" class="{{question.type}} question__single-container"><div class="question__text">{{question.text}}</div><div class="question__option-wrapper" ng-if="question.type == \'slider\'"><div ng-repeat="option in question.options" ng-init="initNumericValue(question.id, option.id)" class="question__option-item"><p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id, option.id)"></span><rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider><span class="input-square input-square--right" ng-click="incrementNumericValue(question.id, option.id)"></span></div></div></div><div ng-if="question.type == \'numeric_single_option\'"><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id)"></span> <input type="number" ng-model="studentData[sectionData.id][question.id]" ng-init="initNumericValue(question.id)" class="question__number-input"> <span class="input-square input-square--right" ng-click="incrementNumericValue(question.id)"></span></div></div><div ng-if="question.type == \'radio_boolean\'"><div class="question__radio"><input type="radio" ng-model="studentData[sectionData.id][question.id]" value="1" id="radio-si" ng-required="!studentData[sectionData.id][question.id]"><div class="check"></div><label for="radio-si">S\xED</label></div><div class="question__radio"><input type="radio" ng-model="studentData[sectionData.id][question.id]" value="0" id="radio-no" ng-required="!studentData[sectionData.id][question.id]"><div class="check"></div><label for="radio-no">No</label></div></div><div class="question__option-wrapper" ng-if="question.type == \'numeric_multiple_option\'"><div ng-repeat="option in question.options" class="question__option-item"><p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id, option.id)"></span> <input type="number" ng-model="studentData[sectionData.id][question.id][option.id]" ng-init="initNumericValue(question.id, option.id)" class="question__number-input"> <span class="input-square input-square--right" ng-click="incrementNumericValue(question.id, option.id)"></span></div></div></div></div><button type="submit" class="btn center--mobile right--desktop">Siguiente</button></form>');
-$templateCache.put('html/quiz/section1-result.html','<div><h2>\xA1Wow! \xBFTe imaginabas esto, {{studentData.name}}?</h2><div class="questionResult results" ng-repeat="question in results"><p>{{question.questionText}}</p><!-- Start table --><div class="Rtable Rtable--3cols"><!--Table Heading --><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><!--Table Body--><div ng-repeat="option in question.options" class="Rtable__results"><div class="Rtable__cell">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell results__yours"><span class="results__number">{{option.yourAnswer | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.censusResult | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div></div></div><!-- End table --></div><div><div class="results__bottom"><button ui-sref="root.quizSection2.question({pageNumber: 1})" class="btn center--mobile right--desktop">Siguiente</button></div></div></div>');
-$templateCache.put('html/quiz/section2-result.html','<div ng-show="displayResults"><h2>\xA1Wow! \xBFTe imaginabas esto, {{studentData.name}}?</h2><div class="questionResult"><p>{{results.avgPersonsPerHouse.questionText}}</p><!-- Start table --><div class="Rtable Rtable--4cols"><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell Rtable__heading">Respuestas promedio de tu clase</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><div ng-repeat="option in results.avgPersonsPerHouse.options" class="Rtable__results"><div class="Rtable__cell Rtable__cell--per-promedio">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell Rtable__cell--per-promedio results__yours"><span class="results__promedio">{{option.yourAnswer | number:2}}</span> <span ng-if="option.yourAnswer" class="results__text">personas <span class="no-wrap">en promedio</span></span></div><div class="Rtable__cell Rtable__cell--per-promedio"><span class="results__promedio">{{option.yourClass | number:2}}</span> <span ng-if="option.yourAnswer" class="results__text">personas <span class="no-wrap">en promedio</span></span></div><div class="Rtable__cell Rtable__cell--per-promedio"><span class="results__promedio">{{option.censusResult | number:2}}</span> <span ng-if="option.censusResult" class="results__text">personas <span class="no-wrap">en promedio</span></span></div></div></div><!-- End table --></div><div class="questionResult"><p>{{results.avgRentingHouse.rentedHouse.questionText}}</p><!-- Start table --><div class="Rtable Rtable--3cols"><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tu respuesta</div><div class="Rtable__cell Rtable__heading border__right--0">Respuestas promedio de tu clase</div><div class="Rtable__results"><div class="Rtable__cell Rtable__cell--per-promedio">{{ results.avgRentingHouse.rentedHouse.optionText }}</div><div class="Rtable__cell Rtable__cell--per-promedio results__yours"><span class="results__promedio">{{ results.avgRentingHouse.rentedHouse.yourAnswer }}</span></div><div class="Rtable__cell Rtable__cell--per-promedio"><canvas id="doughnut" class="chart chart-doughnut" chart-data="results.avgRentingHouse.rentedHouse.yourClass.data" chart-labels="results.avgRentingHouse.rentedHouse.yourClass.labels" chart-colors="results.avgRentingHouse.rentedHouse.yourClass.colors" chart-options="results.avgRentingHouse.rentedHouse.yourClass.options"></canvas></div></div></div><!-- End table --></div><div class="questionResult results"><p>{{results.avgRentingHouse.personsRentingHouses.questionText}}</p><!-- Start table --><div class="Rtable Rtable--4cols"><!--Table Heading --><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell Rtable__heading">Respuestas promedio de tu clase</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><!--Table Body--><div ng-repeat="option in results.avgRentingHouse.personsRentingHouses.options" class="Rtable__results"><div class="Rtable__cell">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell results__yours"><span class="results__number">{{option.yourAnswer | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.yourClass | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourClass | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.censusResult | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div></div></div><!-- End table --></div><div><div class="results__bottom"><button ui-sref="root.quizSection3.result" class="btn center--mobile right--desktop">Siguiente</button></div></div></div>');
+$templateCache.put('html/quiz/section1-result.html','<div><h2>\xA1Listo! \xBFTe imaginabas esto, {{studentData.name}}?</h2><div class="questionResult results" ng-repeat="question in results"><p><b>{{question.questionText}}</b></p><!-- Start table --><div class="Rtable Rtable--3cols"><!--Table Heading --><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><!--Table Body--><div ng-repeat="option in question.options" class="Rtable__results"><div class="Rtable__cell">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell results__yours"><span class="results__number">{{option.yourAnswer | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.censusResult | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div></div></div><!-- End table --></div><div><div class="results__bottom"><button ui-sref="root.quizSection2.question({pageNumber: 1})" class="btn center--mobile right--desktop">Siguiente</button></div></div></div>');
+$templateCache.put('html/quiz/section2-result.html','<div ng-show="displayResults"><h2>\xA1Listo! \xBFTe imaginabas esto, {{studentData.name}}?</h2><div class="questionResult"><p><b>{{results.avgPersonsPerHouse.questionText}}</b></p><!-- Start table --><div class="Rtable Rtable--4cols"><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell Rtable__heading">Respuestas promedio de tu clase</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><div ng-repeat="option in results.avgPersonsPerHouse.options" class="Rtable__results"><div class="Rtable__cell Rtable__cell--per-promedio">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell Rtable__cell--per-promedio results__yours"><span class="results__promedio">{{option.yourAnswer | number:2}}</span> <span ng-if="option.yourAnswer" class="results__text">personas <span class="no-wrap">en promedio</span></span></div><div class="Rtable__cell Rtable__cell--per-promedio"><span class="results__promedio">{{option.yourClass | number:2}}</span> <span ng-if="option.yourAnswer" class="results__text">personas <span class="no-wrap">en promedio</span></span></div><div class="Rtable__cell Rtable__cell--per-promedio"><span class="results__promedio">{{option.censusResult | number:2}}</span> <span ng-if="option.censusResult" class="results__text">personas <span class="no-wrap">en promedio</span></span></div></div></div><!-- End table --></div><div class="questionResult"><p><b>{{results.avgRentingHouse.rentedHouse.questionText}}</b></p><!-- Start table --><div class="Rtable Rtable--3cols"><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tu respuesta</div><div class="Rtable__cell Rtable__heading border__right--0">Respuestas promedio de tu clase</div><div class="Rtable__results"><div class="Rtable__cell Rtable__cell--per-promedio">{{ results.avgRentingHouse.rentedHouse.optionText }}</div><div class="Rtable__cell Rtable__cell--per-promedio results__yours"><span class="results__promedio">{{ results.avgRentingHouse.rentedHouse.yourAnswer }}</span></div><div class="Rtable__cell Rtable__cell--per-promedio"><canvas id="doughnut" class="chart chart-doughnut" chart-data="results.avgRentingHouse.rentedHouse.yourClass.data" chart-labels="results.avgRentingHouse.rentedHouse.yourClass.labels" chart-colors="results.avgRentingHouse.rentedHouse.yourClass.colors" chart-options="results.avgRentingHouse.rentedHouse.yourClass.options"></canvas></div></div></div><!-- End table --></div><div class="questionResult results"><p><b>{{results.avgRentingHouse.personsRentingHouses.questionText}}</b></p><!-- Start table --><div class="Rtable Rtable--4cols"><!--Table Heading --><div class="Rtable__cell"></div><div class="Rtable__cell Rtable__heading results__yours">Tus respuestas</div><div class="Rtable__cell Rtable__heading">Respuestas promedio de tu clase</div><div class="Rtable__cell border__right--0 Rtable__heading">Censo Nacional del 2010</div><!--Table Body--><div ng-repeat="option in results.avgRentingHouse.personsRentingHouses.options" class="Rtable__results"><div class="Rtable__cell">{{ option.optionText.concat(\'_RESULT\') | translate: getTranslationKey(option.optionText) }}</div><div class="Rtable__cell results__yours"><span class="results__number">{{option.yourAnswer | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourAnswer | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.yourClass | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.yourClass | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div><div class="Rtable__cell"><span class="results__number">{{option.censusResult | number:0}}%</span><object type="image/svg+xml" data="img/graph-svg/circle-graph.svg" style="width:{{option.censusResult | number:0}}%" class="results__graphic"><img src="img/graph-svg/circle-graph.png" class="results__graphic"></object></div></div></div><!-- End table --></div><div><div class="results__bottom"><button ui-sref="root.quizSection3.result" class="btn center--mobile right--desktop">Siguiente</button></div></div></div>');
 $templateCache.put('html/quiz/section3-result.html','<div class="wrapper"><h2 class="center">Aprende m&aacute;s de los datos</h2><p class="center main-centered-text">Selecciona una ubicaci\xF3n en el mapa que ves a contuaci\xF3n y observa los resultados.</p><div class="comparativo"><div class="comparativo__buttons"><div class="comparativo__btn" ng-click="changeComparisonType(\'youngProportion\')" ng-class="{selected: comparisonType == \'youngProportion\' }"><div class="comparativo__circle comparativo__circle--primary"></div><h4 class="comparativo__heading">Comparativa 01</h4><p class="comparativo__text">Chicos entre 15 y 18 a\xF1os en la poblaci&oacute;n</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'schoolAttendance\')" ng-class="{selected: comparisonType == \'schoolAttendance\' }"><div class="comparativo__circle comparativo__circle--secondary"></div><h4 class="comparativo__heading">Comparativa 02</h4><p class="comparativo__text">Chicos entre 15 y 18 que van a la escuela</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'avgPersonsPerHouse\')" ng-class="{selected: comparisonType == \'avgPersonsPerHouse\' }"><div class="comparativo__circle comparativo__circle--tertiary"></div><h4 class="comparativo__heading">Comparativa 03</h4><p class="comparativo__text">Promedio de personas por habitaci&oacute;n</p></div><div class="comparativo__btn" ng-click="changeComparisonType(\'personsRentingHouses\')" ng-class="{selected: comparisonType == \'personsRentingHouses\' }"><div class="comparativo__circle comparativo__circle--fourth"></div><h4 class="comparativo__heading">Comparativa 04</h4><p class="comparativo__text">Promedio de personas que vive en un lugar alquilado</p></div></div><div class="comparativo__map youngProportion" id="map-wrapper"><comparison-map province="2" click-function="showDepartmentTooltip" map-control="mapControl"></comparison-map><div id="descriptionDiv" class="description {{comparisonType}}"><a ng-click="closeTooltip()"><i class="fa fa-times description__close" aria-hidden="true"></i></a><div class="pieChart" easypiechart options="pieChartOptions" percent="currentValue"><div class="easypielabel" ng-if="comparisonType != \'avgPersonsPerHouse\'">{{currentValue}}%</div><div class="easypielabel" ng-if="comparisonType == \'avgPersonsPerHouse\'">{{currentDepartment[comparisonType] | number:2}}</div></div><p class="comparativo__comuna">{{currentDepartment.departmentName}}</p></div></div></div><div></div></div>');
 $templateCache.put('html/sign-up/class-code.html','<div class="code-slide"><form name="classCodeForm" ng-submit="classCodeForm.$valid && saveClassCode()" novalidate><div class="center"><p class="code-slide__text">Escrib&iacute; el c&oacute;digo de la clase que te dio tu profe.</p><input type="text" class="code-slide__input" ng-model="studentData.classCode" placeholder="" required><div><button type="submit" class="btn btn--alternative">Siguiente</button></div></div></form></div>');
 $templateCache.put('html/sign-up/index.html','<div ui-view></div>');
