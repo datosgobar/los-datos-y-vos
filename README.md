@@ -5,7 +5,7 @@ Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eid
 ## Estructura del repositorio
 
 * `data`: CSVs con data original del censo para construir indicadores, ids censales y lista de barrios/comunas de la CABA.
-* `indicadores`: CSVs y excels con los indicadores construidos para usar en la aplicación. También hay una tabla con datos falsos 
+* `indicadores`: CSVs y excels con los indicadores construidos para usar en la aplicación. También hay una tabla con datos falsos
 * `src`: Contiene el codigo del proyecto web para Los datos y vos.
 
 ## Instalación
