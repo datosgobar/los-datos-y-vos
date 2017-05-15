@@ -930,6 +930,72 @@ angular.module('app').controller('HeaderCtrl', ["$scope", "$state", "EventBusSvc
 })(window.angular);
 (function(angular){
 'use strict';
+angular.module('app').controller('signUpFormCtrl', ["$scope", "$state", "$filter", "EventBusSvc", "StudentDataSvc", "LocationIndicatorSvc", function($scope, $state, $filter, EventBusSvc, StudentDataSvc, LocationIndicatorSvc) {
+
+	var activate = function() {
+	    $scope.studentData = StudentDataSvc.getStudentData();
+        $scope.defaultProvince = { name: "Provincia"};
+        $scope.defaultDepartment = { name: "¿Dónde vivís?"};
+	    LocationIndicatorSvc.getProvinceList().then(function(data) {
+            $scope.provinceList = [$scope.defaultProvince]; 
+	    	$scope.provinceList = $scope.provinceList.concat(data);
+	    });
+	    $scope.departmentList = [$scope.defaultDepartment]; 
+        $scope.pageLoad = true;
+    };
+
+    var updateDepartmentList = function() {
+        if(!$scope.pageLoad) {
+            $scope.studentData['department'] = $scope.defaultDepartment;    
+        } else {
+            $scope.pageLoad = false;
+        }
+        var provinceId = $scope.studentData.province && $scope.studentData.province.id ? $scope.studentData.province.id : null;
+        if(provinceId == 2) { // CABA
+            LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
+                $scope.departmentList = [$scope.defaultDepartment];
+                $scope.departmentList = $scope.departmentList.concat(data);
+            });
+        } else {
+        	LocationIndicatorSvc.getDepartmentList().then(function(data) {
+                $scope.departmentList = [$scope.defaultDepartment];
+                $scope.departmentList = $scope.departmentList.concat($filter('filter')(data, {provinceId: provinceId}, true));
+    	    });
+        }
+    };
+
+    $scope.$watch("studentData.province", function(){
+    	updateDepartmentList();
+    });
+    
+    $scope.initProvinceCombobox = function() {
+        if(!$scope.studentData['province']) {
+            $scope.studentData['province'] = $scope.defaultProvince;
+        }
+    };
+
+    $scope.initDepartmentCombobox = function() {
+        if(!$scope.studentData['department']) {
+            $scope.studentData['department'] = $scope.defaultDepartment;
+        }
+    };
+
+    $scope.saveClassCode = function() {
+    	$state.go("root.signUpForm.studentData");
+    	StudentDataSvc.updateStudentData($scope.studentData);
+    	EventBusSvc.broadcast('updateClassCode', $scope.studentData.classCode);
+    };
+
+    $scope.saveStudentData = function() {
+    	StudentDataSvc.updateStudentData($scope.studentData);
+        $state.go("root.quizSection1.question", { pageNumber: 1});
+    };
+    
+    activate();
+}]);
+})(window.angular);
+(function(angular){
+'use strict';
 angular.module('app').controller('QuizCtrl', ["$scope", "$state", "$stateParams", "EventBusSvc", "StudentDataSvc", "QuizSvc", "$firebaseArray", function($scope, $state, $stateParams, EventBusSvc,
     StudentDataSvc, QuizSvc, $firebaseArray) {
 
@@ -1313,72 +1379,6 @@ angular.module('app').controller('ResultSection3Ctrl', ["$scope", "$state", "$fi
 })(window.angular);
 (function(angular){
 'use strict';
-angular.module('app').controller('signUpFormCtrl', ["$scope", "$state", "$filter", "EventBusSvc", "StudentDataSvc", "LocationIndicatorSvc", function($scope, $state, $filter, EventBusSvc, StudentDataSvc, LocationIndicatorSvc) {
-
-	var activate = function() {
-	    $scope.studentData = StudentDataSvc.getStudentData();
-        $scope.defaultProvince = { name: "Provincia"};
-        $scope.defaultDepartment = { name: "¿Dónde vivís?"};
-	    LocationIndicatorSvc.getProvinceList().then(function(data) {
-            $scope.provinceList = [$scope.defaultProvince]; 
-	    	$scope.provinceList = $scope.provinceList.concat(data);
-	    });
-	    $scope.departmentList = [$scope.defaultDepartment]; 
-        $scope.pageLoad = true;
-    };
-
-    var updateDepartmentList = function() {
-        if(!$scope.pageLoad) {
-            $scope.studentData['department'] = $scope.defaultDepartment;    
-        } else {
-            $scope.pageLoad = false;
-        }
-        var provinceId = $scope.studentData.province && $scope.studentData.province.id ? $scope.studentData.province.id : null;
-        if(provinceId == 2) { // CABA
-            LocationIndicatorSvc.getNeighbourhoodList().then(function(data) {
-                $scope.departmentList = [$scope.defaultDepartment];
-                $scope.departmentList = $scope.departmentList.concat(data);
-            });
-        } else {
-        	LocationIndicatorSvc.getDepartmentList().then(function(data) {
-                $scope.departmentList = [$scope.defaultDepartment];
-                $scope.departmentList = $scope.departmentList.concat($filter('filter')(data, {provinceId: provinceId}, true));
-    	    });
-        }
-    };
-
-    $scope.$watch("studentData.province", function(){
-    	updateDepartmentList();
-    });
-    
-    $scope.initProvinceCombobox = function() {
-        if(!$scope.studentData['province']) {
-            $scope.studentData['province'] = $scope.defaultProvince;
-        }
-    };
-
-    $scope.initDepartmentCombobox = function() {
-        if(!$scope.studentData['department']) {
-            $scope.studentData['department'] = $scope.defaultDepartment;
-        }
-    };
-
-    $scope.saveClassCode = function() {
-    	$state.go("root.signUpForm.studentData");
-    	StudentDataSvc.updateStudentData($scope.studentData);
-    	EventBusSvc.broadcast('updateClassCode', $scope.studentData.classCode);
-    };
-
-    $scope.saveStudentData = function() {
-    	StudentDataSvc.updateStudentData($scope.studentData);
-        $state.go("root.quizSection1.question", { pageNumber: 1});
-    };
-    
-    activate();
-}]);
-})(window.angular);
-(function(angular){
-'use strict';
 angular.module('app').controller('welcomeCtrl', ["$scope", function($scope) {
     
 }]);
@@ -1386,7 +1386,7 @@ angular.module('app').controller('welcomeCtrl', ["$scope", function($scope) {
 (function(angular){
 'use strict';
 angular.module('templates', []).run(['$templateCache', function($templateCache) {$templateCache.put('index.html','<!DOCTYPE html><html ng-app="app" ng-controller="AppCtrl as appCtrl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!--base href="/"--><title>Los datos y vos</title><script src="https://use.fontawesome.com/3d4418b16e.js"></script><link rel="stylesheet" href="css/style.css"></head><body class="{{ appCtrl.bodyClass }}"><header ui-view="header" id="header"></header><div ui-view="container" id="container" class="wrapper"></div><!-- App --><script src="js/vendor.js"></script><script src="js/bundle.js"></script></body></html>');
-$templateCache.put('html/default/about.html','<div class="dialog"><h2 class="dialog__heading">Acercade Los datos y vos</h2><p class="dialog__text"><b>Esta aplicaci&oacute;n fue hecha con \u2764</b> por el Open Data Institute, los equipos de Datos e Innovaci&oacute;n P&uacute;blica del Ministerio de Modernizaci&oacute;n argentino, Aerolab y Eidos. <b>aaAhora es tuya, \xA1Disfrutala!</b></p><h2 class="dialog__heading">T&eacute;rminos de uso</h2><p class="dialog__text"><b>Los datos que agregues a esta aplicaci&oacute;n no est&aacute;n asociados a ning&uacute;n apellido.</b> S&oacute;lo guardamos la informaci&oacute;n por un breve per&iacute;odo, y en una planilla de c&aacute;lculo, para poder mostrarte visualizaciones en la aplicaci&oacute;n \xA1Usala tranquilo!</p></div>');
+$templateCache.put('html/default/about.html','<div class="dialog"><h2 class="dialog__heading">Acercade Los datos y vos</h2><p class="dialog__text"><b>Esta aplicaci&oacute;n fue hecha con \u2764</b> por el Open Data Institute, los equipos de Datos e Innovaci&oacute;n P&uacute;blica del Ministerio de Modernizaci&oacute;n argentino, Aerolab y Eidos. <b>Ahora es tuya, \xA1Disfrutala!</b></p><h2 class="dialog__heading">T&eacute;rminos de uso</h2><p class="dialog__text"><b>Los datos que agregues a esta aplicaci&oacute;n no est&aacute;n asociados a ning&uacute;n apellido.</b> S&oacute;lo guardamos la informaci&oacute;n por un breve per&iacute;odo, y en una planilla de c&aacute;lculo, para poder mostrarte visualizaciones en la aplicaci&oacute;n \xA1Usala tranquilo!</p></div><!-- <div class="">\n\t<table>\n\t\t<tr>\n\t\t\t<td><img src="./img/logos/odi.svg" alt=""></td>\n\t\t\t<td><img src="./img/logos/datosArgentina.svg" alt=""></td>\n\t\t\t<td><img src="./img/logos/aerolab.svg" alt=""></td>\n\t\t\t<td><img src="./img/logos/eidos.png" alt=""></td>\n\t\t</tr>\n\t</table>\n</div> --><div class="dialog__logos"><div class="container_logos_dialog"><img src="./img/logos/odi.svg" alt="odi logo" width="100%"></div><div class="container_logos_dialog"><img src="./img/logos/datosArgentina.svg" alt="datos argentina logo" width="100%"></div><div class="container_logos_dialog"><img src="./img/logos/aerolab.svg" alt="aerolab logo" width="100%"></div><div class="container_logos_dialog"><img src="./img/logos/eidos.png" alt="eidos logo" width="100%"></div></div>');
 $templateCache.put('html/default/header.html','<div class="header"><div class="wrapper header__container"><div class="header__item header__item--1">Los datos y Vos</div><div ng-if="studentData.classCode && displayClassCode" class="header__item header__item--2 hidden-mobile"><div class="classCode header__code">Clase: {{studentData.classCode}}</div><div class="progress"><div class="header__progress-container"><div class="header__progress-bar" ng-style="progressStyle"></div></div><!-- <div class="header__section">{{stepName}}</div> --></div></div><div class="header__item header__item--3"><a href="" ng-click="openAboutModal()" class="header__acerca">Acerca</a></div></div><div ng-if="studentData.classCode && displayClassCode" class="header__item header__item--2 hidden-desktop"><div class="classCode header__code">Clase: {{studentData.classCode}}</div><div class="progress"><div class="header__progress-container"><div class="header__progress-bar" ng-style="progressStyle"></div></div><div class="header__section">{{stepName}}</div></div></div></div>');
 $templateCache.put('html/quiz/index.html','<div ui-view></div>');
 $templateCache.put('html/quiz/question.html','<form name="questionForm" ng-submit="questionForm.$valid && goToNextPage(pageData.nextPage)" novalidate><div ng-repeat="question in pageData.questions" class="{{question.type}} question__single-container"><div class="question__text">{{question.text}}</div><div class="question__option-wrapper" ng-if="question.type == \'slider\'"><div ng-repeat="option in question.options" ng-init="initNumericValue(question.id, option.id)" class="question__option-item"><p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id, option.id)"></span><rzslider rz-slider-model="studentData[sectionData.id][question.id][option.id]" rz-slider-options="sliderOptions"></rzslider><span class="input-square input-square--right" ng-click="incrementNumericValue(question.id, option.id)"></span></div></div></div><div ng-if="question.type == \'numeric_single_option\'"><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id)"></span> <input type="number" ng-model="studentData[sectionData.id][question.id]" ng-init="initNumericValue(question.id)" class="question__number-input"> <span class="input-square input-square--right" ng-click="incrementNumericValue(question.id)"></span></div></div><div ng-if="question.type == \'radio_boolean\'"><div class="question__radio"><input type="radio" ng-model="studentData[sectionData.id][question.id]" value="1" id="radio-si" ng-required="!studentData[sectionData.id][question.id]"><div class="check"></div><label for="radio-si">S\xED</label></div><div class="question__radio"><input type="radio" ng-model="studentData[sectionData.id][question.id]" value="0" id="radio-no" ng-required="!studentData[sectionData.id][question.id]"><div class="check"></div><label for="radio-no">No</label></div></div><div class="question__option-wrapper" ng-if="question.type == \'numeric_multiple_option\'"><div ng-repeat="option in question.options" class="question__option-item"><p class="question__option">{{ option.textKey | translate: getTranslationKey(option.textKey) }}</p><div class="question__input"><span class="input-square input-square--left" ng-click="decrementNumericValue(question.id, option.id)"></span> <input type="number" ng-model="studentData[sectionData.id][question.id][option.id]" ng-init="initNumericValue(question.id, option.id)" class="question__number-input"> <span class="input-square input-square--right" ng-click="incrementNumericValue(question.id, option.id)"></span></div></div></div></div><button type="submit" class="btn center--mobile right--desktop">Siguiente</button></form>');
