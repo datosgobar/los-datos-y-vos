@@ -12,7 +12,7 @@ angular.module('app').directive("svgMap", function() {
             if(oldSelectedDepartment.length > 0) {
               oldSelectedDepartment.removeClass("selected");
               angular.forEach(oldSelectedDepartment.children('path'), function(v,k){
-                v.style.fill="#F2F2F2";
+                v.style.fill="#969696";
               });
             }
             var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));

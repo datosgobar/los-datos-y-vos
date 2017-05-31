@@ -2,7 +2,7 @@
   <defs>
     <style type="text/css">
       path {
-        fill: #F2F2F2;
+        fill: #969696;
         stroke: white;
         stroke-width: 0.5px;
       }
