@@ -1,20 +1,21 @@
 angular.module('app').controller('signUpFormCtrl', function($scope, $state, $filter, EventBusSvc, StudentDataSvc, LocationIndicatorSvc) {
 
 	var activate = function() {
-	    $scope.studentData = StudentDataSvc.getStudentData();
-        $scope.defaultProvince = { name: "Provincia"};
-        $scope.defaultDepartment = { name: "¿Dónde vivís?"};
-	    LocationIndicatorSvc.getProvinceList().then(function(data) {
-            $scope.provinceList = [$scope.defaultProvince]; 
-	    	$scope.provinceList = $scope.provinceList.concat(data);
-	    });
-	    $scope.departmentList = [$scope.defaultDepartment]; 
-        $scope.pageLoad = true;
+		$scope.studentData = StudentDataSvc.getStudentData();
+    $scope.defaultProvince = { name: "Provincia"};
+    $scope.defaultDepartment = { name: "¿Dónde vivís?"};
+
+		LocationIndicatorSvc.getProvinceList().then(function(data) {
+      $scope.provinceList = [$scope.defaultProvince];
+    	$scope.provinceList = $scope.provinceList.concat(data);
+    });
+    $scope.departmentList = [$scope.defaultDepartment];
+      $scope.pageLoad = true;
     };
 
     var updateDepartmentList = function() {
         if(!$scope.pageLoad) {
-            $scope.studentData['department'] = $scope.defaultDepartment;    
+            $scope.studentData['department'] = $scope.defaultDepartment;
         } else {
             $scope.pageLoad = false;
         }
@@ -35,7 +36,7 @@ angular.module('app').controller('signUpFormCtrl', function($scope, $state, $fil
     $scope.$watch("studentData.province", function(){
     	updateDepartmentList();
     });
-    
+
     $scope.initProvinceCombobox = function() {
         if(!$scope.studentData['province']) {
             $scope.studentData['province'] = $scope.defaultProvince;
@@ -58,6 +59,6 @@ angular.module('app').controller('signUpFormCtrl', function($scope, $state, $fil
     	StudentDataSvc.updateStudentData($scope.studentData);
         $state.go("root.quizSection1.question", { pageNumber: 1});
     };
-    
+
     activate();
 });

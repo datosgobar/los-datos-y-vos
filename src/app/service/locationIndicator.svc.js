@@ -3,10 +3,10 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
     var getProvinceList = function() {
         var defer = $q.defer();
         $http.get("data/indicadores_provincia.json").success(function(data) {
-            var list = []; 
+            var list = [];
             angular.forEach(data, function(element) {
                 list.push({
-                    id: element.provincia_id, 
+                    id: element.provincia_id,
                     name: element.provincia_nombre,
                     youngProportion: element.jovenes_proporcion,
                     schoolAttendance: element.jovenes_asistencia_escolar,
@@ -24,11 +24,11 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
     var getDepartmentList = function() {
         var defer = $q.defer();
         $http.get("data/indicadores_departamento.json").success(function(data) {
-            var list = []; 
+            var list = [];
             angular.forEach(data, function(element) {
                 list.push({
-                    id: element.departamento_id, 
-                    name: element.departamento_nombre != "" ? element.departamento_nombre : "Blank", 
+                    id: element.departamento_id,
+                    name: element.departamento_nombre != "" ? element.departamento_nombre : "Blank",
                     provinceId: element.provincia_id,
                     youngProportion: element.jovenes_proporcion,
                     schoolAttendance: element.jovenes_asistencia_escolar,
@@ -47,15 +47,15 @@ angular.module('app').service('LocationIndicatorSvc', function($q, $http, $filte
         var defer = $q.defer();
         this.getDepartmentList().then(function(departments) {
             $http.get("data/barrios_caba.json").success(function(data) {
-                var list = []; 
+                var list = [];
                 angular.forEach(data, function(element) {
                     var department = $filter('filter')(departments, { id: element.comuna_id}, true)[0];
                     if(!department) {
                         department = {};
                     }
                     list.push({
-                        id: element.comuna_id, 
-                        name: element.barrio_nombre, 
+                        id: element.comuna_id,
+                        name: element.barrio_nombre,
                         departmentName: element.comuna_nombre,
                         youngProportion: department.youngProportion || 0,
                         schoolAttendance: department.schoolAttendance || 0,

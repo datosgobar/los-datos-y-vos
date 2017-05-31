@@ -4,11 +4,11 @@ angular.module('app').directive("comparisonMap", function($timeout) {
     replace: true,
     scope: {
       clickFunction: '=',
-      mapControl: '='
+      mapControl: '=',
+      province: '@'
     },
-    template: "<object type='image/svg+xml' id='comparisonMap' class='student-info__maps' data='img/maps/2.svg'></object>",
+    template: "<object type='image/svg+xml' id='comparisonMap' class='student-info__maps' data='img/maps/{{province}}.svg'></object>",
     link: function(scope, element, attrs) {
-
       var init = function() {
         if(element[0] === undefined) {
           $timeout(function(){}, 2000);
@@ -42,7 +42,6 @@ angular.module('app').directive("comparisonMap", function($timeout) {
       comparisonMap.onload = function() {
         init();
       };
-
       var removeActiveTooltips = scope.mapControl.removeActiveTooltips = function() {
         var pathElements = angular.element(element[0].getSVGDocument().getElementsByClassName("department active"));
         for(var i = 0; i < pathElements.length; i++) {
@@ -50,8 +49,6 @@ angular.module('app').directive("comparisonMap", function($timeout) {
             pathElement.classList.remove("active");
         }
       };
-
-
 
     }
   }

@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="comparativo__map youngProportion" id="map-wrapper">
-			<comparison-map province="2" click-function="showDepartmentTooltip" map-control="mapControl"></comparison-map>
+			<comparison-map province="{{province_id}}" click-function="showDepartmentTooltip" map-control="mapControl"></comparison-map>
 			<div id="descriptionDiv" class="description {{comparisonType}}">
 				<a ng-click="closeTooltip()"><i class="fa fa-times description__close" aria-hidden="true"></i></a>
 				<div class="pieChart" easypiechart
@@ -35,10 +35,10 @@
     					{{currentValue}}%
 				    </div>
 				    <div class="easypielabel" ng-if="comparisonType == 'avgPersonsPerHouse'">
-    					{{currentDepartment[comparisonType] | number:2}}
+    					{{currentDepartment[comparisonType] | number: 2}}
 				    </div>
 				</div>
-				<p class="comparativo__comuna">{{currentDepartment.departmentName}}</p>
+				<p class="comparativo__comuna">{{currentDepartment.name}}</p>
 			</div>
 		</div>
 	</div>

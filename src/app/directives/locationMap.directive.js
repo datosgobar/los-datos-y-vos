@@ -9,14 +9,18 @@ angular.module('app').directive("svgMap", function() {
         var departmentChanged = function(newValue, oldValue) {
           if(newValue.id) {
             var oldSelectedDepartment = angular.element(element[0].getSVGDocument().getElementsByClassName("selected"));
-            oldSelectedDepartment.removeClass("selected");
             if(oldSelectedDepartment.length > 0) {
-              oldSelectedDepartment[0].children[0].style.fill="#F2F2F2";
+              oldSelectedDepartment.removeClass("selected");
+              angular.forEach(oldSelectedDepartment.children('path'), function(v,k){
+                v.style.fill="#F2F2F2";
+              });
             }
             var selectedDepartment = angular.element(element[0].getSVGDocument().getElementById(("00" + newValue.id).slice(-5)));
             if(selectedDepartment.length) {
-              selectedDepartment.addClass("selected");
-              selectedDepartment.children('path')[0].style.fill="#FFEAA8";
+              selectedDepartment.addClass('selected');
+              angular.forEach(selectedDepartment.children('path'), function(v,k){
+                v.style.fill="#FFEAA8";
+              });
             }
           }
         };
