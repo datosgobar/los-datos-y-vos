@@ -61,6 +61,6 @@ Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eid
 
 ## Contacto
 
-Te invitamos a [creanos un issue](https://github.com/datosgobar/los-datos-y-vos/issues/new?title=Encontre un bug en los-datos-y-vos) en caso de que encuentres algún bug o tengas feedback de alguna parte de `los-datos-y-vos`.
+Te invitamos a [creanos un issue](https://github.com/datosgobar/los-datos-y-vos/issues/new?title=Encontre%20un%20bug%20en%20los-datos-y-vos) en caso de que encuentres algún bug o tengas feedback de alguna parte de `los-datos-y-vos`.
 
 Para todo lo demás, podés mandarnos tu comentario o consulta a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar).
