@@ -6,15 +6,15 @@ Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eid
 
 * `data`: CSVs con data original del censo para construir indicadores, ids censales y lista de barrios/comunas de la CABA.
 * `indicadores`: CSVs y excels con los indicadores construidos para usar en la aplicación. También hay una tabla con datos falsos
-* `src`: Contiene el codigo del proyecto web para Los datos y vos.
+* `src`: Contiene el código del proyecto web para _Los datos y vos_.
 
 ## Instalación
 
 ### Instrucciones para configurar firebase
 
-* Ingresar a https://firebase.google.com/ y hacer log-in con una cuenta de google.
-* Ir a la consola de firebase y crear un nuevo proyecto(ej: "los-datos-y-vos").
-* Hacer click en el icono que dice "Añade firebase a tu aplicación web", y copiar el array javascript que contiene la configuracion, por ejemplo:
+* Ingresar a https://firebase.google.com/ y hacer `log-in` con una cuenta de google.
+* Ir a la consola de firebase y crear un nuevo proyecto: (ejemplo: "los-datos-y-vos").
+* Hacer clic en el icono que dice "Añade firebase a tu aplicación web", y copiar el array javascript que contiene la configuración, por ejemplo:
 ```javascript
   var config = {
     apiKey: "apiKey",
@@ -24,7 +24,7 @@ Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eid
     messagingSenderId: "messagingSenderId"
   };
 ```
-* Dirigirse a la solapa "Database", luego al tab "Reglas" (para permitir el acceso a la base de datos sin necesidad de estar loggeados), y modificar el codigo de la siguiente manera:
+* Dirigirse a la solapa "Database", luego al tab "Reglas" (para permitir el acceso a la base de datos sin necesidad de estar loggeados), y modificar el código de la siguiente manera:
 
 ```javascript
   {
@@ -36,22 +36,22 @@ Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eid
 ```
 
 * Publicar los cambios.
-* Pegar la config previamente copiada en el archivo de configuracion: src/app/module.js
+* Pegar la config previamente copiada en el archivo de configuración: `src/app/module.js`
 * Seguir los pasos detallados debajo para realizar un `deploy`.
 
 ### Instrucciones para realizar el deploy
 
-* Requisitos: tener instalado node(version 6.9~) + gulp.
-* Una vez descargado el proyecto situarse desde la terminal en la carpeta open-data-school/los-dayos-y-vos.
-* Correr el comando "gulp production --deploy". El mismo generara la carpeta "open-data-school/docs", la cual contiene los archivos estaticos compilados necesarios para que se vean los cambios en github pages.
+* Requisitos: tener instalado node (versión 6.9~) + [gulp](http://gulpjs.com/).
+* Una vez descargado el proyecto situarse desde la terminal en la carpeta `open-data-school/los-dayos-y-vos`.
+* Correr el comando `gulp production --deploy`. El mismo generará la carpeta "open-data-school/docs", la cual contiene los archivos estáticos compilados necesarios para que se vean los cambios en [Github pages](https://pages.github.com/).
 * Luego de correr el proceso, hacer commit y push al repositorio con los archivos actualizados.
 
 ### Instrucciones para levantar una instancia local
 
-* Requisitos: tener instalado node(version 6.9~)
-* Una vez descargado el proyecto situarse desde la terminal en la carpeta open-data-school/los-dayos-y-vos.
-* Correr "npm install" si se levanta la instancia local por primera vez
-* Correr "npm start" para levantar la instancia local
+* Requisitos: tener instalado node (versión 6.9~)
+* Una vez descargado el proyecto situarse desde la terminal en la carpeta `open-data-school/los-dayos-y-vos`.
+* Correr `npm install` si se levanta la instancia local por primera vez
+* Correr `npm start` para levantar la instancia local
 
 ## Créditos
 
