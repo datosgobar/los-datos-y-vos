@@ -50,7 +50,6 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
             $scope.classAverages.avgPersonsPerHouse.yourProvince += student[$scope.sectionData.id]["avgPersonsPerHouse"]['province'];
             $scope.classAverages.personsRentingHouses.department += student[$scope.sectionData.id]["personsRentingHouses"]['department'];
             $scope.classAverages.personsRentingHouses.province += student[$scope.sectionData.id]["personsRentingHouses"]['province'];
-            $scope.classAverages.personsRentingHouses.province += student[$scope.sectionData.id]["personsRentingHouses"]['province'];
             $scope.classAverages.rentedHouse += parseInt(student[$scope.sectionData.id]["rentedHouse"]);
         });
 
@@ -130,15 +129,20 @@ angular.module('app').controller('ResultSection2Ctrl', function($scope, $state, 
                             questionText: "Porcentaje de personas que vive en un lugar alquilado en:",
                             options: []
                         };
+
                         angular.forEach(question.options, function(option) {
+
                             var optionResult = {
                                 optionText: option.textKey
                             };
-                            optionResult.yourAnswer = $scope.studentData[$scope.sectionData.id][question.id][option.id];
-                            optionResult.yourClass = $scope.classAverages[question.id][option.id] / $scope.studentsPerClass.length;
+
+                            optionResult.yourAnswer   = $scope.studentData[$scope.sectionData.id][question.id][option.id];
+                            optionResult.yourClass    = $scope.classAverages[question.id][option.id] / $scope.studentsPerClass.length;
                             optionResult.censusResult = ($scope.studentData[option.id][question.id]*100);
+
                             questionResults.options.push(optionResult);
                         });
+
                         avgRentingHouseResults.personsRentingHouses = questionResults;
                     }
                 });
