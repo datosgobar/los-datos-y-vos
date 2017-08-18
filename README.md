@@ -2,6 +2,10 @@
 
 Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eidos](http://www.aeidos.com.ar/), [Aerolab](https://aerolab.co/) y [ODI](https://theodi.org/).
 
+## Actividad pedagógica
+
+El proyecto "Los Datos y Vos" se enmarca dentro de una actividad pedagógica diseñada para acercar el concepto de los datos abiertos a chicos en edad de secundaria. Leé más en la guía ["La escuela en la nube: Datos abiertos en el aula"](Guia-los-datos-y-vos.pdf).
+
 ## Estructura del repositorio
 
 * `data`: CSVs con data original del censo para construir indicadores, ids censales y lista de barrios/comunas de la CABA.
