@@ -4,7 +4,7 @@ Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eid
 
 ## Actividad pedagógica
 
-El proyecto "Los Datos y Vos" forma parte de una actividad pedagógica diseñada para acercar datos abiertos a chicos en edad de secundaria. Conocé más en la guía ["La escuela en la nube: Datos abiertos en el aula"](Guia-los-datos-y-vos.pdf).
+El proyecto _Los datos y vos_ forma parte de una actividad pedagógica diseñada para acercar datos abiertos a chicos en edad de secundaria. Conocé más en la guía ["La escuela en la nube: datos abiertos en el aula"](Guia-los-datos-y-vos.pdf).
 
 ## Estructura del repositorio
 
