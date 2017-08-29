@@ -4,7 +4,7 @@ Aplicación web del proyecto "Bring Open Data to Your School" realizado con [Eid
 
 ## Actividad pedagógica
 
-El proyecto "Los Datos y Vos" se enmarca dentro de una actividad pedagógica diseñada para acercar el concepto de los datos abiertos a chicos en edad de secundaria. Leé más en la guía ["La escuela en la nube: Datos abiertos en el aula"](Guia-los-datos-y-vos.pdf).
+El proyecto "Los Datos y Vos" forma parte de una actividad pedagógica diseñada para acercar datos abiertos a chicos en edad de secundaria. Conocé más en la guía ["La escuela en la nube: Datos abiertos en el aula"](Guia-los-datos-y-vos.pdf).
 
 ## Estructura del repositorio
 
@@ -28,7 +28,7 @@ El proyecto "Los Datos y Vos" se enmarca dentro de una actividad pedagógica dis
     messagingSenderId: "messagingSenderId"
   };
 ```
-* Dirigirse a la solapa "Database", luego al tab "Reglas" (para permitir el acceso a la base de datos sin necesidad de estar loggeados), y modificar el código de la siguiente manera:
+* Dirigirse a la solapa "Database", luego al tab "Reglas" (para permitir el acceso a la base de datos sin necesidad de estar loggeados) y modificar el código de la siguiente manera:
 
 ```javascript
   {
@@ -47,7 +47,7 @@ El proyecto "Los Datos y Vos" se enmarca dentro de una actividad pedagógica dis
 
 * Requisitos: tener instalado node (versión 6.9~) + [gulp](http://gulpjs.com/).
 * Una vez descargado el proyecto situarse desde la terminal en la carpeta `open-data-school/los-dayos-y-vos`.
-* Correr el comando `gulp production --deploy`. El mismo generará la carpeta "open-data-school/docs", la cual contiene los archivos estáticos compilados necesarios para que se vean los cambios en [Github pages](https://pages.github.com/).
+* Correr el comando `gulp production --deploy`. El mismo generará la carpeta "open-data-school/docs", que contiene los archivos estáticos compilados necesarios para que se vean los cambios en [Github pages](https://pages.github.com/).
 * Luego de correr el proceso, hacer commit y push al repositorio con los archivos actualizados.
 
 ### Instrucciones para levantar una instancia local
